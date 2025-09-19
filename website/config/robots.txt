@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block access to config and deployment directories
+Disallow: /config/
+Disallow: /deployment/
+
+# Allow access to sitemap
+Sitemap: https://example.com/sitemap.xml
