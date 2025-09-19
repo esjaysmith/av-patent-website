@@ -1,0 +1,263 @@
+<!-- Form and CTA Component Templates -->
+
+<!-- Contact Form Template -->
+<section class="contact-form-section">
+    <div class="container">
+        <div class="form-container">
+            <h2>Contact Us About Patent Licensing</h2>
+            <p>Get detailed information about licensing our camera-only autonomous driving patents.</p>
+
+            <form id="contact-form" class="contact-form" action="/submit-contact" method="POST">
+                <!-- Honeypot field for spam protection -->
+                <div class="form-field honeypot">
+                    <label for="website">Website (leave blank)</label>
+                    <input type="text" id="website" name="website" autocomplete="off">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="first-name">First Name *</label>
+                        <input type="text" id="first-name" name="first_name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">Last Name *</label>
+                        <input type="text" id="last-name" name="last_name" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="company">Company *</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" id="job-title" name="job_title">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="interest">Primary Interest *</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Select your primary interest</option>
+                        <option value="patent-licensing">Patent Licensing</option>
+                        <option value="technology-assessment">Technology Assessment</option>
+                        <option value="partnership">Strategic Partnership</option>
+                        <option value="market-research">Market Research</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="company-size">Company Size</label>
+                    <select id="company-size" name="company_size">
+                        <option value="">Select company size</option>
+                        <option value="startup">Startup (1-50 employees)</option>
+                        <option value="small">Small (51-200 employees)</option>
+                        <option value="medium">Medium (201-1000 employees)</option>
+                        <option value="large">Large (1000+ employees)</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="timeline">Implementation Timeline</label>
+                    <select id="timeline" name="timeline">
+                        <option value="">Select timeline</option>
+                        <option value="immediate">Immediate (within 3 months)</option>
+                        <option value="6months">Within 6 months</option>
+                        <option value="1year">Within 1 year</option>
+                        <option value="2years">Within 2 years</option>
+                        <option value="exploring">Just exploring</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell us about your autonomous driving project and how our patents might help..."></textarea>
+                </div>
+
+                <div class="form-field checkbox-field">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Subscribe to our newsletter for AV industry updates</label>
+                </div>
+
+                <div class="form-field checkbox-field">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">I agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a> *</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+            </form>
+
+            <div id="form-messages" class="form-messages" style="display: none;">
+                <div id="form-success" class="form-success">
+                    <h3>Thank you for your interest!</h3>
+                    <p>We've received your message and will get back to you within 24 hours.</p>
+                </div>
+                <div id="form-error" class="form-error">
+                    <h3>There was an error sending your message.</h3>
+                    <p>Please try again or contact us directly at <a href="mailto:info@autonomous-patent-licensing.com">info@autonomous-patent-licensing.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Signup Form -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Stay Updated on AV Industry Developments</h2>
+            <p>Get exclusive insights on camera-only technology, patent opportunities, and market trends.</p>
+            <form class="newsletter-form" action="/subscribe" method="POST">
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+                <div class="form-field checkbox-field">
+                    <input type="checkbox" id="newsletter-privacy" name="privacy" required>
+                    <label for="newsletter-privacy">I agree to the <a href="/privacy-policy" target="_blank">Privacy Policy</a></label>
+                </div>
+            </form>
+            <p class="newsletter-disclaimer">No spam, unsubscribe at any time.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Button Components -->
+<div class="cta-buttons">
+    <a href="/contact" class="btn btn-primary">Contact Us</a>
+    <a href="/patents-overview" class="btn btn-secondary">Explore Patents</a>
+</div>
+
+<!-- Inline CTA -->
+<div class="cta-inline">
+    <h3>Ready to License Our Patents?</h3>
+    <p>Get started with camera-only autonomous driving technology.</p>
+    <a href="/licensing-information" class="btn btn-primary">Learn About Licensing</a>
+</div>
+
+<!-- Hero CTA -->
+<div class="hero-cta">
+    <h2>Transform Your AV Program with Camera-Only Technology</h2>
+    <p>Join industry leaders in adopting the future of autonomous driving.</p>
+    <div class="cta-buttons">
+        <a href="/contact" class="btn btn-primary btn-large">Schedule Consultation</a>
+        <a href="/patents-overview" class="btn btn-secondary btn-large">View Patent Portfolio</a>
+    </div>
+</div>
+
+<!-- Resource Download CTA -->
+<div class="download-cta">
+    <div class="download-content">
+        <h3>Download Patent Overview</h3>
+        <p>Get detailed information about our camera-only autonomous driving patents.</p>
+        <form class="download-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-primary">Download PDF</button>
+        </form>
+    </div>
+    <div class="download-preview">
+        <img src="/assets/images/patent-overview-preview.jpg" alt="Patent overview document preview" />
+    </div>
+</div>
+
+<!-- Form Validation Styles -->
+<style>
+.form-field.error input,
+.form-field.error textarea,
+.form-field.error select {
+    border-color: #e74c3c;
+}
+
+.form-field .error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.form-messages {
+    margin-top: 2rem;
+}
+
+.form-success {
+    background: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #c3e6cb;
+}
+
+.form-error {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #f5c6cb;
+}
+
+.honeypot {
+    display: none;
+}
+</style>
+
+<!-- Form JavaScript -->
+<script>
+// Form validation and submission
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Clear previous errors
+    document.querySelectorAll('.error-message').forEach(el => el.remove());
+    document.querySelectorAll('.form-field').forEach(el => el.classList.remove('error'));
+
+    // Basic validation
+    let isValid = true;
+    const requiredFields = ['first-name', 'last-name', 'company', 'email', 'interest', 'message'];
+
+    requiredFields.forEach(fieldId => {
+        const field = document.getElementById(fieldId);
+        if (!field.value.trim()) {
+            isValid = false;
+            field.closest('.form-field').classList.add('error');
+            const errorMsg = document.createElement('span');
+            errorMsg.className = 'error-message';
+            errorMsg.textContent = 'This field is required';
+            field.parentNode.appendChild(errorMsg);
+        }
+    });
+
+    // Email validation
+    const emailField = document.getElementById('email');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailField.value && !emailRegex.test(emailField.value)) {
+        isValid = false;
+        emailField.closest('.form-field').classList.add('error');
+        const errorMsg = document.createElement('span');
+        errorMsg.className = 'error-message';
+        errorMsg.textContent = 'Please enter a valid email address';
+        emailField.parentNode.appendChild(errorMsg);
+    }
+
+    if (isValid) {
+        // Submit form (replace with actual submission logic)
+        console.log('Form submitted successfully');
+        document.getElementById('form-messages').style.display = 'block';
+        document.getElementById('form-success').style.display = 'block';
+        document.getElementById('form-error').style.display = 'none';
+        this.reset();
+    }
+});
+</script>

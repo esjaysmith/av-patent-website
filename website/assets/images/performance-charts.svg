@@ -1,0 +1,45 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#f8fafc"/>
+  <text x="300" y="20" font-family="Arial, sans-serif" font-size="16" fill="#1a365d" text-anchor="middle">FSD v13.2.9 Performance Improvements</text>
+
+  <!-- Chart 1: Safety Score -->
+  <text x="150" y="50" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle">Safety Score Improvement</text>
+  <rect x="50" y="60" width="200" height="100" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <line x1="50" y1="140" x2="250" y2="140" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="50" y1="60" x2="50" y2="160" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- Bars -->
+  <rect x="70" y="120" width="30" height="20" fill="#ef4444"/>
+  <rect x="120" y="100" width="30" height="40" fill="#f59e0b"/>
+  <rect x="170" y="80" width="30" height="60" fill="#10b981"/>
+  <rect x="220" y="70" width="30" height="70" fill="#3b82f6"/>
+
+  <!-- Labels -->
+  <text x="85" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v12.3</text>
+  <text x="135" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v13.0</text>
+  <text x="185" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v13.1</text>
+  <text x="235" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v13.2.9</text>
+
+  <!-- Chart 2: Intervention Rate -->
+  <text x="450" y="50" font-family="Arial, sans-serif" font-size="14" fill="#1a365d" text-anchor="middle">Driver Interventions per 1,000 miles</text>
+  <rect x="350" y="60" width="200" height="100" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <line x1="350" y1="140" x2="550" y2="140" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="350" y1="60" x2="350" y2="160" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- Intervention bars (inverted scale) -->
+  <rect x="370" y="80" width="30" height="60" fill="#ef4444"/>
+  <rect x="420" y="90" width="30" height="50" fill="#f59e0b"/>
+  <rect x="470" y="110" width="30" height="30" fill="#10b981"/>
+  <rect x="520" y="125" width="30" height="15" fill="#3b82f6"/>
+
+  <!-- Labels -->
+  <text x="385" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v12.3</text>
+  <text x="435" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v13.0</text>
+  <text x="485" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v13.1</text>
+  <text x="535" y="175" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">v13.2.9</text>
+
+  <!-- Legend -->
+  <circle cx="100" cy="200" r="6" fill="#3b82f6"/>
+  <text x="115" y="205" font-family="Arial, sans-serif" font-size="12" fill="#1a365d">FSD v13.2.9</text>
+  <text x="300" y="250" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">98.7% safety score, 0.15 interventions/1,000 miles</text>
+</svg>

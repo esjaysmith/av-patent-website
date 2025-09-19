@@ -1,0 +1,54 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8fafc"/>
+  <text x="300" y="20" font-family="Arial, sans-serif" font-size="16" fill="#1a365d" text-anchor="middle">FSD v13.2.9 Camera-Only Architecture</text>
+
+  <!-- Cameras -->
+  <rect x="50" y="50" width="80" height="40" fill="#3b82f6" rx="4"/>
+  <text x="90" y="70" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">8 Cameras</text>
+
+  <rect x="470" y="50" width="80" height="40" fill="#3b82f6" rx="4"/>
+  <text x="510" y="70" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">8 Cameras</text>
+
+  <!-- Arrows to neural network -->
+  <polygon points="130,70 140,65 140,75" fill="#6b7280"/>
+  <line x1="130" y1="70" x2="200" y2="70" stroke="#6b7280" stroke-width="2"/>
+  <polygon points="470,70 460,65 460,75" fill="#6b7280"/>
+  <line x1="470" y1="70" x2="400" y2="70" stroke="#6b7280" stroke-width="2"/>
+
+  <!-- Neural Network -->
+  <rect x="200" y="120" width="200" height="80" fill="#10b981" rx="8"/>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">End-to-End</text>
+  <text x="300" y="160" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Neural Network</text>
+  <text x="300" y="180" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Transformer Architecture</text>
+
+  <!-- Internal layers -->
+  <circle cx="240" cy="150" r="8" fill="#ffffff"/>
+  <circle cx="280" cy="150" r="8" fill="#ffffff"/>
+  <circle cx="320" cy="150" r="8" fill="#ffffff"/>
+  <circle cx="360" cy="150" r="8" fill="#ffffff"/>
+  <line x1="248" y1="150" x2="272" y2="150" stroke="#10b981" stroke-width="2"/>
+  <line x1="288" y1="150" x2="312" y2="150" stroke="#10b981" stroke-width="2"/>
+  <line x1="328" y1="150" x2="352" y2="150" stroke="#10b981" stroke-width="2"/>
+
+  <!-- Output to controls -->
+  <polygon points="300,200 295,210 305,210" fill="#6b7280"/>
+  <line x1="300" y1="200" x2="300" y2="250" stroke="#6b7280" stroke-width="2"/>
+
+  <!-- Vehicle Controls -->
+  <rect x="250" y="250" width="100" height="60" fill="#64748b" rx="4"/>
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Vehicle</text>
+  <text x="300" y="290" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Controls</text>
+
+  <!-- Data flow labels -->
+  <text x="300" y="100" font-family="Arial, sans-serif" font-size="12" fill="#1a365d" text-anchor="middle">Raw Camera Data</text>
+  <text x="300" y="230" font-family="Arial, sans-serif" font-size="12" fill="#1a365d" text-anchor="middle">Control Commands</text>
+
+  <!-- Key features -->
+  <text x="50" y="120" font-family="Arial, sans-serif" font-size="12" fill="#10b981">• Multi-view fusion</text>
+  <text x="50" y="140" font-family="Arial, sans-serif" font-size="12" fill="#10b981">• Temporal modeling</text>
+  <text x="50" y="160" font-family="Arial, sans-serif" font-size="12" fill="#10b981">• End-to-end training</text>
+
+  <text x="480" y="120" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6">• No LiDAR dependency</text>
+  <text x="480" y="140" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6">• Cost-effective scaling</text>
+  <text x="480" y="160" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6">• Real-world validation</text>
+</svg>
