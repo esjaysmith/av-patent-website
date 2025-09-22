@@ -66,6 +66,10 @@ class StaticSiteGenerator:
         # Convert markdown to HTML
         html_content = self.md.convert(markdown_content)
 
+        # Fix H1 duplication - convert first H1 in content to H2
+        # This prevents duplicate H1s when page template already has one
+        html_content = re.sub(r'<h1([^>]*)>(.*?)</h1>', r'<h2\1>\2</h2>', html_content, count=1)
+
         # Reset markdown processor for next file
         self.md.reset()
 
@@ -79,6 +83,14 @@ class StaticSiteGenerator:
         if output_filename is None:
             output_filename = md_file_path.stem + '.html'
 
+        # Generate canonical URL and page type
+        if output_filename == 'index.html':
+            canonical_url = '/'
+            page_type = 'homepage'
+        else:
+            canonical_url = '/' + output_filename
+            page_type = md_file_path.stem  # e.g. 'patent-details', 'contact', etc.
+
         # Set default metadata values
         template_vars = {
             'title': metadata.get('title', 'AV Navigation IP Protection'),
@@ -89,7 +101,9 @@ class StaticSiteGenerator:
             'hero_title': metadata.get('hero_title', ''),
             'hero_subtitle': metadata.get('hero_subtitle', ''),
             'page_title': metadata.get('page_title', metadata.get('title', '')),
-            'show_cta': metadata.get('show_cta', False)
+            'show_cta': metadata.get('show_cta', False),
+            'canonical_url': canonical_url,
+            'page_type': page_type
         }
 
         # Load and render template

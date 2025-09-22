@@ -33,4 +33,101 @@
         </div>
     </div>
 </div>
+
+{% if page_type == "patent-details" %}
+<!-- Patent Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Patent",
+    "@id": "US12001207",
+    "name": "US Patent 12,001,207",
+    "description": "Camera-based navigation safety technology for autonomous vehicles and drones",
+    "patentNumber": "US12,001,207",
+    "datePublished": "2024-06-04",
+    "creator": {
+        "@type": "Person",
+        "name": "Patent Inventor"
+    },
+    "assignee": {
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection"
+    },
+    "classification": "Autonomous Vehicle and Drone Navigation",
+    "applicationArea": [
+        "Autonomous Vehicles",
+        "Drone Navigation",
+        "Camera-based Safety Systems",
+        "AI Navigation"
+    ],
+    "technicalField": "Camera-based navigation safety mechanisms",
+    "abstract": "This patent describes innovative methods and systems for enhancing navigation safety in autonomous vehicles and unmanned aerial vehicles (drones) through advanced camera-based perception and safety mechanisms.",
+    "claims": [
+        "Camera-Based Safety Architecture",
+        "Navigation Decision Logic",
+        "Autonomous System Integration"
+    ],
+    "licensing": {
+        "@type": "Offer",
+        "availability": "Available",
+        "businessFunction": "License",
+        "description": "Available for exclusive and non-exclusive licensing",
+        "url": "https://av-navigation-ip.com/licensing.html"
+    }
+}
+</script>
+{% endif %}
+
+{% if page_type == "contact" %}
+<!-- FAQ Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How long does the licensing process typically take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "From initial inquiry to signed agreement: 4-8 weeks for standard licensing terms, 8-12 weeks for complex exclusive arrangements."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you offer licensing for specific geographic regions?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer flexible geographic licensing including country-specific, regional, and global licensing options."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can startups access licensing on favorable terms?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We offer startup-friendly licensing structures including deferred payments, milestone-based royalties, and equity arrangements."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is technical support included with licensing?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, licensing agreements include technical documentation, integration guidance, and ongoing patent family updates."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What response time can I expect for licensing inquiries?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Initial acknowledgment within 24 hours, detailed response within 3-5 business days, and licensing consultation scheduling within 1 week."
+            }
+        }
+    ]
+}
+</script>
+{% endif %}
+
 {% endblock %}

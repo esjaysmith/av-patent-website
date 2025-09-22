@@ -7,6 +7,9 @@
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ keywords }}">
 
+    <!-- SEO Meta Tags -->
+    <link rel="canonical" href="https://av-navigation-ip.com{{ canonical_url }}">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -96,5 +99,44 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Organization Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection",
+        "url": "https://av-navigation-ip.com",
+        "description": "Patent licensing for autonomous vehicle camera-based navigation safety technology",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "",
+            "contactType": "licensing",
+            "email": "licensing@av-navigation-ip.com",
+            "areaServed": "Worldwide"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+        },
+        "sameAs": [],
+        "knowsAbout": [
+            "Patent Licensing",
+            "Autonomous Vehicle Technology",
+            "Camera-based Navigation",
+            "Drone Navigation Systems",
+            "AI Navigation Patents",
+            "Tesla FSD Technology",
+            "Intellectual Property Protection"
+        ],
+        "owns": {
+            "@type": "Patent",
+            "@id": "US12001207",
+            "name": "US Patent 12,001,207",
+            "description": "Camera-based navigation safety technology for autonomous vehicles and drones",
+            "datePublished": "2024-06-04"
+        }
+    }
+    </script>
 </body>
 </html>
