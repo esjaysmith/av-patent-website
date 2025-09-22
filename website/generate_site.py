@@ -13,6 +13,8 @@ import markdown
 from jinja2 import Environment, FileSystemLoader
 import yaml
 import re
+import base64
+import json
 
 class StaticSiteGenerator:
     def __init__(self, design="default"):
@@ -51,6 +53,86 @@ class StaticSiteGenerator:
         else:
             print("! No assets directory found, skipping...")
 
+    def obfuscate_email(self, email):
+        """Obfuscate email address using Base64 encoding"""
+        encoded_email = base64.b64encode(email.encode('utf-8')).decode('utf-8')
+        # Use a more unique ID to avoid collisions
+        obfuscation_id = f"email_{abs(hash(email + str(os.getpid()))) % 100000}"
+
+        # Create JavaScript that will decode and display the email
+        js_code = f'''<span id="{obfuscation_id}" class="email-protected">
+            <noscript>Email address hidden (JavaScript required)</noscript>
+        </span>
+        <script>
+        (function() {{
+            try {{
+                var email = atob('{encoded_email}');
+                var element = document.getElementById('{obfuscation_id}');
+                if (element) {{
+                    element.innerHTML = '<a href="mailto:" + email + '">' + email + '</a>';
+                }}
+            }} catch(e) {{
+                console.error('Email decode error:', e);
+            }}
+        }})();
+        </script>'''
+
+        return js_code
+
+    def obfuscate_emails_in_content(self, content):
+        """Find and obfuscate email addresses in HTML content"""
+        # Skip if content already contains email obfuscation to prevent double-processing
+        if 'class="email-protected"' in content:
+            return content
+
+        # Split content to avoid obfuscating emails in JSON-LD script tags and existing obfuscated emails
+        parts = re.split(r'(<script[^>]*type=["\']application/ld\+json["\'][^>]*>.*?</script>)', content, flags=re.DOTALL | re.IGNORECASE)
+
+        processed_parts = []
+        for i, part in enumerate(parts):
+            # Skip JSON-LD script tags (odd indices after split)
+            if i % 2 == 1 and 'application/ld+json' in part.lower():
+                processed_parts.append(part)
+            else:
+                # Process mailto links in other content
+                mailto_pattern = r'<a href="mailto:([^"]+)"[^>]*>([^<]+)</a>'
+
+                def replace_mailto(match):
+                    email = match.group(1)
+                    display_text = match.group(2)
+
+                    # If display text is the same as email, obfuscate both
+                    if display_text == email:
+                        return self.obfuscate_email(email)
+                    else:
+                        # If different display text, keep display text and obfuscate link
+                        encoded_email = base64.b64encode(email.encode('utf-8')).decode('utf-8')
+                        # Use a more unique ID to avoid collisions
+                        obfuscation_id = f"email_{abs(hash(email + display_text + str(os.getpid()))) % 100000}"
+
+                        js_code = f'''<span id="{obfuscation_id}" class="email-protected">{display_text}</span>
+                        <script>
+                        (function() {{
+                            try {{
+                                var email = atob('{encoded_email}');
+                                var element = document.getElementById('{obfuscation_id}');
+                                if (element) {{
+                                    element.innerHTML = '<a href="mailto:" + email + '">{display_text}</a>';
+                                }}
+                            }} catch(e) {{
+                                console.error('Email decode error:', e);
+                            }}
+                        }})();
+                        </script>'''
+
+                        return js_code
+
+                # Replace mailto links in this part
+                processed_part = re.sub(mailto_pattern, replace_mailto, part)
+                processed_parts.append(processed_part)
+
+        return ''.join(processed_parts)
+
     def parse_frontmatter(self, content):
         """Extract YAML frontmatter from markdown content"""
         if content.startswith('---'):
@@ -77,6 +159,9 @@ class StaticSiteGenerator:
         # Fix H1 duplication - convert first H1 in content to H2
         # This prevents duplicate H1s when page template already has one
         html_content = re.sub(r'<h1([^>]*)>(.*?)</h1>', r'<h2\1>\2</h2>', html_content, count=1)
+
+        # Obfuscate email addresses in the HTML content
+        html_content = self.obfuscate_emails_in_content(html_content)
 
         # Reset markdown processor for next file
         self.md.reset()
@@ -117,6 +202,9 @@ class StaticSiteGenerator:
         # Load and render template
         template = self.jinja_env.get_template('page.html')
         rendered_html = template.render(**template_vars)
+
+        # Obfuscate any remaining email addresses in the final rendered HTML
+        rendered_html = self.obfuscate_emails_in_content(rendered_html)
 
         # Write to build directory
         output_path = self.build_dir / output_filename
