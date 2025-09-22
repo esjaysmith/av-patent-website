@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-5">
+    {% if is_homepage %}
+    <!-- Hero Section for Homepage -->
+    <div class="hero-section rounded-3 text-center mb-5">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold mb-3">{{ hero_title }}</h1>
+            <p class="lead mb-4">{{ hero_subtitle }}</p>
+            <a href="/contact.html" class="btn btn-warning btn-lg cta-button">Start Licensing Inquiry</a>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            {% if not is_homepage %}
+            <h1 class="mb-4">{{ page_title }}</h1>
+            {% endif %}
+
+            <div class="content">
+                {{ content | safe }}
+            </div>
+
+            {% if show_cta and not is_homepage %}
+            <div class="mt-5 p-4 bg-light rounded">
+                <h3>Ready to License US Patent 12,001,207?</h3>
+                <p class="mb-3">Contact us to discuss licensing opportunities for your autonomous vehicle or drone navigation projects.</p>
+                <a href="/contact.html" class="btn btn-primary cta-button">Get in Touch</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
