@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | AV Navigation IP Protection</title>
+    <meta name="description" content="{{ description }}">
+    <meta name="keywords" content="{{ keywords }}">
+
+    <!-- SEO Meta Tags -->
+    <link rel="canonical" href="https://av-navigation-ip.com{{ canonical_url }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #1a1a1a;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 140, 0, 0.05) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff8c00;
+            text-decoration: none;
+            text-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-menu a {
+            color: #b0b0b0;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ff8c00, #ffb347);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #ff8c00;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #ff8c00;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #2b2b2b 0%, #1a1a1a 50%, #0f0f0f 100%);
+            padding: 140px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 140, 0, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 25px;
+            letter-spacing: -0.02em;
+            text-shadow: 0 0 30px rgba(255, 140, 0, 0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            color: #b0b0b0;
+            margin-bottom: 40px;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff8c00 0%, #ff6600 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(255, 140, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #ff6600 0%, #ff4500 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 140, 0, 0.4);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 100px 0;
+            background-color: #1a1a1a;
+            position: relative;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .content h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 40px;
+            letter-spacing: -0.01em;
+        }
+
+        .content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 50px 0 25px;
+            border-left: 4px solid #ff8c00;
+            padding-left: 20px;
+        }
+
+        .content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #ff8c00;
+            margin: 35px 0 20px;
+        }
+
+        .content p {
+            font-size: 1.15rem;
+            color: #c0c0c0;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .content ul, .content ol {
+            margin-left: 25px;
+            margin-bottom: 25px;
+        }
+
+        .content li {
+            color: #c0c0c0;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .content a {
+            color: #ff8c00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .content a:hover {
+            color: #ffb347;
+            text-decoration: underline;
+        }
+
+        /* Glass Cards */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .patent-highlight {
+            background: rgba(255, 140, 0, 0.1);
+            border-left: 4px solid #ff8c00;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .cta-section {
+            background: rgba(255, 140, 0, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 140, 0, 0.3);
+            padding: 50px;
+            border-radius: 16px;
+            text-align: center;
+            margin: 50px 0;
+            box-shadow: 0 8px 32px rgba(255, 140, 0, 0.2);
+        }
+
+        .cta-section h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .cta-section p {
+            color: #c0c0c0;
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            color: #888;
+            padding: 60px 0 40px;
+            margin-top: 100px;
+            border-top: 1px solid rgba(255, 140, 0, 0.2);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .footer h4 {
+            color: #ff8c00;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .footer p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #b0b0b0;
+        }
+
+        .footer a {
+            color: #ff8c00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #ffb347;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 25px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(26, 26, 26, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: 30px 20px;
+                border-bottom: 1px solid rgba(255, 140, 0, 0.2);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .card, .cta-section {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="/" class="navbar-brand">AV Navigation IP</a>
+                <div class="nav-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/patent-details.html">Patent Details</a></li>
+                    <li><a href="/licensing.html">Licensing</a></li>
+                    <li><a href="/industry-insights.html">Industry Insights</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>Legal Disclaimer</h4>
+                    <p>Information provided for licensing inquiry purposes only. All licensing terms and conditions are subject to negotiation and separate agreement. This website does not constitute legal advice.</p>
+                    <p class="footer-bottom">© 2025 AV Navigation IP Protection. All rights reserved.</p>
+                </div>
+                <div>
+                    <h4>Contact for Licensing</h4>
+                    <p><a href="mailto:licensing@av-navigation-ip.com">licensing@av-navigation-ip.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const navToggle = document.querySelector('.nav-toggle');
+            if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Organization Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection",
+        "url": "https://av-navigation-ip.com",
+        "description": "Patent licensing for autonomous vehicle camera-based navigation safety technology",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "",
+            "contactType": "licensing",
+            "email": "licensing@av-navigation-ip.com",
+            "areaServed": "Worldwide"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+        },
+        "sameAs": [],
+        "knowsAbout": [
+            "Patent Licensing",
+            "Autonomous Vehicle Technology",
+            "Camera-based Navigation",
+            "Drone Navigation Systems",
+            "AI Navigation Patents",
+            "Tesla FSD Technology",
+            "Intellectual Property Protection"
+        ],
+        "owns": {
+            "@type": "Patent",
+            "@id": "US12001207",
+            "name": "US Patent 12,001,207",
+            "description": "Camera-based navigation safety technology for autonomous vehicles and drones",
+            "datePublished": "2024-06-04"
+        }
+    }
+    </script>
+</body>
+</html>

@@ -7,6 +7,7 @@ Converts Markdown content to HTML using Jinja2 templates
 import os
 import sys
 import shutil
+import argparse
 from pathlib import Path
 import markdown
 from jinja2 import Environment, FileSystemLoader
@@ -14,12 +15,19 @@ import yaml
 import re
 
 class StaticSiteGenerator:
-    def __init__(self):
+    def __init__(self, design="default"):
         self.base_dir = Path(__file__).parent
         self.content_dir = self.base_dir / "content"
-        self.templates_dir = self.base_dir / "templates"
+        self.designs_dir = self.base_dir / "designs"
+        self.templates_dir = self.designs_dir / design
         self.assets_dir = self.base_dir / "assets"
         self.build_dir = self.base_dir / "build"
+        self.design = design
+
+        # Validate design exists
+        if not self.templates_dir.exists():
+            available_designs = [d.name for d in self.designs_dir.iterdir() if d.is_dir()]
+            raise ValueError(f"Design '{design}' not found. Available designs: {', '.join(available_designs)}")
 
         # Initialize Jinja2 environment
         self.jinja_env = Environment(loader=FileSystemLoader(self.templates_dir))
@@ -162,7 +170,7 @@ Sitemap: https://av-navigation-ip.com/sitemap.xml
 
     def build_site(self):
         """Build the complete static site"""
-        print("🚀 Starting static site generation...")
+        print(f"🚀 Starting static site generation using '{self.design}' design...")
 
         # Clean build directory
         self.clean_build_dir()
@@ -207,9 +215,39 @@ Sitemap: https://av-navigation-ip.com/sitemap.xml
 
 def main():
     """Main function to run the site generator"""
-    generator = StaticSiteGenerator()
+    parser = argparse.ArgumentParser(
+        description="Static Site Generator for AV Navigation IP Protection Website",
+        epilog="""
+Examples:
+  %(prog)s                           # Use default design
+  %(prog)s --design minimal-tech     # Use minimal-tech design
+  %(prog)s --design dark-professional # Use dark-professional design
+  %(prog)s --design light-professional # Use light-professional design
+        """,
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
 
-    if len(sys.argv) > 1 and sys.argv[1] == '--serve':
+    parser.add_argument(
+        '--design',
+        default='default',
+        help='Design theme to use (default: default)'
+    )
+
+    parser.add_argument(
+        '--serve',
+        action='store_true',
+        help='Start local development server (not implemented yet)'
+    )
+
+    args = parser.parse_args()
+
+    try:
+        generator = StaticSiteGenerator(design=args.design)
+    except ValueError as e:
+        print(f"❌ Error: {e}")
+        sys.exit(1)
+
+    if args.serve:
         # Future: Add local development server
         print("Local server not implemented yet. Use python -m http.server in build directory.")
         return

@@ -39,4 +39,5 @@ logs/
 .env.test.local
 .env.production.local
 
-.claude/
+.claude
+/.playwright-mcp/
