@@ -49,7 +49,7 @@ Consider preparing the following information for our licensing discussion:
 ### **Direct Follow-up**
 If you have urgent questions or need to modify your inquiry:
 
-**Email**: [licensing@av-navigation-ip.com](mailto:licensing@av-navigation-ip.com)
+**Email**: [Y29udGFjdEBleGFtcGxlLmNvbQ==](mailto:Y29udGFjdEBleGFtcGxlLmNvbQ==)
 **Subject**: Include your inquiry reference number (provided in confirmation email)
 
 ### **Response Time Expectations**

@@ -597,7 +597,7 @@
                 </div>
                 <div>
                     <h4>Contact for Licensing</h4>
-                    <p><a href="mailto:licensing@av-navigation-ip.com">licensing@av-navigation-ip.com</a></p>
+                    <p><a href="mailto:Y29udGFjdEBleGFtcGxlLmNvbQ==">Y29udGFjdEBleGFtcGxlLmNvbQ==</a></p>
                 </div>
             </div>
         </div>
@@ -616,6 +616,43 @@
             if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
                 navMenu.classList.remove('active');
             }
+        });
+
+        // Email obfuscation decoder
+        function decodeEmail(encodedEmail, elementId, displayText) {
+            try {
+                var email = atob(encodedEmail);
+                var element = document.getElementById(elementId);
+                if (element) {
+                    element.innerHTML = '<a href="mailto:' + email + '">' + (displayText || email) + '</a>';
+                }
+            } catch(e) {
+                console.error('Email decode error:', e);
+            }
+        }
+
+        // Automatic email decoding on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find all mailto links and decode them
+            const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
+
+            mailtoLinks.forEach(function(link) {
+                try {
+                    const href = link.getAttribute('href');
+                    const encodedEmail = href.replace('mailto:', '');
+
+                    // Assume it's always Base64 encoded - decode it
+                    const decodedEmail = atob(encodedEmail);
+
+                    // Update both href and display text
+                    link.href = 'mailto:' + decodedEmail;
+                    if (link.textContent.trim() === encodedEmail) {
+                        link.textContent = decodedEmail;
+                    }
+                } catch(e) {
+                    console.error('Email decode error:', e);
+                }
+            });
         });
 
         // Smooth scrolling for anchor links
@@ -641,7 +678,7 @@
             "@type": "ContactPoint",
             "telephone": "",
             "contactType": "licensing",
-            "email": "licensing@av-navigation-ip.com",
+            "email": "Y29udGFjdEBleGFtcGxlLmNvbQ==",
             "areaServed": "Worldwide"
         },
         "address": {

@@ -100,7 +100,7 @@ Ready to explore licensing opportunities for US Patent 12,001,207? We're committ
 ## Direct Contact Information
 
 ### **Primary Licensing Contact**
-**Email:** [licensing@av-navigation-ip.com](mailto:licensing@av-navigation-ip.com)
+**Email:** [Y29udGFjdEBleGFtcGxlLmNvbQ==](mailto:Y29udGFjdEBleGFtcGxlLmNvbQ==)
 **Subject Line Format:** "Patent Licensing Inquiry - [Your Company] - US 12,001,207"
 
 ### **Response Times**
