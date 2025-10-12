@@ -1,8 +1,16 @@
 {
   "mcpServers": {
-    "playwright": {
+    "screenshot-website-fast": {
       "command": "npx",
-      "args": ["@playwright/mcp@latest"]
+      "args": ["-y", "@just-every/mcp-screenshot-website-fast"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "env": {
+        "PUPPETEER_HEADLESS": "true",
+        "PUPPETEER_ARGS": "--no-sandbox"
+      }
     }
   }
 }

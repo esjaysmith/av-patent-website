@@ -1,10 +1,19 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
-    "playwright": {
+    "screenshot-website-fast": {
       "type": "local",
-      "command": ["npx", "@playwright/mcp@latest"],
+      "command": ["npx", "-y", "@just-every/mcp-screenshot-website-fast"],
       "enabled": true
+    },
+    "puppeteer": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-puppeteer"],
+      "enabled": true,
+      "environment": {
+        "PUPPETEER_HEADLESS": "true",
+        "PUPPETEER_ARGS": "--no-sandbox"
+      }
     }
   }
 }
