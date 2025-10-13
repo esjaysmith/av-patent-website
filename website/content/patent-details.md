@@ -10,14 +10,16 @@ show_cta: true
 
 **Patent Number:** US 12,001,207
 **Issue Date:** June 4, 2024
-**Patent Family:** Navigation Safety Systems
-**Technology Classification:** Autonomous Vehicle and Drone Navigation
+**Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
+**Assignee:** Individual (self-owned)
+**Patent Family:** US16/987,612 (Active, expires 2041); US18/432,397 (Pending); EP and NL applications
+**Technology Classification:** G05D1/00 (Vehicle control), B60W60/00 (Autonomous vehicle drive control), G01C21/00 (Navigation)
 
 ## Patent Abstract
 
-*Note: This is a representative abstract based on the patent's focus on camera-based navigation safety. For complete legal text, refer to official USPTO records.*
+The patent describes a system for controlling autonomous vehicles or air vessels (drones) that uses camera images, navigation modules, and machine learning to safely navigate predefined routes. The system receives destination inputs, generates navigation instructions, captures live camera images, and compares them to stored reference images. A key innovation is the safety-determining module that generates a "safety value" indicating whether navigation instructions can be safely executed. If safety thresholds are not met, the system can request human operator intervention, enabling the system to learn from training data and improve over time.
 
-This patent describes innovative methods and systems for enhancing navigation safety in autonomous vehicles and unmanned aerial vehicles (drones) through advanced camera-based perception and safety mechanisms. The invention addresses critical challenges in real-time navigation decision-making, particularly in complex environments where traditional sensor fusion approaches may be insufficient.
+*For complete legal text and detailed claims, refer to official USPTO records.*
 
 ## Key Technical Claims
 
@@ -41,9 +43,6 @@ This patent describes innovative methods and systems for enhancing navigation sa
 ## Industry Applications and Use Cases
 
 ### Autonomous Vehicles
-<div class="patent-highlight">
-<strong>Tesla FSD Relevance:</strong> This patent's camera-first safety approach aligns perfectly with Tesla's transition to end-to-end neural networks and unsupervised Full Self-Driving capabilities.
-</div>
 
 **Key Applications:**
 - **Consumer Vehicles**: Enhanced safety for Level 2-5 autonomous driving systems
@@ -71,7 +70,7 @@ This patent describes innovative methods and systems for enhancing navigation sa
 
 ### Market Positioning
 
-The patent provides essential protection in a rapidly evolving field where major technology companies are racing to develop safe, reliable autonomous navigation systems. With the industry's shift toward camera-based approaches (following Tesla's lead), this patent offers critical IP protection for:
+The patent provides essential protection in a rapidly evolving field where major technology companies are racing to develop safe, reliable autonomous navigation systems. With the industry's increasing focus on camera-based approaches, this patent offers critical IP protection for:
 
 - **Startups** developing next-generation AV technology
 - **Established automakers** transitioning to autonomous capabilities
@@ -88,25 +87,6 @@ The patent serves as valuable defensive IP, protecting against litigation from c
 
 #### **Technology Validation**
 Association with patented technology demonstrates innovation credibility to investors, customers, and regulatory bodies.
-
-## Technical Specifications
-
-### **Supported Platforms**
-- Automotive Grade Linux (AGL) systems
-- ROS (Robot Operating System) implementations
-- Custom embedded navigation platforms
-- Cloud-connected autonomous systems
-
-### **Performance Characteristics**
-- Real-time processing capabilities (sub-100ms response times)
-- Multi-resolution camera input support
-- Scalable from single-camera to multi-camera arrays
-- Integration with GPS, LiDAR, and radar systems
-
-### **Compliance Standards**
-- ISO 26262 (Automotive Functional Safety)
-- DO-178C (Aviation Software Safety)
-- IEEE 2851 (Autonomous Vehicle Safety)
 
 ## Licensing Opportunities
 
