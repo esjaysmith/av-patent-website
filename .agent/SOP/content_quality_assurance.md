@@ -42,27 +42,40 @@ Use Claude Code's Task tool to spin up parallel fact-checking agents:
 ```
 Task 1: Patent Facts Verification
 Prompt: "You are a fact-checking agent specializing in patent information.
-Review the following content and verify EVERY patent-related claim:
+Review the following content and verify EVERY patent-related claim.
 
-Content:
+⚠️ CRITICAL FIRST STEP - READ PATENT DOCUMENTATION FROM DISK:
+Before verifying any claims, you MUST read these files from the local .agent directory:
+1. Read file: .agent/System/patent_reference.md (comprehensive patent technical reference)
+2. Read file: .agent/US12001207B2.html (official patent document - use offset/limit for specific sections)
+
+These files contain the authoritative source material for all patent claims. Your verification
+MUST be based on the content of these local files as the primary source.
+
+Content to Verify:
 [PASTE CONTENT HERE]
 
 Verify:
-1. Patent number (US 12,001,207)
+1. Patent number (US 12,001,207 B2)
 2. Issue date (June 4, 2024)
-3. Continuation application status (18/432,397)
-4. Patent claims and technical specifications
-5. USPTO filing information
-6. Patent categories and classifications
+3. Expiration date (March 5, 2041)
+4. Continuation application status (18/432,397)
+5. Patent claims and technical specifications
+6. Inventors (Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM)
+7. Patent categories and classifications
+8. Abstract and technical description accuracy
 
 For EACH claim:
 - Claim: [exact text]
 - Verification: [verified/unverified/incorrect]
-- Source: [USPTO database URL or reference]
+- Source: [.agent/System/patent_reference.md line X OR .agent/US12001207B2.html section Y]
 - Correction: [if incorrect]
 - Confidence: [high/medium/low]
 
-Check USPTO database directly. Flag ANY unverifiable claims."
+PRIMARY SOURCE: .agent/System/patent_reference.md and .agent/US12001207B2.html (local disk)
+SECONDARY SOURCE: USPTO database online (if local files insufficient)
+
+Flag ANY claims that don't match the local patent documentation."
 
 ---
 
@@ -127,7 +140,8 @@ Flag ANY unverifiable claims or incorrect attributions."
 **Solution: Clear Division of Responsibilities**
 
 **Agent 1: Patent & Academic References**
-- **PRIMARY FOCUS**: Patent database (USPTO), academic papers (arXiv, IEEE)
+- **MANDATORY FIRST STEP**: Read .agent/System/patent_reference.md and .agent/US12001207B2.html from disk
+- **PRIMARY FOCUS**: Patent documentation (local files), USPTO database, academic papers (arXiv, IEEE)
 - **DO NOT**: Navigate to YouTube, test external URLs, check news sites
 - **DEFERS TO**: Agent 3 for any URLs/videos, Agent 2 for market data
 
@@ -158,6 +172,12 @@ Agent 3 response: "Market statistic found - deferring to Agent 2 for source veri
 
 Update Agent 1 prompt to include:
 ```
+CRITICAL FIRST STEP: Before starting verification, read these files from disk:
+1. Read file: .agent/System/patent_reference.md
+2. Read file: .agent/US12001207B2.html (use offset/limit for large sections)
+
+Use these local files as your PRIMARY source for all patent verification.
+
 IMPORTANT: If you encounter URLs to videos, websites, or external media,
 note them but DO NOT navigate to them. These will be verified by Agent 3.
 Simply note: "URL found - deferring to Agent 3"
@@ -240,10 +260,12 @@ a significant shift toward [VERIFY: technology trend].
 Before launching agents, do a self-check:
 
 **Patent Information:**
-- Visit USPTO database: https://patft.uspto.gov/
-- Search for patent US 12,001,207
+- **START HERE**: Read `.agent/System/patent_reference.md` for comprehensive patent details
+- **THEN**: Check specific claims in `.agent/US12001207B2.html` if needed
+- **ONLY IF NEEDED**: Visit USPTO database: https://patft.uspto.gov/
 - Verify issue date, claims, classifications
 - Check continuation application status (18/432,397)
+- **PRIMARY SOURCE**: Local .agent documentation (always accurate)
 
 **Company Information:**
 - Visit official company websites
@@ -302,12 +324,47 @@ Before launching agents, do a self-check:
 
 ## Source Verification Hierarchy
 
-### Tier 1: Primary Sources (Always Trust)
+### Tier 0: Local Patent Documentation (ALWAYS START HERE)
+
+**⚠️ MANDATORY FIRST SOURCE for All Patent Claims:**
+
+Before consulting any external sources, fact-checking agents MUST read the local patent documentation:
+
+**Primary Local Sources:**
+1. **`.agent/System/patent_reference.md`** - Comprehensive patent technical reference
+   - Patent overview, abstract, claims summary
+   - Technical architecture and applications
+   - Licensing opportunities and target companies
+   - Content development guidelines
+   - Use this for: Quick reference, technical summaries, verified facts
+
+2. **`.agent/US12001207B2.html`** - Official complete patent document (3,689 lines)
+   - Full legal patent text from Google Patents
+   - Complete claims, descriptions, drawings
+   - All metadata and legal information
+   - Use this for: Detailed verification, exact claim text, technical specifications
+   - NOTE: Large file - use Read tool with offset/limit for specific sections
+
+**Why Local First:**
+- ✅ Guaranteed accurate (official document)
+- ✅ Always available (no network issues)
+- ✅ No token waste on web fetches
+- ✅ Faster verification
+- ✅ Complete context in one place
+
+**Agent Workflow:**
+```
+Step 1: Read .agent/System/patent_reference.md (comprehensive reference)
+Step 2: If more detail needed, read specific sections of .agent/US12001207B2.html
+Step 3: Only if local files insufficient, consult external USPTO database
+```
+
+### Tier 1: Primary Sources (External - Use After Local Files)
 
 **Patent Information:**
-- USPTO Patent Database (patft.uspto.gov)
-- Google Patents (patents.google.com)
-- Official patent PDF from USPTO
+- USPTO Patent Database (patft.uspto.gov) - Use only if local files insufficient
+- Google Patents (patents.google.com) - Use only for updates/changes
+- Official patent PDF from USPTO - Use only if HTML unclear
 
 **Company Information:**
 - Official company press releases
@@ -552,16 +609,16 @@ For **every page**, create and maintain this log:
 ### Claim 1
 - **Claim:** "US Patent 12,001,207 issued June 4, 2024"
 - **Verification:** Verified
-- **Source:** USPTO database https://patft.uspto.gov/...
+- **Source:** .agent/System/patent_reference.md (line 21) + .agent/US12001207B2.html
 - **Verified By:** Agent 1 (Patent Facts)
 - **Date:** [date]
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
 
 ### Claim 2
-- **Claim:** "Patent covers camera-based navigation safety systems"
+- **Claim:** "Patent covers dual-module safety system for autonomous vehicles using visual navigation"
 - **Verification:** Verified
-- **Source:** Patent abstract and claims (USPTO)
+- **Source:** .agent/System/patent_reference.md (Abstract section) + .agent/US12001207B2.html (lines 1737-1739)
 - **Verified By:** Agent 1 (Patent Facts)
 - **Date:** [date]
 - **Confidence:** High
@@ -859,16 +916,55 @@ If factual accuracy is questioned (by user, competitor, etc.):
 - Update SOP to prevent recurrence
 - Re-train on fact-checking procedures
 
+## Quick Reference: Patent Documentation Locations
+
+**For All Fact-Checking Agents:**
+
+1. **Comprehensive Reference** (Start Here):
+   - File: `.agent/System/patent_reference.md`
+   - Contents: Full patent overview, technical details, licensing info, content guidelines
+   - When to use: First stop for any patent verification
+
+2. **Official Patent Document** (Detailed Verification):
+   - File: `.agent/US12001207B2.html` (3,689 lines)
+   - Contents: Complete official patent from Google Patents
+   - When to use: Detailed claim text, technical specifications, exact legal language
+   - How to read: Use Read tool with offset/limit for specific sections
+
+3. **External Sources** (Only if Local Insufficient):
+   - USPTO Database: https://patft.uspto.gov/
+   - Google Patents: https://patents.google.com/patent/US12001207B2/en
+   - When to use: Only for updates, changes, or if local files don't have needed info
+
+**Agent Reminder Checklist:**
+- [ ] Read .agent/System/patent_reference.md FIRST
+- [ ] Read specific sections of .agent/US12001207B2.html if needed
+- [ ] Document local file sources in verification report
+- [ ] Only consult external sources if local files insufficient
+
 ## Related Documentation
 
+- **Patent Reference**: `/.agent/System/patent_reference.md` - **PRIMARY SOURCE** for all patent information
+- **Patent HTML**: `/.agent/US12001207B2.html` - Complete official patent document
 - **Content Management SOP**: `/.agent/SOP/content_management.md` - General content procedures
 - **Site Generation & Deployment**: `/.agent/SOP/site_generation_deployment.md` - Deployment process
 - **Project Architecture**: `/.agent/System/project_architecture.md` - System overview
 - **PRD**: `/.agent/Tasks/website_development_prd.md` - Product requirements
+- **Documentation Index**: `/.agent/README.md` - Complete documentation map
 
 ---
 
-**Version:** 1.0
-**Last Updated:** October 12, 2025
-**Next Review:** January 12, 2026 (Quarterly)
+**Version:** 1.1
+**Last Updated:** October 14, 2025 (Added local patent documentation requirements)
+**Previous Update:** October 12, 2025 (Initial version)
+**Next Review:** January 14, 2026 (Quarterly)
 **Status:** ACTIVE - MANDATORY FOR ALL CONTENT
+
+**Version 1.1 Changes:**
+- ✅ Added mandatory local patent documentation reading for fact-checking agents
+- ✅ Created Tier 0 source hierarchy (local .agent files as PRIMARY source)
+- ✅ Updated Agent 1 prompts to require reading .agent/System/patent_reference.md
+- ✅ Added .agent/US12001207B2.html as official patent source
+- ✅ Updated fact-check log examples to reference local file sources
+- ✅ Added Quick Reference section for patent documentation locations
+- ✅ Emphasized local-first verification workflow to reduce token usage and ensure accuracy

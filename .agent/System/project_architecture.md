@@ -3,9 +3,14 @@
 ## Project Overview
 
 **Project Name:** AV Navigation IP Protection Website
-**Purpose:** Static website for monetizing US Patent 12,001,207 through licensing opportunities
+**Purpose:** Static website for monetizing US Patent 12,001,207 B2 through licensing opportunities
 **Target Audience:** Companies in autonomous vehicles, drones, and AI navigation; inventors building IP portfolios
 **Goal:** Generate licensing leads via organic SEO traffic and educate visitors on patent's role in IP portfolio expansion
+
+**Core Patent:** US Patent 12,001,207 B2
+- **Technology:** Dual-module safety system for autonomous vehicles and aircraft using visual navigation point recognition
+- **Status:** Active (granted June 4, 2024, expires March 5, 2041)
+- **Full Technical Reference:** See [`patent_reference.md`](./patent_reference.md) for complete details
 
 ## Project Structure
 
@@ -14,7 +19,10 @@ op_patent/
 ├── .agent/                    # Documentation folder
 │   ├── Tasks/                # PRD and implementation plans
 │   ├── System/               # Architecture and system state docs
+│   │   ├── project_architecture.md   # This file
+│   │   └── patent_reference.md       # US Patent 12,001,207 B2 reference
 │   ├── SOP/                  # Standard operating procedures
+│   ├── US12001207B2.html     # Full patent document (official source)
 │   └── README.md             # Documentation index
 ├── .claude/                   # Claude Code configuration
 │   └── settings.local.json   # Local settings
@@ -345,7 +353,13 @@ rsync -avz build/ user@host:/path/to/site
 
 ## Related Documentation
 
+### Core Documentation
+- **Patent Reference**: [`patent_reference.md`](./patent_reference.md) - Complete US Patent 12,001,207 B2 technical reference
+- **Patent Document**: `.agent/US12001207B2.html` - Official patent HTML (3,689 lines)
 - **PRD**: `/docs/website_prd_001.md` - Complete product requirements
 - **Site Analysis**: `/docs/site_analysis_001.md` - Testing and SEO analysis
+
+### Additional Resources
 - **Website README**: `/website/README.md` - Detailed usage guide
 - **Project Instructions**: `/CLAUDE.md` - Claude Code instructions
+- **Documentation Index**: `.agent/README.md` - Complete documentation map

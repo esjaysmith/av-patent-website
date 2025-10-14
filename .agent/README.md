@@ -26,6 +26,7 @@ Current system state including architecture, technology stack, and core function
 
 **Contents:**
 - [`project_architecture.md`](./System/project_architecture.md) - Comprehensive architecture documentation covering project structure, tech stack, components, and integration points
+- [`patent_reference.md`](./System/patent_reference.md) - Complete technical reference for US Patent 12,001,207 B2 including abstract, claims, applications, licensing opportunities, and content development guidelines
 
 ### SOP/
 Best practices and step-by-step procedures for common tasks.
@@ -52,8 +53,9 @@ Next: [`Tasks/website_development_prd.md`](./Tasks/website_development_prd.md)
 ### 3. Working with Content
 **⚠️ CRITICAL - Start Here:** [`SOP/content_quality_assurance.md`](./SOP/content_quality_assurance.md)
 - **MANDATORY multi-agent fact-checking protocol**
+- **NEW v1.1:** Agents MUST read `.agent/System/patent_reference.md` from disk FIRST
 - Quality assurance requirements for scaled content
-- Source verification hierarchy
+- Tier 0 source hierarchy: Local .agent documentation is PRIMARY source
 
 Then: [`SOP/content_management.md`](./SOP/content_management.md)
 - Create new pages
@@ -75,9 +77,12 @@ Finally: [`SOP/site_generation_deployment.md`](./SOP/site_generation_deployment.
 1. Create `.md` file in `/website/content/`
 2. Add YAML frontmatter
 3. Write Markdown content with [VERIFY] tags for all factual claims
-4. **Launch 3+ fact-checking agents (Agent 1: Patent, Agent 2: Industry, Agent 3: Events)**
+4. **Launch 3+ fact-checking agents:**
+   - **Agent 1 (Patent):** MUST read `.agent/System/patent_reference.md` and `.agent/US12001207B2.html` from disk FIRST
+   - **Agent 2 (Industry):** Market claims verification
+   - **Agent 3 (Events):** Dates, timelines, URL testing
 5. **Review all agent findings and make corrections**
-6. **Document verification in fact-check log**
+6. **Document verification in fact-check log (include local file sources)**
 7. Generate site: `python generate_site.py`
 8. Test locally: `python -m http.server 8000`
 9. **Final fact-check pass before deploy**
@@ -120,6 +125,21 @@ cd website
 cd website
 python test_website.py
 ```
+
+## Patent Documentation
+
+### Primary Patent Document
+- **Patent HTML**: `.agent/US12001207B2.html` - Complete official patent document (3,689 lines)
+- **Patent Reference**: [`System/patent_reference.md`](./System/patent_reference.md) - Comprehensive technical reference and content guidelines
+
+### Patent Quick Facts
+- **Number:** US12001207B2
+- **Status:** Active (expires 2041-03-05)
+- **Grant Date:** June 4, 2024
+- **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
+- **Technology:** Dual-module safety system for autonomous vehicles and aircraft using visual navigation point recognition
+
+**⚠️ MANDATORY:** When creating any content about the patent, consult [`System/patent_reference.md`](./System/patent_reference.md) first and follow the content quality assurance protocols.
 
 ## External Documentation References
 
@@ -246,6 +266,20 @@ For visual architecture flow diagrams, see:
 - Test thoroughly before production deployment
 
 ## Document Change Log
+
+### October 14, 2025 - Patent Documentation Integration & Fact-Checking Updates
+- **✅ ADDED: Patent Reference Documentation**
+- Created comprehensive `System/patent_reference.md` with full technical details
+- Added patent quick facts section to README
+- Included patent document location (`.agent/US12001207B2.html`)
+- Linked patent reference to content quality assurance requirements
+- Added patent overview, applications, licensing opportunities, and content guidelines
+- **✅ UPDATED: Content Quality Assurance SOP v1.1**
+- **CRITICAL:** Fact-checking agents MUST now read local `.agent` patent documentation from disk FIRST
+- Created Tier 0 source hierarchy (local files = PRIMARY source)
+- Updated Agent 1 prompts to require reading patent_reference.md before verification
+- Reduces token usage and ensures agents have accurate patent context
+- All fact-check logs must now reference local file sources
 
 ### October 12, 2025 - Quality Assurance Update (CRITICAL)
 - **⚠️ ADDED: Content Quality Assurance SOP (MANDATORY)**
