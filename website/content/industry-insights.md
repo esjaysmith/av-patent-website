@@ -17,6 +17,8 @@ The autonomous vehicle and drone navigation industries are experiencing unpreced
 <strong>Market Alert:</strong> Tesla's transition to unsupervised Full Self-Driving represents a fundamental shift toward camera-first autonomous navigation, making camera-based safety patents increasingly valuable.
 </div>
 
+**Current Status (October 2025):** Unsupervised FSD launched as paid robotaxi service in Austin, TX. Customer rollout to select US cities expected by end of 2025, limited to HW4/AI4 vehicles.
+
 **Key Developments:**
 - **End-to-End Neural Networks**: Tesla's shift away from traditional sensor fusion to pure camera-based AI decision making
 - **Massive Scale Deployment**: Hundreds of thousands of vehicles becoming real-world testing platforms
@@ -75,9 +77,9 @@ The AV patent landscape is rapidly evolving, with three distinct phases:
 - Patent quality increasingly important for investor confidence
 
 ### **Corporate AV Strategy Shifts**
-**Major Automaker Responses to Tesla:**
-- **General Motors**: Increased investment in camera-based Cruise technology
-- **Ford**: Partnership with Argo AI for camera-first development
+**Major Automaker Strategic Pivots:**
+- **General Motors**: After $10B investment in Cruise robotaxis, pivoted to Super Cruise driver-assist technology (Dec 2024)
+- **Ford**: Following Argo AI shutdown (Oct 2022), shifted focus to BlueCruise advanced driver assistance
 - **Volkswagen**: Camera-centric approach for ID. series autonomous features
 - **BMW**: Accelerated camera-based driver assistance development
 
@@ -94,9 +96,9 @@ The AV patent landscape is rapidly evolving, with three distinct phases:
 </div>
 
 **Key Regulatory Developments:**
-- **NHTSA** updating federal safety standards for camera-based AV systems
+- **NHTSA** developing voluntary safety programs (AV STEP) for camera-based AV systems
 - **European Union** developing camera-specific safety certification requirements
-- **ISO 26262** expanding to cover camera-first autonomous navigation safety
+- **ISO 26262** supplemented by ISO 8800 for AI/ML-based autonomous safety systems
 - **China GB Standards** incorporating camera-based safety requirements
 
 **Compliance Advantages:**
@@ -115,9 +117,9 @@ Patents covering camera-based navigation safety provide:
 - Limited camera-first safety coverage
 
 **Apple:**
-- 200+ AV-related patents
-- Heavy focus on user interface and integration
-- Emerging camera-based navigation patents
+- 248 AV-related patents (Project Titan canceled Feb 2024)
+- Legacy portfolio focused on LiDAR, V2X, and user interfaces
+- Resources redirected to AI development
 
 **Amazon:**
 - Delivery drone navigation patents
