@@ -487,13 +487,15 @@ RESUME INSTRUCTIONS:
 ```
 CHECKPOINT 6 COMPLETE: All 5 landing page drafts finished!
 
-CRITICAL NEXT PHASE: Multi-Agent Fact-Checking (Checkpoint 7)
+CRITICAL NEXT PHASE: Multi-Agent Fact-Checking (Checkpoints 7a-7e)
 
 RESUME INSTRUCTIONS:
 - Phase 2 (Content Creation) is COMPLETE
 - Proceed to Phase 3: Multi-Agent Fact-Checking
 - Read: .agent/SOP/content_quality_assurance.md (MANDATORY)
-- Launch 3 fact-checking agents for EACH landing page (15 agents total)
+- Start with Checkpoint 7a: Landing Page 1 fact-checking
+- Launch ONLY 3 agents for Page 1 (NOT all pages at once)
+- Complete fact-checking SEQUENTIALLY, one page at a time
 - Do NOT skip fact-checking - this is non-negotiable
 ```
 
@@ -503,9 +505,12 @@ RESUME INSTRUCTIONS:
 **Timeline:** Week 5 (5 days, 1 day per page)
 **Status:** Not Started
 
-#### Checkpoint 7: All Landing Pages Fact-Checked & Corrected
-**Deliverables:**
-1. ✅ **15 Fact-Checking Agent Reports** (3 agents × 5 pages)
+**CRITICAL EXECUTION REQUIREMENT:** Fact-checking must be performed **SEQUENTIALLY, ONE PAGE AT A TIME**. Launch exactly 3 agents for one page, wait for completion, review/correct, then proceed to the next page. **NEVER launch agents for multiple pages simultaneously.**
+
+**Maximum Concurrent Agents:** 3 agents at any time (one per fact-checking specialization)
+
+**Overall Deliverables (across all checkpoints 7a-7e):**
+1. ✅ **15 Fact-Checking Agent Reports** (3 agents × 5 pages, completed sequentially)
    - Agent 1 (Patent Facts): 5 reports in `/docs/fact-checking/agent1-patent-facts/`
    - Agent 2 (Industry Claims): 5 reports in `/docs/fact-checking/agent2-industry-claims/`
    - Agent 3 (Current Events): 5 reports in `/docs/fact-checking/agent3-current-events/`
@@ -524,17 +529,41 @@ RESUME INSTRUCTIONS:
    - All corrections documented in fact-check logs
    - Sources cited properly
 
+---
+
+#### Checkpoint 7a: Landing Page 1 Fact-Checked & Corrected
+**Page:** `series-a-av-patent-portfolio-strategy.md` (Page 1 of 5)
+**Status:** Not Started
+
+**Deliverables:**
+1. ✅ **3 Fact-Checking Agent Reports** (for this page only)
+   - `/docs/fact-checking/agent1-patent-facts/series-a-av-patent-portfolio-strategy-report.md`
+   - `/docs/fact-checking/agent2-industry-claims/series-a-av-patent-portfolio-strategy-report.md`
+   - `/docs/fact-checking/agent3-current-events/series-a-av-patent-portfolio-strategy-report.md`
+
+2. ✅ **Completed Fact-Check Log**
+   - `/website/content/fact-check-logs/series-a-av-patent-portfolio-strategy-fact-check.md`
+   - Status: "READY FOR PUBLICATION"
+
+3. ✅ **Corrected Landing Page Content**
+   - `/website/content/series-a-av-patent-portfolio-strategy.md`
+   - All [VERIFY] tags removed
+   - All corrections applied
+
 **Verification Criteria:**
-- [ ] All 15 agent reports completed and reviewed
+- [ ] Exactly 3 agents launched for this page (Patent Facts, Industry Claims, Current Events)
+- [ ] All 3 agent reports completed and reviewed
 - [ ] 100% fact-check pass rate achieved (or corrections made)
-- [ ] Zero [VERIFY] tags remaining in any content
-- [ ] All corrections documented in fact-check logs
-- [ ] Source Quality Score >2.5 for each page
-- [ ] All fact-check logs signed off with "READY FOR PUBLICATION"
+- [ ] Zero [VERIFY] tags remaining in content
+- [ ] All corrections documented in fact-check log
+- [ ] Source Quality Score >2.5 for this page
+- [ ] Fact-check log signed off with "READY FOR PUBLICATION"
 
-**Multi-Agent Launch Procedure:**
+**Execution Instructions:**
 
-For EACH landing page, launch 3 agents in parallel:
+**CRITICAL:** Launch exactly 3 agents for THIS PAGE ONLY. Do NOT proceed to Checkpoint 7b until this checkpoint is 100% complete.
+
+**Multi-Agent Launch Procedure for Landing Page 1:**
 
 **Agent 1: Patent Facts Verification**
 ```
@@ -636,32 +665,234 @@ Check: Official announcements, press releases, news sources, working URLs
 "
 ```
 
-**Fact-Checking Workflow:**
+**Context for Next Session:**
+```
+CHECKPOINT 7a COMPLETE: Landing Page 1 (Series A AV) fact-checked, corrected, and verified.
 
-**Day 1:** Landing Page 1 (Series A AV)
-- Morning: Launch 3 agents, wait for completion
-- Afternoon: Review findings, make corrections, update fact-check log
+PROGRESS: Page 1 of 5 complete
 
-**Day 2:** Landing Page 2 (Tesla FSD Competitor)
-- Morning: Launch 3 agents, wait for completion
-- Afternoon: Review findings, make corrections, update fact-check log
+RESUME INSTRUCTIONS:
+- Read: /website/content/series-a-av-patent-portfolio-strategy.md (corrected version)
+- Read: /website/content/fact-check-logs/series-a-av-patent-portfolio-strategy-fact-check.md
+- Verify: All 3 agent reports saved in /docs/fact-checking/
+- Proceed to Checkpoint 7b: Landing Page 2 (Tesla FSD Competitor)
 
-**Day 3:** Landing Page 3 (Drone Delivery Pre-IPO)
-- Morning: Launch 3 agents, wait for completion
-- Afternoon: Review findings, make corrections, update fact-check log
+CRITICAL: Do NOT skip to other pages. Complete Checkpoint 7b next.
+```
 
-**Day 4:** Landing Page 4 (VC Due Diligence)
-- Morning: Launch 3 agents, wait for completion
-- Afternoon: Review findings, make corrections, update fact-check log
+---
 
-**Day 5:** Landing Page 5 (Autonomous Trucking)
-- Morning: Launch 3 agents, wait for completion
-- Afternoon: Review findings, make corrections, update fact-check log
-- Evening: Final review of all 5 fact-check logs
+#### Checkpoint 7b: Landing Page 2 Fact-Checked & Corrected
+**Page:** `tesla-fsd-competitor-camera-patent-licensing.md` (Page 2 of 5)
+**Status:** Not Started
+
+**Deliverables:**
+1. ✅ **3 Fact-Checking Agent Reports** (for this page only)
+   - `/docs/fact-checking/agent1-patent-facts/tesla-fsd-competitor-camera-patent-licensing-report.md`
+   - `/docs/fact-checking/agent2-industry-claims/tesla-fsd-competitor-camera-patent-licensing-report.md`
+   - `/docs/fact-checking/agent3-current-events/tesla-fsd-competitor-camera-patent-licensing-report.md`
+
+2. ✅ **Completed Fact-Check Log**
+   - `/website/content/fact-check-logs/tesla-fsd-competitor-camera-patent-licensing-fact-check.md`
+   - Status: "READY FOR PUBLICATION"
+
+3. ✅ **Corrected Landing Page Content**
+   - `/website/content/tesla-fsd-competitor-camera-patent-licensing.md`
+   - All [VERIFY] tags removed
+   - All corrections applied
+
+**Verification Criteria:**
+- [ ] Exactly 3 agents launched for this page (Patent Facts, Industry Claims, Current Events)
+- [ ] All 3 agent reports completed and reviewed
+- [ ] 100% fact-check pass rate achieved (or corrections made)
+- [ ] Zero [VERIFY] tags remaining in content
+- [ ] All corrections documented in fact-check log
+- [ ] Source Quality Score >2.5 for this page
+- [ ] Fact-check log signed off with "READY FOR PUBLICATION"
+
+**Execution Instructions:**
+
+**CRITICAL:** Launch exactly 3 agents for THIS PAGE ONLY. Do NOT proceed to Checkpoint 7c until this checkpoint is 100% complete.
+
+Use the same 3 agent prompts as Checkpoint 7a, but replace the content with:
+- Content to Verify: `/website/content/tesla-fsd-competitor-camera-patent-licensing.md`
 
 **Context for Next Session:**
 ```
-CHECKPOINT 7 COMPLETE: All 5 landing pages fact-checked, corrected, and verified.
+CHECKPOINT 7b COMPLETE: Landing Page 2 (Tesla FSD Competitor) fact-checked, corrected, and verified.
+
+PROGRESS: Page 2 of 5 complete
+
+RESUME INSTRUCTIONS:
+- Read: /website/content/tesla-fsd-competitor-camera-patent-licensing.md (corrected version)
+- Read: /website/content/fact-check-logs/tesla-fsd-competitor-camera-patent-licensing-fact-check.md
+- Verify: All 3 agent reports saved in /docs/fact-checking/
+- Proceed to Checkpoint 7c: Landing Page 3 (Drone Delivery Pre-IPO)
+
+CRITICAL: Do NOT skip to other pages. Complete Checkpoint 7c next.
+```
+
+---
+
+#### Checkpoint 7c: Landing Page 3 Fact-Checked & Corrected
+**Page:** `drone-delivery-patent-portfolio-pre-ipo.md` (Page 3 of 5)
+**Status:** Not Started
+
+**Deliverables:**
+1. ✅ **3 Fact-Checking Agent Reports** (for this page only)
+   - `/docs/fact-checking/agent1-patent-facts/drone-delivery-patent-portfolio-pre-ipo-report.md`
+   - `/docs/fact-checking/agent2-industry-claims/drone-delivery-patent-portfolio-pre-ipo-report.md`
+   - `/docs/fact-checking/agent3-current-events/drone-delivery-patent-portfolio-pre-ipo-report.md`
+
+2. ✅ **Completed Fact-Check Log**
+   - `/website/content/fact-check-logs/drone-delivery-patent-portfolio-pre-ipo-fact-check.md`
+   - Status: "READY FOR PUBLICATION"
+
+3. ✅ **Corrected Landing Page Content**
+   - `/website/content/drone-delivery-patent-portfolio-pre-ipo.md`
+   - All [VERIFY] tags removed
+   - All corrections applied
+
+**Verification Criteria:**
+- [ ] Exactly 3 agents launched for this page (Patent Facts, Industry Claims, Current Events)
+- [ ] All 3 agent reports completed and reviewed
+- [ ] 100% fact-check pass rate achieved (or corrections made)
+- [ ] Zero [VERIFY] tags remaining in content
+- [ ] All corrections documented in fact-check log
+- [ ] Source Quality Score >2.5 for this page
+- [ ] Fact-check log signed off with "READY FOR PUBLICATION"
+
+**Execution Instructions:**
+
+**CRITICAL:** Launch exactly 3 agents for THIS PAGE ONLY. Do NOT proceed to Checkpoint 7d until this checkpoint is 100% complete.
+
+Use the same 3 agent prompts as Checkpoint 7a, but replace the content with:
+- Content to Verify: `/website/content/drone-delivery-patent-portfolio-pre-ipo.md`
+
+**Context for Next Session:**
+```
+CHECKPOINT 7c COMPLETE: Landing Page 3 (Drone Delivery Pre-IPO) fact-checked, corrected, and verified.
+
+PROGRESS: Page 3 of 5 complete
+
+RESUME INSTRUCTIONS:
+- Read: /website/content/drone-delivery-patent-portfolio-pre-ipo.md (corrected version)
+- Read: /website/content/fact-check-logs/drone-delivery-patent-portfolio-pre-ipo-fact-check.md
+- Verify: All 3 agent reports saved in /docs/fact-checking/
+- Proceed to Checkpoint 7d: Landing Page 4 (VC Due Diligence)
+
+CRITICAL: Do NOT skip to other pages. Complete Checkpoint 7d next.
+```
+
+---
+
+#### Checkpoint 7d: Landing Page 4 Fact-Checked & Corrected
+**Page:** `venture-capital-av-patent-portfolio-due-diligence.md` (Page 4 of 5)
+**Status:** Not Started
+
+**Deliverables:**
+1. ✅ **3 Fact-Checking Agent Reports** (for this page only)
+   - `/docs/fact-checking/agent1-patent-facts/venture-capital-av-patent-portfolio-due-diligence-report.md`
+   - `/docs/fact-checking/agent2-industry-claims/venture-capital-av-patent-portfolio-due-diligence-report.md`
+   - `/docs/fact-checking/agent3-current-events/venture-capital-av-patent-portfolio-due-diligence-report.md`
+
+2. ✅ **Completed Fact-Check Log**
+   - `/website/content/fact-check-logs/venture-capital-av-patent-portfolio-due-diligence-fact-check.md`
+   - Status: "READY FOR PUBLICATION"
+
+3. ✅ **Corrected Landing Page Content**
+   - `/website/content/venture-capital-av-patent-portfolio-due-diligence.md`
+   - All [VERIFY] tags removed
+   - All corrections applied
+
+**Verification Criteria:**
+- [ ] Exactly 3 agents launched for this page (Patent Facts, Industry Claims, Current Events)
+- [ ] All 3 agent reports completed and reviewed
+- [ ] 100% fact-check pass rate achieved (or corrections made)
+- [ ] Zero [VERIFY] tags remaining in content
+- [ ] All corrections documented in fact-check log
+- [ ] Source Quality Score >2.5 for this page
+- [ ] Fact-check log signed off with "READY FOR PUBLICATION"
+
+**Execution Instructions:**
+
+**CRITICAL:** Launch exactly 3 agents for THIS PAGE ONLY. Do NOT proceed to Checkpoint 7e until this checkpoint is 100% complete.
+
+Use the same 3 agent prompts as Checkpoint 7a, but replace the content with:
+- Content to Verify: `/website/content/venture-capital-av-patent-portfolio-due-diligence.md`
+
+**Context for Next Session:**
+```
+CHECKPOINT 7d COMPLETE: Landing Page 4 (VC Due Diligence) fact-checked, corrected, and verified.
+
+PROGRESS: Page 4 of 5 complete
+
+RESUME INSTRUCTIONS:
+- Read: /website/content/venture-capital-av-patent-portfolio-due-diligence.md (corrected version)
+- Read: /website/content/fact-check-logs/venture-capital-av-patent-portfolio-due-diligence-fact-check.md
+- Verify: All 3 agent reports saved in /docs/fact-checking/
+- Proceed to Checkpoint 7e: Landing Page 5 (Autonomous Trucking) - FINAL FACT-CHECK PAGE
+
+CRITICAL: One more page to go. Complete Checkpoint 7e next.
+```
+
+---
+
+#### Checkpoint 7e: Landing Page 5 Fact-Checked & Corrected (FINAL)
+**Page:** `autonomous-trucking-patent-defense-strategy.md` (Page 5 of 5)
+**Status:** Not Started
+
+**Deliverables:**
+1. ✅ **3 Fact-Checking Agent Reports** (for this page only)
+   - `/docs/fact-checking/agent1-patent-facts/autonomous-trucking-patent-defense-strategy-report.md`
+   - `/docs/fact-checking/agent2-industry-claims/autonomous-trucking-patent-defense-strategy-report.md`
+   - `/docs/fact-checking/agent3-current-events/autonomous-trucking-patent-defense-strategy-report.md`
+
+2. ✅ **Completed Fact-Check Log**
+   - `/website/content/fact-check-logs/autonomous-trucking-patent-defense-strategy-fact-check.md`
+   - Status: "READY FOR PUBLICATION"
+
+3. ✅ **Corrected Landing Page Content**
+   - `/website/content/autonomous-trucking-patent-defense-strategy.md`
+   - All [VERIFY] tags removed
+   - All corrections applied
+
+**Verification Criteria:**
+- [ ] Exactly 3 agents launched for this page (Patent Facts, Industry Claims, Current Events)
+- [ ] All 3 agent reports completed and reviewed
+- [ ] 100% fact-check pass rate achieved (or corrections made)
+- [ ] Zero [VERIFY] tags remaining in content
+- [ ] All corrections documented in fact-check log
+- [ ] Source Quality Score >2.5 for this page
+- [ ] Fact-check log signed off with "READY FOR PUBLICATION"
+
+**Execution Instructions:**
+
+**CRITICAL:** Launch exactly 3 agents for THIS PAGE ONLY. This is the final fact-checking checkpoint.
+
+Use the same 3 agent prompts as Checkpoint 7a, but replace the content with:
+- Content to Verify: `/website/content/autonomous-trucking-patent-defense-strategy.md`
+
+**Final Verification (All 5 Pages):**
+After completing this checkpoint, verify:
+- [ ] All 15 agent reports exist (3 per page × 5 pages)
+- [ ] All 5 fact-check logs marked "READY FOR PUBLICATION"
+- [ ] All 5 landing pages have zero [VERIFY] tags
+- [ ] Source Quality Score >2.5 for all pages
+
+**Context for Next Session:**
+```
+CHECKPOINT 7e COMPLETE: Landing Page 5 (Autonomous Trucking) fact-checked, corrected, and verified.
+
+PHASE 3 (MULTI-AGENT FACT-CHECKING) IS 100% COMPLETE!
+
+PROGRESS: All 5 pages fact-checked sequentially (5 of 5 complete)
+
+FINAL VERIFICATION RESULTS:
+- 15 agent reports completed (3 agents × 5 pages)
+- 5 fact-check logs signed off as "READY FOR PUBLICATION"
+- All [VERIFY] tags removed from all 5 landing pages
+- All corrections applied and documented
 
 RESUME INSTRUCTIONS:
 - Phase 3 (Multi-Agent Fact-Checking) is COMPLETE
@@ -972,8 +1203,13 @@ DOCUMENTATION UPDATES NEEDED:
 - Page 4: 3 days (longer, more complex)
 - Page 5: 3 days
 
-**Phase 3 (Fact-Checking):** 5 days
-- 1 day per page (3 agents launched in parallel per page)
+**Phase 3 (Fact-Checking):** 5 days (sequential execution)
+- Day 1: Checkpoint 7a - Page 1 (3 agents, review, correct)
+- Day 2: Checkpoint 7b - Page 2 (3 agents, review, correct)
+- Day 3: Checkpoint 7c - Page 3 (3 agents, review, correct)
+- Day 4: Checkpoint 7d - Page 4 (3 agents, review, correct)
+- Day 5: Checkpoint 7e - Page 5 (3 agents, review, correct, final verification)
+- Maximum 3 agents running concurrently at any time
 
 **Phase 4 (SEO & Publishing):** 5 days
 - Technical SEO: 2 days
@@ -1471,6 +1707,17 @@ For each checkpoint, document the following:
 
 ## Document Change Log
 
+### October 17, 2025 - Sequential Fact-Checking Update
+- **BREAKING CHANGE:** Restructured Phase 3 fact-checking to enforce sequential execution
+- Split Checkpoint 7 into 5 sub-checkpoints (7a-7e), one per landing page
+- Added explicit constraint: Maximum 3 agents running concurrently at any time
+- Each checkpoint now requires completion before proceeding to next
+- Added progress tracking: "Page X of 5 complete" for each checkpoint
+- Updated context instructions to prevent parallel agent launches
+- Clarified workflow: Launch 3 agents for ONE page, wait for completion, review/correct, then proceed
+- Added final verification checklist in Checkpoint 7e
+- Updated Checkpoint 6 resume instructions to reference new structure
+
 ### October 15, 2025 - Initial Creation
 - Created comprehensive task document for Phase 3 Content Expansion
 - Defined 5 landing pages targeting high-intent keywords
@@ -1483,7 +1730,7 @@ For each checkpoint, document the following:
 
 ---
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Ready for Implementation - Checkpoint 1 Start
 **Next Review:** After Checkpoint 8 completion (end of Phase 4)
 **Related Tasks:** See `website_development_prd.md` for overall project context
