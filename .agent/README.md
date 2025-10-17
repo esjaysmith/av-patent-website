@@ -20,7 +20,10 @@ Product requirements, feature specifications, and implementation plans.
 
 **Contents:**
 - [`website_development_prd.md`](./Tasks/website_development_prd.md) - Complete Product Requirements Document with all phases, success metrics, and roadmap
-- [`seo_landing_pages_phase3.md`](./Tasks/seo_landing_pages_phase3.md) - **NEW:** Comprehensive implementation plan for 5 high-intent SEO landing pages targeting startups and investors (Phase 3 Content Expansion)
+- [`website_prd_001.md`](./Tasks/website_prd_001.md) - Original PRD (foundational document, superseded by website_development_prd.md)
+- [`seo_landing_pages_phase3.md`](./Tasks/seo_landing_pages_phase3.md) - Comprehensive implementation plan for 5 high-intent SEO landing pages targeting startups and investors (Phase 3 Content Expansion)
+- [`landing_pages_keyword_research.md`](./Tasks/landing_pages_keyword_research.md) - Complete keyword research and analysis for Phase 3 landing pages
+- [`seo_technical_specs.md`](./Tasks/seo_technical_specs.md) - Technical SEO specifications for all landing pages (meta tags, headings, structured data, etc.)
 
 ### System/
 Current system state including architecture, technology stack, and core functionalities.
@@ -28,6 +31,7 @@ Current system state including architecture, technology stack, and core function
 **Contents:**
 - [`project_architecture.md`](./System/project_architecture.md) - Comprehensive architecture documentation covering project structure, tech stack, components, and integration points
 - [`patent_reference.md`](./System/patent_reference.md) - Complete technical reference for US Patent 12,001,207 B2 including abstract, claims, applications, licensing opportunities, and content development guidelines
+- [`site_analysis_001.md`](./System/site_analysis_001.md) - Complete site analysis and testing results (Phases 1 & 2), including functionality tests, SEO analysis, and deployment readiness assessment
 
 ### SOP/
 Best practices and step-by-step procedures for common tasks.
@@ -146,8 +150,6 @@ python test_website.py
 
 ### Website Documentation
 - **Website README**: `/website/README.md` - Detailed website features, structure, and usage
-- **Original PRD**: `/docs/website_prd_001.md` - Initial product requirements document
-- **Site Analysis**: `/docs/site_analysis_001.md` - Comprehensive testing and SEO analysis report
 
 ### Configuration Files
 - **Project Instructions**: `/CLAUDE.md` - Instructions for Claude Code
