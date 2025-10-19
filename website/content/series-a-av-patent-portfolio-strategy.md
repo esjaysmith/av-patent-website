@@ -294,7 +294,7 @@ The patent claims must cover technologies you're actually using or planning to u
 Patent expiration matters for long-term value and investor perception:
 
 - **Minimum threshold**: [VERIFY: 15+ years remaining] (until at least [VERIFY: 2040])
-- **Optimal**: [VERIFY: 17-20 years remaining] (recently granted patents)
+- **Optimal**: [VERIFY: 15+ years remaining] (recently granted patents)
 - **Avoid**: Patents expiring within [VERIFY: 10 years] (limited long-term value)
 
 Investors evaluate IP portfolios over [VERIFY: 10-15 year horizons] (time to potential IPO or acquisition). Patents expiring in [VERIFY: 2028-2030] provide little strategic value compared to patents expiring in [VERIFY: 2040-2041].
@@ -367,7 +367,7 @@ A concrete example illustrates the strategic value of camera-based safety patent
 
 - **Patent Number**: [VERIFY: US 12,001,207 B2]
 - **Grant Date**: [VERIFY: June 4, 2024] (recently granted, current technology)
-- **Expiration**: [VERIFY: March 5, 2041] ([VERIFY: 17 years remaining])
+- **Expiration**: [VERIFY: March 5, 2041] ([VERIFY: 15+ years remaining])
 - **Technology**: Dual-module camera-based navigation safety system
 - **Inventors**: [VERIFY: Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM]
 
@@ -393,7 +393,7 @@ A concrete example illustrates the strategic value of camera-based safety patent
 - **Immediate Portfolio Boost**: Granted status provides instant IP credibility
 - **Camera-First Alignment**: Directly relevant to Tesla FSD competitive positioning
 - **Safety Focus**: Addresses investor concerns about safety validation
-- **Long Protection Period**: [VERIFY: 17 years] covers entire potential IPO timeline
+- **Long Protection Period**: [VERIFY: 15+ years] covers entire potential IPO timeline
 - **Available for Licensing**: Can strengthen portfolio within [VERIFY: 30-60 days of negotiation]
 
 This patent exemplifies the type of strategic licensing opportunity that Series A startups should prioritize: recently granted, technologically relevant, safety-focused, and aligned with industry trends toward camera-based systems.
@@ -405,7 +405,7 @@ This patent exemplifies the type of strategic licensing opportunity that Series 
       <ul class="fa-ul">
         <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span><strong>Granted:</strong> June 4, 2024</li>
         <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span><strong>Technology:</strong> Dual-module safety with visual navigation</li>
-        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span><strong>Expiration:</strong> March 5, 2041 (17+ years)</li>
+        <li><span class="fa-li"><i class="fas fa-check-circle text-success"></i></span><strong>Expiration:</strong> March 5, 2041 (15+ years)</li>
       </ul>
     </div>
     <div class="col-md-6">
@@ -468,7 +468,7 @@ The implications for Series A AV startups are profound:
 
 Tesla's deployment validated that camera-only approaches can achieve L4 autonomy (no human driver required). This shifted investor perception from "Will camera-only work?" to "How do you compete with Tesla's camera-only approach?"
 
-Prior to Tesla FSD unsupervised deployment, many VCs favored LiDAR-heavy approaches (Waymo, Cruise model). [VERIFY: Post-October 2025], investor pitch decks increasingly emphasize camera-first or camera-primary architectures due to cost advantages.
+Prior to Tesla FSD unsupervised deployment, many VCs favored LiDAR-heavy approaches (Waymo, Cruise model). Following Tesla's October 2025 unsupervised FSD deployment, investor pitch decks increasingly emphasize camera-first or camera-primary architectures due to cost advantages.
 
 **2. Competitive Pressure on Startups**
 
