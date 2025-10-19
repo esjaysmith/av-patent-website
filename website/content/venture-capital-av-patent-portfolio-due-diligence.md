@@ -65,13 +65,13 @@ Patent portfolio quality impacts valuation at every stage:
 
 **Series B → Series C:** Demonstrated freedom-to-operate (backed by legal opinions) reduces investor anxiety, justifying premium Series C pricing.
 
-**Series C → IPO:** Institutional investors conducting pre-IPO due diligence now review IP portfolios as critically as revenue and profit metrics. [VERIFY: Terra Drone's $390M IPO valuation in March 2024 was partly driven by comprehensive patent portfolio.] Weak IP is now a deal-breaker for institutional rounds.
+**Series C → IPO:** Institutional investors conducting pre-IPO due diligence now review IP portfolios as critically as revenue and profit metrics. [VERIFY: Terra Drone's $144M IPO valuation in November 2024 was partly driven by comprehensive patent portfolio.] Weak IP is now a deal-breaker for institutional rounds.
 
 ### The Camera-First Patent Evaluation Challenge
 
 The autonomous vehicle industry is undergoing a fundamental technology transition: from LiDAR-heavy sensor fusion to camera-first, AI-driven approaches. This transition creates an IP evaluation challenge for VCs.
 
-[VERIFY: Tesla's October 2025 unsupervised FSD launch validates camera-first technology at scale, signaling industry-wide shift.] Yet most VCs were trained to evaluate LiDAR patents, radar sensor patents, and GPS-based navigation—not camera-based neural networks.
+[VERIFY: Tesla's June 2025 supervised robotaxi launch in Austin validates camera-first technology at scale, signaling industry-wide shift.] Yet most VCs were trained to evaluate LiDAR patents, radar sensor patents, and GPS-based navigation—not camera-based neural networks.
 
 Camera-first patents are different:
 
@@ -223,7 +223,7 @@ Identify portfolio gaps:
 
 ## Evaluating Camera-Based Navigation Patents: A Specialized Framework
 
-Camera-first autonomous driving is now mainstream. [VERIFY: Tesla's October 2025 unsupervised FSD launch validates camera-only architecture at scale.] This fundamental shift requires different patent evaluation criteria.
+Camera-first autonomous driving is now mainstream. [VERIFY: Tesla's June 2025 supervised robotaxi launch in Austin validates camera-only architecture at scale.] This fundamental shift requires different patent evaluation criteria.
 
 ### Why Camera-Based Patents Require Different Evaluation
 
@@ -272,7 +272,7 @@ Let's apply our evaluation framework to a real patent: US Patent 12,001,207 B2, 
   **1. Quantitative Metrics:**
   - ✅ **Granted Status:** USPTO granted June 2024 (not pending) = strong
   - ✅ **Patent Age:** Recent grant (current technology) = strong
-  - ✅ **Expiration:** 17+ years remaining (long protection) = strong
+  - ✅ **Expiration:** 15+ years remaining (long protection) = strong
   - ✅ **Technology Coverage:** Multiple applications (AV, drones, maritime) = strong
 
   **2. Claim Breadth Analysis:**
