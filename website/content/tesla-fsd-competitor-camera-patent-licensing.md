@@ -26,9 +26,9 @@ schema_type: "Article"
 
 # How Tesla FSD Competitors Can License Camera-Based Safety Patents
 
-[VERIFY] Tesla's June 2025 launch of supervised robotaxi service in Austin marks progress in camera-first autonomous vehicle technology—and every competitor now faces a critical question: How do we compete with Tesla's proven camera-based approach without infringing on their extensive patent portfolio?
+Tesla's June 22, 2025 launch of supervised robotaxi service in Austin marks progress in camera-first autonomous vehicle technology—and every competitor now faces a critical question: How do we compete with Tesla's proven camera-based approach without infringing on their extensive patent portfolio?
 
-The autonomous vehicle industry is at an inflection point. [VERIFY] Tesla's June 2025 Austin robotaxi service, operating with safety observers in passenger seats, represents significant progress in camera-first autonomous systems. For every traditional automaker and AV technology company, this development creates both urgency and opportunity: urgency to adopt camera-first architectures that investors and customers increasingly demand, and opportunity to differentiate through strategic patent positioning.
+The autonomous vehicle industry is at an inflection point. Tesla's June 22, 2025 Austin robotaxi service, operating with safety observers in passenger seats, represents significant progress in camera-first autonomous systems. For every traditional automaker and AV technology company, this development creates both urgency and opportunity: urgency to adopt camera-first architectures that investors and customers increasingly demand, and opportunity to differentiate through strategic patent positioning.
 
 This guide explains how Tesla FSD competitors can strengthen their IP position through strategic licensing of camera-based safety patents, enabling credible competitive positioning while reducing infringement risk. Whether you're a traditional automaker pivoting from LiDAR-heavy systems or an AV startup competing directly with Tesla, building a defensible camera-based patent portfolio is no longer optional—it's essential for survival.
 
@@ -532,7 +532,7 @@ This 6-month timeline provides:
 
 ## Conclusion
 
-[VERIFY] Tesla's June 2025 launch of supervised robotaxi service in Austin, combined with ongoing FSD development, marks progress in camera-first autonomous driving—creating competitive urgency across the autonomous vehicle industry. Every AV company now increasingly evaluates camera-first technology, end-to-end neural networks, and profitable unit economics at scale.
+Tesla's June 22, 2025 launch of supervised robotaxi service in Austin, combined with ongoing FSD development, marks progress in camera-first autonomous driving—creating competitive urgency across the autonomous vehicle industry. Every AV company now increasingly evaluates camera-first technology, end-to-end neural networks, and profitable unit economics at scale.
 
 For Tesla FSD competitors, this creates urgent strategic imperatives:
 

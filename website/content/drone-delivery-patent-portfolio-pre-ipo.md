@@ -26,7 +26,7 @@ schema_type: "Article"
 
 # Drone Delivery Patent Portfolio for IPO: Strategic Licensing Guide
 
-When Terra Drone successfully completed its IPO at a $144M valuation on November 29, 2024, institutional investors recognized the importance of strong patent portfolios for autonomous delivery companies. The Japanese drone services company's public market entry demonstrates the growing maturity of the commercial drone sector and the increasing scrutiny that institutional investors apply to patent portfolios during IPO evaluation.
+When Terra Drone successfully completed its IPO on November 29, 2024 with a market cap of approximately $200M, institutional investors recognized the importance of strong patent portfolios for autonomous delivery companies. The Japanese drone services company's public market entry demonstrates the growing maturity of the commercial drone sector and the increasing scrutiny that institutional investors apply to patent portfolios during IPO evaluation.
 
 For pre-IPO drone delivery companies, this represents both a challenge and an opportunity. The Terra Drone IPO and similar public market entries have raised investor expectations for what constitutes a competitive drone company going public. If you're a Series C or late-stage drone delivery company preparing for your own IPO within the next 12-24 months, your patent portfolio directly impacts your valuation, investor confidence, and ability to secure BVLOS (Beyond Visual Line of Sight) regulatory waivers.
 
@@ -38,7 +38,7 @@ The drone delivery market has evolved dramatically. Where once drone companies c
 
 ### Terra Drone IPO: Milestone for Commercial Drone Services
 
-Terra Drone completed its IPO on November 29, 2024 at a $144M valuation, marking a significant milestone for commercial drone services companies. The Japanese company's entry into public markets demonstrates institutional investor confidence in drone delivery as a scalable business model. Like other autonomous technology companies, Terra Drone benefits from a comprehensive patent portfolio covering flight operations, communications, and safety systems. Patent portfolio strength has become a key element of investor due diligence for autonomous vehicle and drone companies preparing for public markets.
+Terra Drone completed its IPO on November 29, 2024 with a market cap of approximately $200M, marking a significant milestone for commercial drone services companies. The Japanese company's entry into public markets demonstrates institutional investor confidence in drone delivery as a scalable business model. Like other autonomous technology companies, Terra Drone benefits from a comprehensive patent portfolio covering flight operations, communications, and safety systems. Patent portfolio strength has become a key element of investor due diligence for autonomous vehicle and drone companies preparing for public markets.
 
 **What this means for your company:** IPO investors and underwriters now benchmark drone companies against Terra Drone's portfolio strength. When investment banks and venture capital firms evaluate your IPO readiness, they're asking: "How does your patent portfolio compare to Terra Drone's?"
 
@@ -402,7 +402,7 @@ If you're a Series C+ drone company preparing for IPO in the next 12-24 months, 
 
 ## Conclusion: Strategic Patent Licensing for IPO Success
 
-The Terra Drone $390M IPO proved that comprehensive patent portfolios matter for drone company valuations and investor confidence. For pre-IPO drone delivery companies, this reality has reshaped what's required for successful IPO preparation.
+Terra Drone's approximately $200M market cap following its November 29, 2024 IPO proved that comprehensive patent portfolios matter for drone company valuations and investor confidence. For pre-IPO drone delivery companies, this reality has reshaped what's required for successful IPO preparation.
 
 **Key Takeaways:**
 
