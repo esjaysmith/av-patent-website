@@ -12,12 +12,12 @@ The autonomous vehicle and drone navigation industries are experiencing unpreced
 
 ## Tesla's Market Impact: The Camera-First Revolution
 
-### **Tesla FSD Unsupervised Rollout**
+### **Tesla FSD Progress**
 <div class="patent-highlight">
-<strong>Market Alert:</strong> Tesla's transition to unsupervised Full Self-Driving represents a fundamental shift toward camera-first autonomous navigation, making camera-based safety patents increasingly valuable.
+<strong>Market Alert:</strong> Tesla's progress toward unsupervised Full Self-Driving represents a fundamental shift toward camera-first autonomous navigation, making camera-based safety patents increasingly valuable.
 </div>
 
-**Current Status (October 2025):** Unsupervised FSD launched as paid robotaxi service in Austin, TX. Customer rollout to select US cities expected by end of 2025, limited to HW4/AI4 vehicles.
+**Current Status (October 2025):** Supervised FSD launched as paid robotaxi service in Austin, TX. Progress continues toward unsupervised operations, with customer rollout to select US cities under development, limited to HW4/AI4 vehicles.
 
 **Key Developments:**
 - **End-to-End Neural Networks**: Tesla's shift away from traditional sensor fusion to pure camera-based AI decision making

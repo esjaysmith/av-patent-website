@@ -29,7 +29,7 @@ schema_type: "Article"
 
 In 2024, hundreds of autonomous vehicle companies reached Series A or higher funding stages—but those with strong patent portfolios secured 30-50% higher valuations and smoother Series B negotiations. If you're a Series A AV startup founder or CTO, you're facing a critical IP dilemma: investors expect patent protection, but in-house patent development takes 18-36 months—and your Series B timeline is 18-24 months away.
 
-The competitive landscape is intensifying. In 2024, global venture capital reached $330B, with AV and mobility sectors seeing significant growth and megarounds increasing 29% YoY. With more capital available but heightened competition, patent portfolios have become table stakes for Series B funding. Every board meeting now includes the question: "What's our IP strategy?"
+The competitive landscape is intensifying. In 2024, global venture capital exceeded $300B, with AV and mobility sectors seeing significant growth. With more capital available but heightened competition, patent portfolios have become table stakes for Series B funding. Every board meeting now includes the question: "What's our IP strategy?"
 
 This guide explains how Series A autonomous vehicle startups can strengthen patent portfolios quickly through strategic licensing, with specific focus on camera-based safety patents that align with industry trends and investor expectations. You'll learn why patent licensing is faster and more cost-effective than in-house development, and how to build a balanced IP portfolio before your next funding round.
 
@@ -49,7 +49,7 @@ The reason is straightforward: Series B rounds typically range from [VERIFY: $25
 
 ### The Growing AV Funding Landscape
 
-In 2024, global venture capital reached $330B, with AV and mobility sectors seeing significant growth and megarounds increasing 29% YoY. This capital influx created both opportunity and challenge for Series A startups. On one hand, more capital is available for autonomous vehicle innovation. On the other hand, competition for Series B funding has intensified.
+In 2024, global venture capital exceeded $300B, with AV and mobility sectors seeing significant growth. This capital influx created both opportunity and challenge for Series A startups. On one hand, more capital is available for autonomous vehicle innovation. On the other hand, competition for Series B funding has intensified.
 
 Consider the math: If hundreds of companies are at Series A or higher, and each seeks Series B funding within 18-24 months, that creates significant competition for limited Series B allocations. Top-tier VCs like Andreessen Horowitz, Sequoia, and Greylock typically lead [VERIFY: 2-4 Series B deals per year in the AV sector]. The selectivity forces investors to scrutinize every differentiator—and patent portfolios have emerged as a key screening criterion.
 

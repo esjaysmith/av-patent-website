@@ -28,7 +28,7 @@ schema_type: "Article,FAQPage"
 
 ## Introduction: Why Patent Due Diligence Matters in AV Investments
 
-In 2024, global venture capital reached $330B, with AV and mobility sectors seeing significant growth and megarounds increasing 29% YoY—and investment partners report that patent portfolio quality can influence 30-50% of valuation, making IP due diligence critical for competitive returns.
+In 2024, global venture capital exceeded $300B, with AV and mobility sectors seeing significant growth—and investment partners report that patent portfolio quality can influence 30-50% of valuation, making IP due diligence critical for competitive returns.
 
 Patent portfolios are invisible assets with outsized impact. When your due diligence team reviews a Series A autonomous vehicle startup, you're evaluating technology maturity, market traction, team execution—and IP protection. Yet many VCs treat patent due diligence as an afterthought, left to legal counsel during term sheet finalization.
 
@@ -47,7 +47,7 @@ This guide provides venture capital investors with a practical framework for eva
 
 ### The Growing AV Funding Landscape: Why Patents Matter Now
 
-In 2024, global venture capital reached $330B, with AV and mobility sectors seeing significant growth and megarounds increasing 29% YoY. The AV market is experiencing explosive growth, but competition is equally intense. Hundreds of companies have reached Series A or higher funding stages, creating a crowded funding environment where differentiation drives valuation.
+In 2024, global venture capital exceeded $300B, with AV and mobility sectors seeing significant growth. The AV market is experiencing explosive growth, but competition is equally intense. Hundreds of companies have reached Series A or higher funding stages, creating a crowded funding environment where differentiation drives valuation.
 
 Patent portfolios serve as a primary differentiation mechanism. Here's why:
 

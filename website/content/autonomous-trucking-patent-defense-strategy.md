@@ -50,7 +50,7 @@ This comprehensive guide provides autonomous trucking companies with a practical
 
 ### Current State of Commercial Vehicle Patents
 
-The autonomous trucking industry faces an intensifying patent landscape. Over 37,000 autonomous vehicle patents have been filed globally, with a growing subset focused specifically on commercial vehicles and Class 8 trucks.
+The autonomous trucking industry faces an intensifying patent landscape. Thousands of autonomous vehicle patents have been filed globally, with a growing subset focused specifically on commercial vehicles and Class 8 trucks.
 
 **Major Patent Holders in Autonomous Trucking:**
 - **Waymo**: Extensive autonomous driving patent portfolio (LiDAR-focused, shifting toward camera-first)
