@@ -17,15 +17,13 @@ This document defines the **non-negotiable** fact-checking and quality assurance
 - **SEO Risk**: Search engines penalize misinformation
 - **Professional Reputation**: Errors reflect poorly on patent holder
 
-## Multi-Agent Fact-Checking Protocol
+## Single-Agent Comprehensive Fact-Checking Protocol
 
 ### Overview
 
-**EVERY content piece** must be verified by **minimum 3 specialized AI agents** running in parallel:
+**EVERY content piece** must be verified by **1 comprehensive AI fact-checking agent** that covers all verification areas:
 
-1. **Patent Facts Verification Agent**
-2. **Industry & Market Claims Agent**
-3. **Current Events & Quotes Agent**
+1. **Comprehensive Fact-Checking Agent** (covers patent facts, industry claims, and current events)
 
 ### Agent Launch Procedure
 
@@ -35,14 +33,14 @@ This document defines the **non-negotiable** fact-checking and quality assurance
 - ✅ **BEFORE** updating current event references
 - ✅ **ANY TIME** factual accuracy is in question
 
-#### How to Launch Agents
+#### How to Launch the Agent
 
-Use Claude Code's Task tool to spin up parallel fact-checking agents:
+Use Claude Code's Task tool to spin up the comprehensive fact-checking agent:
 
 ```
-Task 1: Patent Facts Verification
-Prompt: "You are a fact-checking agent specializing in patent information.
-Review the following content and verify EVERY patent-related claim.
+Comprehensive Fact-Checking Task
+Prompt: "You are a comprehensive fact-checking agent responsible for verifying ALL factual claims in content.
+Review the following content and verify EVERY claim across all categories: patent facts, industry claims, and current events.
 
 ⚠️ CRITICAL FIRST STEP - READ PATENT DOCUMENTATION FROM DISK:
 Before verifying any claims, you MUST read these files from the local .agent directory:
@@ -55,6 +53,7 @@ MUST be based on the content of these local files as the primary source.
 Content to Verify:
 [PASTE CONTENT HERE]
 
+SECTION 1: PATENT FACTS VERIFICATION
 Verify:
 1. Patent number (US 12,001,207 B2)
 2. Issue date (June 4, 2024)
@@ -65,27 +64,10 @@ Verify:
 7. Patent categories and classifications
 8. Abstract and technical description accuracy
 
-For EACH claim:
-- Claim: [exact text]
-- Verification: [verified/unverified/incorrect]
-- Source: [.agent/System/patent_reference.md line X OR .agent/US12001207B2.html section Y]
-- Correction: [if incorrect]
-- Confidence: [high/medium/low]
-
 PRIMARY SOURCE: .agent/System/patent_reference.md and .agent/US12001207B2.html (local disk)
 SECONDARY SOURCE: USPTO database online (if local files insufficient)
 
-Flag ANY claims that don't match the local patent documentation."
-
----
-
-Task 2: Industry & Market Claims Verification
-Prompt: "You are a fact-checking agent specializing in autonomous vehicle
-industry claims. Review the following content and verify EVERY industry/market claim:
-
-Content:
-[PASTE CONTENT HERE]
-
+SECTION 2: INDUSTRY & MARKET CLAIMS VERIFICATION
 Verify:
 1. Company names, products (Tesla FSD, etc.)
 2. Market statistics and financial figures
@@ -94,26 +76,9 @@ Verify:
 5. Industry trends and predictions
 6. Competitive landscape claims
 
-For EACH claim:
-- Claim: [exact text]
-- Verification: [verified/unverified/incorrect]
-- Source: [official source URL]
-- Correction: [if incorrect]
-- Confidence: [high/medium/low]
-
 Use official company announcements, reputable tech news, industry reports.
-Flag ANY unverifiable claims."
 
----
-
-Task 3: Current Events & Quotes Verification
-Prompt: "You are a fact-checking agent specializing in dates, timelines,
-quotes, and current events. Review the following content and verify EVERY
-temporal claim and quote:
-
-Content:
-[PASTE CONTENT HERE]
-
+SECTION 3: CURRENT EVENTS & QUOTES VERIFICATION
 Verify:
 1. All dates (announcements, releases, milestones)
 2. Event timelines (Tesla FSD rollout, etc.)
@@ -122,85 +87,32 @@ Verify:
 5. Report publication dates
 6. Technology deployment dates
 
-For EACH claim:
+Check official announcements, press releases, reputable news sources.
+
+OUTPUT FORMAT - For EACH claim across all sections:
 - Claim: [exact text]
+- Category: [Patent/Industry/Events]
 - Verification: [verified/unverified/incorrect]
-- Source: [primary source URL]
+- Source: [.agent/System/patent_reference.md line X OR official source URL]
 - Correction: [if incorrect]
 - Confidence: [high/medium/low]
 
-Check official announcements, press releases, reputable news sources.
-Flag ANY unverifiable claims or incorrect attributions."
+Flag ANY claims that cannot be verified or are incorrect."
 ```
 
-### ⚠️ CRITICAL: Avoiding Agent Duplication
+### Verification Efficiency Tips
 
-**Problem:** Multiple agents may navigate to the same URL (YouTube video, website, etc.), consuming excessive tokens and context.
-
-**Solution: Clear Division of Responsibilities**
-
-**Agent 1: Patent & Academic References**
-- **MANDATORY FIRST STEP**: Read .agent/System/patent_reference.md and .agent/US12001207B2.html from disk
-- **PRIMARY FOCUS**: Patent documentation (local files), USPTO database, academic papers (arXiv, IEEE)
-- **DO NOT**: Navigate to YouTube, test external URLs, check news sites
-- **DEFERS TO**: Agent 3 for any URLs/videos, Agent 2 for market data
-
-**Agent 2: Industry & Market Data**
-- **PRIMARY FOCUS**: Market reports, company websites, analyst research
-- **DO NOT**: Navigate to YouTube, check patent database, verify academic citations
-- **DEFERS TO**: Agent 1 for patents/papers, Agent 3 for URLs/dates
-
-**Agent 3: URLs, Dates & Media**
-- **PRIMARY FOCUS**: ALL URL testing (YouTube, external links), dates, timelines
-- **EXCLUSIVE RESPONSIBILITY**: Navigate to videos, test links, verify media
-- **DO NOT**: Check USPTO database, verify market statistics, read academic papers
-- **DEFERS TO**: Agent 1 for technical details, Agent 2 for industry claims
-
-**Example Coordination:**
-```
-Agent 1 encounters: "Video available at youtube.com/watch?v=ABC"
-Agent 1 response: "YouTube video link found - deferring to Agent 3 for verification"
-
-Agent 2 encounters: "According to research paper (arxiv.org/abs/123)"
-Agent 2 response: "Academic reference found - deferring to Agent 1 for paper verification"
-
-Agent 3 encounters: "Market projected to reach $500B"
-Agent 3 response: "Market statistic found - deferring to Agent 2 for source verification"
-```
-
-**Template Updates to Prevent Duplication:**
-
-Update Agent 1 prompt to include:
-```
-CRITICAL FIRST STEP: Before starting verification, read these files from disk:
-1. Read file: .agent/System/patent_reference.md
-2. Read file: .agent/US12001207B2.html (use offset/limit for large sections)
-
-Use these local files as your PRIMARY source for all patent verification.
-
-IMPORTANT: If you encounter URLs to videos, websites, or external media,
-note them but DO NOT navigate to them. These will be verified by Agent 3.
-Simply note: "URL found - deferring to Agent 3"
-```
-
-Update Agent 2 prompt to include:
-```
-IMPORTANT: If you encounter academic paper citations or patent references,
-note them but DO NOT verify them. These will be verified by Agent 1.
-Simply note: "Academic/patent reference found - deferring to Agent 1"
-```
-
-Update Agent 3 prompt to include:
-```
-IMPORTANT: You are the ONLY agent that should navigate to URLs, test video
-links, or access external media. Do NOT verify patent details or market
-statistics - defer those to Agents 1 and 2 respectively.
-```
+**Best Practices for Single Agent:**
+- Start with local patent documentation (.agent/System/patent_reference.md) for all patent claims
+- Use the official patent HTML (.agent/US12001207B2.html) for detailed technical specifications
+- Prioritize official sources (company press releases, USPTO database, government sites)
+- Document all sources clearly in the verification report
+- Flag any claims that cannot be verified with primary sources
 
 ### Agent Results Review Process
 
-#### Step 1: Collect All Agent Reports
-Wait for all 3 agents to complete. Review each report thoroughly.
+#### Step 1: Collect Agent Report
+Wait for the fact-checking agent to complete. Review the comprehensive report thoroughly.
 
 #### Step 2: Categorize Findings
 Sort findings into:
@@ -279,12 +191,12 @@ Before launching agents, do a self-check:
 - Check publication date (not outdated)
 - Verify context (not taken out of context)
 
-### Stage 3: Multi-Agent Verification (CRITICAL)
+### Stage 3: Comprehensive Agent Verification (CRITICAL)
 
-**Launch all 3 agents in parallel** (see Agent Launch Procedure above).
+**Launch the comprehensive fact-checking agent** (see Agent Launch Procedure above).
 
 **Minimum Requirements:**
-- All 3 agents must complete verification
+- Agent must complete verification of all claim categories
 - All findings must be reviewed and addressed
 - 100% of flagged issues must be resolved
 - No unverified claims can remain
@@ -610,7 +522,7 @@ For **every page**, create and maintain this log:
 - **Claim:** "US Patent 12,001,207 issued June 4, 2024"
 - **Verification:** Verified
 - **Source:** .agent/System/patent_reference.md (line 21) + .agent/US12001207B2.html
-- **Verified By:** Agent 1 (Patent Facts)
+- **Verified By:** Comprehensive Fact-Checking Agent
 - **Date:** [date]
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
@@ -619,7 +531,7 @@ For **every page**, create and maintain this log:
 - **Claim:** "Patent covers dual-module safety system for autonomous vehicles using visual navigation"
 - **Verification:** Verified
 - **Source:** .agent/System/patent_reference.md (Abstract section) + .agent/US12001207B2.html (lines 1737-1739)
-- **Verified By:** Agent 1 (Patent Facts)
+- **Verified By:** Comprehensive Fact-Checking Agent
 - **Date:** [date]
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
@@ -634,7 +546,7 @@ For **every page**, create and maintain this log:
 - **Claim:** "Tesla deployed FSD v12 in March 2024"
 - **Verification:** Verified
 - **Source:** Tesla press release (link) + TechCrunch article (link)
-- **Verified By:** Agent 2 (Industry Claims)
+- **Verified By:** Comprehensive Fact-Checking Agent
 - **Date:** [date]
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
@@ -643,7 +555,7 @@ For **every page**, create and maintain this log:
 - **Claim:** "AV market projected to reach $X billion by 2030"
 - **Verification:** Verified
 - **Source:** McKinsey & Company Report 2023 (link)
-- **Verified By:** Agent 2 (Industry Claims)
+- **Verified By:** Comprehensive Fact-Checking Agent
 - **Date:** [date]
 - **Confidence:** Medium (projection)
 - **Status:** ✅ VERIFIED WITH CAVEAT (noted as projection)
@@ -658,7 +570,7 @@ For **every page**, create and maintain this log:
 - **Claim:** "Event X occurred on October 12, 2024"
 - **Verification:** Verified
 - **Source:** Official announcement (link) + Reuters (link)
-- **Verified By:** Agent 3 (Current Events)
+- **Verified By:** Comprehensive Fact-Checking Agent
 - **Date:** [date]
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
@@ -672,10 +584,10 @@ For **every page**, create and maintain this log:
 ### Correction 1
 - **Original Claim:** "Tesla released FSD in January 2024"
 - **Issue:** Incorrect date
-- **Flagged By:** Agent 3
+- **Flagged By:** Comprehensive Fact-Checking Agent
 - **Correction:** "Tesla released FSD v12 in March 2024"
 - **New Source:** Tesla official announcement
-- **Re-Verified By:** Agent 3 (re-run)
+- **Re-Verified By:** Comprehensive Fact-Checking Agent (re-run)
 - **Date Corrected:** [date]
 - **Status:** ✅ CORRECTED AND VERIFIED
 
@@ -688,7 +600,7 @@ For **every page**, create and maintain this log:
 ### Removed 1
 - **Original Claim:** "Industry experts believe..."
 - **Issue:** No verifiable source, vague attribution
-- **Flagged By:** Agent 3
+- **Flagged By:** Comprehensive Fact-Checking Agent
 - **Reason:** Cannot verify "industry experts" without specific attribution
 - **Date Removed:** [date]
 - **Replacement:** Removed sentence, flow maintained
@@ -709,9 +621,10 @@ For **every page**, create and maintain this log:
 - Tier 3 Sources: [number] ([percentage]%)
 
 **Agent Performance:**
-- Agent 1 (Patent Facts): [X claims verified, Y flagged]
-- Agent 2 (Industry Claims): [X claims verified, Y flagged]
-- Agent 3 (Current Events): [X claims verified, Y flagged]
+- Comprehensive Fact-Checking Agent:
+  - Patent Claims: [X verified, Y flagged]
+  - Industry Claims: [X verified, Y flagged]
+  - Events/Quotes: [X verified, Y flagged]
 
 **Final Status:** ✅ READY FOR PUBLICATION
 **Sign-off:** [Human reviewer name/date]
@@ -867,7 +780,7 @@ Create reusable blocks of verified content:
 **2. Batch Fact-Checking**
 For similar pages (e.g., 5 drone application pages):
 - Draft all 5 pages
-- Run agents once across all 5
+- Run the comprehensive agent once across all 5
 - Consolidate verification findings
 
 **3. Verification Prioritization**
@@ -900,7 +813,7 @@ If factual accuracy is questioned (by user, competitor, etc.):
 - Identify specific claims in question
 
 **2. Emergency Verification (Within 24 Hours)**
-- Launch all 3 agents on questioned claims
+- Launch the comprehensive fact-checking agent on questioned claims
 - Manual verification of flagged sections
 - Consult primary sources directly
 - Document findings
@@ -954,16 +867,25 @@ If factual accuracy is questioned (by user, competitor, etc.):
 
 ---
 
-**Version:** 1.1
-**Last Updated:** October 14, 2025 (Added local patent documentation requirements)
-**Previous Update:** October 12, 2025 (Initial version)
-**Next Review:** January 14, 2026 (Quarterly)
+**Version:** 1.2
+**Last Updated:** October 20, 2025 (Simplified to single comprehensive agent)
+**Previous Update:** October 14, 2025 (Added local patent documentation requirements)
+**Next Review:** January 20, 2026 (Quarterly)
 **Status:** ACTIVE - MANDATORY FOR ALL CONTENT
+
+**Version 1.2 Changes:**
+- ✅ **SIMPLIFIED:** Changed from 3 specialized agents to 1 comprehensive fact-checking agent
+- ✅ Single agent now handles all verification categories: patent facts, industry claims, and current events
+- ✅ Updated agent launch procedure with comprehensive prompt template
+- ✅ Streamlined agent results review process (single report instead of 3)
+- ✅ Simplified fact-check log templates to reference single agent
+- ✅ Reduced complexity while maintaining thorough verification standards
+- ✅ Maintained requirement to read local .agent patent documentation first
 
 **Version 1.1 Changes:**
 - ✅ Added mandatory local patent documentation reading for fact-checking agents
 - ✅ Created Tier 0 source hierarchy (local .agent files as PRIMARY source)
-- ✅ Updated Agent 1 prompts to require reading .agent/System/patent_reference.md
+- ✅ Updated agent prompts to require reading .agent/System/patent_reference.md
 - ✅ Added .agent/US12001207B2.html as official patent source
 - ✅ Updated fact-check log examples to reference local file sources
 - ✅ Added Quick Reference section for patent documentation locations

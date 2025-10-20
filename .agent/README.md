@@ -57,8 +57,9 @@ Next: [`Tasks/website_development_prd.md`](./Tasks/website_development_prd.md)
 
 ### 3. Working with Content
 **⚠️ CRITICAL - Start Here:** [`SOP/content_quality_assurance.md`](./SOP/content_quality_assurance.md)
-- **MANDATORY multi-agent fact-checking protocol**
-- **NEW v1.1:** Agents MUST read `.agent/System/patent_reference.md` from disk FIRST
+- **MANDATORY comprehensive fact-checking protocol**
+- **NEW v1.2:** Single comprehensive agent for all fact-checking (patent, industry, events)
+- Agent MUST read `.agent/System/patent_reference.md` from disk FIRST
 - Quality assurance requirements for scaled content
 - Tier 0 source hierarchy: Local .agent documentation is PRIMARY source
 
@@ -76,17 +77,16 @@ Finally: [`SOP/site_generation_deployment.md`](./SOP/site_generation_deployment.
 ## Common Tasks Quick Links
 
 ### Creating New Content
-**⚠️ CRITICAL:** [`content_quality_assurance.md`](./SOP/content_quality_assurance.md) → "Multi-Agent Fact-Checking Protocol"
+**⚠️ CRITICAL:** [`content_quality_assurance.md`](./SOP/content_quality_assurance.md) → "Single-Agent Comprehensive Fact-Checking Protocol"
 
 **MANDATORY Steps:**
 1. Create `.md` file in `/website/content/`
 2. Add YAML frontmatter
 3. Write Markdown content with [VERIFY] tags for all factual claims
-4. **Launch 3+ fact-checking agents:**
-   - **Agent 1 (Patent):** MUST read `.agent/System/patent_reference.md` and `.agent/US12001207B2.html` from disk FIRST
-   - **Agent 2 (Industry):** Market claims verification
-   - **Agent 3 (Events):** Dates, timelines, URL testing
-5. **Review all agent findings and make corrections**
+4. **Launch comprehensive fact-checking agent:**
+   - **MUST read `.agent/System/patent_reference.md` and `.agent/US12001207B2.html` from disk FIRST**
+   - Verifies patent facts, industry claims, and current events in one comprehensive pass
+5. **Review agent findings and make corrections**
 6. **Document verification in fact-check log (include local file sources)**
 7. Generate site: `python generate_site.py`
 8. Test locally: `python -m http.server 8000`
@@ -166,7 +166,7 @@ python test_website.py
 - Sitemap.xml and robots.txt generation
 - SEO meta tags implemented
 - Deployment-ready infrastructure
-- **⚠️ Content quality assurance SOP implemented (MANDATORY for all content)**
+- **⚠️ Content quality assurance SOP implemented (MANDATORY for all content - single comprehensive agent)**
 
 ### 🔄 In Progress (Phase 5 - SEO)
 - Social media meta tags (Open Graph, Twitter Cards)
@@ -184,7 +184,7 @@ python test_website.py
   - Autonomous trucking patent defense
 - Subdirectory support in generator
 - Additional SEO-optimized content
-- **Multi-agent fact-checking workflow for all new content (MANDATORY)**
+- **Comprehensive fact-checking workflow for all new content (MANDATORY)**
 
 ## Technology Reference
 
@@ -283,7 +283,15 @@ For visual architecture flow diagrams, see:
 - Integrated keyword research, content briefs, and SEO specifications
 - Success metrics: 250-500 monthly visitors, 5-10 licensing inquiries within 6 months
 - Timeline: 6 weeks (30 days) across 4 phases
-- **MANDATORY:** All landing pages must pass multi-agent fact-checking before publish
+- **MANDATORY:** All landing pages must pass comprehensive fact-checking before publish
+
+### October 20, 2025 - Simplified Fact-Checking to Single Agent
+- **✅ UPDATED: Content Quality Assurance SOP v1.2**
+- **SIMPLIFIED:** Changed from 3 specialized agents to 1 comprehensive fact-checking agent
+- Single agent now handles all verification: patent facts, industry claims, and current events
+- Reduces complexity and token usage while maintaining thorough verification
+- Updated all documentation to reflect single-agent approach
+- Agent still MUST read local `.agent` patent documentation from disk FIRST
 
 ### October 14, 2025 - Patent Documentation Integration & Fact-Checking Updates
 - **✅ ADDED: Patent Reference Documentation**
@@ -293,9 +301,9 @@ For visual architecture flow diagrams, see:
 - Linked patent reference to content quality assurance requirements
 - Added patent overview, applications, licensing opportunities, and content guidelines
 - **✅ UPDATED: Content Quality Assurance SOP v1.1**
-- **CRITICAL:** Fact-checking agents MUST now read local `.agent` patent documentation from disk FIRST
+- **CRITICAL:** Fact-checking agents MUST read local `.agent` patent documentation from disk FIRST
 - Created Tier 0 source hierarchy (local files = PRIMARY source)
-- Updated Agent 1 prompts to require reading patent_reference.md before verification
+- Updated agent prompts to require reading patent_reference.md before verification
 - Reduces token usage and ensures agents have accurate patent context
 - All fact-check logs must now reference local file sources
 

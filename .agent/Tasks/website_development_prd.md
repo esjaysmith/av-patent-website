@@ -133,11 +133,10 @@ This PRD outlines the development of a lean, SEO-driven static website focused o
 
 **Mandatory Process for ALL Content:**
 
-1. **Multi-Agent Fact-Checking (3+ Agents)**
-   - Agent 1: Patent Facts Verification
-   - Agent 2: Industry & Market Claims
-   - Agent 3: Current Events & Quotes
-   - Launch in parallel before publishing ANY content
+1. **Comprehensive Fact-Checking (Single Agent)**
+   - Comprehensive Fact-Checking Agent (covers patent facts, industry claims, and current events)
+   - Launch before publishing ANY content
+   - Agent MUST read .agent/System/patent_reference.md FIRST
 
 2. **Verification Requirements**
    - 100% fact-check pass rate required

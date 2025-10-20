@@ -102,30 +102,31 @@ As this project scales to **tens of landing pages** (Phase 3+), maintaining fact
 - Include relevant quotes and expert perspectives
 - **REMAIN 100% FACTUALLY CORRECT**
 
-### Mandatory Multi-Agent Fact-Checking Protocol
+### Mandatory Comprehensive Fact-Checking Protocol
 
 **⚠️ CRITICAL REQUIREMENT:** For ALL content creation or editing (homepage, landing pages, core pages, ANY page):
 
 #### Before Publishing ANY Content:
 
-**1. Launch Parallel Fact-Checking Agents (3 Agents Minimum)**
+**1. Launch Comprehensive Fact-Checking Agent**
 
-Use the Task tool to spin up multiple specialized fact-checking agents:
+Use the Task tool to spin up a comprehensive fact-checking agent that covers all verification areas:
 
 ```
-Agent 1: Patent Facts Verification
+Comprehensive Fact-Checking Agent:
+SECTION 1: Patent Facts Verification
 - Verify patent number, issue date, claims
 - Validate technical specifications
-- Check USPTO records
+- Check USPTO records (after reading local .agent documentation)
 - Verify continuation application status
 
-Agent 2: Industry Claims Verification
+SECTION 2: Industry Claims Verification
 - Verify market statistics and trends
 - Validate company references (Tesla, etc.)
 - Check technology claims (FSD, E2E neural networks)
 - Verify regulatory information
 
-Agent 3: Current Events & Quotes Verification
+SECTION 3: Current Events & Quotes Verification
 - Verify all dates and timelines
 - Validate quotes and attributions
 - Check news sources and links
@@ -199,17 +200,15 @@ To create tens of unique landing pages while maintaining accuracy:
 3. Validate company information via official websites
 4. Cross-reference statistics with original sources
 
-#### Stage 3: Multi-Agent Verification (CRITICAL)
+#### Stage 3: Comprehensive Agent Verification (CRITICAL)
 ```bash
-# Launch 3+ fact-checking agents in parallel
-Agent 1: Verify all patent-related claims
-Agent 2: Verify all market/industry claims
-Agent 3: Verify all current events/quotes
+# Launch comprehensive fact-checking agent
+Comprehensive Agent: Verify all claims (patent, industry, and events)
 ```
 
 **Agent Instructions Template:**
 ```
-You are a fact-checking agent. Review the following content and verify EVERY factual claim:
+You are a comprehensive fact-checking agent. Review the following content and verify EVERY factual claim across all categories:
 
 Content: [paste content]
 
@@ -293,15 +292,15 @@ For each landing page, maintain a **fact-check log**:
 
 ## Patent Claims Verified
 - Claim: "US Patent 12,001,207 issued June 4, 2024"
-- Source: USPTO database (direct link)
-- Verified by: Agent 1
+- Source: .agent/System/patent_reference.md + USPTO database (direct link)
+- Verified by: Comprehensive Fact-Checking Agent
 - Date: [date]
 - Status: ✅ VERIFIED
 
 ## Industry Statistics Verified
 - Claim: "Tesla deployed FSD v12 in March 2024"
 - Source: Tesla official announcement + TechCrunch article
-- Verified by: Agent 2
+- Verified by: Comprehensive Fact-Checking Agent
 - Date: [date]
 - Status: ✅ VERIFIED
 
@@ -353,15 +352,14 @@ Track these metrics across all landing pages:
 6. Include relevant links (internal and external)
 7. **Flag all factual claims for verification**
 
-### Step 4: Multi-Agent Fact-Checking (NEW - MANDATORY)
-**⚠️ CRITICAL: Launch 3+ fact-checking agents before proceeding**
-1. Agent 1: Verify patent facts
-2. Agent 2: Verify industry/market claims
-3. Agent 3: Verify current events/quotes
-4. Review all agent findings
-5. Correct ALL flagged issues
-6. Re-verify corrected content
-7. Document verification in fact-check log
+### Step 4: Comprehensive Fact-Checking (MANDATORY)
+**⚠️ CRITICAL: Launch comprehensive fact-checking agent before proceeding**
+1. Launch comprehensive fact-checking agent (covers patent facts, industry claims, and current events)
+2. Agent MUST read .agent/System/patent_reference.md FIRST for patent verification
+3. Review all agent findings across all categories
+4. Correct ALL flagged issues
+5. Re-verify corrected content
+6. Document verification in fact-check log
 
 ### Step 5: Optimize for SEO
 1. Include primary keyword in first paragraph
@@ -575,10 +573,10 @@ Before publishing new or updated content, verify:
 
 ### ⚠️ FACT-CHECKING (MANDATORY)
 - [ ] **ALL factual claims marked with [VERIFY] during drafting**
-- [ ] **3+ fact-checking agents launched and completed**
-- [ ] **Agent 1 verified all patent facts (100% complete)**
-- [ ] **Agent 2 verified all industry/market claims (100% complete)**
-- [ ] **Agent 3 verified all quotes/dates/current events (100% complete)**
+- [ ] **Comprehensive fact-checking agent launched and completed**
+- [ ] **Agent verified all patent facts (100% complete) - MUST read .agent/System/patent_reference.md FIRST**
+- [ ] **Agent verified all industry/market claims (100% complete)**
+- [ ] **Agent verified all quotes/dates/current events (100% complete)**
 - [ ] **All agent findings reviewed and corrections made**
 - [ ] **Fact-check log created and documented**
 - [ ] **Zero unverified claims remain in content**
