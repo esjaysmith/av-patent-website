@@ -23,14 +23,14 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 - ✅ **Site Structure**: All landing pages accessible from homepage (Milestone 1 complete)
 - ⏳ **SEO**: Missing Open Graph tags, structured data, canonical URLs
 - ⏳ **Form**: Contact form not tested, may not be functional
-- ⏳ **Legal**: No legal disclaimer, no privacy policy
+- ✅ **Legal**: Legal disclaimer and privacy policy published (Milestone 4 complete)
 - ⏳ **Deployment**: Not deployed to production hosting
 
 ### Launch Blockers (Must Complete)
 1. ~~**Site Navigation** - Landing pages inaccessible (no homepage links)~~ ✅ Complete
 2. **Contact Form** - Not tested, potentially non-functional
 3. **SEO Optimization** - Missing critical tags for search visibility
-4. **Legal Compliance** - No disclaimer/privacy policy (liability risk)
+4. ~~**Legal Compliance** - No disclaimer/privacy policy (liability risk)~~ ✅ Complete
 5. **Production Deployment** - Not hosted publicly
 
 ## Success Criteria
@@ -40,7 +40,7 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 - [x] Sitemap accessible via footer link
 - [ ] Contact form tested and delivering submissions
 - [ ] SEO technical requirements implemented (Phase 4 specs)
-- [ ] Legal disclaimer and privacy policy published and linked
+- [x] Legal disclaimer and privacy policy published and linked
 - [ ] Site deployed to production hosting with HTTPS
 - [ ] Google Search Console configured and sitemap submitted
 - [ ] All 46 tests passing + new tests for launch requirements
@@ -131,29 +131,33 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 
 ---
 
-### Milestone 4: Legal & Compliance
+### Milestone 4: Legal & Compliance ✅ COMPLETE
 **Owner**: Developer + Legal Review (if available)
 **Duration**: 1-2 days
+**Status**: Complete (November 10, 2025)
+
 **Deliverables**:
-1. Legal Disclaimer page (`disclaimer.md`)
+1. ✅ Legal Disclaimer page (`disclaimer.md`)
    - No legal advice, informational purposes only
    - Patent licensing terms subject to negotiation
    - No guarantees or warranties
-2. Privacy Policy page (`privacy.md`)
+2. ✅ Privacy Policy page (`privacy.md`)
    - Contact form data handling
-   - No cookies (or cookie disclosure if analytics added)
-   - GDPR compliance statement
-   - Email opt-out instructions
-3. Terms of Use page (optional, `terms.md`)
-4. Footer links to all legal pages
-5. Disclaimer snippet in footer (all pages)
+   - Cookie disclosure for Google Analytics
+   - GDPR compliance statement with user rights
+   - Third-party services disclosure (Formspree, Google Analytics)
+3. ⚠️ Terms of Use page (optional, `terms.md`) - Deferred (not required for launch)
+4. ✅ Footer links to all legal pages
+5. ✅ Disclaimer snippet in footer (all pages)
+6. ✅ Contact form privacy checkbox updated to link to `/privacy.html`
 
-**Acceptance Criteria**:
-- Legal Disclaimer page published and linked in footer
-- Privacy Policy page published and linked in footer
-- Disclaimer snippet visible in footer on all pages
-- Contact form includes privacy policy acknowledgment checkbox
-- Legal pages accessible from all site pages
+**Acceptance Criteria**: ✅ ALL MET
+- ✅ Legal Disclaimer page published and linked in footer
+- ✅ Privacy Policy page published and linked in footer
+- ✅ Disclaimer snippet visible in footer on all pages
+- ✅ Contact form includes privacy policy acknowledgment checkbox
+- ✅ Legal pages accessible from all site pages
+- ✅ Both pages included in sitemap.xml
 
 **Task File**: `20251110_milestone4_legal_compliance.md`
 

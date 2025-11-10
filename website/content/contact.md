@@ -85,7 +85,7 @@ Ready to explore licensing opportunities for US Patent 12,001,207? We're committ
         <div class="form-check">
             <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
             <label class="form-check-label" for="privacy">
-                I agree to the <a href="#privacy-policy">Privacy Policy</a> and consent to being contacted regarding patent licensing opportunities *
+                I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a> and consent to being contacted regarding patent licensing opportunities *
             </label>
         </div>
     </div>
