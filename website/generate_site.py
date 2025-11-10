@@ -116,7 +116,9 @@ class StaticSiteGenerator:
             'page_title': metadata.get('page_title', metadata.get('title', '')),
             'show_cta': metadata.get('show_cta', False),
             'canonical_url': canonical_url,
-            'page_type': page_type
+            'page_type': page_type,
+            'breadcrumb_parent': metadata.get('breadcrumb_parent', ''),
+            'breadcrumb_parent_url': metadata.get('breadcrumb_parent_url', '')
         }
 
         # Load and render template

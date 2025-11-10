@@ -13,6 +13,8 @@ keywords:
 show_cta: true
 cta_text: "Schedule Pre-IPO Patent Portfolio Assessment"
 cta_link: "/contact.html?utm_source=landing&utm_medium=page&utm_campaign=drone-delivery-ipo"
+breadcrumb_parent: "Solutions"
+breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"

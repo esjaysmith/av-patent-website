@@ -13,6 +13,8 @@ keywords:
   - logistics AV safety patents
   - Waabi patent strategy
   - commercial trucking camera-first patents
+breadcrumb_parent: "Solutions"
+breadcrumb_parent_url: "/#solutions"
 show_cta: true
 cta_text: "Schedule Patent Portfolio Consultation"
 cta_link: "/contact.html?utm_source=landing&utm_medium=page&utm_campaign=trucking-patent"

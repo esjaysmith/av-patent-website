@@ -18,6 +18,8 @@ layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-16"
 modified: "2025-10-16"
+breadcrumb_parent: "Solutions"
+breadcrumb_parent_url: "/#solutions"
 canonical: "https://[domain]/series-a-av-patent-portfolio-strategy.html"
 og_type: "article"
 og_image: "https://[domain]/assets/images/series-a-av-og-image.jpg"

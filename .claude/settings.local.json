@@ -15,7 +15,9 @@
       "WebSearch",
       "mcp__puppeteer__puppeteer_navigate",
       "mcp__puppeteer__puppeteer_screenshot",
-      "mcp__puppeteer__puppeteer_evaluate"
+      "mcp__puppeteer__puppeteer_evaluate",
+      "Skill(superpowers:brainstorming)",
+      "mcp__screenshot-website-fast__take_screenshot"
     ]
   },
   "enableAllProjectMcpServers": true,

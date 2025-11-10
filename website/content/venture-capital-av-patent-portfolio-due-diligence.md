@@ -13,6 +13,8 @@ keywords:
 show_cta: true
 cta_text: "Request Patent Portfolio Analysis Template"
 cta_link: "/contact.html?utm_source=vc-dd-guide&utm_medium=primary-cta&utm_campaign=patent-assessment"
+breadcrumb_parent: "Solutions"
+breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"

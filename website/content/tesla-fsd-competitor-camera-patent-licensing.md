@@ -13,6 +13,8 @@ keywords:
 show_cta: true
 cta_text: "Schedule Competitive Patent Strategy Consultation"
 cta_link: "/contact.html?utm_source=tesla-fsd-competitor-page&utm_medium=primary-cta&utm_campaign=patent-licensing"
+breadcrumb_parent: "Solutions"
+breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-17"
