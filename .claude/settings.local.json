@@ -12,7 +12,10 @@
       "mcp__playwright__browser_evaluate",
       "mcp__playwright__browser_hover",
       "mcp__playwright__browser_console_messages",
-      "WebSearch"
+      "WebSearch",
+      "mcp__puppeteer__puppeteer_navigate",
+      "mcp__puppeteer__puppeteer_screenshot",
+      "mcp__puppeteer__puppeteer_evaluate"
     ]
   },
   "enableAllProjectMcpServers": true,
