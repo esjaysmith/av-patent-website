@@ -36,14 +36,28 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 ## Success Criteria
 
 ### Launch Readiness Checklist
+
+**Site Structure & Navigation** ✅
 - [x] All 12 pages accessible from homepage with ≤2 clicks
 - [x] Sitemap accessible via footer link
+
+**Content Quality & Credibility**
+- [ ] All 80 `[VERIFY]` tags resolved with fact-checking
+- [ ] Footnote system implemented with authoritative sources
+- [ ] Google Patent link added to all relevant pages
+- [ ] Fact-check logs updated with verification sources
+
+**Technical & SEO**
 - [ ] Contact form tested and delivering submissions
 - [ ] SEO technical requirements implemented (Phase 4 specs)
+- [ ] All 46 tests passing + new tests for launch requirements
+
+**Legal & Compliance** ✅
 - [x] Legal disclaimer and privacy policy published and linked
+
+**Production Deployment**
 - [ ] Site deployed to production hosting with HTTPS
 - [ ] Google Search Console configured and sitemap submitted
-- [ ] All 46 tests passing + new tests for launch requirements
 
 ### Post-Launch Success Metrics (3 Months)
 - **Traffic**: 250-500 monthly visitors (organic search)
@@ -99,6 +113,51 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 - No 404 errors on form submission
 
 **Task File**: `20251110_milestone2_contact_form_testing.md`
+
+---
+
+### Milestone 2.5: Content Verification & References
+**Owner**: Developer + Content Specialist
+**Duration**: 7-12 days (Can run in parallel with other milestones)
+**Priority**: High (Launch blocker for content credibility)
+**Deliverables**:
+1. Resolve all 80 `[VERIFY]` tagged statements across content files
+2. Add footnote system with references to:
+   - Industry statistics and reports
+   - Government regulations (NHTSA, FAA, EU, China)
+   - Patent data (USPTO statistics)
+   - Financial calculations and cost breakdowns
+   - Corporate actions (partnerships, shutdowns, funding)
+3. Add Google Patent link (https://patents.google.com/patent/US12001207B2) to:
+   - Homepage (`index.md`)
+   - Patent Details page (`patent-details.md`)
+   - Licensing page (`licensing.md`)
+   - All 5 SEO landing pages
+4. Fact-check and validate all claims in content files
+5. Update fact-check logs with verification sources
+
+**Acceptance Criteria**:
+- All `[VERIFY]` tags removed or resolved
+- Footnote references present for all statistics, calculations, and deep-dive claims
+- Google Patent link prominent on all relevant pages
+- All factual claims verified against authoritative sources
+- Fact-check logs updated with sources and validation dates
+- No unsubstantiated claims remain in published content
+
+**Priority Areas (Complete First)**:
+1. Homepage and Patent Details (highest traffic pages)
+2. Cost calculations and financial statistics (investor credibility)
+3. Patent litigation costs and USPTO data (legal accuracy)
+4. Regulatory requirements (compliance credibility)
+5. Industry statistics and market trends (competitive positioning)
+
+**Task File**: `20251110_verify_statements_resolution.md` ✅ Created
+
+**Notes**:
+- This work can proceed in parallel with Milestones 2-4
+- Critical for content credibility and professional perception
+- Reduces legal risk from unverified claims
+- Improves SEO through authoritative citations
 
 ---
 
@@ -586,13 +645,14 @@ Key sections:
 - `.agent/SOP/site_generation_deployment.md` - Build & deploy
 - `.agent/SOP/content_quality_assurance.md` - Fact-checking
 
-### Task Files (To Be Created)
-1. `20251110_milestone1_site_structure_navigation.md`
-2. `20251110_milestone2_contact_form_testing.md`
-3. `20251110_milestone3_seo_technical_implementation.md`
-4. `20251110_milestone4_legal_compliance.md`
-5. `20251110_milestone5_production_deployment.md`
-6. `20251110_milestone6_post_launch_optimization.md`
+### Task Files
+1. `20251110_milestone1_site_structure_navigation.md` ✅ Complete
+2. `20251110_milestone2_contact_form_testing.md` (To Be Created)
+3. `20251110_milestone3_seo_technical_implementation.md` (To Be Created)
+4. `20251110_milestone4_legal_compliance.md` ✅ Complete
+5. `20251110_milestone5_production_deployment.md` (To Be Created)
+6. `20251110_milestone6_post_launch_optimization.md` (To Be Created)
+7. `20251110_verify_statements_resolution.md` ✅ Created - **80 VERIFY tags to resolve**
 
 ---
 
