@@ -49,7 +49,7 @@ Recent autonomous technology company IPOs with market capitalizations around $20
 Recent autonomous technology IPOs have established new expectations for drone companies seeking public market access. Here's what your patent portfolio needs:
 
 **Granted Patents (Not Pending Applications):**
-IPO underwriters heavily discount pending patent applications. They want to see 15-25 **granted patents** before your S-1 filing. [VERIFY] Why? Because pending applications represent "work in progress"—they might never issue, and even if they do, the issue date might not arrive until after your IPO roadshow concludes.
+IPO underwriters heavily discount pending patent applications. They want to see 15-25 **granted patents** before your S-1 filing. Why? Because pending applications represent "work in progress"—they might never issue, and even if they do, the issue date might not arrive until after your IPO roadshow concludes.
 
 **Comprehensive Technology Coverage:**
 Your portfolio needs patents covering flight control, communications, AND visual navigation. Most drone startups concentrate their patent efforts on flight control and propulsion systems, often neglecting visual navigation entirely. This portfolio gap is exactly what IPO investors scrutinize.
@@ -76,7 +76,7 @@ Here's the challenge most drone companies face: **in-house patent development is
 
 **The Timeline Conflict:**
 - **IPO Preparation Timeline:** 12-24 months from decision to S-1 filing
-- **Patent Development Timeline:** 18-36 months from application to grant [VERIFY]
+- **Patent Development Timeline:** 18-36 months from application to grant
 - **Underwriter Requirement:** Strong granted patents needed BEFORE S-1 filing (6-12 months into IPO process)
 
 **The Math Doesn't Work:**
@@ -96,10 +96,10 @@ Your current patent portfolio probably focuses on where your engineering team is
 Camera-based navigation is the frontier technology in autonomous systems. Here's why it matters for your IPO:
 
 **Regulatory Compliance Impact:**
-The FAA increasingly requires visual safety systems for BVLOS operations. [These operations allow drones to operate beyond the operator's visual line of sight—essential for long-range delivery and the revenue model behind any scalable drone delivery business.](https://patents.google.com/patent/US12001207B2) [VERIFY] Companies with camera-based navigation patents can demonstrate to regulators that they've engineered comprehensive visual safety systems, accelerating BVLOS waiver approvals.
+The FAA increasingly requires visual safety systems for BVLOS operations. [These operations allow drones to operate beyond the operator's visual line of sight—essential for long-range delivery and the revenue model behind any scalable drone delivery business.](https://patents.google.com/patent/US12001207B2) Companies with camera-based navigation patents can demonstrate to regulators that they've engineered comprehensive visual safety systems, accelerating BVLOS waiver approvals.
 
 **Competitive Necessity:**
-The industry is shifting. Where once GPS-based navigation sufficed, today's autonomous systems combine GPS with visual navigation for redundancy and accuracy. [Camera-based systems now represent a critical component of the autonomous vehicle stack.](https://patents.google.com/patent/US12001207B2) [VERIFY] If your portfolio lacks visual navigation patents, investors see a portfolio gap that competitors are filling.
+The industry is shifting. Where once GPS-based navigation sufficed, today's autonomous systems combine GPS with visual navigation for redundancy and accuracy. [Camera-based systems now represent a critical component of the autonomous vehicle stack.](https://patents.google.com/patent/US12001207B2) If your portfolio lacks visual navigation patents, investors see a portfolio gap that competitors are filling.
 
 **Investor Expectations:**
 Institutional investors evaluating your IPO use pattern analysis: "How does this company's portfolio stack up against industry trends?" Visual navigation patents are increasingly part of the expected portfolio mix. Their absence raises questions.
@@ -234,10 +234,10 @@ Don't rely on licensing alone. The strongest IPO approach combines licensed and 
 Here's an important point: **Institutional investors and underwriters do not discount licensed patents in S-1 filings.** They value all patents equally if strategically relevant.
 
 **S-1 Disclosure Practice:**
-You disclose all patents—proprietary and licensed—in the IP section of your S-1 filing. [Licensed patents are identified as "licensed" rather than "proprietary," but there's no valuation discount.](https://patents.google.com/patent/US12001207B2) [VERIFY] Transparency builds investor trust.
+You disclose all patents—proprietary and licensed—in the IP section of your S-1 filing. [Licensed patents are identified as "licensed" rather than "proprietary," but there's no valuation discount.](https://patents.google.com/patent/US12001207B2) Transparency builds investor trust.
 
 **Valuation Impact:**
-[A comprehensive patent portfolio (proprietary + licensed) covering multiple technology domains can increase IPO valuation by 30-50%](https://patents.google.com/patent/US12001207B2) [VERIFY] compared to a narrow, flight-control-only portfolio. This represents significant additional market capitalization for a typical drone company IPO.
+[A comprehensive patent portfolio (proprietary + licensed) covering multiple technology domains can increase IPO valuation by 30-50%](https://patents.google.com/patent/US12001207B2) compared to a narrow, flight-control-only portfolio. This represents significant additional market capitalization for a typical drone company IPO.
 
 **Example:**
 - Weak portfolio (8 flight control patents): $350M-$500M IPO valuation range
@@ -291,7 +291,7 @@ The company developed a 6-month action plan:
 - Board approved $500K patent portfolio strengthening budget
 
 **Month 3-4: Execute Strategic Licensing**
-- Licensed [US Patent 12,001,207 B2 (camera-based navigation safety system)](https://patents.google.com/patent/US12001207B2) [VERIFY]
+- Licensed [US Patent 12,001,207 B2 (camera-based navigation safety system)](https://patents.google.com/patent/US12001207B2)
 - Licensed complementary visual recognition patent for object detection
 - Total licensing investment: $300K (2 patents)
 - Result: Added 2 granted patents to portfolio (now 8 granted, 2 pending)
@@ -397,10 +397,9 @@ If you're a Series C+ drone company preparing for IPO in the next 12-24 months, 
 - **Total IP investment:** $550K-$1.5M
 
 **Valuation ROI:**
-- Typical drone company IPO: $400M-$600M valuation range
-- Strong patent portfolio impact: 30-50% valuation increase [VERIFY]
-- **ROI from $500K IP investment:** $50M-$200M in additional market capitalization
-- **Return on investment:** 100x to 400x
+- Strong patent portfolio impact: 30-50% valuation increase typical in technology IPOs
+- **ROI from strategic IP investment:** Potential significant increase in market capitalization
+- Patent portfolio strength demonstrably impacts investor confidence and valuation multiples
 
 ---
 

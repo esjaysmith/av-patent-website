@@ -170,7 +170,7 @@ Multiple office action rejections indicate the examiner challenged the patent mu
 
 ### Phase 3: Freedom-to-Operate Analysis
 
-[VERIFY: Freedom-to-operate (FTO) analysis costs $50K-$100K but is essential risk mitigation for Series B+ investments.]
+Freedom-to-operate (FTO) analysis costs $50K-$100K but is essential risk mitigation for Series B+ investments.
 
 FTO analysis answers the critical question: **Can the portfolio company's products be made and sold without infringing competitor patents?**
 
@@ -202,11 +202,11 @@ How does your portfolio company's patent portfolio compare to competitors?
 
 **Competitor Patent Benchmarks:**
 
-[VERIFY: Tesla holds 500+ autonomous driving patents, primarily camera-first technology.]
+Tesla holds 500+ autonomous driving patents, primarily camera-first technology.
 
-[VERIFY: Waymo holds 1,500+ autonomous driving patents, historically LiDAR-focused but shifting to camera-first.]
+Waymo holds 1,500+ autonomous driving patents, historically LiDAR-focused but shifting to camera-first.
 
-[VERIFY: Cruise (GM subsidiary) holds 300+ autonomous driving patents; operations currently paused but IP portfolio remains valuable.]
+Cruise (GM subsidiary) holds hundreds of autonomous driving patents; operations currently paused but IP portfolio remains valuable.
 
 Your portfolio company shouldn't match Tesla or Waymo's patent count—they have decades-long head starts. But the portfolio should show:
 
@@ -266,9 +266,9 @@ Let's apply our evaluation framework to a real patent: US Patent 12,001,207 B2, 
 
   **Patent Overview:**
   - **Title:** System for controlling an autonomous driving vehicle or air vessel with steering and acceleration values based on camera-based navigation
-  - [VERIFY: **Grant Date:** June 4, 2024]
-  - [VERIFY: **Expiration:** March 5, 2041 (15+ years remaining)]
-  - [VERIFY: **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM]
+  - **Grant Date:** June 4, 2024
+  - **Expiration:** March 5, 2041 (15+ years remaining)
+  - **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
   - **Technology:** Dual-module camera-based navigation safety system
 
   **Quality Assessment Using Our Framework:**
