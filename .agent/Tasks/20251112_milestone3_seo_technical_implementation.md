@@ -777,78 +777,142 @@ cd /Users/sjsmit/Development/Caden/op_patent/website
 mkdir -p assets/images/og-images
 ```
 
-### 3.2 Generate Social Sharing Images
+### 3.2 Select and Download Background Images
 
-**Tool Recommendation**: DALL-E 3 (ChatGPT Plus) or Midjourney
+**Updated Approach**: Manual background selection from free/commons platforms (see Refactoring Design section above)
 
-**Image Specifications**:
-- **Dimensions**: 1200x630 pixels (Facebook/Twitter optimal)
-- **Format**: JPG (better compression than PNG for photos)
-- **Quality**: High (90%+ JPEG quality)
-- **Branding**: Orange accent color (#e67e22), clean professional design
-- **Text**: Minimal (title + subtle branding)
+**Create background images directory**:
 
-**General Prompt Template**:
-
-```
-Create a professional social media preview image (1200x630px) for a patent licensing website about autonomous vehicle camera-based navigation technology.
-
-Theme: [SPECIFIC PAGE THEME]
-Visual style: Clean, modern, tech-focused
-Color scheme: White/light gray background with orange accent (#e67e22)
-Text overlay: "[PAGE TITLE]" in bold sans-serif font
-Branding: "AV Navigation IP" subtle logo/text in corner
-Imagery: [SPECIFIC VISUAL ELEMENTS]
-
-The image should feel professional, authoritative, and tech-forward, suitable for LinkedIn/Twitter sharing by VCs, AV startup founders, and patent attorneys.
+```bash
+cd /Users/sjsmit/Development/Caden/op_patent/website
+mkdir -p assets/images/backgrounds
 ```
 
-**See Appendix C** for complete AI prompts for all 13 images.
+**Download 4 background images** from Unsplash, Pexels, or Pixabay:
 
-### 3.3 Image File Naming Convention
+**Category A - Startup/Innovation** (`startup-innovation.jpg`):
+- Primary search: "autonomous vehicle technology modern"
+- Alternatives: "self-driving car dashboard futuristic", "AI vehicle sensor technology", "autonomous navigation camera system", "electric vehicle innovation startup", "automotive technology lab research"
+- Requirements: 1200x630px minimum, CC0/Free license, professional quality
 
-Save generated images with these exact filenames:
+**Category B - Investment/Finance** (`investment-finance.jpg`):
+- Primary search: "business investment strategy technology"
+- Alternatives: "venture capital handshake deal", "financial growth chart technology", "tech investment portfolio modern", "business funding startup meeting", "corporate investment digital finance"
+- Requirements: 1200x630px minimum, CC0/Free license, professional quality
 
+**Category C - Technical/Legal** (`technical-legal.jpg`):
+- Primary search: "patent document technology blueprint"
+- Alternatives: "intellectual property legal document", "technical diagram engineering blueprint", "patent certificate official document", "legal contract technology licensing", "technical specifications detailed drawing"
+- Requirements: 1200x630px minimum, CC0/Free license, professional quality
+
+**Category D - General/Info** (`general-info.jpg`):
+- Primary search: "smart transportation future connectivity"
+- Alternatives: "connected vehicles network highway", "smart city transportation aerial", "transportation technology network digital", "intelligent transport system future", "mobility innovation urban landscape"
+- Requirements: 1200x630px minimum, CC0/Free license, professional quality
+
+**Save all 4 images to**: `/website/assets/images/backgrounds/`
+
+**See Appendix C** for detailed search workflow and licensing verification steps.
+
+### 3.3 Create Python OG Image Generator Script
+
+**Create file**: `/website/generate_og_images.py`
+
+This script will automatically overlay text on your 4 background images to create category-based social sharing images.
+
+**See Refactoring Design section** for complete script specifications including:
+- Image processing (resize, crop to 1200x630px)
+- Dark gradient overlay on bottom 40%
+- Two-line text rendering (white patent number, orange tagline)
+- Space Grotesk font with system fallbacks
+- CLI interface (`--category`, `--preview` flags)
+
+**After creating the script, run**:
+
+```bash
+cd /Users/sjsmit/Development/Caden/op_patent/website
+python generate_og_images.py
 ```
-homepage-og.jpg                                    # Homepage
-patent-details-og.jpg                              # Patent Details
-licensing-og.jpg                                   # Licensing
-industry-insights-og.jpg                           # Industry Insights
-contact-og.jpg                                     # Contact
-thank-you-og.jpg                                   # Thank You
-about-og.jpg                                       # About
-disclaimer-og.jpg                                  # Legal Disclaimer
-privacy-og.jpg                                     # Privacy Policy
-series-a-av-og.jpg                                 # Series A landing page
-tesla-fsd-competitor-og.jpg                        # Tesla FSD landing page
-drone-delivery-og.jpg                              # Drone Delivery landing page
-venture-capital-due-diligence-og.jpg               # VC Due Diligence landing page
-autonomous-trucking-og.jpg                         # Autonomous Trucking landing page
+
+**Expected output**: 4 generated images in `/website/assets/images/`:
+- `og-startup-innovation.jpg`
+- `og-investment-finance.jpg`
+- `og-technical-legal.jpg`
+- `og-general-info.jpg`
+
+### 3.4 Update Environment Configuration
+
+**Create `.env` file** (if not already created in earlier phase):
+
+```bash
+# Domain Configuration
+SITE_URL=https://av-navigation-ip.com
+
+# Other environment variables...
 ```
 
-**Storage location**: `/website/assets/images/og-images/`
+### 3.5 Update Generator for Category-Based Images
 
-### 3.4 Update Frontmatter with Image Paths
+**Modify `/website/generate_site.py`** to use category-based image mapping:
+
+```python
+# Add at top of file
+OG_IMAGE_CATEGORIES = {
+    'series-a-av-patent-portfolio-strategy': 'startup-innovation',
+    'tesla-fsd-competitor-camera-patent-licensing': 'startup-innovation',
+    'autonomous-trucking-patent-defense-strategy': 'startup-innovation',
+    'venture-capital-av-patent-portfolio-due-diligence': 'investment-finance',
+    'drone-delivery-patent-portfolio-pre-ipo': 'investment-finance',
+    'patent-details': 'technical-legal',
+    'licensing': 'technical-legal',
+}
+DEFAULT_OG_CATEGORY = 'general-info'
+
+# In page processing loop:
+page_slug = os.path.splitext(os.path.basename(md_file))[0]
+og_category = OG_IMAGE_CATEGORIES.get(page_slug, DEFAULT_OG_CATEGORY)
+og_image_path = f'/assets/images/og-{og_category}.jpg'
+
+# Add to template context:
+context = {
+    # ... existing fields ...
+    'og_image': f"{SITE_URL}{og_image_path}",
+}
+```
+
+### 3.6 Update Frontmatter with Category-Based Image Paths
 
 **Files**: All 13 content files
 
-**Update `og_image` and `twitter_image` fields** in frontmatter:
+**Update `og_image` and `twitter_image` fields** to use category-based URLs:
 
+**For startup/innovation pages** (series-a, tesla-fsd, autonomous-trucking):
 ```yaml
-og_image: "https://av-navigation-ip.com/assets/images/og-images/[filename]-og.jpg"
-twitter_image: "https://av-navigation-ip.com/assets/images/og-images/[filename]-og.jpg"
+og_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+twitter_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
 ```
 
-**Example for homepage** (`index.md`):
-
+**For investment/finance pages** (vc-due-diligence, drone-delivery):
 ```yaml
-og_image: "https://av-navigation-ip.com/assets/images/og-images/homepage-og.jpg"
-twitter_image: "https://av-navigation-ip.com/assets/images/og-images/homepage-og.jpg"
+og_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
+twitter_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
 ```
 
-**See Appendix B** for complete frontmatter with image paths.
+**For technical/legal pages** (patent-details, licensing):
+```yaml
+og_image: "https://av-navigation-ip.com/assets/images/og-technical-legal.jpg"
+twitter_image: "https://av-navigation-ip.com/assets/images/og-technical-legal.jpg"
+```
 
-### 3.5 Optimize Meta Descriptions
+**For general/info pages** (homepage, industry-insights, contact, thank-you, about, disclaimer, privacy):
+```yaml
+og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+```
+
+**See Appendix B** for complete frontmatter templates with category-based image paths.
+
+### 3.7 Optimize Meta Descriptions
 
 **Current issue**: Some descriptions exceed 160 characters, hurting search snippet quality.
 
@@ -866,7 +930,7 @@ description: "Patent portfolio strategy for Series A autonomous vehicle startups
 description: "Build your AV patent portfolio before Series B. License camera navigation IP in 4-9 months vs 30-66 months in-house development."
 ```
 
-### 3.6 Add Automated Tests for Images & Descriptions
+### 3.8 Add Automated Tests for Images & Descriptions
 
 **File**: `/website/test_website.py`
 
@@ -919,11 +983,12 @@ class TestSocialImagesAndMeta(unittest.TestCase):
 
 **Expected test count after Phase 3**: 62 tests (58 from Phase 2 + 4 new)
 
-### 3.7 Validation Steps
+### 3.9 Validation Steps
 
-1. **Verify images generated**: Check `/website/assets/images/og-images/` contains 13 JPG files
-2. **Regenerate site**: `python generate_site.py` (should copy images to `/build/assets/`)
-3. **Run tests**: `python test_website.py` (expect 62+ passing)
+1. **Verify background images downloaded**: Check `/website/assets/images/backgrounds/` contains 4 JPG files
+2. **Verify generated OG images**: Check `/website/assets/images/` contains 4 `og-*.jpg` files
+3. **Regenerate site**: `python generate_site.py` (should copy images to `/build/assets/`)
+4. **Run tests**: `python test_website.py` (expect 62+ passing)
 4. **Validate with Facebook**:
    - Visit [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
    - Enter a page URL (use local file:// URL or deploy to staging)
@@ -1268,341 +1333,198 @@ author: "AV Navigation IP Protection"
 
 ---
 
-## Appendix C: AI Image Generation Prompts (1200x630px Social Sharing Images)
+## Appendix C: Background Image Search & Selection Workflow
 
-**General Guidelines for All Images**:
-- Dimensions: 1200x630 pixels
-- Format: JPG, high quality (90%+)
-- Color scheme: Clean white/light gray background with orange accent (#e67e22)
-- Branding: "AV Navigation IP" subtle text in corner
-- Font: Bold, professional sans-serif for main text
-- Style: Modern, tech-focused, authoritative
+**Updated Approach**: Manual background selection from free/commons platforms (replaces AI generation)
 
-**Tool**: DALL-E 3 (ChatGPT Plus) or Midjourney
+**Platforms to Use**:
+- **Unsplash**: https://unsplash.com/ (100% free, no attribution required)
+- **Pexels**: https://www.pexels.com/ (100% free, no attribution required)
+- **Pixabay**: https://pixabay.com/ (Free for commercial use, CC0 license)
 
----
-
-### 1. Homepage (homepage-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for a patent licensing website.
-
-Visual elements:
-- Sleek autonomous vehicle silhouette (side view) with camera sensors highlighted
-- Abstract camera lens icon with orange glow (#e67e22)
-- Clean white background with subtle tech grid pattern
-- Orange accent lines suggesting navigation pathways
-
-Text overlay:
-- Main headline: "US Patent 12,001,207" (large, bold)
-- Subheadline: "Camera-Based AV Navigation Safety" (medium weight)
-- Branding: "AV Navigation IP Protection" (small, bottom right)
-
-Style: Professional, authoritative, tech-forward. Suitable for LinkedIn sharing by VCs and AV startup founders.
-```
+**Image Requirements**:
+- **Dimensions**: 1200x630 pixels minimum (larger is okay, will be cropped)
+- **Format**: JPG preferred (better compression)
+- **License**: CC0 or Free for commercial use
+- **Quality**: High resolution, professional photography
+- **Style**: Clean, modern, tech-focused, not too busy
 
 ---
 
-### 2. Patent Details (patent-details-og.jpg)
+### Category A: Startup/Innovation
 
-```
-Create a professional social media preview image (1200x630px) for a patent technical details page.
+**File**: `startup-innovation.jpg`
+**Used for pages**: Series A AV, Tesla FSD Competitor, Autonomous Trucking
 
-Visual elements:
-- Abstract patent document with visible technical diagrams
-- Camera module schematic overlay (simplified)
-- Orange highlight accent (#e67e22) on key patent elements
-- Clean white background
+**Primary Search Query**: "autonomous vehicle technology modern"
 
-Text overlay:
-- Main headline: "US 12,001,207 B2" (large, bold)
-- Subheadline: "Technical Patent Details" (medium)
-- Issue date: "Issued June 4, 2024" (small)
-- Branding: "AV Navigation IP" (bottom right)
+**Alternative Search Queries**:
+1. "self-driving car dashboard futuristic"
+2. "AI vehicle sensor technology"
+3. "autonomous navigation camera system"
+4. "electric vehicle innovation startup"
+5. "automotive technology lab research"
+6. "AV startup technology prototype"
+7. "autonomous vehicle testing facility"
 
-Style: Technical yet accessible, professional, authoritative.
-```
+**Selection Criteria**:
+- Shows modern autonomous vehicle technology
+- Clean, professional aesthetic
+- Tech-forward, innovation-focused
+- Not too busy (text overlay area should be clear)
+- Conveys startup energy and innovation
 
----
-
-### 3. Licensing (licensing-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for a patent licensing page.
-
-Visual elements:
-- Handshake silhouette (abstract, minimalist)
-- Contract/document icon with orange checkmark (#e67e22)
-- Light gray background with orange accent border
-- Professional business aesthetic
-
-Text overlay:
-- Main headline: "Patent Licensing" (large, bold)
-- Subheadline: "Flexible Terms for AV Startups" (medium)
-- Icon: Document with signature line
-- Branding: "AV Navigation IP Protection" (bottom right)
-
-Style: Professional, trustworthy, business-focused.
-```
+**Search Workflow**:
+1. Go to Unsplash.com or Pexels.com
+2. Search using primary query
+3. Filter by "Most relevant" or "Popular"
+4. Look for images with clear space in bottom 40% for text overlay
+5. Verify image is at least 1200x630px
+6. Download highest resolution available
+7. Save as `startup-innovation.jpg`
 
 ---
 
-### 4. Industry Insights (industry-insights-og.jpg)
+### Category B: Investment/Finance
 
-```
-Create a professional social media preview image (1200x630px) for an industry insights blog/resource page.
+**File**: `investment-finance.jpg`
+**Used for pages**: VC Due Diligence, Drone Delivery Pre-IPO
 
-Visual elements:
-- Abstract lightbulb with circuit board pattern inside
-- Upward-trending graph line in orange (#e67e22)
-- Clean white background with subtle gradient
-- Tech innovation aesthetic
+**Primary Search Query**: "business investment strategy technology"
 
-Text overlay:
-- Main headline: "AV Industry Insights" (large, bold)
-- Subheadline: "Patent Strategy & Market Trends" (medium)
-- Icon: Graph/chart element
-- Branding: "AV Navigation IP" (bottom right)
+**Alternative Search Queries**:
+1. "venture capital handshake deal"
+2. "financial growth chart technology"
+3. "tech investment portfolio modern"
+4. "business funding startup meeting"
+5. "corporate investment digital finance"
+6. "venture capital pitch meeting"
+7. "investment analysis technology"
 
-Style: Thought leadership, innovative, authoritative.
-```
+**Selection Criteria**:
+- Shows business/investment/finance theme
+- Professional, trustworthy aesthetic
+- Conveys growth and strategic thinking
+- Clear space for text overlay in bottom 40%
+- Suitable for VC and investor audience
 
----
-
-### 5. Contact (contact-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for a contact/inquiry page.
-
-Visual elements:
-- Email/message icon (minimalist line art)
-- Abstract communication lines connecting nodes (orange #e67e22)
-- Clean white background
-- Approachable yet professional aesthetic
-
-Text overlay:
-- Main headline: "Let's Talk Licensing" (large, friendly yet professional)
-- Subheadline: "Schedule Your Consultation" (medium)
-- Icon: Envelope or chat bubble
-- Branding: "AV Navigation IP Protection" (bottom right)
-
-Style: Welcoming, professional, accessible.
-```
+**Search Workflow**:
+1. Go to Unsplash.com or Pexels.com
+2. Search using primary query
+3. Filter by "Most relevant" or "Popular"
+4. Look for images with clear space in bottom 40% for text overlay
+5. Verify image is at least 1200x630px
+6. Download highest resolution available
+7. Save as `investment-finance.jpg`
 
 ---
 
-### 6. Thank You (thank-you-og.jpg)
+### Category C: Technical/Legal
 
-```
-Create a professional social media preview image (1200x630px) for a thank you/confirmation page.
+**File**: `technical-legal.jpg`
+**Used for pages**: Patent Details, Licensing
 
-Visual elements:
-- Orange checkmark (#e67e22) in circle
-- Abstract success/confirmation visual
-- Light background with subtle celebration aesthetic
-- Professional yet warm tone
+**Primary Search Query**: "patent document technology blueprint"
 
-Text overlay:
-- Main headline: "Thank You!" (large, friendly)
-- Subheadline: "We'll respond within 24 hours" (medium)
-- Icon: Checkmark in circle
-- Branding: "AV Navigation IP Protection" (bottom right)
+**Alternative Search Queries**:
+1. "intellectual property legal document"
+2. "technical diagram engineering blueprint"
+3. "patent certificate official document"
+4. "legal contract technology licensing"
+5. "technical specifications detailed drawing"
+6. "patent application blueprint"
+7. "engineering document technical"
 
-Style: Appreciative, professional, reassuring.
-```
+**Selection Criteria**:
+- Shows technical/legal/documentation theme
+- Professional, authoritative aesthetic
+- Conveys intellectual property and technical expertise
+- Clear space for text overlay in bottom 40%
+- Not too busy or text-heavy
 
----
-
-### 7. About (about-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for an about page.
-
-Visual elements:
-- Shield icon with patent number inside (abstract, minimalist)
-- Orange accent elements (#e67e22)
-- Clean white background
-- Trust and authority aesthetic
-
-Text overlay:
-- Main headline: "About AV Navigation IP" (large, bold)
-- Subheadline: "Protecting Innovation Since 2024" (medium)
-- Icon: Shield or badge element
-- Branding: "US Patent 12,001,207" (bottom)
-
-Style: Trustworthy, authoritative, established.
-```
+**Search Workflow**:
+1. Go to Unsplash.com or Pexels.com
+2. Search using primary query
+3. Filter by "Most relevant" or "Popular"
+4. Look for images with clear space in bottom 40% for text overlay
+5. Verify image is at least 1200x630px
+6. Download highest resolution available
+7. Save as `technical-legal.jpg`
 
 ---
 
-### 8. Legal Disclaimer (disclaimer-og.jpg)
+### Category D: General/Info (Default Catch-All)
 
-```
-Create a professional social media preview image (1200x630px) for a legal disclaimer page.
+**File**: `general-info.jpg`
+**Used for pages**: Homepage, Industry Insights, Contact, Thank You, About, Disclaimer, Privacy, and any new pages
 
-Visual elements:
-- Document icon with legal gavel (minimalist)
-- Orange accent line (#e67e22) as border element
-- Clean, neutral background
-- Professional legal aesthetic
+**Primary Search Query**: "smart transportation future connectivity"
 
-Text overlay:
-- Main headline: "Legal Disclaimer" (large, formal)
-- Subheadline: "Important Information" (medium)
-- Icon: Document or legal symbol
-- Branding: "AV Navigation IP Protection" (bottom right)
+**Alternative Search Queries**:
+1. "connected vehicles network highway"
+2. "smart city transportation aerial"
+3. "transportation technology network digital"
+4. "intelligent transport system future"
+5. "mobility innovation urban landscape"
+6. "connected autonomous vehicles highway"
+7. "smart mobility future city"
 
-Style: Formal, professional, clear.
-```
+**Selection Criteria**:
+- Shows transportation/connectivity/future theme
+- Professional, forward-looking aesthetic
+- Broad enough to work for multiple page types
+- Clear space for text overlay in bottom 40%
+- Conveys innovation and connectivity
 
----
-
-### 9. Privacy Policy (privacy-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for a privacy policy page.
-
-Visual elements:
-- Lock/padlock icon (minimalist)
-- Shield element with checkmark
-- Orange accent (#e67e22) on security elements
-- Clean, trustworthy aesthetic
-
-Text overlay:
-- Main headline: "Privacy Policy" (large, formal)
-- Subheadline: "Your Data is Protected" (medium)
-- Icon: Lock or shield
-- Branding: "AV Navigation IP Protection" (bottom right)
-
-Style: Trustworthy, secure, professional.
-```
+**Search Workflow**:
+1. Go to Unsplash.com or Pexels.com
+2. Search using primary query
+3. Filter by "Most relevant" or "Popular"
+4. Look for images with clear space in bottom 40% for text overlay
+5. Verify image is at least 1200x630px
+6. Download highest resolution available
+7. Save as `general-info.jpg`
 
 ---
 
-### 10. Series A AV Startups (series-a-av-og.jpg)
+## License Verification
 
-```
-Create a professional social media preview image (1200x630px) for a Series A startup patent strategy page.
+Before downloading any image, verify the license:
 
-Visual elements:
-- Rocket ship launching (abstract, minimalist) with camera lens detail
-- Upward growth chart in background (subtle)
-- Orange accent elements (#e67e22) on key visual points
-- Startup/innovation aesthetic
+**Unsplash**:
+- All images are free for commercial use
+- No attribution required (but appreciated)
+- Confirm "Free to use" badge on image page
 
-Text overlay:
-- Main headline: "Series A Patent Strategy" (large, bold)
-- Subheadline: "Build IP Before Series B" (medium)
-- Stat: "4-9 months vs 30-66 months" (callout)
-- Branding: "AV Navigation IP" (bottom right)
+**Pexels**:
+- All free images are under Pexels License
+- Free for commercial use
+- No attribution required
+- Confirm "Free to use" badge on image page
 
-Style: Growth-focused, innovative, startup-friendly.
-```
-
----
-
-### 11. Tesla FSD Competitors (tesla-fsd-competitor-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for a Tesla FSD competition patent strategy page.
-
-Visual elements:
-- Two vehicles side-by-side (abstract silhouettes)
-- Camera sensors highlighted with orange glow (#e67e22)
-- Competitive positioning visual (abstract)
-- Modern, competitive aesthetic
-
-Text overlay:
-- Main headline: "Compete with Tesla FSD" (large, bold)
-- Subheadline: "Camera-Based Patent Protection" (medium)
-- Icon: Camera lens element
-- Branding: "AV Navigation IP Protection" (bottom right)
-
-Style: Competitive, innovative, authoritative.
-```
+**Pixabay**:
+- Look for "Free for commercial use" or "CC0" license
+- No attribution required for CC0 images
+- Confirm license terms on download page
 
 ---
 
-### 12. Drone Delivery Pre-IPO (drone-delivery-og.jpg)
+## Complete Workflow Summary
 
-```
-Create a professional social media preview image (1200x630px) for a drone delivery IPO patent strategy page.
+**Time estimate**: 20-30 minutes for all 4 images
 
-Visual elements:
-- Drone silhouette with camera system (minimalist, top view)
-- IPO bell or stock chart element (subtle)
-- Orange accent (#e67e22) on navigation pathways
-- Flight path lines suggesting navigation
+**Steps**:
+1. **Search** for Category A (Startup/Innovation) using primary or alternative queries
+2. **Select** best image meeting criteria (dimensions, clear overlay space, license)
+3. **Download** highest resolution
+4. **Save** as `startup-innovation.jpg` in `/website/assets/images/backgrounds/`
+5. **Repeat** steps 1-4 for Categories B, C, and D
+6. **Verify** all 4 images downloaded correctly
+7. **Run** `python generate_og_images.py` to create final social sharing images with text overlay
 
-Text overlay:
-- Main headline: "Drone Patent Portfolio" (large, bold)
-- Subheadline: "Strengthen IP Before IPO" (medium)
-- Icon: Drone with camera
-- Branding: "AV Navigation IP Protection" (bottom right)
-
-Style: Innovation-focused, growth-oriented, professional.
-```
+**Result**: 4 background images + 4 generated OG images (8 total files)
 
 ---
-
-### 13. VC Due Diligence (venture-capital-due-diligence-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for a VC due diligence guide page.
-
-Visual elements:
-- Magnifying glass over patent document (abstract)
-- Checklist with orange checkmarks (#e67e22)
-- Investment/analysis aesthetic
-- Professional VC-focused design
-
-Text overlay:
-- Main headline: "VC Due Diligence Guide" (large, bold)
-- Subheadline: "AV Patent Portfolio Analysis" (medium)
-- Icon: Magnifying glass or checklist
-- Branding: "AV Navigation IP Protection" (bottom right)
-
-Style: Analytical, professional, investor-focused.
-```
-
----
-
-### 14. Autonomous Trucking (autonomous-trucking-og.jpg)
-
-```
-Create a professional social media preview image (1200x630px) for an autonomous trucking patent strategy page.
-
-Visual elements:
-- Class 8 semi-truck silhouette (side view) with camera sensors
-- Highway/road lines suggesting navigation
-- Orange accent (#e67e22) on camera systems
-- Commercial vehicle aesthetic
-
-Text overlay:
-- Main headline: "Autonomous Trucking IP" (large, bold)
-- Subheadline: "Camera-Based Patent Defense" (medium)
-- Icon: Truck with camera sensors
-- Branding: "AV Navigation IP Protection" (bottom right)
-
-Style: Industrial, professional, commercial-focused.
-```
-
----
-
-**Image Generation Workflow**:
-
-1. **Copy prompt** for each page
-2. **Submit to DALL-E 3** (ChatGPT Plus) or Midjourney
-3. **Review generated image** - ensure 1200x630px, professional quality
-4. **Download as JPG** (high quality)
-5. **Rename file** according to naming convention (e.g., `homepage-og.jpg`)
-6. **Save to** `/website/assets/images/og-images/`
-7. **Repeat for all 13 images**
-
-**Estimated time**: 30-60 minutes for all 13 images (depending on AI generation speed and iteration needs)
-
----
-
 ## Appendix D: Test Validation Checklist
 
 After completing all 4 phases, use this checklist to verify implementation:
