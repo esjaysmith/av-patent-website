@@ -18,6 +18,205 @@ Implement all missing SEO technical requirements per `seo_technical_specs.md`: O
 
 **Solution**: Implement all technical SEO requirements per detailed specifications.
 
+## Refactoring Design: Social Sharing Images
+
+### Problem Statement
+
+Original approach required AI-generated images (Canva or similar) for creating Open Graph images. This has limitations:
+- Dependency on external AI services
+- Inconsistent quality and style
+- Licensing concerns with AI-generated content
+- Manual effort required for each page (12 unique images)
+- Difficult to maintain brand consistency across pages
+
+### Refactored Solution
+
+Replace AI generation with a **manual background selection + automated Python text overlay** system:
+
+#### Core Components
+
+1. **Category-Based Image System**
+   - Group 12 pages into 4 categories
+   - Each category shares one background image with consistent text overlay
+   - Reduces work from 12 images to 4 images
+
+2. **Manual Background Selection**
+   - Developer selects 4 high-quality images from free/commons platforms (Unsplash, Pexels, Pixabay)
+   - Comprehensive search queries provided for each category
+   - Clear licensing requirements (CC0/Free for commercial use)
+
+3. **Automated Text Overlay**
+   - Python script (`generate_og_images.py`) using Pillow
+   - Overlays brand-consistent text on backgrounds
+   - Text: "US PATENT 12,001,207 B2 | Camera-Based Navigation Safety"
+   - Uses Space Grotesk font (website brand font) with orange (#e67e22) branding
+
+4. **Environment Configuration**
+   - `.env` file for deployment-specific variables (domain, analytics, email)
+   - Enables dev/staging/production environments
+   - No hardcoded values in code
+
+### Image Categories & Mapping
+
+**Category A - Startup/Innovation** (3 pages):
+- `series-a-av-patent-portfolio-strategy`
+- `tesla-fsd-competitor-camera-patent-licensing`
+- `autonomous-trucking-patent-defense-strategy`
+- Search: "autonomous vehicle technology modern"
+
+**Category B - Investment/Finance** (2 pages):
+- `venture-capital-av-patent-portfolio-due-diligence`
+- `drone-delivery-patent-portfolio-pre-ipo`
+- Search: "business investment strategy technology"
+
+**Category C - Technical/Legal** (2 pages):
+- `patent-details`
+- `licensing`
+- Search: "patent document technology blueprint"
+
+**Category D - General/Info** (5+ pages, default catch-all):
+- `index`, `industry-insights`, `contact`, `thank-you`, `about`
+- Any new pages automatically assigned to this category
+- Search: "smart transportation future connectivity"
+
+### Python Generator Script Design
+
+**File**: `/website/generate_og_images.py`
+
+**Features**:
+- Loads background images from `/assets/images/backgrounds/[category].jpg`
+- Resizes/crops to 1200x630px (Open Graph standard)
+- Applies dark gradient overlay (transparent → rgba(0,0,0,0.6)) on bottom 40%
+- Renders two-line text overlay:
+  - Line 1: "US PATENT 12,001,207 B2" (white, 48-54px, bold, uppercase)
+  - Line 2: "Camera-Based Navigation Safety" (orange #e67e22, 34-38px, medium)
+- Space Grotesk font with system font fallback (Arial, Helvetica)
+- Text shadow for readability on light backgrounds
+- Smart crop from center if aspect ratio doesn't match
+- Slight blur (radius=1) to background for text readability
+- Outputs high-quality JPEG (quality=92)
+
+**CLI Interface**:
+```bash
+python generate_og_images.py                        # Generate all 4 categories
+python generate_og_images.py --category startup     # Single category
+python generate_og_images.py --preview              # Display without saving
+```
+
+### Environment Configuration Design
+
+**File**: `/website/.env` (gitignored)
+
+```bash
+# Environment
+ENVIRONMENT=production
+
+# Domain Configuration
+SITE_DOMAIN=av-navigation-ip.com
+SITE_URL=https://av-navigation-ip.com
+
+# Analytics
+GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+GOOGLE_ANALYTICS_ENABLED=true
+
+# Contact
+CONTACT_EMAIL=contact@av-navigation-ip.com
+
+# SEO
+ROBOTS_INDEX=true
+```
+
+**Rationale**: Separate environment-specific variables from code:
+- Local development uses `localhost:8000`
+- Staging can use different domain/analytics
+- Production uses live domain
+- Analytics can be disabled in dev/staging
+- Single source of truth for deployment configuration
+
+### Site Generator Integration
+
+**Modifications to `/website/generate_site.py`**:
+
+1. Load environment variables with `python-dotenv`
+2. Define `OG_IMAGE_CATEGORIES` mapping at top of file
+3. In page processing loop:
+   - Extract page slug from filename
+   - Look up category from mapping (defaults to `general-info`)
+   - Set `og_image_path = f'/assets/images/og-{category}.jpg'`
+4. Pass to template context:
+   - `site_url`: From SITE_URL environment variable
+   - `og_image`: Category-specific image path
+   - `ga_id`: Google Analytics ID from environment
+   - `ga_enabled`: Boolean from environment
+
+**Template Updates (`base.html`)**:
+- Replace all `https://[domain]` with `{{ site_url }}`
+- Use `{{ site_url }}{{ og_image }}` for Open Graph/Twitter Card images
+- Conditional Google Analytics: `{% if ga_enabled %}...{% endif %}`
+- All structured data uses `{{ site_url }}` variable
+
+### Benefits of Refactored Approach
+
+1. **Quality Control**: Manual selection ensures high-quality, relevant imagery
+2. **Licensing Clarity**: All images from verified CC0/Free sources
+3. **Brand Consistency**: Automated text overlay ensures uniform branding
+4. **Maintainability**: Python script makes updates easy (change text once, regenerate all)
+5. **Scalability**: New pages automatically get appropriate category image
+6. **Reduced Work**: 4 images instead of 12 unique images
+7. **Environment Flexibility**: .env supports dev/staging/production
+8. **No External Dependencies**: No reliance on AI services or external tools
+
+### Trade-offs
+
+**Advantages over AI Generation**:
+- Better image quality and relevance
+- Clear, unambiguous licensing
+- No external service dependencies
+- Consistent branding across all images
+- Easier to update (regenerate vs. recreate)
+
+**Considerations**:
+- Developer must manually select 4 background images (one-time ~30 min effort)
+- Requires Pillow dependency (~10MB)
+- Background images not in git (must be downloaded per environment)
+
+**Mitigation**: Comprehensive search queries provided for each category with 5+ alternatives, clear selection criteria, and detailed requirements.
+
+### Directory Structure
+
+```
+/website/
+├── .env.example                    # Template (committed to git)
+├── .env                            # Local config (gitignored)
+├── .gitignore                      # Add: .env, backgrounds/, og-*.jpg
+├── requirements.txt                # Add: python-dotenv, Pillow
+├── generate_site.py                # Modified: env loading, category mapping
+├── generate_og_images.py           # New: OG image generator script
+├── assets/
+│   └── images/
+│       ├── backgrounds/            # Developer downloads 4 images here (gitignored)
+│       │   ├── startup-innovation.jpg
+│       │   ├── investment-finance.jpg
+│       │   ├── technical-legal.jpg
+│       │   └── general-info.jpg
+│       ├── og-startup-innovation.jpg    # Generated by script (gitignored)
+│       ├── og-investment-finance.jpg    # Generated by script (gitignored)
+│       ├── og-technical-legal.jpg       # Generated by script (gitignored)
+│       └── og-general-info.jpg          # Generated by script (gitignored)
+└── designs/
+    └── default/
+        └── base.html               # Modified: use environment variables
+```
+
+### Implementation Workflow Summary
+
+**Phase 1**: Environment Setup (`.env`, dependencies)
+**Phase 2**: Background Image Selection (search, download, verify)
+**Phase 3**: OG Image Generator Script (create, test, verify output)
+**Phase 4**: Site Generator Updates (env loading, category mapping, template context)
+**Phase 5**: Content Metadata (add date fields, verify descriptions)
+**Phase 6**: Testing & Validation (regenerate, test, validate)
+
 ## Deliverables
 
 ### 1. Open Graph Meta Tags (All 12 Pages)
