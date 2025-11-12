@@ -174,24 +174,55 @@ class WebsiteValidator:
 
         await self.page.goto(f"file://{(self.build_dir / 'contact.html').absolute()}")
 
+        # Test simplified form fields (5 fields total)
         form_fields = [
-            ("firstName", "First Name"),
-            ("lastName", "Last Name"),
-            ("email", "Email"),
-            ("company", "Company"),
-            ("industry", "Industry"),
-            ("message", "Message")
+            ("name", "Name", True),
+            ("email", "Email", True),
+            ("company", "Company", True),
+            ("phone", "Phone", False),  # Optional field
+            ("message", "Message", True)
         ]
 
-        for field_id, field_name in form_fields:
+        for field_id, field_name, is_required in form_fields:
             try:
                 field = await self.page.query_selector(f'#{field_id}')
                 if field:
-                    self.log_test(f"Form field: {field_name}", "PASS", f"Found #{field_id}")
+                    # Check if required attribute matches expectation
+                    required_attr = await field.get_attribute('required')
+                    is_actually_required = required_attr is not None
+
+                    if is_actually_required == is_required:
+                        req_status = "required" if is_required else "optional"
+                        self.log_test(f"Form field: {field_name}", "PASS", f"Found #{field_id} ({req_status})")
+                    else:
+                        expected = "required" if is_required else "optional"
+                        actual = "required" if is_actually_required else "optional"
+                        self.log_test(f"Form field: {field_name}", "FAIL", f"Expected {expected} but found {actual}")
                 else:
                     self.log_test(f"Form field: {field_name}", "FAIL", f"Missing #{field_id}")
             except Exception as e:
                 self.log_test(f"Form field: {field_name}", "FAIL", str(e))
+
+        # Test that old fields are removed
+        removed_fields = [
+            ("firstName", "First Name"),
+            ("lastName", "Last Name"),
+            ("title", "Title"),
+            ("industry", "Industry"),
+            ("licensingType", "Licensing Type"),
+            ("timeline", "Timeline"),
+            ("privacy", "Privacy Checkbox")
+        ]
+
+        for field_id, field_name in removed_fields:
+            try:
+                field = await self.page.query_selector(f'#{field_id}')
+                if field is None:
+                    self.log_test(f"Removed field: {field_name}", "PASS", f"Confirmed #{field_id} removed")
+                else:
+                    self.log_test(f"Removed field: {field_name}", "FAIL", f"Old field #{field_id} still exists")
+            except Exception as e:
+                self.log_test(f"Removed field: {field_name}", "FAIL", str(e))
 
         # Test submit button
         try:
@@ -202,6 +233,30 @@ class WebsiteValidator:
                 self.log_test("Form submit button", "FAIL", "Submit button missing")
         except Exception as e:
             self.log_test("Form submit button", "FAIL", str(e))
+
+        # Test for example guidance text in message field
+        try:
+            form_text = await self.page.query_selector('.form-text')
+            if form_text:
+                text_content = await form_text.text_content()
+                if "Examples of helpful inquiries" in text_content:
+                    self.log_test("Message field examples", "PASS", "Example guidance found")
+                else:
+                    self.log_test("Message field examples", "FAIL", "Example text missing")
+            else:
+                self.log_test("Message field examples", "FAIL", "Form-text div missing")
+        except Exception as e:
+            self.log_test("Message field examples", "FAIL", str(e))
+
+        # Test privacy policy link (not checkbox)
+        try:
+            privacy_link = await self.page.query_selector('a[href="/privacy.html"]')
+            if privacy_link:
+                self.log_test("Privacy policy link", "PASS", "Privacy policy link found")
+            else:
+                self.log_test("Privacy policy link", "FAIL", "Privacy policy link missing")
+        except Exception as e:
+            self.log_test("Privacy policy link", "FAIL", str(e))
 
     async def test_accessibility(self):
         """Test basic accessibility features"""

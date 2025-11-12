@@ -14,84 +14,51 @@ Ready to explore licensing opportunities for US Patent 12,001,207? We're committ
 
 <div class="bg-light p-4 rounded">
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="row g-3">
-    <div class="col-md-6">
-        <label for="firstName" class="form-label">First Name *</label>
-        <input type="text" class="form-control" id="firstName" name="firstName" required>
+    <!-- Required Fields -->
+    <div class="col-12">
+        <label for="name" class="form-label">Name *</label>
+        <input type="text" class="form-control" id="name" name="name" required>
     </div>
+
     <div class="col-md-6">
-        <label for="lastName" class="form-label">Last Name *</label>
-        <input type="text" class="form-control" id="lastName" name="lastName" required>
-    </div>
-    <div class="col-md-6">
-        <label for="email" class="form-label">Email Address *</label>
+        <label for="email" class="form-label">Email *</label>
         <input type="email" class="form-control" id="email" name="email" required>
     </div>
+
     <div class="col-md-6">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control" id="phone" name="phone">
-    </div>
-    <div class="col-md-8">
         <label for="company" class="form-label">Company/Organization *</label>
         <input type="text" class="form-control" id="company" name="company" required>
     </div>
-    <div class="col-md-4">
-        <label for="title" class="form-label">Your Title</label>
-        <input type="text" class="form-control" id="title" name="title" placeholder="e.g., CTO, IP Director">
-    </div>
+
     <div class="col-12">
-        <label for="industry" class="form-label">Industry Focus *</label>
-        <select class="form-select" id="industry" name="industry" required>
-            <option value="">Select Primary Industry</option>
-            <option value="automotive">Automotive/Passenger Vehicles</option>
-            <option value="commercial-transport">Commercial Transportation</option>
-            <option value="drones-uav">Drones/UAV Systems</option>
-            <option value="ai-robotics">AI/Robotics Platforms</option>
-            <option value="research">Research Institution</option>
-            <option value="other">Other (please specify in message)</option>
-        </select>
+        <label for="phone" class="form-label">Phone Number (Optional)</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+1 (555) 123-4567">
     </div>
+
     <div class="col-12">
-        <label for="licensingType" class="form-label">Licensing Interest</label>
-        <select class="form-select" id="licensingType" name="licensingType">
-            <option value="">Select Licensing Type (if known)</option>
-            <option value="exclusive">Exclusive Licensing</option>
-            <option value="non-exclusive">Non-Exclusive Licensing</option>
-            <option value="field-of-use">Field-of-Use Licensing</option>
-            <option value="geographic">Geographic Licensing</option>
-            <option value="unsure">Not Sure - Need Consultation</option>
-        </select>
-    </div>
-    <div class="col-12">
-        <label for="timeline" class="form-label">Project Timeline</label>
-        <select class="form-select" id="timeline" name="timeline">
-            <option value="">Select Implementation Timeline</option>
-            <option value="immediate">Immediate (0-3 months)</option>
-            <option value="short-term">Short-term (3-6 months)</option>
-            <option value="medium-term">Medium-term (6-12 months)</option>
-            <option value="long-term">Long-term (12+ months)</option>
-            <option value="research">Research/Exploration Phase</option>
-        </select>
-    </div>
-    <div class="col-12">
-        <label for="message" class="form-label">Project Details & Licensing Questions *</label>
-        <textarea class="form-control" id="message" name="message" rows="5" required
-                  placeholder="Please describe:
-• Your current/planned autonomous navigation projects
-• Specific applications for the patent technology
-• Geographic markets of interest
-• Any specific licensing questions or requirements"></textarea>
-    </div>
-    <div class="col-12">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
-            <label class="form-check-label" for="privacy">
-                I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a> and consent to being contacted regarding patent licensing opportunities *
-            </label>
+        <label for="message" class="form-label">Tell Us About Your Licensing Needs *</label>
+        <textarea class="form-control" id="message" name="message" rows="6" required minlength="10" maxlength="2000"></textarea>
+        <div class="form-text">
+            <strong>Examples of helpful inquiries:</strong><br>
+            <em>"We're a Series A AV startup developing L3 highway autonomy. Looking to license for our production system launching Q3 2026. Interested in discussing non-exclusive terms."</em><br><br>
+            <em>"Tesla FSD competitor exploring camera-based navigation patents. Need to understand technical specs and exclusive licensing options for passenger vehicles."</em><br><br>
+            <em>"Drone delivery company preparing for IPO. Want to add this patent to our portfolio for investor due diligence. Timeline: 6 months."</em>
         </div>
     </div>
+
+    <!-- Privacy Policy Reference -->
+    <div class="col-12">
+        <p class="small text-muted">
+            By submitting this form, you agree to our <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+            We'll contact you regarding patent licensing opportunities for US Patent 12,001,207.
+        </p>
+    </div>
+
+    <!-- Submit Button -->
     <div class="col-12">
         <button type="submit" class="btn btn-primary cta-button btn-lg">Submit Licensing Inquiry</button>
     </div>
+
     <input type="hidden" name="_subject" value="New Patent Licensing Inquiry - US 12,001,207">
     <input type="hidden" name="_next" value="https://av-navigation-ip.com/thank-you.html">
 </form>
