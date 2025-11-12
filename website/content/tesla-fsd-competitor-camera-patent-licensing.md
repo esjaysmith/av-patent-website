@@ -210,6 +210,8 @@ Ideally, licensed patents cover camera-based safety architectures that differ me
 
 ### US Patent 12,001,207 B2: Camera-Based Safety Patent for Tesla Competitors
 
+**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+
 US Patent 12,001,207 B2, granted June 4, 2024, exemplifies a strategically valuable camera-based safety patent for Tesla FSD competitors. This patent covers a dual-module camera-based navigation safety system applicable to autonomous vehicles and aerial vessels.
 
 **Strategic Value for Tesla Competitors:**

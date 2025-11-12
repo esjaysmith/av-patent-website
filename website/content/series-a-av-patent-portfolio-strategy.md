@@ -363,6 +363,8 @@ This response demonstrates strategic sophistication that resonates with Series B
 
 ### Example: US Patent 12,001,207 B2
 
+**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+
 A concrete example illustrates the strategic value of camera-based safety patent licensing:
 
 **Patent Overview:**

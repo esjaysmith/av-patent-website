@@ -187,6 +187,8 @@ The patent technology should support FAA BVLOS waiver requirements. Camera-based
 
 ### US Patent 12,001,207 B2: Camera-Based Safety Patent for Drone Delivery
 
+**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+
 This patent perfectly demonstrates a high-value drone licensing opportunity:
 
 **Technology Overview:**

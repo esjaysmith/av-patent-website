@@ -174,6 +174,8 @@ Camera-based autonomous systems are particularly well-suited for long-haul truck
 
 ### US Patent 12,001,207 B2: Dual-Module Safety for Commercial Vehicles
 
+**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+
 To illustrate how camera-based patents apply to commercial trucking, let's examine a real patent example: US Patent 12,001,207 B2.
 
 **Patent Overview:**
