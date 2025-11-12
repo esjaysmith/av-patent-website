@@ -58,6 +58,8 @@ The autonomous vehicle industry is experiencing unprecedented growth, with major
 **Applications:** Autonomous vehicles, drones, AI navigation platforms
 **Strategic Value:** Essential protection in the rapidly expanding AV market
 
+**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+
 This patent provides fundamental protection for innovative approaches to navigation safety that are becoming industry standard in modern autonomous systems.
 
 ## Take Action: Secure Your Innovation Future

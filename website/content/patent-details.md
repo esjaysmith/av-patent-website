@@ -8,7 +8,7 @@ show_cta: true
 
 # US Patent 12,001,207: Camera-Based Navigation Safety Technology
 
-**Patent Number:** US 12,001,207
+**Patent Number:** US 12,001,207 B2 — **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 **Issue Date:** June 4, 2024
 **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
 **Assignee:** Individual (self-owned)

@@ -257,6 +257,8 @@ When you encounter a camera-based patent in portfolio company's portfolio, use t
 
 ### Case Study: Evaluating US Patent 12,001,207 B2
 
+**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+
 Let's apply our evaluation framework to a real patent: US Patent 12,001,207 B2, a camera-based navigation safety system.
 
 <div class="patent-highlight">
