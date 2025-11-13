@@ -49,231 +49,29 @@ By completion, all 13 pages will have:
 
 ---
 
-## Refactoring Design: Social Sharing Images
+## Prerequisites: Refactoring Tasks
 
-**Note**: This document originally specified AI-generated images. The approach has been refactored for better control, licensing, and maintainability.
+**IMPORTANT**: Before implementing the SEO features in this PRD, you must first complete the refactoring tasks documented in:
 
-### Problem Statement
+**→ `.agent/Tasks/20251112_refactor_social_images_environment_config.md`**
 
-Original approach required AI-generated images (DALL-E 3, Midjourney) for creating 13 unique Open Graph images. This has limitations:
-- Dependency on external AI services (ChatGPT Plus or Midjourney subscription)
-- Inconsistent quality and style across generations
-- Licensing concerns with AI-generated content
-- Manual effort required for each of 13 pages
-- Difficult to maintain brand consistency
-- Time-consuming iteration to get acceptable results
+This refactoring PRD covers:
+- Environment configuration setup (`.env` files, dependencies)
+- Manual background image selection and download (4 category images)
+- Python OG image generator script (`generate_og_images.py`)
+- Category-based image mapping definition
+- `.gitignore` updates
 
-### Refactored Solution
+**Why this is separate**: The refactoring establishes the infrastructure and image generation system that the main SEO implementation depends on. Complete the refactoring PRD first, then return here to start with Phase 1.
 
-Replace AI generation with a **manual background selection + automated Python text overlay** system:
+**Estimated Time**: 1-2 days for refactoring tasks
 
-#### Core Components
-
-1. **Category-Based Image System**
-   - Group 13 pages into 4 categories
-   - Each category shares one background image with consistent text overlay
-   - Reduces work from 13 unique images to 4 background selections
-
-2. **Manual Background Selection**
-   - Developer selects 4 high-quality images from free/commons platforms (Unsplash, Pexels, Pixabay)
-   - Comprehensive search queries provided for each category
-   - Clear licensing requirements (CC0/Free for commercial use)
-   - Ensures professional quality and relevance
-
-3. **Automated Text Overlay**
-   - Python script (`generate_og_images.py`) using Pillow library
-   - Overlays brand-consistent text on backgrounds
-   - Text: "US PATENT 12,001,207 B2 | Camera-Based Navigation Safety"
-   - Uses Space Grotesk font (website brand font) with orange (#e67e22) branding
-   - Consistent output across all categories
-
-4. **Environment Configuration**
-   - `.env` file for deployment-specific variables (domain, analytics, email)
-   - Enables dev/staging/production environments
-   - No hardcoded values in code
-   - Single source of truth for configuration
-
-### Image Categories & Mapping
-
-**Category A - Startup/Innovation** (3 pages):
-- `series-a-av-patent-portfolio-strategy`
-- `tesla-fsd-competitor-camera-patent-licensing`
-- `autonomous-trucking-patent-defense-strategy`
-- Search query: "autonomous vehicle technology modern"
-- Alternative queries: "self-driving car dashboard futuristic", "AI vehicle sensor technology", etc.
-
-**Category B - Investment/Finance** (2 pages):
-- `venture-capital-av-patent-portfolio-due-diligence`
-- `drone-delivery-patent-portfolio-pre-ipo`
-- Search query: "business investment strategy technology"
-- Alternative queries: "venture capital handshake deal", "financial growth chart technology", etc.
-
-**Category C - Technical/Legal** (2 pages):
-- `patent-details`
-- `licensing`
-- Search query: "patent document technology blueprint"
-- Alternative queries: "intellectual property legal document", "technical diagram engineering", etc.
-
-**Category D - General/Info** (6+ pages, default catch-all):
-- `index`, `industry-insights`, `contact`, `thank-you`, `about`, `disclaimer`, `privacy`
-- Any new pages automatically assigned to this category
-- Search query: "smart transportation future connectivity"
-- Alternative queries: "connected vehicles network highway", "smart city transportation aerial", etc.
-
-### Python Generator Script Design
-
-**File**: `/website/generate_og_images.py`
-
-**Features**:
-- Loads background images from `/assets/images/backgrounds/[category].jpg`
-- Resizes/crops to 1200x630px (Open Graph standard)
-- Applies dark gradient overlay (transparent → rgba(0,0,0,0.6)) on bottom 40%
-- Renders two-line text overlay:
-  - Line 1: "US PATENT 12,001,207 B2" (white, 48-54px, bold, uppercase)
-  - Line 2: "Camera-Based Navigation Safety" (orange #e67e22, 34-38px, medium)
-- Space Grotesk font with system font fallback (Arial, Helvetica)
-- Text shadow for readability on light backgrounds
-- Smart crop from center if aspect ratio doesn't match
-- Slight blur (radius=1) to background for text readability
-- Outputs high-quality JPEG (quality=92)
-
-**CLI Interface**:
-```bash
-python generate_og_images.py                        # Generate all 4 categories
-python generate_og_images.py --category startup     # Single category
-python generate_og_images.py --preview              # Display without saving
-```
-
-### Environment Configuration Design
-
-**File**: `/website/.env` (gitignored)
-
-```bash
-# Environment
-ENVIRONMENT=production
-
-# Domain Configuration
-SITE_DOMAIN=av-navigation-ip.com
-SITE_URL=https://av-navigation-ip.com
-
-# Analytics
-GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
-GOOGLE_ANALYTICS_ENABLED=true
-
-# Contact
-CONTACT_EMAIL=contact@av-navigation-ip.com
-
-# SEO
-ROBOTS_INDEX=true
-```
-
-**Rationale**: Separate environment-specific variables from code:
-- Local development uses `localhost:8000`
-- Staging can use different domain/analytics
-- Production uses live domain
-- Analytics can be disabled in dev/staging
-- Single source of truth for deployment configuration
-
-### Site Generator Integration
-
-**Modifications to `/website/generate_site.py`**:
-
-1. Load environment variables with `python-dotenv`
-2. Define `OG_IMAGE_CATEGORIES` mapping at top of file
-3. In page processing loop:
-   - Extract page slug from filename
-   - Look up category from mapping (defaults to `general-info`)
-   - Set `og_image_path = f'/assets/images/og-{category}.jpg'`
-4. Pass to template context:
-   - `site_url`: From SITE_URL environment variable
-   - `og_image`: Category-specific image path
-   - `ga_id`: Google Analytics ID from environment
-   - `ga_enabled`: Boolean from environment
-
-**Template Updates (`base.html`)**:
-- Replace all hardcoded domains with `{{ site_url }}`
-- Use `{{ site_url }}{{ og_image }}` for Open Graph/Twitter Card images
-- Conditional Google Analytics: `{% if ga_enabled %}...{% endif %}`
-- All structured data uses `{{ site_url }}` variable
-
-### Benefits of Refactored Approach
-
-1. **Quality Control**: Manual selection ensures high-quality, relevant imagery
-2. **Licensing Clarity**: All images from verified CC0/Free sources
-3. **Brand Consistency**: Automated text overlay ensures uniform branding across all images
-4. **Maintainability**: Python script makes updates easy (change text once, regenerate all)
-5. **Scalability**: New pages automatically get appropriate category image via default catch-all
-6. **Reduced Work**: 4 background images instead of 13 unique AI-generated images
-7. **Environment Flexibility**: .env configuration supports dev/staging/production seamlessly
-8. **No External Dependencies**: No reliance on AI services, subscriptions, or external tools
-9. **Faster Iteration**: Regenerate all images in seconds vs. waiting for AI generation
-10. **Cost Savings**: No ChatGPT Plus or Midjourney subscription required
-
-### Trade-offs
-
-**Advantages over AI Generation**:
-- Better image quality and relevance
-- Clear, unambiguous licensing (CC0/Free)
-- No external service dependencies
-- Consistent branding across all images
-- Easier to update (regenerate vs. recreate)
-- Faster workflow after initial setup
-- No subscription costs
-
-**Considerations**:
-- Developer must manually select 4 background images (one-time ~30 min effort)
-- Requires Pillow dependency (~10MB)
-- Background images not in git (must be downloaded per environment)
-- Text overlay is fixed (vs. custom text per AI image)
-
-**Mitigation**: Comprehensive search queries provided for each category with 5+ alternatives each, clear selection criteria, and detailed image requirements. One-time setup effort pays off long-term.
-
-### Directory Structure
-
-```
-/website/
-├── .env.example                    # Template (committed to git)
-├── .env                            # Local config (gitignored)
-├── .gitignore                      # Add: .env, backgrounds/, og-*.jpg
-├── requirements.txt                # Add: python-dotenv, Pillow
-├── generate_site.py                # Modified: env loading, category mapping
-├── generate_og_images.py           # New: OG image generator script
-├── assets/
-│   └── images/
-│       ├── backgrounds/            # Developer downloads 4 images here (gitignored)
-│       │   ├── startup-innovation.jpg
-│       │   ├── investment-finance.jpg
-│       │   ├── technical-legal.jpg
-│       │   └── general-info.jpg
-│       ├── og-startup-innovation.jpg    # Generated by script (gitignored)
-│       ├── og-investment-finance.jpg    # Generated by script (gitignored)
-│       ├── og-technical-legal.jpg       # Generated by script (gitignored)
-│       └── og-general-info.jpg          # Generated by script (gitignored)
-└── designs/
-    └── default/
-        └── base.html               # Modified: use environment variables
-```
-
-### Implementation Workflow Summary
-
-**Phase 1**: Environment Setup (`.env`, dependencies, gitignore)
-**Phase 2**: Background Image Selection (search, download, verify licensing and dimensions)
-**Phase 3**: OG Image Generator Script (create script, test execution, verify output)
-**Phase 4**: Site Generator Updates (environment loading, category mapping, template context)
-**Phase 5**: Content Metadata (add date fields, verify descriptions, update image paths)
-**Phase 6**: Testing & Validation (regenerate site, test locally, validate with external tools)
-
-### Migration from Original AI-Generated Approach
-
-**Changes to original PRD specifications**:
-- **Section 3.2**: Replace AI prompt instructions with background selection workflow
-- **Appendix C**: Replace 13 individual AI prompts with 4 category-based search queries
-- **Phase 3**: Add environment setup phase before image generation
-- **Dependencies**: Add `python-dotenv` and `Pillow` to requirements.txt
-- **Images**: Generate 4 category images instead of 13 unique images
-- **Testing**: Update image path tests to use category-based naming
-
-All other sections (Open Graph tags, Twitter Cards, structured data, meta descriptions, Google Analytics) remain unchanged.
+**After refactoring is complete**, you will have:
+- ✅ `.env` configuration system functional
+- ✅ 4 background images downloaded (CC0/Free license)
+- ✅ `generate_og_images.py` script working
+- ✅ 4 category-based Open Graph images generated (1200x630px)
+- ✅ Category mapping defined and ready for site generator integration
 
 ---
 
@@ -765,98 +563,39 @@ class TestStructuredDataSchemas(unittest.TestCase):
 
 ## Phase 3: Social Sharing Images & Meta Description Optimization
 
-**Duration**: Day 2-3 (6-8 hours, including image generation)
-**Outcome**: 13 branded social images created, meta descriptions optimized
+**Duration**: Day 2-3 (2-3 hours for metadata updates only)
+**Outcome**: Category-based image paths added to frontmatter, meta descriptions optimized
 
-### 3.1 Create Social Sharing Images Directory
+**PREREQUISITE**: Refactoring PRD must be complete (`.env` setup, background images downloaded, `generate_og_images.py` script functional, 4 OG images generated)
 
-**Command**:
+### 3.1 Verify Refactoring Prerequisites Complete
 
-```bash
-cd /Users/sjsmit/Development/Caden/op_patent/website
-mkdir -p assets/images/og-images
-```
+Before starting Phase 3, verify:
+- [ ] `.env` file exists and contains `SITE_URL` variable
+- [ ] 4 background images exist in `/website/assets/images/backgrounds/`
+- [ ] `generate_og_images.py` script has been run successfully
+- [ ] 4 Open Graph images exist in `/website/assets/images/`:
+  - `og-startup-innovation.jpg`
+  - `og-investment-finance.jpg`
+  - `og-technical-legal.jpg`
+  - `og-general-info.jpg`
 
-### 3.2 Select and Download Background Images
+**If any of these are missing**, return to the refactoring PRD and complete those tasks first.
 
-**Updated Approach**: Manual background selection from free/commons platforms (see Refactoring Design section above)
-
-**Create background images directory**:
-
-```bash
-cd /Users/sjsmit/Development/Caden/op_patent/website
-mkdir -p assets/images/backgrounds
-```
-
-**Download 4 background images** from Unsplash, Pexels, or Pixabay:
-
-**Category A - Startup/Innovation** (`startup-innovation.jpg`):
-- Primary search: "autonomous vehicle technology modern"
-- Alternatives: "self-driving car dashboard futuristic", "AI vehicle sensor technology", "autonomous navigation camera system", "electric vehicle innovation startup", "automotive technology lab research"
-- Requirements: 1200x630px minimum, CC0/Free license, professional quality
-
-**Category B - Investment/Finance** (`investment-finance.jpg`):
-- Primary search: "business investment strategy technology"
-- Alternatives: "venture capital handshake deal", "financial growth chart technology", "tech investment portfolio modern", "business funding startup meeting", "corporate investment digital finance"
-- Requirements: 1200x630px minimum, CC0/Free license, professional quality
-
-**Category C - Technical/Legal** (`technical-legal.jpg`):
-- Primary search: "patent document technology blueprint"
-- Alternatives: "intellectual property legal document", "technical diagram engineering blueprint", "patent certificate official document", "legal contract technology licensing", "technical specifications detailed drawing"
-- Requirements: 1200x630px minimum, CC0/Free license, professional quality
-
-**Category D - General/Info** (`general-info.jpg`):
-- Primary search: "smart transportation future connectivity"
-- Alternatives: "connected vehicles network highway", "smart city transportation aerial", "transportation technology network digital", "intelligent transport system future", "mobility innovation urban landscape"
-- Requirements: 1200x630px minimum, CC0/Free license, professional quality
-
-**Save all 4 images to**: `/website/assets/images/backgrounds/`
-
-**See Appendix C** for detailed search workflow and licensing verification steps.
-
-### 3.3 Create Python OG Image Generator Script
-
-**Create file**: `/website/generate_og_images.py`
-
-This script will automatically overlay text on your 4 background images to create category-based social sharing images.
-
-**See Refactoring Design section** for complete script specifications including:
-- Image processing (resize, crop to 1200x630px)
-- Dark gradient overlay on bottom 40%
-- Two-line text rendering (white patent number, orange tagline)
-- Space Grotesk font with system fallbacks
-- CLI interface (`--category`, `--preview` flags)
-
-**After creating the script, run**:
-
-```bash
-cd /Users/sjsmit/Development/Caden/op_patent/website
-python generate_og_images.py
-```
-
-**Expected output**: 4 generated images in `/website/assets/images/`:
-- `og-startup-innovation.jpg`
-- `og-investment-finance.jpg`
-- `og-technical-legal.jpg`
-- `og-general-info.jpg`
-
-### 3.4 Update Environment Configuration
-
-**Create `.env` file** (if not already created in earlier phase):
-
-```bash
-# Domain Configuration
-SITE_URL=https://av-navigation-ip.com
-
-# Other environment variables...
-```
-
-### 3.5 Update Generator for Category-Based Images
+### 3.2 Update Generator for Category-Based Images
 
 **Modify `/website/generate_site.py`** to use category-based image mapping:
 
 ```python
-# Add at top of file
+# Add at top of file (after imports)
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
+SITE_URL = os.getenv('SITE_URL', 'https://av-navigation-ip.com')
+
+# Category-based Open Graph image mapping
 OG_IMAGE_CATEGORIES = {
     'series-a-av-patent-portfolio-strategy': 'startup-innovation',
     'tesla-fsd-competitor-camera-patent-licensing': 'startup-innovation',
@@ -868,7 +607,7 @@ OG_IMAGE_CATEGORIES = {
 }
 DEFAULT_OG_CATEGORY = 'general-info'
 
-# In page processing loop:
+# In page processing loop (where you build the template context):
 page_slug = os.path.splitext(os.path.basename(md_file))[0]
 og_category = OG_IMAGE_CATEGORIES.get(page_slug, DEFAULT_OG_CATEGORY)
 og_image_path = f'/assets/images/og-{og_category}.jpg'
@@ -877,10 +616,11 @@ og_image_path = f'/assets/images/og-{og_category}.jpg'
 context = {
     # ... existing fields ...
     'og_image': f"{SITE_URL}{og_image_path}",
+    'site_url': SITE_URL,
 }
 ```
 
-### 3.6 Update Frontmatter with Category-Based Image Paths
+### 3.3 Update Frontmatter with Category-Based Image Paths
 
 **Files**: All 13 content files
 
@@ -912,7 +652,7 @@ twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
 
 **See Appendix B** for complete frontmatter templates with category-based image paths.
 
-### 3.7 Optimize Meta Descriptions
+### 3.4 Optimize Meta Descriptions
 
 **Current issue**: Some descriptions exceed 160 characters, hurting search snippet quality.
 
@@ -930,7 +670,7 @@ description: "Patent portfolio strategy for Series A autonomous vehicle startups
 description: "Build your AV patent portfolio before Series B. License camera navigation IP in 4-9 months vs 30-66 months in-house development."
 ```
 
-### 3.8 Add Automated Tests for Images & Descriptions
+### 3.5 Add Automated Tests for Images & Descriptions
 
 **File**: `/website/test_website.py`
 
@@ -983,12 +723,11 @@ class TestSocialImagesAndMeta(unittest.TestCase):
 
 **Expected test count after Phase 3**: 62 tests (58 from Phase 2 + 4 new)
 
-### 3.9 Validation Steps
+### 3.6 Validation Steps
 
-1. **Verify background images downloaded**: Check `/website/assets/images/backgrounds/` contains 4 JPG files
-2. **Verify generated OG images**: Check `/website/assets/images/` contains 4 `og-*.jpg` files
-3. **Regenerate site**: `python generate_site.py` (should copy images to `/build/assets/`)
-4. **Run tests**: `python test_website.py` (expect 62+ passing)
+1. **Verify refactoring complete**: Check `/website/assets/images/` contains 4 `og-*.jpg` files
+2. **Regenerate site**: `python generate_site.py` (should copy images to `/build/assets/`)
+3. **Run tests**: `python test_website.py` (expect 62+ passing)
 4. **Validate with Facebook**:
    - Visit [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
    - Enter a page URL (use local file:// URL or deploy to staging)
@@ -1333,196 +1072,16 @@ author: "AV Navigation IP Protection"
 
 ---
 
-## Appendix C: Background Image Search & Selection Workflow
+## Appendix C: Background Image Selection (Moved)
 
-**Updated Approach**: Manual background selection from free/commons platforms (replaces AI generation)
+**This section has been moved to the refactoring PRD**: `.agent/Tasks/20251112_refactor_social_images_environment_config.md`
 
-**Platforms to Use**:
-- **Unsplash**: https://unsplash.com/ (100% free, no attribution required)
-- **Pexels**: https://www.pexels.com/ (100% free, no attribution required)
-- **Pixabay**: https://pixabay.com/ (Free for commercial use, CC0 license)
-
-**Image Requirements**:
-- **Dimensions**: 1200x630 pixels minimum (larger is okay, will be cropped)
-- **Format**: JPG preferred (better compression)
-- **License**: CC0 or Free for commercial use
-- **Quality**: High resolution, professional photography
-- **Style**: Clean, modern, tech-focused, not too busy
-
----
-
-### Category A: Startup/Innovation
-
-**File**: `startup-innovation.jpg`
-**Used for pages**: Series A AV, Tesla FSD Competitor, Autonomous Trucking
-
-**Primary Search Query**: "autonomous vehicle technology modern"
-
-**Alternative Search Queries**:
-1. "self-driving car dashboard futuristic"
-2. "AI vehicle sensor technology"
-3. "autonomous navigation camera system"
-4. "electric vehicle innovation startup"
-5. "automotive technology lab research"
-6. "AV startup technology prototype"
-7. "autonomous vehicle testing facility"
-
-**Selection Criteria**:
-- Shows modern autonomous vehicle technology
-- Clean, professional aesthetic
-- Tech-forward, innovation-focused
-- Not too busy (text overlay area should be clear)
-- Conveys startup energy and innovation
-
-**Search Workflow**:
-1. Go to Unsplash.com or Pexels.com
-2. Search using primary query
-3. Filter by "Most relevant" or "Popular"
-4. Look for images with clear space in bottom 40% for text overlay
-5. Verify image is at least 1200x630px
-6. Download highest resolution available
-7. Save as `startup-innovation.jpg`
-
----
-
-### Category B: Investment/Finance
-
-**File**: `investment-finance.jpg`
-**Used for pages**: VC Due Diligence, Drone Delivery Pre-IPO
-
-**Primary Search Query**: "business investment strategy technology"
-
-**Alternative Search Queries**:
-1. "venture capital handshake deal"
-2. "financial growth chart technology"
-3. "tech investment portfolio modern"
-4. "business funding startup meeting"
-5. "corporate investment digital finance"
-6. "venture capital pitch meeting"
-7. "investment analysis technology"
-
-**Selection Criteria**:
-- Shows business/investment/finance theme
-- Professional, trustworthy aesthetic
-- Conveys growth and strategic thinking
-- Clear space for text overlay in bottom 40%
-- Suitable for VC and investor audience
-
-**Search Workflow**:
-1. Go to Unsplash.com or Pexels.com
-2. Search using primary query
-3. Filter by "Most relevant" or "Popular"
-4. Look for images with clear space in bottom 40% for text overlay
-5. Verify image is at least 1200x630px
-6. Download highest resolution available
-7. Save as `investment-finance.jpg`
-
----
-
-### Category C: Technical/Legal
-
-**File**: `technical-legal.jpg`
-**Used for pages**: Patent Details, Licensing
-
-**Primary Search Query**: "patent document technology blueprint"
-
-**Alternative Search Queries**:
-1. "intellectual property legal document"
-2. "technical diagram engineering blueprint"
-3. "patent certificate official document"
-4. "legal contract technology licensing"
-5. "technical specifications detailed drawing"
-6. "patent application blueprint"
-7. "engineering document technical"
-
-**Selection Criteria**:
-- Shows technical/legal/documentation theme
-- Professional, authoritative aesthetic
-- Conveys intellectual property and technical expertise
-- Clear space for text overlay in bottom 40%
-- Not too busy or text-heavy
-
-**Search Workflow**:
-1. Go to Unsplash.com or Pexels.com
-2. Search using primary query
-3. Filter by "Most relevant" or "Popular"
-4. Look for images with clear space in bottom 40% for text overlay
-5. Verify image is at least 1200x630px
-6. Download highest resolution available
-7. Save as `technical-legal.jpg`
-
----
-
-### Category D: General/Info (Default Catch-All)
-
-**File**: `general-info.jpg`
-**Used for pages**: Homepage, Industry Insights, Contact, Thank You, About, Disclaimer, Privacy, and any new pages
-
-**Primary Search Query**: "smart transportation future connectivity"
-
-**Alternative Search Queries**:
-1. "connected vehicles network highway"
-2. "smart city transportation aerial"
-3. "transportation technology network digital"
-4. "intelligent transport system future"
-5. "mobility innovation urban landscape"
-6. "connected autonomous vehicles highway"
-7. "smart mobility future city"
-
-**Selection Criteria**:
-- Shows transportation/connectivity/future theme
-- Professional, forward-looking aesthetic
-- Broad enough to work for multiple page types
-- Clear space for text overlay in bottom 40%
-- Conveys innovation and connectivity
-
-**Search Workflow**:
-1. Go to Unsplash.com or Pexels.com
-2. Search using primary query
-3. Filter by "Most relevant" or "Popular"
-4. Look for images with clear space in bottom 40% for text overlay
-5. Verify image is at least 1200x630px
-6. Download highest resolution available
-7. Save as `general-info.jpg`
-
----
-
-## License Verification
-
-Before downloading any image, verify the license:
-
-**Unsplash**:
-- All images are free for commercial use
-- No attribution required (but appreciated)
-- Confirm "Free to use" badge on image page
-
-**Pexels**:
-- All free images are under Pexels License
-- Free for commercial use
-- No attribution required
-- Confirm "Free to use" badge on image page
-
-**Pixabay**:
-- Look for "Free for commercial use" or "CC0" license
-- No attribution required for CC0 images
-- Confirm license terms on download page
-
----
-
-## Complete Workflow Summary
-
-**Time estimate**: 20-30 minutes for all 4 images
-
-**Steps**:
-1. **Search** for Category A (Startup/Innovation) using primary or alternative queries
-2. **Select** best image meeting criteria (dimensions, clear overlay space, license)
-3. **Download** highest resolution
-4. **Save** as `startup-innovation.jpg` in `/website/assets/images/backgrounds/`
-5. **Repeat** steps 1-4 for Categories B, C, and D
-6. **Verify** all 4 images downloaded correctly
-7. **Run** `python generate_og_images.py` to create final social sharing images with text overlay
-
-**Result**: 4 background images + 4 generated OG images (8 total files)
+See the refactoring PRD for:
+- Detailed search workflow for each of 4 image categories
+- Primary and alternative search queries
+- Image selection criteria
+- License verification steps
+- Complete workflow summary
 
 ---
 ## Appendix D: Test Validation Checklist
