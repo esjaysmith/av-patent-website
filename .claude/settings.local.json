@@ -17,7 +17,11 @@
       "mcp__puppeteer__puppeteer_screenshot",
       "mcp__puppeteer__puppeteer_evaluate",
       "Skill(superpowers:brainstorming)",
-      "mcp__screenshot-website-fast__take_screenshot"
+      "mcp__screenshot-website-fast__take_screenshot",
+      "WebFetch(domain:www.pexels.com)",
+      "WebFetch(domain:pixabay.com)",
+      "mcp__puppeteer__puppeteer_click",
+      "Bash(curl:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
