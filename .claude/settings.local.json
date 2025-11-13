@@ -21,7 +21,8 @@
       "WebFetch(domain:www.pexels.com)",
       "WebFetch(domain:pixabay.com)",
       "mcp__puppeteer__puppeteer_click",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(pip install:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
