@@ -17,8 +17,17 @@ website/
 │   ├── base.html          # Base template with navigation
 │   └── page.html          # Content page template
 ├── assets/                 # Static assets (CSS, images, JS)
+│   └── images/
+│       └── backgrounds/    # Background images for OG image generation
+│           ├── startup-innovation.jpg
+│           ├── investment-finance.jpg
+│           ├── technical-legal.jpg
+│           └── general-info.jpg
 ├── build/                  # Generated static site (output)
+├── .env.example            # Environment configuration template
+├── .env                    # Local environment config (gitignored)
 ├── generate_site.py        # Static site generator script
+├── generate_og_images.py   # Open Graph image generator
 ├── deploy.sh              # Deployment script
 ├── requirements.txt        # Python dependencies
 └── README.md              # This file
@@ -41,12 +50,33 @@ website/
 pip install -r requirements.txt
 ```
 
-### 2. Generate Site
+### 2. Configure Environment
+```bash
+# Copy the example environment file
+cp .env.example .env
+
+# Edit .env with your environment-specific settings
+# (domain, analytics ID, contact email, etc.)
+```
+
+### 3. Generate Social Images
+```bash
+# Generate Open Graph images for social sharing
+python generate_og_images.py
+
+# Or generate a single category
+python generate_og_images.py --category general-info
+
+# Preview without saving
+python generate_og_images.py --preview
+```
+
+### 4. Generate Site
 ```bash
 python generate_site.py
 ```
 
-### 3. Preview Locally
+### 5. Preview Locally
 ```bash
 # Open in browser
 open build/index.html
@@ -58,12 +88,41 @@ cd build && python -m http.server 8000
 
 ## Development Workflow
 
+### Environment Configuration
+
+The site uses environment-specific configuration via `.env` file:
+
+```bash
+# Environment
+ENVIRONMENT=development
+
+# Domain Configuration
+SITE_DOMAIN=localhost
+SITE_URL=http://localhost:8000
+
+# Analytics
+GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
+GOOGLE_ANALYTICS_ENABLED=false
+
+# Contact
+CONTACT_EMAIL=contact@example.com
+
+# SEO
+ROBOTS_INDEX=false
+```
+
+**Setup**:
+1. Copy `.env.example` to `.env`
+2. Update values for your environment (dev/staging/production)
+3. `.env` is gitignored; `.env.example` provides template
+
 ### Adding New Content
 1. Create new `.md` file in `content/` directory
 2. Add YAML frontmatter with metadata
 3. Write content in Markdown
-4. Run `python generate_site.py`
-5. Preview in `build/` directory
+4. Regenerate Open Graph images if needed: `python generate_og_images.py`
+5. Run `python generate_site.py`
+6. Preview in `build/` directory
 
 ### Content Frontmatter Format
 ```yaml
@@ -74,6 +133,7 @@ keywords: "SEO keywords, comma separated"
 page_title: "Display title (optional)"
 show_cta: true/false
 is_homepage: true/false (homepage only)
+og_category: "startup-innovation|investment-finance|technical-legal|general-info"
 ---
 ```
 
@@ -82,10 +142,42 @@ is_homepage: true/false (homepage only)
 2. Add CSS to `templates/base.html` or `assets/` directory
 3. Regenerate site with `python generate_site.py`
 
+### Updating Social Sharing Images
+
+**To regenerate all Open Graph images**:
+```bash
+python generate_og_images.py
+```
+
+**To update a single category**:
+```bash
+python generate_og_images.py --category general-info
+```
+
+**To replace a background image**:
+1. Download new image (1200x630px minimum, CC0/Free license)
+2. Save as `assets/images/backgrounds/[category].jpg`
+3. Regenerate: `python generate_og_images.py --category [category]`
+4. Commit background image to git
+
+**Image Requirements**:
+- Dimensions: 1200x630px minimum
+- Format: JPG preferred
+- License: CC0 or Free for commercial use
+- Style: Clear space in bottom 40% for text overlay
+- Sources: Unsplash, Pexels, Pixabay
+
 ## Deployment
 
 ### Local Testing
 ```bash
+# Configure environment
+cp .env.example .env
+# Edit .env for local settings
+
+# Generate Open Graph images
+python generate_og_images.py
+
 # Generate site
 python generate_site.py
 
@@ -94,12 +186,26 @@ python generate_site.py
 ```
 
 ### Live Deployment
-1. Configure hosting credentials in `deploy.sh`
-2. Set up domain and hosting (SiteGround, Netlify, etc.)
-3. Run deployment:
+
+**Pre-deployment Checklist**:
+1. Create production `.env` file with:
+   - Production domain and URL
+   - Google Analytics ID and enable tracking
+   - Production contact email
+   - Enable robots indexing (`ROBOTS_INDEX=true`)
+2. Generate Open Graph images: `python generate_og_images.py`
+3. Generate site: `python generate_site.py`
+4. Test locally before deploying
+
+**Deploy to Production**:
 ```bash
 ./deploy.sh production
 ```
+
+**Environment-Specific Configuration**:
+- `.env` is gitignored (create per environment)
+- Background images ARE committed to git (for reproducibility)
+- Generated OG images are gitignored (regenerate per deployment)
 
 ## Site Pages
 
@@ -115,11 +221,36 @@ python generate_site.py
 ## SEO Features
 
 - **Meta Tags**: Title, description, keywords for each page
+- **Open Graph Images**: Category-based social sharing images (1200x630px)
+- **Twitter Cards**: Optimized for social media sharing
 - **Sitemap**: XML sitemap for search engines
 - **Robots.txt**: Search crawler instructions
 - **Semantic HTML**: Proper heading hierarchy
 - **Internal Linking**: Cross-page navigation
 - **Mobile Responsive**: Mobile-first design
+
+### Social Sharing Images
+
+The site uses a category-based system for Open Graph images:
+
+**Categories**:
+- **startup-innovation**: For AV startup and innovation pages
+- **investment-finance**: For VC and investment-related pages
+- **technical-legal**: For patent details and licensing pages
+- **general-info**: Default for homepage, contact, and informational pages
+
+**Image Generation Workflow**:
+1. Background images are manually selected from CC0/free sources (Unsplash, Pexels)
+2. Background images are committed to git for reproducibility
+3. Python script generates Open Graph images with branded text overlay
+4. Generated OG images are gitignored (derivatives that can be regenerated)
+
+**Benefits**:
+- High-quality, relevant imagery (manual selection)
+- Clear licensing (CC0/Free sources)
+- Consistent branding (automated text overlay)
+- Easy maintenance (regenerate all images in seconds)
+- No external dependencies (no AI services required)
 
 ## Technical Stack
 
@@ -128,6 +259,8 @@ python generate_site.py
 - **Jinja2**: HTML templating
 - **Bootstrap 5**: CSS framework
 - **PyYAML**: Frontmatter parsing
+- **python-dotenv**: Environment configuration
+- **Pillow**: Image processing for Open Graph images
 
 ## Content Strategy
 
