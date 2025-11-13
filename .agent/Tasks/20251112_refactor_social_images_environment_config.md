@@ -66,7 +66,8 @@ By completion, the project will have:
 - [ ] 4 Open Graph images generated with correct dimensions (1200x630px)
 - [ ] Text overlay renders correctly (white patent number, orange tagline)
 - [ ] Images use Space Grotesk font (or system fallback)
-- [ ] All environment-specific files excluded from git
+- [ ] Environment-specific files (.env, generated OG images) excluded from git
+- [ ] Background images committed to git for reproducibility
 - [ ] Documentation updated with image selection workflow
 
 ---
@@ -115,14 +116,15 @@ ROBOTS_INDEX=false
 # Environment configuration
 .env
 
-# Background images (downloaded locally, not committed)
-assets/images/backgrounds/
-
-# Generated Open Graph images (generated locally, not committed)
+# Generated Open Graph images (derivatives of background images + text overlay)
 assets/images/og-*.jpg
 ```
 
-**Rationale**: Environment-specific files and generated images should not be committed to git.
+**Rationale**:
+- **Background images ARE committed** to git for reproducibility and consistency across all environments
+- **Generated OG images are gitignored** since they're derivatives that can be regenerated via `generate_og_images.py`
+- **Environment config (.env) is gitignored** as it contains environment-specific settings
+- **Trade-off**: ~8MB of background images in git is acceptable given the massive benefits in reproducibility, consistency, and deployment simplicity
 
 #### 1.3 Update `requirements.txt`
 
@@ -680,20 +682,21 @@ After completing all phases:
 
 - [ ] `.env.example` file created and committed to git
 - [ ] `.env` file created locally (not committed)
-- [ ] `.gitignore` updated to exclude `.env`, backgrounds, and generated images
+- [ ] `.gitignore` updated to exclude `.env` and generated OG images (background images ARE committed)
 - [ ] `requirements.txt` updated with `python-dotenv` and `Pillow`
 - [ ] Dependencies installed successfully (`pip install -r requirements.txt`)
 
 ### Background Images ✅
 
 - [ ] `assets/images/backgrounds/` directory created
-- [ ] 4 background images downloaded:
+- [ ] 4 background images downloaded and **committed to git**:
   - [ ] `startup-innovation.jpg` (1200x630px minimum, CC0/Free license)
   - [ ] `investment-finance.jpg` (1200x630px minimum, CC0/Free license)
   - [ ] `technical-legal.jpg` (1200x630px minimum, CC0/Free license)
   - [ ] `general-info.jpg` (1200x630px minimum, CC0/Free license)
 - [ ] All images verified for license (CC0 or Free for commercial use)
 - [ ] All images have clear space in bottom 40% for text overlay
+- [ ] Background images committed to git (ensures consistency across environments)
 
 ### OG Image Generator ✅
 
@@ -737,14 +740,14 @@ After completing this refactoring PRD, proceed to the main SEO implementation PR
 ├── .env                            # Local config (gitignored) ✅
 ├── .gitignore                      # Updated ✅
 ├── requirements.txt                # Updated with python-dotenv, Pillow ✅
-├── generate_og_images.py           # New script ✅
+├── generate_og_images.py           # New script (committed to git) ✅
 ├── assets/
 │   └── images/
-│       ├── backgrounds/            # Gitignored ✅
-│       │   ├── startup-innovation.jpg       ✅
-│       │   ├── investment-finance.jpg       ✅
-│       │   ├── technical-legal.jpg          ✅
-│       │   └── general-info.jpg             ✅
+│       ├── backgrounds/            # Committed to git ✅
+│       │   ├── startup-innovation.jpg       # Committed ✅
+│       │   ├── investment-finance.jpg       # Committed ✅
+│       │   ├── technical-legal.jpg          # Committed ✅
+│       │   └── general-info.jpg             # Committed ✅
 │       ├── og-startup-innovation.jpg        # Generated (gitignored) ✅
 │       ├── og-investment-finance.jpg        # Generated (gitignored) ✅
 │       ├── og-technical-legal.jpg           # Generated (gitignored) ✅
@@ -763,23 +766,33 @@ After completing this refactoring PRD, proceed to the main SEO implementation PR
 - ✅ Easier to update (regenerate vs. recreate)
 - ✅ Faster workflow after initial setup
 - ✅ No subscription costs
+- ✅ Reproducibility across all environments (background images committed to git)
+- ✅ CI/CD friendly (images always available, OG images generated automatically)
+- ✅ Zero onboarding friction for new developers (clone and run)
 
 **Considerations**:
 - ⚠️ Developer must manually select 4 background images (one-time ~30 min effort)
 - ⚠️ Requires Pillow dependency (~10MB)
-- ⚠️ Background images not in git (must be downloaded per environment)
-- ⚠️ Text overlay is fixed (vs. custom text per AI image)
+- ⚠️ Background images in git (~8MB total) - acceptable trade-off for reproducibility
+- ⚠️ Text overlay is fixed (vs. custom text per AI image) - consistent branding benefit
 
 **Mitigation**: Comprehensive search queries provided for each category with 5+ alternatives each, clear selection criteria, and detailed image requirements. One-time setup effort pays off long-term.
+
+**Git Repository Size Impact**:
+- 4 background images × ~2MB each = ~8MB total
+- This is negligible for modern git repositories
+- Trade-off heavily favors reproducibility, consistency, and deployment simplicity
 
 ---
 
 ## Document Metadata
 
 **Document Status**: Active - Ready for Implementation
-**Version**: 1.0
+**Version**: 1.1
 **Created**: November 12, 2025
-**Last Updated**: November 12, 2025
+**Last Updated**: November 13, 2025
+**Change Log**:
+- v1.1 (Nov 13): Changed background images from gitignored to committed for reproducibility
 **Estimated Completion**: November 14, 2025 (1-2 days)
 **Owner**: Developer (Team Member)
 **Priority**: High

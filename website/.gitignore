@@ -1,0 +1,5 @@
+# Environment configuration
+.env
+
+# Generated Open Graph images (derivatives of background images + text overlay)
+assets/images/og-*.jpg
