@@ -142,6 +142,138 @@ class WebsiteValidator:
             else:
                 self.log_test(f"Meta Keywords: {page_file}", "FAIL", "Missing keywords")
 
+    async def test_open_graph_twitter_tags(self):
+        """Test Open Graph and Twitter Card meta tags"""
+        print("\n🔗 Testing Open Graph & Twitter Card Tags...")
+
+        pages = ["index.html", "patent-details.html", "licensing.html", "series-a-av-patent-portfolio-strategy.html"]
+
+        # Required Open Graph tags
+        required_og_tags = ['og:title', 'og:description', 'og:type', 'og:url', 'og:image', 'og:site_name']
+
+        # Required Twitter Card tags
+        required_twitter_tags = ['twitter:card', 'twitter:title', 'twitter:description', 'twitter:image']
+
+        for page_file in pages:
+            await self.page.goto(f"file://{(self.build_dir / page_file).absolute()}")
+
+            # Test Open Graph tags
+            for og_tag in required_og_tags:
+                try:
+                    og_value = await self.page.get_attribute(f'meta[property="{og_tag}"]', 'content')
+                    if og_value and len(og_value) > 0:
+                        self.log_test(f"OG {og_tag}: {page_file}", "PASS", f"Found: {og_value[:50]}...")
+                    else:
+                        self.log_test(f"OG {og_tag}: {page_file}", "FAIL", "Missing or empty")
+                except Exception as e:
+                    self.log_test(f"OG {og_tag}: {page_file}", "FAIL", str(e))
+
+            # Test Twitter Card tags
+            for twitter_tag in required_twitter_tags:
+                try:
+                    twitter_value = await self.page.get_attribute(f'meta[name="{twitter_tag}"]', 'content')
+                    if twitter_value and len(twitter_value) > 0:
+                        self.log_test(f"Twitter {twitter_tag}: {page_file}", "PASS", f"Found: {twitter_value[:50]}...")
+                    else:
+                        self.log_test(f"Twitter {twitter_tag}: {page_file}", "FAIL", "Missing or empty")
+                except Exception as e:
+                    self.log_test(f"Twitter {twitter_tag}: {page_file}", "FAIL", str(e))
+
+            # Validate og:image URL format
+            og_image = await self.page.get_attribute('meta[property="og:image"]', 'content')
+            if og_image:
+                if og_image.startswith('https://'):
+                    self.log_test(f"OG Image HTTPS: {page_file}", "PASS", "Uses HTTPS")
+                else:
+                    self.log_test(f"OG Image HTTPS: {page_file}", "FAIL", "Must use HTTPS")
+
+                if 'av-navigation-ip.com' in og_image:
+                    self.log_test(f"OG Image Domain: {page_file}", "PASS", "Correct domain")
+                else:
+                    self.log_test(f"OG Image Domain: {page_file}", "FAIL", "Incorrect domain")
+
+    async def test_structured_data_schemas(self):
+        """Test JSON-LD structured data schemas"""
+        print("\n📊 Testing Structured Data Schemas...")
+
+        # Test Article schema on content pages
+        content_pages = [
+            'series-a-av-patent-portfolio-strategy.html',
+            'tesla-fsd-competitor-camera-patent-licensing.html',
+            'drone-delivery-patent-portfolio-pre-ipo.html',
+            'venture-capital-av-patent-portfolio-due-diligence.html',
+            'autonomous-trucking-patent-defense-strategy.html',
+            'industry-insights.html',
+            'about.html',
+            'licensing.html'
+        ]
+
+        for page_file in content_pages:
+            page_path = self.build_dir / page_file
+            if page_path.exists():
+                await self.page.goto(f"file://{page_path.absolute()}")
+
+                # Check for Article schema
+                page_content = await self.page.content()
+                if '"@type": "Article"' in page_content:
+                    self.log_test(f"Article Schema: {page_file}", "PASS", "Found Article schema")
+
+                    # Verify required Article fields
+                    if '"headline"' in page_content:
+                        self.log_test(f"Article headline: {page_file}", "PASS", "Found headline field")
+                    else:
+                        self.log_test(f"Article headline: {page_file}", "FAIL", "Missing headline field")
+
+                    if '"datePublished"' in page_content:
+                        self.log_test(f"Article datePublished: {page_file}", "PASS", "Found datePublished field")
+                    else:
+                        self.log_test(f"Article datePublished: {page_file}", "FAIL", "Missing datePublished field")
+                else:
+                    self.log_test(f"Article Schema: {page_file}", "FAIL", "Missing Article schema")
+
+        # Test BreadcrumbList schema on all non-homepage pages
+        all_pages = [
+            'patent-details.html',
+            'licensing.html',
+            'industry-insights.html',
+            'contact.html',
+            'thank-you.html',
+            'about.html',
+            'disclaimer.html',
+            'privacy.html',
+            'series-a-av-patent-portfolio-strategy.html'
+        ]
+
+        for page_file in all_pages:
+            page_path = self.build_dir / page_file
+            if page_path.exists():
+                await self.page.goto(f"file://{page_path.absolute()}")
+
+                page_content = await self.page.content()
+                if '"@type": "BreadcrumbList"' in page_content:
+                    self.log_test(f"BreadcrumbList Schema: {page_file}", "PASS", "Found BreadcrumbList schema")
+
+                    # Verify itemListElement exists
+                    if '"itemListElement"' in page_content:
+                        self.log_test(f"Breadcrumb items: {page_file}", "PASS", "Found itemListElement")
+                    else:
+                        self.log_test(f"Breadcrumb items: {page_file}", "FAIL", "Missing itemListElement")
+                else:
+                    self.log_test(f"BreadcrumbList Schema: {page_file}", "FAIL", "Missing BreadcrumbList schema")
+
+        # Test Organization schema (should exist from base.html on all pages)
+        test_pages = ['index.html', 'patent-details.html', 'contact.html']
+        for page_file in test_pages:
+            page_path = self.build_dir / page_file
+            if page_path.exists():
+                await self.page.goto(f"file://{page_path.absolute()}")
+
+                page_content = await self.page.content()
+                if '"@type": "Organization"' in page_content:
+                    self.log_test(f"Organization Schema: {page_file}", "PASS", "Found Organization schema")
+                else:
+                    self.log_test(f"Organization Schema: {page_file}", "FAIL", "Missing Organization schema")
+
     async def test_responsive_design(self):
         """Test responsive design at different viewport sizes"""
         print("\n📱 Testing Responsive Design...")
@@ -258,6 +390,64 @@ class WebsiteValidator:
         except Exception as e:
             self.log_test("Privacy policy link", "FAIL", str(e))
 
+    async def test_social_images_and_meta(self):
+        """Test social sharing images and meta description optimization"""
+        print("\n🖼️  Testing Social Images & Meta Descriptions...")
+
+        # Test that referenced Open Graph images exist
+        all_pages = [
+            'index.html',
+            'patent-details.html',
+            'licensing.html',
+            'industry-insights.html',
+            'contact.html',
+            'thank-you.html',
+            'about.html',
+            'disclaimer.html',
+            'privacy.html',
+            'series-a-av-patent-portfolio-strategy.html',
+            'tesla-fsd-competitor-camera-patent-licensing.html',
+            'drone-delivery-patent-portfolio-pre-ipo.html',
+            'venture-capital-av-patent-portfolio-due-diligence.html',
+            'autonomous-trucking-patent-defense-strategy.html'
+        ]
+
+        for page_file in all_pages:
+            page_path = self.build_dir / page_file
+            if page_path.exists():
+                await self.page.goto(f"file://{page_path.absolute()}")
+
+                # Extract og:image URL
+                og_image = await self.page.get_attribute('meta[property="og:image"]', 'content')
+                if og_image:
+                    # Convert URL to local file path
+                    if '/assets/images/' in og_image:
+                        # Extract filename from URL
+                        filename = og_image.split('/assets/images/')[-1]
+                        image_path = self.build_dir / 'assets' / 'images' / filename
+
+                        if image_path.exists():
+                            self.log_test(f"OG Image exists: {page_file}", "PASS", f"Found: {filename}")
+                        else:
+                            self.log_test(f"OG Image exists: {page_file}", "FAIL", f"Missing: {filename}")
+                    else:
+                        self.log_test(f"OG Image path: {page_file}", "FAIL", f"Invalid path: {og_image}")
+                else:
+                    self.log_test(f"OG Image: {page_file}", "FAIL", "No og:image tag found")
+
+                # Test meta description length (should be 120-160 characters for optimal SEO)
+                meta_desc = await self.page.get_attribute('meta[name="description"]', 'content')
+                if meta_desc:
+                    desc_length = len(meta_desc)
+                    if 120 <= desc_length <= 160:
+                        self.log_test(f"Meta desc length: {page_file}", "PASS", f"{desc_length} chars (optimal)")
+                    elif desc_length < 120:
+                        self.log_test(f"Meta desc length: {page_file}", "FAIL", f"{desc_length} chars (too short, min 120)")
+                    else:
+                        self.log_test(f"Meta desc length: {page_file}", "FAIL", f"{desc_length} chars (too long, max 160)")
+                else:
+                    self.log_test(f"Meta description: {page_file}", "FAIL", "Missing meta description")
+
     async def test_accessibility(self):
         """Test basic accessibility features"""
         print("\n♿ Testing Accessibility...")
@@ -285,6 +475,39 @@ class WebsiteValidator:
             self.log_test("Heading structure", "PASS", f"Found {len(headings)} headings")
         else:
             self.log_test("Heading structure", "FAIL", "No headings found")
+
+    async def test_google_analytics(self):
+        """Test Google Analytics tracking code structure"""
+        print("\n📊 Testing Google Analytics...")
+
+        # Test all pages for GA script presence
+        all_pages = [
+            'index.html',
+            'patent-details.html',
+            'licensing.html',
+            'industry-insights.html',
+            'contact.html',
+            'thank-you.html'
+        ]
+
+        for page_file in all_pages:
+            page_path = self.build_dir / page_file
+            if page_path.exists():
+                await self.page.goto(f"file://{page_path.absolute()}")
+
+                page_content = await self.page.content()
+
+                # Check for Google Analytics script
+                if 'googletagmanager.com/gtag/js' in page_content:
+                    self.log_test(f"GA script: {page_file}", "PASS", "Google Analytics script found")
+                else:
+                    self.log_test(f"GA script: {page_file}", "FAIL", "Missing Google Analytics script")
+
+                # Check for gtag function
+                if 'window.dataLayer' in page_content and 'function gtag()' in page_content:
+                    self.log_test(f"GA structure: {page_file}", "PASS", "gtag structure present")
+                else:
+                    self.log_test(f"GA structure: {page_file}", "FAIL", "gtag structure missing")
 
     async def test_performance_basics(self):
         """Test basic performance metrics"""
@@ -324,6 +547,10 @@ class WebsiteValidator:
             await self.test_page_loading()
             await self.test_navigation_links()
             await self.test_seo_elements()
+            await self.test_open_graph_twitter_tags()
+            await self.test_structured_data_schemas()
+            await self.test_social_images_and_meta()
+            await self.test_google_analytics()
             await self.test_responsive_design()
             await self.test_contact_form()
             await self.test_accessibility()

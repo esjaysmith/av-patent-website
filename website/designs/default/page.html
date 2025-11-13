@@ -153,4 +153,71 @@
 </script>
 {% endif %}
 
+{% if page_type in ["landing", "insights", "about"] or (page_type not in ["patent-details", "contact", "homepage"]) %}
+<!-- Article Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page_title or title }}",
+    "description": "{{ description }}",
+    "author": {
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://av-navigation-ip.com/assets/images/logo.png"
+        }
+    },
+    "datePublished": "{{ date_published or '2025-11-01' }}",
+    "dateModified": "{{ date_modified or date_published or '2025-11-12' }}",
+    "image": "{{ og_image }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ og_url }}"
+    }
+}
+</script>
+{% endif %}
+
+{% if not is_homepage %}
+<!-- BreadcrumbList Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://av-navigation-ip.com/"
+        }{% if breadcrumb_parent %},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ breadcrumb_parent }}",
+            "item": "https://av-navigation-ip.com{{ breadcrumb_parent_url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ page_title or title }}",
+            "item": "{{ og_url }}"
+        }{% else %},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ page_title or title }}",
+            "item": "{{ og_url }}"
+        }{% endif %}
+    ]
+}
+</script>
+{% endif %}
+
 {% endblock %}

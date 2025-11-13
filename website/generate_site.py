@@ -37,6 +37,23 @@ class StaticSiteGenerator:
         # Initialize Markdown processor
         self.md = markdown.Markdown(extensions=['meta', 'toc', 'tables'])
 
+    def determine_page_type(self, filename):
+        """Determine page type for schema selection."""
+        if filename == 'index.html':
+            return 'homepage'
+        elif filename == 'patent-details.html':
+            return 'patent-details'
+        elif filename == 'contact.html':
+            return 'contact'
+        elif filename == 'industry-insights.html':
+            return 'insights'
+        elif filename == 'about.html':
+            return 'about'
+        elif filename in ['disclaimer.html', 'privacy.html', 'thank-you.html']:
+            return 'legal'
+        else:
+            return 'landing'  # All SEO landing pages
+
     def clean_build_dir(self):
         """Remove and recreate build directory"""
         if self.build_dir.exists():
@@ -96,13 +113,14 @@ class StaticSiteGenerator:
         if output_filename is None:
             output_filename = md_file_path.stem + '.html'
 
-        # Generate canonical URL and page type
+        # Generate canonical URL
         if output_filename == 'index.html':
             canonical_url = '/'
-            page_type = 'homepage'
         else:
             canonical_url = '/' + output_filename
-            page_type = md_file_path.stem  # e.g. 'patent-details', 'contact', etc.
+
+        # Determine page type for schema selection
+        page_type = self.determine_page_type(output_filename)
 
         # Set default metadata values
         template_vars = {
@@ -118,7 +136,25 @@ class StaticSiteGenerator:
             'canonical_url': canonical_url,
             'page_type': page_type,
             'breadcrumb_parent': metadata.get('breadcrumb_parent', ''),
-            'breadcrumb_parent_url': metadata.get('breadcrumb_parent_url', '')
+            'breadcrumb_parent_url': metadata.get('breadcrumb_parent_url', ''),
+
+            # Open Graph fields
+            'og_title': metadata.get('og_title', metadata.get('title', 'AV Navigation IP Protection')),
+            'og_description': metadata.get('og_description', metadata.get('description', '')),
+            'og_type': metadata.get('og_type', 'website'),
+            'og_url': metadata.get('canonical', f"https://av-navigation-ip.com{canonical_url}"),
+            'og_image': metadata.get('og_image', 'https://av-navigation-ip.com/assets/images/og-general-info.jpg'),
+            'og_site_name': 'AV Navigation IP Protection',
+
+            # Twitter Card fields
+            'twitter_card': metadata.get('twitter_card', 'summary_large_image'),
+            'twitter_title': metadata.get('twitter_title', metadata.get('title', 'AV Navigation IP Protection')),
+            'twitter_description': metadata.get('twitter_description', metadata.get('description', '')),
+            'twitter_image': metadata.get('twitter_image', metadata.get('og_image', 'https://av-navigation-ip.com/assets/images/og-general-info.jpg')),
+
+            # Schema.org date fields
+            'date_published': metadata.get('date', metadata.get('date_published', '2025-11-01')),
+            'date_modified': metadata.get('modified', metadata.get('date_modified', '2025-11-12'))
         }
 
         # Load and render template

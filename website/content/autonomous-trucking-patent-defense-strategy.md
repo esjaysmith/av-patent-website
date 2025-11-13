@@ -1,7 +1,7 @@
 ---
 title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
 page_title: "Strengthen Your Autonomous Trucking Patent Portfolio with Camera-Based Navigation Patents"
-description: "Licensed camera-based navigation patents for autonomous trucking companies. US Patent 12,001,207 B2 provides defensive IP for Class 8 trucks and commercial fleets. Faster and cheaper than in-house development."
+description: "Autonomous trucking patent defense strategy. License camera-based navigation safety IP for Class 8 trucks and commercial AV applications."
 keywords:
   - autonomous trucking patent defense strategy
   - commercial vehicle AV patent licensing
@@ -22,11 +22,18 @@ layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
 modified: "2025-10-18"
-canonical: "https://example.com/autonomous-trucking-patent-defense-strategy.html"
+
+# Open Graph
+og_title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
+og_description: "Autonomous trucking patent defense strategy. License camera-based navigation safety IP for Class 8 trucks and commercial AV applications."
 og_type: "article"
-og_image: "https://example.com/assets/images/trucking-patent-og-image.jpg"
+og_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+
+# Twitter Card
 twitter_card: "summary_large_image"
-schema_type: "Article"
+twitter_title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
+twitter_description: "Autonomous trucking patent defense strategy. License camera-based navigation safety IP for Class 8 trucks and commercial AV applications."
+twitter_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
 ---
 
 # Strengthen Your Autonomous Trucking Patent Portfolio with Camera-Based Navigation Patents

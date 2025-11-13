@@ -1,9 +1,25 @@
 ---
 title: "Contact Us - Patent Licensing Inquiries"
-description: "Contact us for US Patent 12,001,207 licensing inquiries. Fast response for autonomous vehicle and drone navigation technology licensing."
+description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
 keywords: "patent licensing contact, US patent 12001207 inquiry, autonomous vehicle patent licensing contact, IP licensing consultation"
 page_title: "Contact Us"
 show_cta: false
+
+# Open Graph
+og_title: "Contact Us - Patent Licensing Inquiries"
+og_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
+og_type: "website"
+og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "Contact Us - Patent Licensing Inquiries"
+twitter_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
+twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Schema.org dates
+date_published: "2025-11-01"
+date_modified: "2025-11-12"
 ---
 
 # Contact Us for Licensing Inquiries

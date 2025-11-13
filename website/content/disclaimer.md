@@ -1,9 +1,25 @@
 ---
 title: "Legal Disclaimer | AV Navigation IP Protection"
-description: "Legal disclaimer for AV Navigation IP Protection website. Important legal information about US Patent 12,001,207 B2 licensing."
+description: "Legal disclaimer for AV Navigation IP Protection. Informational purposes only; not legal or licensing advice for patent inquiries."
 keywords: legal disclaimer, patent licensing disclaimer, informational purposes
 layout: page
 show_cta: false
+
+# Open Graph
+og_title: "Legal Disclaimer | AV Navigation IP Protection"
+og_description: "Legal disclaimer for AV Navigation IP Protection. Informational purposes only; not legal or licensing advice for patent inquiries."
+og_type: "website"
+og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "Legal Disclaimer | AV Navigation IP Protection"
+twitter_description: "Legal disclaimer for AV Navigation IP Protection. Informational purposes only; not legal or licensing advice for patent inquiries."
+twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Schema.org dates
+date_published: "2025-11-01"
+date_modified: "2025-11-12"
 ---
 
 # Legal Disclaimer

@@ -1,9 +1,25 @@
 ---
 title: "Why License Now? Industry Trends and IP Strategy"
-description: "Critical industry trends driving the need for autonomous vehicle patent protection. Tesla FSD, camera-first architectures, and IP strategy insights."
+description: "AV patent licensing insights for autonomous vehicle startups. Tesla FSD competition, VC due diligence, and IP portfolio strategy."
 keywords: "autonomous vehicle industry trends, Tesla FSD patent protection, camera-based AV technology, IP strategy, patent licensing timing, AV market trends"
 page_title: "Industry Insights: Why License Now?"
 show_cta: true
+
+# Open Graph
+og_title: "Why License Now? Industry Trends and IP Strategy"
+og_description: "AV patent licensing insights for autonomous vehicle startups. Tesla FSD competition, VC due diligence, and IP portfolio strategy."
+og_type: "article"
+og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "Why License Now? Industry Trends and IP Strategy"
+twitter_description: "AV patent licensing insights for autonomous vehicle startups. Tesla FSD competition, VC due diligence, and IP portfolio strategy."
+twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Schema.org dates
+date_published: "2025-11-01"
+date_modified: "2025-11-12"
 ---
 
 # Why License Now? Critical Industry Trends Driving IP Strategy

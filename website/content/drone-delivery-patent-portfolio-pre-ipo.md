@@ -1,7 +1,7 @@
 ---
 title: "Drone Delivery Patent Portfolio for IPO | Terra Drone"
 page_title: "Strengthen Your Drone Patent Portfolio for IPO Success: Strategic Licensing Guide"
-description: "Pre-IPO drone companies need strong patent portfolios. Learn how Terra Drone-level portfolio strengthening through strategic licensing enables IPO success."
+description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
 keywords:
   - drone delivery patent portfolio for IPO
   - UAV patent strategy pre-IPO
@@ -19,11 +19,18 @@ layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
 modified: "2025-10-18"
-canonical: "https://example.com/drone-delivery-patent-portfolio-pre-ipo.html"
+
+# Open Graph
+og_title: "Drone Delivery Patent Portfolio for IPO | Terra Drone"
+og_description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
 og_type: "article"
-og_image: "https://example.com/assets/images/drone-delivery-ipo-og-image.jpg"
+og_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
+
+# Twitter Card
 twitter_card: "summary_large_image"
-schema_type: "Article"
+twitter_title: "Drone Delivery Patent Portfolio for IPO | Terra Drone"
+twitter_description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
+twitter_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
 ---
 
 # Drone Delivery Patent Portfolio for IPO: Strategic Licensing Guide

@@ -10,6 +10,30 @@
     <!-- SEO Meta Tags -->
     <link rel="canonical" href="https://av-navigation-ip.com{{ canonical_url }}">
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{ og_title }}" />
+    <meta property="og:description" content="{{ og_description }}" />
+    <meta property="og:type" content="{{ og_type }}" />
+    <meta property="og:url" content="{{ og_url }}" />
+    <meta property="og:image" content="{{ og_image }}" />
+    <meta property="og:site_name" content="{{ og_site_name }}" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="{{ twitter_card }}" />
+    <meta name="twitter:title" content="{{ twitter_title }}" />
+    <meta name="twitter:description" content="{{ twitter_description }}" />
+    <meta name="twitter:image" content="{{ twitter_image }}" />
+
+    <!-- Google Analytics (TODO: Replace G-XXXXXXXXXX with actual Measurement ID before production deployment) -->
+    <!-- Tracking will be activated when deployed to production domain -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 

@@ -1,7 +1,7 @@
 ---
 title: "AV Patent Portfolio Due Diligence Guide for VCs | IP Assessment"
 page_title: "The Complete Guide to AV Patent Portfolio Due Diligence for Venture Capital"
-description: "Comprehensive guide for VCs evaluating autonomous vehicle patent portfolios. Assess patent quality, identify camera-first technology patents, and conduct IP due diligence during AV investment decisions."
+description: "VC guide to AV patent due diligence. Evaluate autonomous vehicle IP portfolios, patent quality, and freedom-to-operate for investments."
 keywords:
   - AV patent portfolio due diligence for venture capital
   - autonomous vehicle IP due diligence checklist
@@ -19,11 +19,18 @@ layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
 modified: "2025-10-18"
-canonical: "https://example.com/venture-capital-av-patent-portfolio-due-diligence.html"
+
+# Open Graph
+og_title: "AV Patent Portfolio Due Diligence Guide for VCs | IP Assessment"
+og_description: "VC guide to AV patent due diligence. Evaluate autonomous vehicle IP portfolios, patent quality, and freedom-to-operate for investments."
 og_type: "article"
-og_image: "https://example.com/assets/images/vc-dd-guide-og-image.jpg"
+og_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
+
+# Twitter Card
 twitter_card: "summary_large_image"
-schema_type: "Article,FAQPage"
+twitter_title: "AV Patent Portfolio Due Diligence Guide for VCs | IP Assessment"
+twitter_description: "VC guide to AV patent due diligence. Evaluate autonomous vehicle IP portfolios, patent quality, and freedom-to-operate for investments."
+twitter_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
 ---
 
 # The Complete Guide to AV Patent Portfolio Due Diligence for Venture Capital

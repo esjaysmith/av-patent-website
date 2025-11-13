@@ -1,9 +1,25 @@
 ---
 title: "About Our Vision-Based Autonomous Navigation Patent"
-description: "Learn about the development of US Patent 12,001,207 and our pioneering work in camera-based, end-to-end autonomous vehicle navigation technology."
+description: "About AV Navigation IP Protection. Offering US Patent 12,001,207 licensing for camera-based autonomous vehicle navigation safety systems."
 keywords: "autonomous vehicle patent history, vision-based navigation development, end-to-end deep learning AV, camera-first autonomous driving"
 page_title: "Our Story"
 show_cta: true
+
+# Open Graph
+og_title: "About Our Vision-Based Autonomous Navigation Patent"
+og_description: "About AV Navigation IP Protection. Offering US Patent 12,001,207 licensing for camera-based autonomous vehicle navigation safety systems."
+og_type: "website"
+og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Twitter Card
+twitter_card: "summary_large_image"
+twitter_title: "About Our Vision-Based Autonomous Navigation Patent"
+twitter_description: "About AV Navigation IP Protection. Offering US Patent 12,001,207 licensing for camera-based autonomous vehicle navigation safety systems."
+twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+
+# Schema.org dates
+date_published: "2025-11-01"
+date_modified: "2025-11-12"
 ---
 
 # The Journey Behind US Patent 12,001,207
