@@ -498,7 +498,7 @@ rsync -avz --delete build_backup_YYYYMMDD_HHMMSS/ username@server.com:/path/
 
 ## Related Documentation
 
-- **Content Management SOP**: `/.agent/SOP/content_management.md`
-- **Project Architecture**: `/.agent/System/project_architecture.md`
+- **Content Management SOP**: `/docs/SOP/content_management.md`
+- **Project Architecture**: `/docs/System/project_architecture.md`
 - **Website README**: `/website/README.md`
-- **PRD**: `/.agent/Tasks/website_development_prd.md`
+- **PRD**: `/docs/plans/archived/website_development_prd.md`

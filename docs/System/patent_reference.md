@@ -238,7 +238,7 @@ The patent includes multiple independent and dependent claims covering:
 ## Related Documentation
 
 ### Internal References
-- **Full Patent HTML:** `.agent/US12001207B2.html` (3,689 lines)
+- **Full Patent HTML:** `docs/US12001207B2.html` (3,689 lines)
 - **Patent PDF:** Available at Google Patents
 - **USPTO Link:** https://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&d=PALL&s1=12001207.PN.
 
@@ -326,5 +326,5 @@ When updating this document:
 **Document Version:** 1.0
 **Created:** October 14, 2025
 **Last Updated:** October 14, 2025
-**Source:** US Patent 12,001,207 B2 (Full HTML document in `.agent/US12001207B2.html`)
+**Source:** US Patent 12,001,207 B2 (Full HTML document in `docs/US12001207B2.html`)
 **Next Review:** January 14, 2026

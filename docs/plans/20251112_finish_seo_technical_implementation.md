@@ -124,7 +124,7 @@ By completion, all 13 pages will have:
 
 **STATUS**: ✅ **REFACTORING COMPLETE** - All prerequisite tasks finished successfully.
 
-**Reference Document**: `.agent/Tasks/20251112_refactor_social_images_environment_config.md`
+**Reference Document**: `docs/plans/20251112_refactor_social_images_environment_config.md`
 
 This refactoring PRD covered:
 - ✅ Environment configuration setup (`.env` files, dependencies)
@@ -1152,7 +1152,7 @@ author: "AV Navigation IP Protection"
 
 ## Appendix C: Background Image Selection (Moved)
 
-**This section has been moved to the refactoring PRD**: `.agent/Tasks/20251112_refactor_social_images_environment_config.md`
+**This section has been moved to the refactoring PRD**: `docs/plans/20251112_refactor_social_images_environment_config.md`
 
 See the refactoring PRD for:
 - Detailed search workflow for each of 4 image categories
@@ -1409,7 +1409,7 @@ Quick reference table showing which files are modified in each phase:
 - `20251110_production_readiness_prd.md` - Parent PRD (Milestone 3)
 - `website_development_prd.md` - Overall project context
 - `seo_landing_pages_phase4_publishing.md` - SEO content strategy
-- `.agent/SOP/site_generation_deployment.md` - Build & deploy process
+- `docs/SOP/site_generation_deployment.md` - Build & deploy process
 
 **Next Steps After Completion**:
 1. Update production readiness PRD to mark Milestone 3 complete

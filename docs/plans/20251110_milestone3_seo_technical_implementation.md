@@ -8,7 +8,7 @@
 - **Status**: Not Started
 - **Dependencies**: Milestone 1 (breadcrumbs needed for BreadcrumbList schema)
 - **Blocks**: Milestone 5 (SEO must be complete before production deployment)
-- **Reference**: `.agent/Tasks/seo_technical_specs.md` (comprehensive specifications)
+- **Reference**: `docs/plans/seo_technical_specs.md` (comprehensive specifications)
 
 ## Overview
 
@@ -799,8 +799,8 @@ After implementation, the directory structure will be:
 
 ## Related Documentation
 
-- `.agent/Tasks/seo_technical_specs.md` - Comprehensive SEO specifications
-- `.agent/Tasks/seo_landing_pages_phase4_publishing.md` - Phase 4 SEO publishing task
+- `docs/plans/seo_technical_specs.md` - Comprehensive SEO specifications
+- `docs/plans/seo_landing_pages_phase4_publishing.md` - Phase 4 SEO publishing task
 
 ---
 

@@ -4,7 +4,7 @@
 - **Created**: October 16, 2025
 - **Purpose**: Technical SEO requirements for all 5 Phase 3 landing pages
 - **Status**: Complete - Ready for Implementation
-- **Related Task**: `.agent/Tasks/seo_landing_pages_phase3.md`
+- **Related Task**: `docs/plans/seo_landing_pages_phase3.md`
 - **Applies To**: All Phase 3 landing pages + future content
 
 ---
@@ -2384,10 +2384,10 @@ Print this checklist and use for each landing page:
 
 - **Keyword Research**: `/docs/landing-pages-keyword-research.md`
 - **Content Briefs**: `/docs/content-briefs/[page-name]-brief.md`
-- **Content Quality Assurance**: `/.agent/SOP/content_quality_assurance.md`
-- **Content Management**: `/.agent/SOP/content_management.md`
-- **Site Generation & Deployment**: `/.agent/SOP/site_generation_deployment.md`
-- **Phase 3 Task Document**: `/.agent/Tasks/seo_landing_pages_phase3.md`
+- **Content Quality Assurance**: `/docs/SOP/content_quality_assurance.md`
+- **Content Management**: `/docs/SOP/content_management.md`
+- **Site Generation & Deployment**: `/docs/SOP/site_generation_deployment.md`
+- **Phase 3 Task Document**: `/docs/plans/seo_landing_pages_phase3.md`
 
 ---
 

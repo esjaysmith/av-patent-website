@@ -15,15 +15,15 @@ This directory contains comprehensive documentation for the AV Navigation IP Pro
 
 ## Documentation Structure
 
-### Tasks/
+### plans/
 Product requirements, feature specifications, and implementation plans.
 
 **Contents:**
-- [`website_development_prd.md`](./Tasks/website_development_prd.md) - Complete Product Requirements Document with all phases, success metrics, and roadmap
-- [`website_prd_001.md`](./Tasks/website_prd_001.md) - Original PRD (foundational document, superseded by website_development_prd.md)
-- [`seo_landing_pages_phase3.md`](./Tasks/seo_landing_pages_phase3.md) - Comprehensive implementation plan for 5 high-intent SEO landing pages targeting startups and investors (Phase 3 Content Expansion)
-- [`landing_pages_keyword_research.md`](./Tasks/landing_pages_keyword_research.md) - Complete keyword research and analysis for Phase 3 landing pages
-- [`seo_technical_specs.md`](./Tasks/seo_technical_specs.md) - Technical SEO specifications for all landing pages (meta tags, headings, structured data, etc.)
+- [`website_development_prd.md`](./plans/archived/website_development_prd.md) - Complete Product Requirements Document with all phases, success metrics, and roadmap
+- [`website_prd_001.md`](./plans/archived/website_prd_001.md) - Original PRD (foundational document, superseded by website_development_prd.md)
+- [`seo_landing_pages_phase3.md`](./plans/archived/seo_landing_pages_phase3.md) - Comprehensive implementation plan for 5 high-intent SEO landing pages targeting startups and investors (Phase 3 Content Expansion)
+- [`landing_pages_keyword_research.md`](./plans/archived/landing_pages_keyword_research.md) - Complete keyword research and analysis for Phase 3 landing pages
+- [`seo_technical_specs.md`](./plans/archived/seo_technical_specs.md) - Technical SEO specifications for all landing pages (meta tags, headings, structured data, etc.)
 
 ### System/
 Current system state including architecture, technology stack, and core functionalities.
@@ -50,7 +50,7 @@ Start here: [`System/project_architecture.md`](./System/project_architecture.md)
 - Learn about system architecture
 
 ### 2. Reading Requirements
-Next: [`Tasks/website_development_prd.md`](./Tasks/website_development_prd.md)
+Next: [`plans/archived/website_development_prd.md`](./plans/archived/website_development_prd.md)
 - Review product requirements
 - Check current development phase
 - Understand success metrics and roadmap
@@ -59,9 +59,9 @@ Next: [`Tasks/website_development_prd.md`](./Tasks/website_development_prd.md)
 **⚠️ CRITICAL - Start Here:** [`SOP/content_quality_assurance.md`](./SOP/content_quality_assurance.md)
 - **MANDATORY comprehensive fact-checking protocol**
 - **NEW v1.2:** Single comprehensive agent for all fact-checking (patent, industry, events)
-- Agent MUST read `.agent/System/patent_reference.md` from disk FIRST
+- Agent MUST read `docs/System/patent_reference.md` from disk FIRST
 - Quality assurance requirements for scaled content
-- Tier 0 source hierarchy: Local .agent documentation is PRIMARY source
+- Tier 0 source hierarchy: Local docs documentation is PRIMARY source
 
 Then: [`SOP/content_management.md`](./SOP/content_management.md)
 - Create new pages
@@ -84,7 +84,7 @@ Finally: [`SOP/site_generation_deployment.md`](./SOP/site_generation_deployment.
 2. Add YAML frontmatter
 3. Write Markdown content with [VERIFY] tags for all factual claims
 4. **Launch comprehensive fact-checking agent:**
-   - **MUST read `.agent/System/patent_reference.md` and `.agent/US12001207B2.html` from disk FIRST**
+   - **MUST read `docs/System/patent_reference.md` and `docs/US12001207B2.html` from disk FIRST**
    - Verifies patent facts, industry claims, and current events in one comprehensive pass
 5. **Review agent findings and make corrections**
 6. **Document verification in fact-check log (include local file sources)**
@@ -134,7 +134,7 @@ python test_website.py
 ## Patent Documentation
 
 ### Primary Patent Document
-- **Patent HTML**: `.agent/US12001207B2.html` - Complete official patent document (3,689 lines)
+- **Patent HTML**: `docs/US12001207B2.html` - Complete official patent document (3,689 lines)
 - **Patent Reference**: [`System/patent_reference.md`](./System/patent_reference.md) - Comprehensive technical reference and content guidelines
 
 ### Patent Quick Facts
@@ -176,7 +176,7 @@ python test_website.py
 - Google Search Console setup
 
 ### ⏳ Upcoming (Phase 3 - Content Expansion)
-- **📋 TASK PLANNED:** 5 high-intent landing pages (see [`seo_landing_pages_phase3.md`](./Tasks/seo_landing_pages_phase3.md))
+- **📋 TASK PLANNED:** 5 high-intent landing pages (see [`seo_landing_pages_phase3.md`](./plans/archived/seo_landing_pages_phase3.md))
   - Series A AV startup patent strategy
   - Tesla FSD competitor patent licensing
   - Drone delivery pre-IPO patent portfolio
@@ -276,7 +276,7 @@ For visual architecture flow diagrams, see:
 
 ### October 15, 2025 - Phase 3 Content Expansion Task Created
 - **✅ ADDED: SEO Landing Pages Task Document**
-- Created comprehensive implementation plan: `Tasks/seo_landing_pages_phase3.md`
+- Created comprehensive implementation plan: `plans/archived/seo_landing_pages_phase3.md`
 - Defined 5 high-intent landing pages targeting startups and investors
 - Structured into 8 checkpoints with context-clearing capability for long-running tasks
 - Included current industry data (Oct 2025): $8.73B AV funding, 376 Series A+ companies
@@ -291,17 +291,17 @@ For visual architecture flow diagrams, see:
 - Single agent now handles all verification: patent facts, industry claims, and current events
 - Reduces complexity and token usage while maintaining thorough verification
 - Updated all documentation to reflect single-agent approach
-- Agent still MUST read local `.agent` patent documentation from disk FIRST
+- Agent still MUST read local `docs` patent documentation from disk FIRST
 
 ### October 14, 2025 - Patent Documentation Integration & Fact-Checking Updates
 - **✅ ADDED: Patent Reference Documentation**
 - Created comprehensive `System/patent_reference.md` with full technical details
 - Added patent quick facts section to README
-- Included patent document location (`.agent/US12001207B2.html`)
+- Included patent document location (`docs/US12001207B2.html`)
 - Linked patent reference to content quality assurance requirements
 - Added patent overview, applications, licensing opportunities, and content guidelines
 - **✅ UPDATED: Content Quality Assurance SOP v1.1**
-- **CRITICAL:** Fact-checking agents MUST read local `.agent` patent documentation from disk FIRST
+- **CRITICAL:** Fact-checking agents MUST read local `docs` patent documentation from disk FIRST
 - Created Tier 0 source hierarchy (local files = PRIMARY source)
 - Updated agent prompts to require reading patent_reference.md before verification
 - Reduces token usage and ensures agents have accurate patent context
@@ -326,7 +326,7 @@ For visual architecture flow diagrams, see:
 ## Future Documentation Plans
 
 ### Planned Additions
-- ✅ **Phase 3 Implementation Guide**: **COMPLETE** - See [`Tasks/seo_landing_pages_phase3.md`](./Tasks/seo_landing_pages_phase3.md) for detailed landing page implementation plan with checkpoints
+- ✅ **Phase 3 Implementation Guide**: **COMPLETE** - See [`plans/archived/seo_landing_pages_phase3.md`](./plans/archived/seo_landing_pages_phase3.md) for detailed landing page implementation plan with checkpoints
 - **SEO Optimization Checklist**: Comprehensive SEO implementation guide
 - **Analytics Setup Guide**: Google Analytics and Search Console configuration
 - **Advanced Customization Guide**: Theme creation and template modification

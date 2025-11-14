@@ -191,7 +191,7 @@ Or manually replace `[domain]` placeholders in templates with `av-navigation-ip.
 2. Upload `website/build/*` contents to `/public_html/`
 3. Verify files uploaded correctly
 
-**Method 2: rsync** (from `.agent/SOP/site_generation_deployment.md`):
+**Method 2: rsync** (from `docs/SOP/site_generation_deployment.md`):
 ```bash
 rsync -avz --delete website/build/ user@siteground-server:/home/user/public_html/
 ```
@@ -291,7 +291,7 @@ aws cloudfront create-invalidation --distribution-id XXXXXX --paths "/*"
 - `.htaccess` - Apache configuration (if using SiteGround)
 
 ### Documentation
-- `.agent/SOP/site_generation_deployment.md` - Update with production deployment steps
+- `docs/SOP/site_generation_deployment.md` - Update with production deployment steps
 
 ## Success Metrics
 

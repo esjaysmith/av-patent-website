@@ -16,8 +16,8 @@
 
 ```
 op_patent/
-├── .agent/                    # Documentation folder
-│   ├── Tasks/                # PRD and implementation plans
+├── docs/                    # Documentation folder
+│   ├── plans/archived/                # PRD and implementation plans
 │   ├── System/               # Architecture and system state docs
 │   │   ├── project_architecture.md   # This file
 │   │   └── patent_reference.md       # US Patent 12,001,207 B2 reference
@@ -355,11 +355,11 @@ rsync -avz build/ user@host:/path/to/site
 
 ### Core Documentation
 - **Patent Reference**: [`patent_reference.md`](./patent_reference.md) - Complete US Patent 12,001,207 B2 technical reference
-- **Patent Document**: `.agent/US12001207B2.html` - Official patent HTML (3,689 lines)
+- **Patent Document**: `docs/US12001207B2.html` - Official patent HTML (3,689 lines)
 - **PRD**: `/docs/website_prd_001.md` - Complete product requirements
 - **Site Analysis**: `/docs/site_analysis_001.md` - Testing and SEO analysis
 
 ### Additional Resources
 - **Website README**: `/website/README.md` - Detailed usage guide
 - **Project Instructions**: `/CLAUDE.md` - Claude Code instructions
-- **Documentation Index**: `.agent/README.md` - Complete documentation map
+- **Documentation Index**: `docs/README.md` - Complete documentation map

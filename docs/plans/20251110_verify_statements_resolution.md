@@ -7,8 +7,8 @@
 - **Created**: November 10, 2025
 - **Related Documents**:
   - `20251110_production_readiness_prd.md`
-  - `.agent/SOP/content_quality_assurance.md`
-  - `.agent/System/patent_reference.md`
+  - `docs/SOP/content_quality_assurance.md`
+  - `docs/System/patent_reference.md`
 
 ## Executive Summary
 
@@ -540,8 +540,8 @@ VERIFY tags indicate statements that require:
 
 ## Related Documentation
 
-- `.agent/SOP/content_quality_assurance.md` - Fact-checking procedures
-- `.agent/System/patent_reference.md` - Patent verification guidelines
+- `docs/SOP/content_quality_assurance.md` - Fact-checking procedures
+- `docs/System/patent_reference.md` - Patent verification guidelines
 - `20251110_production_readiness_prd.md` - Launch requirements
 
 ---

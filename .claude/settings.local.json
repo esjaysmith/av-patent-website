@@ -22,7 +22,16 @@
       "WebFetch(domain:pixabay.com)",
       "mcp__puppeteer__puppeteer_click",
       "Bash(curl:*)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(for file in SOP/*.md)",
+      "Bash(do sed -i '' 's|\\.agent/System/patent_reference\\.md|docs/System/patent_reference.md|g' \"$file\")",
+      "Bash(done)",
+      "Bash(do sed -i '' 's|/\\.agent/|/docs/|g' \"$file\")",
+      "Bash(do sed -i '' 's|\\.agent/Tasks/|docs/plans/archived/|g' \"$file\")",
+      "Bash(for file in System/*.md)",
+      "Bash(do sed -i '' 's|\\.agent/|docs/|g' \"$file\")",
+      "Bash(do sed -i '' 's|Tasks/|plans/archived/|g' \"$file\")",
+      "Bash(find:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

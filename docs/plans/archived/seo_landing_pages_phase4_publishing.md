@@ -169,7 +169,7 @@ Add new landing pages to site navigation:
 
 #### 3.1 Generate Static Site
 
-Follow SOP: `.agent/SOP/site_generation_deployment.md`
+Follow SOP: `docs/SOP/site_generation_deployment.md`
 
 ```bash
 # Navigate to website directory
@@ -243,7 +243,7 @@ Sitemap: https://oppatent.com/sitemap.xml
 
 ### Step 5: Deployment to Production
 
-Follow deployment SOP: `.agent/SOP/site_generation_deployment.md`
+Follow deployment SOP: `docs/SOP/site_generation_deployment.md`
 
 **Pre-Deployment Checklist:**
 - [ ] All local tests passed
@@ -485,16 +485,16 @@ keywords: "autonomous trucking patent defense, commercial vehicle AV patents, tr
 ## Related Documentation
 
 **Parent Task:**
-- `/.agent/Tasks/seo_landing_pages_phase3.md` - Phase 3 Complete (Content Creation & Fact-Checking)
+- `/docs/plans/seo_landing_pages_phase3.md` - Phase 3 Complete (Content Creation & Fact-Checking)
 
 **Reference Documents:**
-- **SEO Technical Specs**: `/.agent/Tasks/seo_technical_specs.md` - Technical SEO requirements
-- **Keyword Research**: `/.agent/Tasks/landing_pages_keyword_research.md` - Keyword targets
+- **SEO Technical Specs**: `/docs/plans/seo_technical_specs.md` - Technical SEO requirements
+- **Keyword Research**: `/docs/plans/landing_pages_keyword_research.md` - Keyword targets
 - **Content Briefs**: `/website/content/content-briefs/` - Original content briefs
 
 **SOP Documentation:**
-- **Site Generation & Deployment**: `/.agent/SOP/site_generation_deployment.md` - Deployment workflow
-- **Content Management**: `/.agent/SOP/content_management.md` - Content workflow
+- **Site Generation & Deployment**: `/docs/SOP/site_generation_deployment.md` - Deployment workflow
+- **Content Management**: `/docs/SOP/content_management.md` - Content workflow
 
 **Content Files:**
 - `/website/content/series-a-av-patent-portfolio-strategy.md`
@@ -534,5 +534,5 @@ Begin with **Step 1: SEO Technical Implementation** for all 5 landing pages.
 
 **Critical Dependencies:**
 - All content must be fact-checked and corrected (✅ COMPLETE)
-- Review `.agent/SOP/site_generation_deployment.md` before deployment
-- Review `.agent/Tasks/seo_technical_specs.md` for technical requirements
+- Review `docs/SOP/site_generation_deployment.md` before deployment
+- Review `docs/plans/seo_technical_specs.md` for technical requirements

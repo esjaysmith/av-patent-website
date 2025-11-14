@@ -562,13 +562,13 @@ If you don't receive an acknowledgment email within 24 hours:
    - Document reCAPTCHA setup process
    - Document how to change email delivery address
    - Document spam protection troubleshooting
-   - Save to: `.agent/SOP/contact_form_management.md`
+   - Save to: `docs/SOP/contact_form_management.md`
 
 2. **Update Production Deployment Checklist**
    - Add Web3Forms access key configuration
    - Add reCAPTCHA keys configuration
    - Add email delivery testing step
-   - Update: `.agent/Tasks/20251110_production_readiness_prd.md`
+   - Update: `docs/plans/20251110_production_readiness_prd.md`
 
 3. **Update Test Suite**
    - Add automated tests for form validation
@@ -761,11 +761,11 @@ These enhancements are **not required for launch** but should be considered afte
 ### Reference Documents
 - `20251110_production_readiness_prd.md` - Parent PRD (Milestone 2)
 - `website_development_prd.md` - Overall project phases
-- `.agent/System/patent_reference.md` - Patent details for form context
+- `docs/System/patent_reference.md` - Patent details for form context
 
 ### SOPs (To Be Created)
-- `.agent/SOP/contact_form_management.md` - Web3Forms + reCAPTCHA configuration
-- `.agent/SOP/form_spam_handling.md` - Spam protection troubleshooting
+- `docs/SOP/contact_form_management.md` - Web3Forms + reCAPTCHA configuration
+- `docs/SOP/form_spam_handling.md` - Spam protection troubleshooting
 
 ### Current Files (To Be Modified)
 - `website/content/contact.md` - Form implementation

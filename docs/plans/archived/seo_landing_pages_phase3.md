@@ -8,7 +8,7 @@
 - **Created**: October 15, 2025
 - **Last Updated**: October 19, 2025
 - **Completion Date**: October 19, 2025
-- **Next Task**: `.agent/Tasks/seo_landing_pages_phase4_publishing.md`
+- **Next Task**: `docs/plans/seo_landing_pages_phase4_publishing.md`
 
 ## Executive Summary
 
@@ -46,8 +46,8 @@ Each landing page will match current industry trends with specific patent licens
 ### Phase 1: Keyword Research & Content Planning ✅ COMPLETE
 **Status:** Complete
 **Deliverables:**
-- ✅ Keyword research document (`/Users/sjsmit/Development/Caden/op_patent/.agent/Tasks/landing_pages_keyword_research.md`)
-- ✅ SEO technical specifications (`/Users/sjsmit/Development/Caden/op_patent/.agent/Tasks/seo_technical_specs.md`)
+- ✅ Keyword research document (`/Users/sjsmit/Development/Caden/op_patent/docs/plans/landing_pages_keyword_research.md`)
+- ✅ SEO technical specifications (`/Users/sjsmit/Development/Caden/op_patent/docs/plans/seo_technical_specs.md`)
 - ✅ Content briefs for all 5 pages (`/Users/sjsmit/Development/Caden/op_patent/website/content/content-briefs/`)
 
 ### Phase 2: Content Creation ✅ COMPLETE
@@ -90,7 +90,7 @@ Each landing page will match current industry trends with specific patent licens
 
 **Next Steps:**
 Phase 4 work has been split into a separate task document:
-👉 **See:** `.agent/Tasks/seo_landing_pages_phase4_publishing.md`
+👉 **See:** `docs/plans/seo_landing_pages_phase4_publishing.md`
 
 **What Phase 4 Will Cover:**
 1. SEO Technical Implementation (meta tags, descriptions, structured data)
@@ -276,9 +276,9 @@ Phase 4 work has been split into a separate task document:
 **Date Completed:** October 16, 2025
 
 **Deliverables:**
-1. ✅ Keyword Analysis Document (`.agent/Tasks/landing_pages_keyword_research.md`)
+1. ✅ Keyword Analysis Document (`docs/plans/landing_pages_keyword_research.md`)
 2. ✅ Content Briefs for All 5 Pages (`website/content/content-briefs/`)
-3. ✅ SEO Technical Specifications (`.agent/Tasks/seo_technical_specs.md`)
+3. ✅ SEO Technical Specifications (`docs/plans/seo_technical_specs.md`)
 
 ---
 
@@ -378,7 +378,7 @@ CRITICAL: Phase 2 (Content Creation) will be COMPLETE
 Proceed to Phase 3: Multi-Agent Fact-Checking (Checkpoints 7a-7e)
 
 RESUME INSTRUCTIONS:
-- Read: .agent/SOP/content_quality_assurance.md (MANDATORY)
+- Read: docs/SOP/content_quality_assurance.md (MANDATORY)
 - Start with Checkpoint 7a: Landing Page 1 fact-checking
 - Launch comprehensive fact-checking agent for Page 1
 - Complete fact-checking SEQUENTIALLY, one page at a time
@@ -394,7 +394,7 @@ RESUME INSTRUCTIONS:
 
 **Checkpoints 7a through 7e:** Each landing page gets comprehensive fact-checking:
 - Single comprehensive agent verifies: Patent Facts, Industry & Market Claims, and Current Events/Dates/URLs
-- Agent MUST read .agent/System/patent_reference.md FIRST for patent verification
+- Agent MUST read docs/System/patent_reference.md FIRST for patent verification
 
 ---
 
@@ -440,7 +440,7 @@ RESUME INSTRUCTIONS:
 5. ✅ 4 Corrected Landing Pages - Pages 1-4 (COMPLETE)
 6. ⏳ 1 Landing Page Pending Fact-Checking - Page 5 (PENDING)
 
-**For detailed fact-checking instructions, see:** `.agent/SOP/content_quality_assurance.md`
+**For detailed fact-checking instructions, see:** `docs/SOP/content_quality_assurance.md`
 
 ---
 
@@ -637,7 +637,7 @@ RESUME INSTRUCTIONS:
 ### Phase 4: SEO Optimization & Publishing
 **Status:** Split into separate task document
 
-**See:** `.agent/Tasks/seo_landing_pages_phase4_publishing.md`
+**See:** `docs/plans/seo_landing_pages_phase4_publishing.md`
 
 Phase 4 work includes:
 - SEO Technical Implementation (all 5 pages)
@@ -709,22 +709,22 @@ Phase 4 work includes:
 ## Related Documentation
 
 **Task Documentation:**
-- **This Document**: `/.agent/Tasks/seo_landing_pages_phase3.md` - Updated implementation plan
-- **Website PRD**: `/.agent/Tasks/website_prd_001.md` - Overall project requirements
+- **This Document**: `/docs/plans/seo_landing_pages_phase3.md` - Updated implementation plan
+- **Website PRD**: `/docs/plans/website_prd_001.md` - Overall project requirements
 
 **Phase 1 Completed Documents:**
-- **Keyword Research**: `/.agent/Tasks/landing_pages_keyword_research.md` - Comprehensive keyword analysis
-- **SEO Technical Specs**: `/.agent/Tasks/seo_technical_specs.md` - Technical SEO requirements
+- **Keyword Research**: `/docs/plans/landing_pages_keyword_research.md` - Comprehensive keyword analysis
+- **SEO Technical Specs**: `/docs/plans/seo_technical_specs.md` - Technical SEO requirements
 - **Content Briefs**: `/website/content/content-briefs/` - 5 detailed content briefs
 
 **System Documentation:**
-- **Project Architecture**: `/.agent/System/project_architecture.md` - Technical architecture
-- **Patent Reference**: `/.agent/System/patent_reference.md` - **PRIMARY SOURCE** for patent claims
+- **Project Architecture**: `/docs/System/project_architecture.md` - Technical architecture
+- **Patent Reference**: `/docs/System/patent_reference.md` - **PRIMARY SOURCE** for patent claims
 
 **SOP Documentation:**
-- **⚠️ Content Quality Assurance**: `/.agent/SOP/content_quality_assurance.md` - **MANDATORY** fact-checking protocol
-- **Content Management**: `/.agent/SOP/content_management.md` - Content creation workflow
-- **Site Generation & Deployment**: `/.agent/SOP/site_generation_deployment.md` - Publishing workflow
+- **⚠️ Content Quality Assurance**: `/docs/SOP/content_quality_assurance.md` - **MANDATORY** fact-checking protocol
+- **Content Management**: `/docs/SOP/content_management.md` - Content creation workflow
+- **Site Generation & Deployment**: `/docs/SOP/site_generation_deployment.md` - Publishing workflow
 
 ---
 
@@ -745,7 +745,7 @@ Phase 4 work includes:
 - Total fact-check logs created: 5 comprehensive logs
 - Common error patterns documented for future content creation
 - **PHASE 4 SPLIT OFF:** Created new task document for SEO & publishing work
-  - New task: `.agent/Tasks/seo_landing_pages_phase4_publishing.md`
+  - New task: `docs/plans/seo_landing_pages_phase4_publishing.md`
   - This allows clear separation of content creation (complete) from technical implementation (pending)
 - Version updated to 4.0 (task complete, next phase separated)
 
@@ -810,7 +810,7 @@ Phase 4 work includes:
 **Total Duration:** 4 days (October 15-19, 2025)
 
 **Next Task:**
-👉 **See:** `.agent/Tasks/seo_landing_pages_phase4_publishing.md` for SEO implementation and publishing
+👉 **See:** `docs/plans/seo_landing_pages_phase4_publishing.md` for SEO implementation and publishing
 
 **Completion Checklist:**
 - [x] Phase 1: Keyword research, content briefs, technical specs

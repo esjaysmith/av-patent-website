@@ -174,7 +174,7 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 4. Regulatory requirements (compliance credibility)
 5. Industry statistics and market trends (competitive positioning)
 
-**Task File**: `.agent/Tasks/consolidated_verify_statements.md` ✅ Complete
+**Task File**: `docs/plans/consolidated_verify_statements.md` ✅ Complete
 
 **Notes**:
 - ✅ Work completed ahead of schedule (November 12, 2025)
@@ -220,7 +220,7 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 - **Phase 3**: Social Images & Meta Descriptions - Complete
 - **Phase 4**: Google Analytics & Final Testing - Complete
 
-**Task File**: `.agent/Tasks/20251112_finish_seo_technical_implementation.md` ✅ Complete
+**Task File**: `docs/plans/20251112_finish_seo_technical_implementation.md` ✅ Complete
 
 **Notes**:
 - Completed 3 days ahead of schedule
@@ -283,7 +283,7 @@ This PRD consolidates all remaining work required to launch the AV Navigation IP
 - SSL certificate valid (no browser warnings)
 - 301 redirects configured (www/non-www consistency)
 - Google Analytics tracking in production
-- Production deployment documented in `.agent/SOP/site_generation_deployment.md`
+- Production deployment documented in `docs/SOP/site_generation_deployment.md`
 
 **Task File**: `20251110_milestone5_production_deployment.md`
 
@@ -677,21 +677,21 @@ Key sections:
 - `website_development_prd.md` - Overall project phases
 - `seo_landing_pages_phase4_publishing.md` - SEO publishing
 - `seo_technical_specs.md` - Technical SEO requirements
-- `.agent/System/patent_reference.md` - Patent details
+- `docs/System/patent_reference.md` - Patent details
 
 ### SOPs
-- `.agent/SOP/content_management.md` - Content workflow
-- `.agent/SOP/site_generation_deployment.md` - Build & deploy
-- `.agent/SOP/content_quality_assurance.md` - Fact-checking
+- `docs/SOP/content_management.md` - Content workflow
+- `docs/SOP/site_generation_deployment.md` - Build & deploy
+- `docs/SOP/content_quality_assurance.md` - Fact-checking
 
 ### Task Files
 1. `20251110_milestone1_site_structure_navigation.md` ✅ Complete (Nov 10, 2025)
 2. `20251110_milestone2_contact_form_testing.md` ✅ Complete (Nov 12, 2025) - Handled by separate Contact Form PRD
-3. `.agent/Tasks/20251112_finish_seo_technical_implementation.md` ✅ Complete (Nov 13, 2025)
+3. `docs/plans/20251112_finish_seo_technical_implementation.md` ✅ Complete (Nov 13, 2025)
 4. `20251110_milestone4_legal_compliance.md` ✅ Complete (Nov 10, 2025)
 5. `20251110_milestone5_production_deployment.md` ⏳ Pending (To Be Created)
 6. `20251110_milestone6_post_launch_optimization.md` ⏳ Pending (To Be Created)
-7. `.agent/Tasks/consolidated_verify_statements.md` ✅ Complete (Nov 12, 2025) - **All 80+ VERIFY tags resolved**
+7. `docs/plans/consolidated_verify_statements.md` ✅ Complete (Nov 12, 2025) - **All 80+ VERIFY tags resolved**
 
 ### Milestone Completion Summary
 - ✅ **Complete**: 5 milestones (1, 2, 2.5, 3, 4)

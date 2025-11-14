@@ -136,7 +136,7 @@ This PRD outlines the development of a lean, SEO-driven static website focused o
 1. **Comprehensive Fact-Checking (Single Agent)**
    - Comprehensive Fact-Checking Agent (covers patent facts, industry claims, and current events)
    - Launch before publishing ANY content
-   - Agent MUST read .agent/System/patent_reference.md FIRST
+   - Agent MUST read docs/System/patent_reference.md FIRST
 
 2. **Verification Requirements**
    - 100% fact-check pass rate required
@@ -149,7 +149,7 @@ This PRD outlines the development of a lean, SEO-driven static website focused o
    - Correction Rate: <10%
    - Re-verification schedule: Every 3-6 months
 
-**See:** `/.agent/SOP/content_quality_assurance.md` for complete fact-checking protocol
+**See:** `/docs/SOP/content_quality_assurance.md` for complete fact-checking protocol
 
 ### Phase 4: Maintenance & Continuation - 🔄 ONGOING
 **Timeline**: As needed | **Status**: 🔄 Planned
@@ -333,10 +333,10 @@ This PRD outlines the development of a lean, SEO-driven static website focused o
 
 ## Related Documentation
 
-- **Project Architecture**: `/.agent/System/project_architecture.md`
+- **Project Architecture**: `/docs/System/project_architecture.md`
 - **Site Analysis Report**: `/docs/site_analysis_001.md`
 - **Original PRD**: `/docs/website_prd_001.md`
 - **Website README**: `/website/README.md`
-- **⚠️ Content Quality Assurance SOP**: `/.agent/SOP/content_quality_assurance.md` - **MANDATORY for all content**
-- **Content Management SOP**: `/.agent/SOP/content_management.md`
-- **Site Generation & Deployment SOP**: `/.agent/SOP/site_generation_deployment.md`
+- **⚠️ Content Quality Assurance SOP**: `/docs/SOP/content_quality_assurance.md` - **MANDATORY for all content**
+- **Content Management SOP**: `/docs/SOP/content_management.md`
+- **Site Generation & Deployment SOP**: `/docs/SOP/site_generation_deployment.md`

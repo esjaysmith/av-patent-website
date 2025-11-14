@@ -64,9 +64,9 @@ python -m http.server 8000
 
 ```
 op_patent/
-├── .agent/                    # ⭐ COMPLETE PROJECT DOCUMENTATION (START HERE!)
+├── docs/                    # ⭐ COMPLETE PROJECT DOCUMENTATION (START HERE!)
 │   ├── README.md              # Documentation index - read this first
-│   ├── Tasks/                 # Product requirements and implementation plans
+│   ├── plans/                 # Product requirements and implementation plans
 │   ├── System/                # Architecture docs, patent reference
 │   └── SOP/                   # Standard operating procedures
 │
@@ -118,7 +118,7 @@ op_patent/
    ```
 
 4. **⚠️ MANDATORY: Follow the fact-checking protocol**
-   - See `.agent/SOP/content_quality_assurance.md`
+   - See `docs/SOP/content_quality_assurance.md`
    - All patent claims must be verified against the source document
    - Technical specifications must be accurate
 
@@ -130,7 +130,7 @@ op_patent/
 
 6. **Test locally** (see "Running the Development Server" below)
 
-7. **Update documentation** in `.agent/` folder if you added new features
+7. **Update documentation** in `docs/` folder if you added new features
 
 ### Editing Existing Content
 
@@ -275,30 +275,30 @@ The entire website is in the `build/` directory - just upload its contents to yo
 
 ## Important Documentation
 
-### Must-Read Documentation in `.agent/` Folder
+### Must-Read Documentation in `docs/` Folder
 
-**⭐ Start here**: `.agent/README.md` - Complete documentation index
+**⭐ Start here**: `docs/README.md` - Complete documentation index
 
 **System Documentation:**
-- `.agent/System/project_architecture.md` - Full technical architecture
-- `.agent/System/patent_reference.md` - US Patent 12,001,207 B2 details
-- `.agent/System/technology_stack.md` - Detailed tech stack information
+- `docs/System/project_architecture.md` - Full technical architecture
+- `docs/System/patent_reference.md` - US Patent 12,001,207 B2 details
+- `docs/System/technology_stack.md` - Detailed tech stack information
 
 **Standard Operating Procedures (SOPs):**
-- `.agent/SOP/content_management.md` - How to create and edit content
-- `.agent/SOP/site_generation_deployment.md` - Build and deploy procedures
-- `.agent/SOP/content_quality_assurance.md` - **MANDATORY fact-checking protocol**
-- `.agent/SOP/template_editing.md` - How to modify Jinja2 templates
+- `docs/SOP/content_management.md` - How to create and edit content
+- `docs/SOP/site_generation_deployment.md` - Build and deploy procedures
+- `docs/SOP/content_quality_assurance.md` - **MANDATORY fact-checking protocol**
+- `docs/SOP/template_editing.md` - How to modify Jinja2 templates
 
 **Task Documentation:**
-- `.agent/Tasks/` - Product requirements and implementation plans for features
+- `docs/plans/` - Product requirements and implementation plans for features
 
-### Why `.agent/` Documentation Matters
+### Why `docs/` Documentation Matters
 
 Per `CLAUDE.md` project instructions:
-> We maintain all essential documents in the `.agent` folder, ensuring they are regularly updated... Before planning any implementation, always review the `.agent/README.md` first to gain proper context.
+> We maintain all essential documents in the `docs` folder, ensuring they are regularly updated... Before planning any implementation, always review the `docs/README.md` first to gain proper context.
 
-The `.agent/` documentation ensures:
+The `docs/` documentation ensures:
 - ✅ Consistent development practices
 - ✅ Accurate patent information
 - ✅ Quality content standards
@@ -309,7 +309,7 @@ The `.agent/` documentation ensures:
 ### ⚠️ CRITICAL: Fact-Checking Protocol
 
 **ALL content must follow the comprehensive fact-checking protocol** documented in:
-`.agent/SOP/content_quality_assurance.md`
+`docs/SOP/content_quality_assurance.md`
 
 Key requirements:
 1. **Patent claims** must be verified against `/US12001207B2.html`
@@ -414,7 +414,7 @@ Key requirements:
 2. **Use a second terminal** - one for the server, one for generating
 3. **Test frequently** - run `python test_website.py` before committing
 4. **Reference existing pages** - look at current `.md` files for examples
-5. **Check documentation first** - `.agent/README.md` has answers
+5. **Check documentation first** - `docs/README.md` has answers
 
 ### File Watching (Optional)
 
@@ -443,7 +443,7 @@ Recommended for development:
 
 ## Next Steps
 
-1. **Read `.agent/README.md`** - Get complete context
+1. **Read `docs/README.md`** - Get complete context
 2. **Review existing content** - Look at `website/content/*.md` files
 3. **Run the test suite** - Ensure everything works
 4. **Make a small change** - Practice the workflow
@@ -451,10 +451,10 @@ Recommended for development:
 
 ## Getting Help
 
-- **Documentation**: Start with `.agent/README.md`
+- **Documentation**: Start with `docs/README.md`
 - **Code Examples**: Review existing files in `website/content/`
-- **Architecture**: See `.agent/System/project_architecture.md`
-- **Procedures**: Check `.agent/SOP/` for specific task guidance
+- **Architecture**: See `docs/System/project_architecture.md`
+- **Procedures**: Check `docs/SOP/` for specific task guidance
 
 ## Contributing
 
@@ -463,10 +463,10 @@ When adding new features or content:
 1. ✅ Follow the development workflow above
 2. ✅ Adhere to the fact-checking protocol
 3. ✅ Run all tests before committing
-4. ✅ Update `.agent/` documentation to reflect changes
+4. ✅ Update `docs/` documentation to reflect changes
 5. ✅ Test in the development environment first
 6. ✅ Deploy to staging before production
 
 ---
 
-**Remember**: This is a static site generator. Every change requires regenerating the site with `python generate_site.py`. When in doubt, check `.agent/README.md` for comprehensive guidance.
+**Remember**: This is a static site generator. Every change requires regenerating the site with `python generate_site.py`. When in doubt, check `docs/README.md` for comprehensive guidance.

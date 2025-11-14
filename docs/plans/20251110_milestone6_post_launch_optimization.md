@@ -288,7 +288,7 @@ Monitor in Google Search Console:
 
 ## Documentation
 
-Update `.agent/SOP/site_generation_deployment.md` with:
+Update `docs/SOP/site_generation_deployment.md` with:
 - Production deployment process
 - Post-launch monitoring checklist
 - Search engine submission process
@@ -310,7 +310,7 @@ After launch week, establish ongoing schedule:
 - Review and respond to licensing inquiries
 
 **Quarterly**:
-- Re-verify facts in landing pages (`.agent/SOP/content_quality_assurance.md`)
+- Re-verify facts in landing pages (`docs/SOP/content_quality_assurance.md`)
 - Update "Last Modified" dates on content pages
 - Review and update SEO strategy based on performance
 - Analyze traffic patterns and optimize underperforming pages

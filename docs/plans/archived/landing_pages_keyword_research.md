@@ -4,7 +4,7 @@
 - **Created**: October 15, 2025
 - **Purpose**: Comprehensive keyword research for 5 high-intent landing pages
 - **Status**: Complete - Ready for Content Creation
-- **Related Task**: `.agent/Tasks/seo_landing_pages_phase3.md`
+- **Related Task**: `docs/plans/seo_landing_pages_phase3.md`
 
 ## Executive Summary
 

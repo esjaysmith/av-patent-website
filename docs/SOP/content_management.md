@@ -117,7 +117,7 @@ Comprehensive Fact-Checking Agent:
 SECTION 1: Patent Facts Verification
 - Verify patent number, issue date, claims
 - Validate technical specifications
-- Check USPTO records (after reading local .agent documentation)
+- Check USPTO records (after reading local docs documentation)
 - Verify continuation application status
 
 SECTION 2: Industry Claims Verification
@@ -292,7 +292,7 @@ For each landing page, maintain a **fact-check log**:
 
 ## Patent Claims Verified
 - Claim: "US Patent 12,001,207 issued June 4, 2024"
-- Source: .agent/System/patent_reference.md + USPTO database (direct link)
+- Source: docs/System/patent_reference.md + USPTO database (direct link)
 - Verified by: Comprehensive Fact-Checking Agent
 - Date: [date]
 - Status: ✅ VERIFIED
@@ -355,7 +355,7 @@ Track these metrics across all landing pages:
 ### Step 4: Comprehensive Fact-Checking (MANDATORY)
 **⚠️ CRITICAL: Launch comprehensive fact-checking agent before proceeding**
 1. Launch comprehensive fact-checking agent (covers patent facts, industry claims, and current events)
-2. Agent MUST read .agent/System/patent_reference.md FIRST for patent verification
+2. Agent MUST read docs/System/patent_reference.md FIRST for patent verification
 3. Review all agent findings across all categories
 4. Correct ALL flagged issues
 5. Re-verify corrected content
@@ -574,7 +574,7 @@ Before publishing new or updated content, verify:
 ### ⚠️ FACT-CHECKING (MANDATORY)
 - [ ] **ALL factual claims marked with [VERIFY] during drafting**
 - [ ] **Comprehensive fact-checking agent launched and completed**
-- [ ] **Agent verified all patent facts (100% complete) - MUST read .agent/System/patent_reference.md FIRST**
+- [ ] **Agent verified all patent facts (100% complete) - MUST read docs/System/patent_reference.md FIRST**
 - [ ] **Agent verified all industry/market claims (100% complete)**
 - [ ] **Agent verified all quotes/dates/current events (100% complete)**
 - [ ] **All agent findings reviewed and corrections made**
@@ -596,7 +596,7 @@ Before publishing new or updated content, verify:
 
 ## Related Documentation
 
-- **Project Architecture**: `/.agent/System/project_architecture.md`
-- **Site Generation SOP**: `/.agent/SOP/site_generation.md`
+- **Project Architecture**: `/docs/System/project_architecture.md`
+- **Site Generation SOP**: `/docs/SOP/site_generation.md`
 - **Website README**: `/website/README.md`
 - **Original PRD**: `/docs/website_prd_001.md`

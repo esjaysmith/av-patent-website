@@ -43,9 +43,9 @@ Prompt: "You are a comprehensive fact-checking agent responsible for verifying A
 Review the following content and verify EVERY claim across all categories: patent facts, industry claims, and current events.
 
 ⚠️ CRITICAL FIRST STEP - READ PATENT DOCUMENTATION FROM DISK:
-Before verifying any claims, you MUST read these files from the local .agent directory:
-1. Read file: .agent/System/patent_reference.md (comprehensive patent technical reference)
-2. Read file: .agent/US12001207B2.html (official patent document - use offset/limit for specific sections)
+Before verifying any claims, you MUST read these files from the local docs directory:
+1. Read file: docs/System/patent_reference.md (comprehensive patent technical reference)
+2. Read file: docs/US12001207B2.html (official patent document - use offset/limit for specific sections)
 
 These files contain the authoritative source material for all patent claims. Your verification
 MUST be based on the content of these local files as the primary source.
@@ -64,7 +64,7 @@ Verify:
 7. Patent categories and classifications
 8. Abstract and technical description accuracy
 
-PRIMARY SOURCE: .agent/System/patent_reference.md and .agent/US12001207B2.html (local disk)
+PRIMARY SOURCE: docs/System/patent_reference.md and docs/US12001207B2.html (local disk)
 SECONDARY SOURCE: USPTO database online (if local files insufficient)
 
 SECTION 2: INDUSTRY & MARKET CLAIMS VERIFICATION
@@ -93,7 +93,7 @@ OUTPUT FORMAT - For EACH claim across all sections:
 - Claim: [exact text]
 - Category: [Patent/Industry/Events]
 - Verification: [verified/unverified/incorrect]
-- Source: [.agent/System/patent_reference.md line X OR official source URL]
+- Source: [docs/System/patent_reference.md line X OR official source URL]
 - Correction: [if incorrect]
 - Confidence: [high/medium/low]
 
@@ -103,8 +103,8 @@ Flag ANY claims that cannot be verified or are incorrect."
 ### Verification Efficiency Tips
 
 **Best Practices for Single Agent:**
-- Start with local patent documentation (.agent/System/patent_reference.md) for all patent claims
-- Use the official patent HTML (.agent/US12001207B2.html) for detailed technical specifications
+- Start with local patent documentation (docs/System/patent_reference.md) for all patent claims
+- Use the official patent HTML (docs/US12001207B2.html) for detailed technical specifications
 - Prioritize official sources (company press releases, USPTO database, government sites)
 - Document all sources clearly in the verification report
 - Flag any claims that cannot be verified with primary sources
@@ -172,12 +172,12 @@ a significant shift toward [VERIFY: technology trend].
 Before launching agents, do a self-check:
 
 **Patent Information:**
-- **START HERE**: Read `.agent/System/patent_reference.md` for comprehensive patent details
-- **THEN**: Check specific claims in `.agent/US12001207B2.html` if needed
+- **START HERE**: Read `docs/System/patent_reference.md` for comprehensive patent details
+- **THEN**: Check specific claims in `docs/US12001207B2.html` if needed
 - **ONLY IF NEEDED**: Visit USPTO database: https://patft.uspto.gov/
 - Verify issue date, claims, classifications
 - Check continuation application status (18/432,397)
-- **PRIMARY SOURCE**: Local .agent documentation (always accurate)
+- **PRIMARY SOURCE**: Local docs documentation (always accurate)
 
 **Company Information:**
 - Visit official company websites
@@ -243,14 +243,14 @@ Before launching agents, do a self-check:
 Before consulting any external sources, fact-checking agents MUST read the local patent documentation:
 
 **Primary Local Sources:**
-1. **`.agent/System/patent_reference.md`** - Comprehensive patent technical reference
+1. **`docs/System/patent_reference.md`** - Comprehensive patent technical reference
    - Patent overview, abstract, claims summary
    - Technical architecture and applications
    - Licensing opportunities and target companies
    - Content development guidelines
    - Use this for: Quick reference, technical summaries, verified facts
 
-2. **`.agent/US12001207B2.html`** - Official complete patent document (3,689 lines)
+2. **`docs/US12001207B2.html`** - Official complete patent document (3,689 lines)
    - Full legal patent text from Google Patents
    - Complete claims, descriptions, drawings
    - All metadata and legal information
@@ -266,8 +266,8 @@ Before consulting any external sources, fact-checking agents MUST read the local
 
 **Agent Workflow:**
 ```
-Step 1: Read .agent/System/patent_reference.md (comprehensive reference)
-Step 2: If more detail needed, read specific sections of .agent/US12001207B2.html
+Step 1: Read docs/System/patent_reference.md (comprehensive reference)
+Step 2: If more detail needed, read specific sections of docs/US12001207B2.html
 Step 3: Only if local files insufficient, consult external USPTO database
 ```
 
@@ -521,7 +521,7 @@ For **every page**, create and maintain this log:
 ### Claim 1
 - **Claim:** "US Patent 12,001,207 issued June 4, 2024"
 - **Verification:** Verified
-- **Source:** .agent/System/patent_reference.md (line 21) + .agent/US12001207B2.html
+- **Source:** docs/System/patent_reference.md (line 21) + docs/US12001207B2.html
 - **Verified By:** Comprehensive Fact-Checking Agent
 - **Date:** [date]
 - **Confidence:** High
@@ -530,7 +530,7 @@ For **every page**, create and maintain this log:
 ### Claim 2
 - **Claim:** "Patent covers dual-module safety system for autonomous vehicles using visual navigation"
 - **Verification:** Verified
-- **Source:** .agent/System/patent_reference.md (Abstract section) + .agent/US12001207B2.html (lines 1737-1739)
+- **Source:** docs/System/patent_reference.md (Abstract section) + docs/US12001207B2.html (lines 1737-1739)
 - **Verified By:** Comprehensive Fact-Checking Agent
 - **Date:** [date]
 - **Confidence:** High
@@ -834,12 +834,12 @@ If factual accuracy is questioned (by user, competitor, etc.):
 **For All Fact-Checking Agents:**
 
 1. **Comprehensive Reference** (Start Here):
-   - File: `.agent/System/patent_reference.md`
+   - File: `docs/System/patent_reference.md`
    - Contents: Full patent overview, technical details, licensing info, content guidelines
    - When to use: First stop for any patent verification
 
 2. **Official Patent Document** (Detailed Verification):
-   - File: `.agent/US12001207B2.html` (3,689 lines)
+   - File: `docs/US12001207B2.html` (3,689 lines)
    - Contents: Complete official patent from Google Patents
    - When to use: Detailed claim text, technical specifications, exact legal language
    - How to read: Use Read tool with offset/limit for specific sections
@@ -850,20 +850,20 @@ If factual accuracy is questioned (by user, competitor, etc.):
    - When to use: Only for updates, changes, or if local files don't have needed info
 
 **Agent Reminder Checklist:**
-- [ ] Read .agent/System/patent_reference.md FIRST
-- [ ] Read specific sections of .agent/US12001207B2.html if needed
+- [ ] Read docs/System/patent_reference.md FIRST
+- [ ] Read specific sections of docs/US12001207B2.html if needed
 - [ ] Document local file sources in verification report
 - [ ] Only consult external sources if local files insufficient
 
 ## Related Documentation
 
-- **Patent Reference**: `/.agent/System/patent_reference.md` - **PRIMARY SOURCE** for all patent information
-- **Patent HTML**: `/.agent/US12001207B2.html` - Complete official patent document
-- **Content Management SOP**: `/.agent/SOP/content_management.md` - General content procedures
-- **Site Generation & Deployment**: `/.agent/SOP/site_generation_deployment.md` - Deployment process
-- **Project Architecture**: `/.agent/System/project_architecture.md` - System overview
-- **PRD**: `/.agent/Tasks/website_development_prd.md` - Product requirements
-- **Documentation Index**: `/.agent/README.md` - Complete documentation map
+- **Patent Reference**: `/docs/System/patent_reference.md` - **PRIMARY SOURCE** for all patent information
+- **Patent HTML**: `/docs/US12001207B2.html` - Complete official patent document
+- **Content Management SOP**: `/docs/SOP/content_management.md` - General content procedures
+- **Site Generation & Deployment**: `/docs/SOP/site_generation_deployment.md` - Deployment process
+- **Project Architecture**: `/docs/System/project_architecture.md` - System overview
+- **PRD**: `/docs/plans/archived/website_development_prd.md` - Product requirements
+- **Documentation Index**: `/docs/README.md` - Complete documentation map
 
 ---
 
@@ -880,13 +880,13 @@ If factual accuracy is questioned (by user, competitor, etc.):
 - ✅ Streamlined agent results review process (single report instead of 3)
 - ✅ Simplified fact-check log templates to reference single agent
 - ✅ Reduced complexity while maintaining thorough verification standards
-- ✅ Maintained requirement to read local .agent patent documentation first
+- ✅ Maintained requirement to read local docs patent documentation first
 
 **Version 1.1 Changes:**
 - ✅ Added mandatory local patent documentation reading for fact-checking agents
-- ✅ Created Tier 0 source hierarchy (local .agent files as PRIMARY source)
-- ✅ Updated agent prompts to require reading .agent/System/patent_reference.md
-- ✅ Added .agent/US12001207B2.html as official patent source
+- ✅ Created Tier 0 source hierarchy (local docs files as PRIMARY source)
+- ✅ Updated agent prompts to require reading docs/System/patent_reference.md
+- ✅ Added docs/US12001207B2.html as official patent source
 - ✅ Updated fact-check log examples to reference local file sources
 - ✅ Added Quick Reference section for patent documentation locations
 - ✅ Emphasized local-first verification workflow to reduce token usage and ensure accuracy
