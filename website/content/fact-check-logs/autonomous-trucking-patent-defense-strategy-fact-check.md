@@ -3,7 +3,7 @@
 **Page:** autonomous-trucking-patent-defense-strategy.md
 **Created:** October 19, 2025
 **Last Verified:** October 19, 2025
-**Verified By:** Direct fact-checking against patent documentation (.agent/System/patent_reference.md and .agent/US12001207B2.html)
+**Verified By:** Direct fact-checking against patent documentation (docs/System/patent_reference.md and docs/US12001207B2.html)
 **Status:** Verified and Published
 
 ---
@@ -27,7 +27,7 @@
 - **Claim:** "US Patent 12,001,207 B2"
 - **Line Numbers:** Throughout document (lines 30, 175, 455, etc.)
 - **Verification:** ✅ VERIFIED
-- **Source:** .agent/US12001207B2.html (line 25: `citation_patent_number" content="US:12001207"`)
+- **Source:** docs/US12001207B2.html (line 25: `citation_patent_number" content="US:12001207"`)
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
 
@@ -35,7 +35,7 @@
 - **Claim:** "Grant Date: June 4, 2024"
 - **Line Number:** 178
 - **Verification:** ✅ VERIFIED
-- **Source:** .agent/US12001207B2.html (line 26: `DC.date" content="2024-06-04" scheme="issue"`)
+- **Source:** docs/US12001207B2.html (line 26: `DC.date" content="2024-06-04" scheme="issue"`)
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
 
@@ -43,7 +43,7 @@
 - **Claim:** "Expiration: March 5, 2041"
 - **Line Number:** 179
 - **Verification:** ✅ VERIFIED
-- **Source:** .agent/US12001207B2.html (line 147: `expires <time itemprop="expiration" datetime="2041-03-05">2041-03-05</time>`)
+- **Source:** docs/US12001207B2.html (line 147: `expires <time itemprop="expiration" datetime="2041-03-05">2041-03-05</time>`)
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
 
@@ -62,8 +62,8 @@
 - **Line Number:** 180
 - **Verification:** ✅ VERIFIED
 - **Source:**
-  - .agent/US12001207B2.html (lines 27-28)
-  - .agent/System/patent_reference.md (lines 8-10)
+  - docs/US12001207B2.html (lines 27-28)
+  - docs/System/patent_reference.md (lines 8-10)
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
 
@@ -71,7 +71,7 @@
 - **Claim:** "Dual-module camera-based navigation safety system"
 - **Line Number:** 181
 - **Verification:** ✅ VERIFIED
-- **Source:** .agent/System/patent_reference.md (lines 32-48: describes safety-determining module and control module)
+- **Source:** docs/System/patent_reference.md (lines 32-48: describes safety-determining module and control module)
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
 
@@ -80,8 +80,8 @@
 - **Line Number:** 182
 - **Verification:** ✅ VERIFIED
 - **Source:**
-  - .agent/US12001207B2.html (title includes "autonomous driving vehicle or air vessel")
-  - .agent/System/patent_reference.md (lines 75-78: "Aerial Vehicles (Air Vessels)" explicitly listed)
+  - docs/US12001207B2.html (title includes "autonomous driving vehicle or air vessel")
+  - docs/System/patent_reference.md (lines 75-78: "Aerial Vehicles (Air Vessels)" explicitly listed)
 - **Confidence:** High
 - **Status:** ✅ VERIFIED
 
@@ -331,6 +331,6 @@ This content should be re-verified if:
 **Version:** 1.0
 **Status:** ✅ VERIFIED AND READY FOR PUBLICATION
 **Sign-off Date:** October 19, 2025
-**Verified By:** Direct verification against .agent/System/patent_reference.md and .agent/US12001207B2.html
+**Verified By:** Direct verification against docs/System/patent_reference.md and docs/US12001207B2.html
 
 **Summary:** Landing Page 5 (Autonomous Trucking) has been fact-checked and corrected. One critical error fixed (years remaining: 17+ → 15+), one factual error removed (Aurora-Waymo Via), and 20+ unverifiable claims qualified with appropriate hedging language. All patent claims verified 100% against local documentation. Page is ready for publication.

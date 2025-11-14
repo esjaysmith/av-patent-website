@@ -5,7 +5,7 @@
 - **Target Word Count**: 1,800-2,200 words
 - **Created**: October 16, 2025
 - **Status**: Ready for Content Creation
-- **Related**: `.agent/Tasks/seo_landing_pages_phase3.md` - Landing Page 5
+- **Related**: `docs/plans/archived/seo_landing_pages_phase3.md` - Landing Page 5
 
 ---
 
@@ -281,7 +281,7 @@
 
 #### H3: US Patent 12,001,207 B2: Dual-Module Safety for Commercial Vehicles
 **Patent Overview:**
-- **Granted**: June 4, 2024 [VERIFY from .agent/System/patent_reference.md]
+- **Granted**: June 4, 2024 [VERIFY from docs/System/patent_reference.md]
 - **Technology**: Dual-module safety system using visual navigation point recognition
 - **Application**: Autonomous vehicles and air vessels (includes commercial trucks)
 
@@ -312,7 +312,7 @@
 **Patent Claim Excerpt (Simplified for Non-Technical Audience):**
 > "A system for controlling an autonomous vehicle using a safety-determining module that validates camera-based navigation by comparing live images to stored route data, ensuring safe execution of navigation commands only when safety thresholds are met."
 
-[VERIFY exact claim language from .agent/US12001207B2.html]
+[VERIFY exact claim language from docs/US12001207B2.html]
 
 **Keywords to Include:**
 - "commercial trucking camera-first patents"
@@ -635,7 +635,7 @@
 4. **USPTO Patent Database**
    - Source: patft.uspto.gov (US Patent 12,001,207 B2)
    - Use for: Patent number, issue date, inventor names, claims
-   - [VERIFY: Use .agent/System/patent_reference.md as PRIMARY source]
+   - [VERIFY: Use docs/System/patent_reference.md as PRIMARY source]
 
 **Industry Sources to Cite (Tier 2):**
 
@@ -770,7 +770,7 @@
 
 ### High-Risk Claims Requiring Extra Verification
 
-**Patent Information (CRITICAL - use .agent/System/patent_reference.md):**
+**Patent Information (CRITICAL - use docs/System/patent_reference.md):**
 - [ ] Patent number: US 12,001,207 B2
 - [ ] Issue date: June 4, 2024
 - [ ] Inventors: Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
@@ -813,8 +813,8 @@
 ### Sources to Prioritize (Tier 1)
 
 **For Patent Claims:**
-1. PRIMARY: .agent/System/patent_reference.md (local disk - ALWAYS START HERE)
-2. SECONDARY: .agent/US12001207B2.html (local disk)
+1. PRIMARY: docs/System/patent_reference.md (local disk - ALWAYS START HERE)
+2. SECONDARY: docs/US12001207B2.html (local disk)
 3. TERTIARY: USPTO.gov (only if local files insufficient)
 
 **For Company/Funding Data:**
@@ -1000,8 +1000,8 @@
 ## Content Quality Checklist
 
 ### Before Drafting
-- [ ] Read .agent/System/patent_reference.md (PRIMARY patent source)
-- [ ] Review .agent/SOP/content_quality_assurance.md (fact-checking requirements)
+- [ ] Read docs/System/patent_reference.md (PRIMARY patent source)
+- [ ] Review docs/SOP/content_quality_assurance.md (fact-checking requirements)
 - [ ] Research Waabi, Aurora, Tesla Semi latest news (current as of Oct 2025)
 - [ ] Verify NHTSA and FMCSA latest guidance documents
 

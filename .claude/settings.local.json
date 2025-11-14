@@ -31,7 +31,12 @@
       "Bash(for file in System/*.md)",
       "Bash(do sed -i '' 's|\\.agent/|docs/|g' \"$file\")",
       "Bash(do sed -i '' 's|Tasks/|plans/archived/|g' \"$file\")",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(for file in website/content/content-briefs/*.md)",
+      "Bash(do sed -i '' 's|\\.agent/System/|docs/System/|g' \"$file\")",
+      "Bash(do sed -i '' 's|\\.agent/SOP/|docs/SOP/|g' \"$file\")",
+      "Bash(do sed -i '' 's|\\.agent/US12001207B2\\.html|docs/US12001207B2.html|g' \"$file\")",
+      "Bash(for file in website/content/fact-check-logs/*.md)"
     ]
   },
   "enableAllProjectMcpServers": true,

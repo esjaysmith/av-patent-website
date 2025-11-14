@@ -5,7 +5,7 @@
 - **Word Count Target:** 2,200-2,600 words
 - **Created:** October 15, 2025
 - **Status:** Ready for Writing
-- **Related:** `.agent/Tasks/seo_landing_pages_phase3.md` (Landing Page 4)
+- **Related:** `docs/plans/archived/seo_landing_pages_phase3.md` (Landing Page 4)
 
 ---
 
@@ -758,7 +758,7 @@ These claims will be tagged with [VERIFY] during drafting and must be fact-check
    - Agent 2 will verify (company data)
 
 7. **"US Patent 12,001,207 B2 granted June 4, 2024, expires March 5, 2041"**
-   - Source: USPTO patent database and .agent/System/patent_reference.md
+   - Source: USPTO patent database and docs/System/patent_reference.md
    - Agent 1 will verify (patent facts)
 
 8. **"FTO analysis costs $50K-$100K"**
@@ -776,7 +776,7 @@ These claims will be tagged with [VERIFY] during drafting and must be fact-check
 ### Sources to Prioritize (Tier 1)
 
 **Patent Information:**
-- `.agent/System/patent_reference.md` (PRIMARY SOURCE)
+- `docs/System/patent_reference.md` (PRIMARY SOURCE)
 - USPTO patent database (US 12,001,207 B2)
 
 **VC & Funding Data:**
@@ -942,5 +942,5 @@ Use Bootstrap table classes for checklist-style content:
 
 **Related Documents:**
 - Keywords: `/docs/landing-pages-keyword-research.md`
-- Task Plan: `.agent/Tasks/seo_landing_pages_phase3.md`
-- Patent Reference: `.agent/System/patent_reference.md` (must read before writing case study section)
+- Task Plan: `docs/plans/archived/seo_landing_pages_phase3.md`
+- Patent Reference: `docs/System/patent_reference.md` (must read before writing case study section)

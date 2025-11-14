@@ -39,7 +39,7 @@
 
 **Agent:** Patent Claims Specialist
 **Focus:** Verify all claims about US Patent 12,001,207 B2
-**Source:** Local patent documentation (.agent/System/patent_reference.md, .agent/US12001207B2.html)
+**Source:** Local patent documentation (docs/System/patent_reference.md, docs/US12001207B2.html)
 
 ### Verification Results
 
@@ -134,13 +134,13 @@
 #### ✅ CLAIM: 2024 AV Funding Data (Line 31, 50)
 - **Claim:** "$8.73B raised in 2024 across 75 autonomous vehicle funding rounds"
 - **Status:** ✅ VERIFIED CORRECT
-- **Source:** .agent/Tasks/seo_landing_pages_phase3.md, line 24
+- **Source:** docs/plans/archived/seo_landing_pages_phase3.md, line 24
 - **Verification:** Exact match
 
 #### ✅ CLAIM: Series A+ Companies (Line 50)
 - **Claim:** "376 companies have reached Series A or higher funding stages"
 - **Status:** ✅ VERIFIED CORRECT
-- **Source:** .agent/Tasks/seo_landing_pages_phase3.md, line 25
+- **Source:** docs/plans/archived/seo_landing_pages_phase3.md, line 25
 - **Verification:** Exact match
 
 #### ✅ CLAIM: Camera-First Industry Trend (Lines 74, 80, 226)
@@ -364,11 +364,11 @@ Document contains [VERIFY] tags on appropriate claims:
 
 **Tier 0 Sources (Primary, 100% Reliable):**
 - US Patent 12,001,207 B2 official documentation
-- Local .agent/System/patent_reference.md
+- Local docs/System/patent_reference.md
 - **Claims Verified:** 7 patent claims
 
 **Tier 1 Sources (Secondary, High Reliability):**
-- .agent/Tasks/seo_landing_pages_phase3.md (task context)
+- docs/plans/archived/seo_landing_pages_phase3.md (task context)
 - Landing Page 3 fact-check logs (previous verification work)
 - **Claims Verified:** 3 funding/market claims
 
@@ -467,4 +467,4 @@ Document contains [VERIFY] tags on appropriate claims:
 
 **Log Version:** 1.0
 **Last Updated:** October 19, 2025
-**Verification Standard:** Multi-agent fact-checking per .agent/SOP/content_quality_assurance.md
+**Verification Standard:** Multi-agent fact-checking per docs/SOP/content_quality_assurance.md

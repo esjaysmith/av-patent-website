@@ -76,7 +76,7 @@
 ### ✅ Claim 1: Patent Number
 - **Claim:** US 12,001,207 B2
 - **Status:** ✅ VERIFIED
-- **Source:** .agent/US12001207B2.html + .agent/System/patent_reference.md
+- **Source:** docs/US12001207B2.html + docs/System/patent_reference.md
 - **Confidence:** HIGH
 
 ### ✅ Claim 2: Issue Date

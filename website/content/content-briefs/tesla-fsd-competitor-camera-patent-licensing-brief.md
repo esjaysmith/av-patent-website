@@ -5,7 +5,7 @@
 - **Word Count Target:** 2,000-2,400 words
 - **Created:** October 15, 2025
 - **Status:** Ready for Writing
-- **Related:** `.agent/Tasks/seo_landing_pages_phase3.md` (Landing Page 2)
+- **Related:** `docs/plans/archived/seo_landing_pages_phase3.md` (Landing Page 2)
 
 ---
 
@@ -647,7 +647,7 @@ These claims will be tagged with [VERIFY] during drafting and must be fact-check
    - Agent 2 will verify (regulatory claim)
 
 8. **"US Patent 12,001,207 B2 granted June 4, 2024, expires March 5, 2041"**
-   - Source: USPTO patent database and .agent/System/patent_reference.md
+   - Source: USPTO patent database and docs/System/patent_reference.md
    - Agent 1 will verify (patent facts)
 
 9. **"Patent lawsuits cost $3M-$10M+"**
@@ -662,7 +662,7 @@ These claims will be tagged with [VERIFY] during drafting and must be fact-check
 ### Sources to Prioritize (Tier 1)
 
 **Patent Information:**
-- `.agent/System/patent_reference.md` (PRIMARY SOURCE)
+- `docs/System/patent_reference.md` (PRIMARY SOURCE)
 - USPTO patent database (US 12,001,207 B2)
 
 **Tesla & FSD Information:**
@@ -819,5 +819,5 @@ Use Bootstrap table classes for cost/timeline comparisons:
 
 **Related Documents:**
 - Keywords: `/docs/landing-pages-keyword-research.md`
-- Task Plan: `.agent/Tasks/seo_landing_pages_phase3.md`
-- Patent Reference: `.agent/System/patent_reference.md` (must read before writing)
+- Task Plan: `docs/plans/archived/seo_landing_pages_phase3.md`
+- Patent Reference: `docs/System/patent_reference.md` (must read before writing)
