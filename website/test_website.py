@@ -390,6 +390,68 @@ class WebsiteValidator:
         except Exception as e:
             self.log_test("Privacy policy link", "FAIL", str(e))
 
+        # Test Web3Forms endpoint
+        try:
+            form = await self.page.query_selector('form')
+            if form:
+                form_action = await form.get_attribute('action')
+                if 'web3forms.com/submit' in form_action:
+                    self.log_test("Web3Forms endpoint", "PASS", "Form uses Web3Forms API")
+                else:
+                    self.log_test("Web3Forms endpoint", "FAIL", f"Form action: {form_action}")
+            else:
+                self.log_test("Web3Forms endpoint", "FAIL", "Form element not found")
+        except Exception as e:
+            self.log_test("Web3Forms endpoint", "FAIL", str(e))
+
+        # Test honeypot spam protection
+        try:
+            honeypot = await self.page.query_selector('input[name="botcheck"]')
+            if honeypot:
+                honeypot_style = await honeypot.get_attribute('style')
+                if 'display:none' in honeypot_style or 'display: none' in honeypot_style:
+                    self.log_test("Honeypot spam protection", "PASS", "Honeypot field hidden")
+                else:
+                    self.log_test("Honeypot spam protection", "FAIL", f"Honeypot visible: {honeypot_style}")
+            else:
+                self.log_test("Honeypot spam protection", "FAIL", "Honeypot field missing")
+        except Exception as e:
+            self.log_test("Honeypot spam protection", "FAIL", str(e))
+
+        # Test Web3Forms access key present
+        try:
+            access_key = await self.page.query_selector('input[name="access_key"]')
+            if access_key:
+                key_value = await access_key.get_attribute('value')
+                if key_value and len(key_value) > 20:
+                    self.log_test("Web3Forms access key", "PASS", "Access key configured")
+                else:
+                    self.log_test("Web3Forms access key", "FAIL", "Access key empty or invalid")
+            else:
+                self.log_test("Web3Forms access key", "FAIL", "Access key field missing")
+        except Exception as e:
+            self.log_test("Web3Forms access key", "FAIL", str(e))
+
+        # Test hCaptcha widget present
+        try:
+            hcaptcha = await self.page.query_selector('.h-captcha[data-captcha="true"]')
+            if hcaptcha:
+                self.log_test("hCaptcha widget", "PASS", "hCaptcha spam protection present")
+            else:
+                self.log_test("hCaptcha widget", "FAIL", "hCaptcha widget missing")
+        except Exception as e:
+            self.log_test("hCaptcha widget", "FAIL", str(e))
+
+        # Test Web3Forms script present
+        try:
+            page_content = await self.page.content()
+            if 'web3forms.com/client/script.js' in page_content:
+                self.log_test("Web3Forms script", "PASS", "Web3Forms client script loaded")
+            else:
+                self.log_test("Web3Forms script", "FAIL", "Web3Forms script missing")
+        except Exception as e:
+            self.log_test("Web3Forms script", "FAIL", str(e))
+
     async def test_social_images_and_meta(self):
         """Test social sharing images and meta description optimization"""
         print("\n🖼️  Testing Social Images & Meta Descriptions...")

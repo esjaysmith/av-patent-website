@@ -29,7 +29,13 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 ## Licensing Inquiry Form
 
 <div class="bg-light p-4 rounded">
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="row g-3">
+<form action="https://api.web3forms.com/submit" method="POST" class="row g-3">
+    <!-- Web3Forms Configuration -->
+    <input type="hidden" name="access_key" value="bbf3b29a-8931-4c5a-9e5f-21434df994f0">
+    <input type="hidden" name="subject" value="New Patent Licensing Inquiry - US 12,001,207">
+    <input type="hidden" name="from_name" value="AV Navigation IP - Contact Form">
+    <input type="hidden" name="redirect" value="https://av-navigation-ip.com/thank-you.html">
+
     <!-- Required Fields -->
     <div class="col-12">
         <label for="name" class="form-label">Name *</label>
@@ -62,6 +68,14 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
         </div>
     </div>
 
+    <!-- Spam Protection: Honeypot -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1">
+
+    <!-- Spam Protection: hCaptcha -->
+    <div class="col-12">
+        <div class="h-captcha" data-captcha="true"></div>
+    </div>
+
     <!-- Privacy Policy Reference -->
     <div class="col-12">
         <p class="small text-muted">
@@ -74,10 +88,9 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
     <div class="col-12">
         <button type="submit" class="btn btn-primary cta-button btn-lg">Submit Licensing Inquiry</button>
     </div>
-
-    <input type="hidden" name="_subject" value="New Patent Licensing Inquiry - US 12,001,207">
-    <input type="hidden" name="_next" value="https://av-navigation-ip.com/thank-you.html">
 </form>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </div>
 
 ## Direct Contact Information
