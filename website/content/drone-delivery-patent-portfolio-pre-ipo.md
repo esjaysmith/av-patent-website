@@ -24,13 +24,13 @@ modified: "2025-10-18"
 og_title: "Drone Delivery Patent Portfolio for IPO | Terra Drone"
 og_description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
+og_image: "/assets/images/og-investment-finance.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Drone Delivery Patent Portfolio for IPO | Terra Drone"
 twitter_description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
+twitter_image: "/assets/images/og-investment-finance.jpg"
 ---
 
 # Drone Delivery Patent Portfolio for IPO: Strategic Licensing Guide

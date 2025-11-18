@@ -8,7 +8,7 @@
     <meta name="keywords" content="{{ keywords }}">
 
     <!-- SEO Meta Tags -->
-    <link rel="canonical" href="https://av-navigation-ip.com{{ canonical_url }}">
+    <link rel="canonical" href="{{ site_url }}{{ canonical_url }}">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{{ og_title }}" />
@@ -24,14 +24,14 @@
     <meta name="twitter:description" content="{{ twitter_description }}" />
     <meta name="twitter:image" content="{{ twitter_image }}" />
 
-    <!-- Google Analytics (TODO: Replace G-XXXXXXXXXX with actual Measurement ID before production deployment) -->
-    <!-- Tracking will be activated when deployed to production domain -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <!-- Google Analytics -->
+    <!-- Configure your Measurement ID in .env file: GOOGLE_ANALYTICS_ID=G-YOUR-ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ google_analytics_id }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+      gtag('config', '{{ google_analytics_id }}');
     </script>
 
     <!-- Google Fonts -->
@@ -726,7 +726,7 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "AV Navigation IP Protection",
-        "url": "https://av-navigation-ip.com",
+        "url": "{{ site_url }}",
         "description": "Patent licensing for autonomous vehicle camera-based navigation safety technology",
         "contactPoint": {
             "@type": "ContactPoint",

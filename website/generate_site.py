@@ -16,6 +16,20 @@ import re
 import base64
 import json
 
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    print("Warning: python-dotenv not installed. Using default values. Install with: pip install python-dotenv")
+
+# Environment configuration
+SITE_URL = os.getenv('SITE_URL', 'https://av-navigation-ip.com')
+SITE_DOMAIN = os.getenv('SITE_DOMAIN', 'av-navigation-ip.com')
+ENVIRONMENT = os.getenv('ENVIRONMENT', 'production')
+ROBOTS_INDEX = os.getenv('ROBOTS_INDEX', 'true').lower() == 'true'
+GOOGLE_ANALYTICS_ID = os.getenv('GOOGLE_ANALYTICS_ID', 'G-XXXXXXXXXX')
+
 class StaticSiteGenerator:
     def __init__(self, design="default"):
         self.base_dir = Path(__file__).parent
@@ -53,6 +67,35 @@ class StaticSiteGenerator:
             return 'legal'
         else:
             return 'landing'  # All SEO landing pages
+
+    def _normalize_url(self, url):
+        """Normalize URL to use environment-based domain.
+
+        Handles both absolute URLs (https://...) and relative URLs (/assets/...).
+        If URL is absolute, replaces the domain with SITE_URL.
+        If URL is relative, prepends SITE_URL.
+        """
+        if not url:
+            return f"{SITE_URL}/assets/images/og-general-info.jpg"
+
+        # If URL starts with http:// or https://, replace the base URL
+        if url.startswith('http://') or url.startswith('https://'):
+            # Extract the path part (everything after the domain)
+            # Example: https://av-navigation-ip.com/assets/images/foo.jpg -> /assets/images/foo.jpg
+            import re
+            match = re.search(r'https?://[^/]+(/.*)$', url)
+            if match:
+                path = match.group(1)
+                return f"{SITE_URL}{path}"
+            return url  # If parsing fails, return original
+
+        # If URL is relative (starts with /), prepend SITE_URL
+        elif url.startswith('/'):
+            return f"{SITE_URL}{url}"
+
+        # If URL doesn't start with /, assume it's a relative path and add /
+        else:
+            return f"{SITE_URL}/{url}"
 
     def clean_build_dir(self):
         """Remove and recreate build directory"""
@@ -137,24 +180,28 @@ class StaticSiteGenerator:
             'page_type': page_type,
             'breadcrumb_parent': metadata.get('breadcrumb_parent', ''),
             'breadcrumb_parent_url': metadata.get('breadcrumb_parent_url', ''),
+            'site_url': SITE_URL,
 
             # Open Graph fields
             'og_title': metadata.get('og_title', metadata.get('title', 'AV Navigation IP Protection')),
             'og_description': metadata.get('og_description', metadata.get('description', '')),
             'og_type': metadata.get('og_type', 'website'),
-            'og_url': metadata.get('canonical', f"https://av-navigation-ip.com{canonical_url}"),
-            'og_image': metadata.get('og_image', 'https://av-navigation-ip.com/assets/images/og-general-info.jpg'),
+            'og_url': metadata.get('og_url', f"{SITE_URL}{canonical_url}"),
+            'og_image': self._normalize_url(metadata.get('og_image', '/assets/images/og-general-info.jpg')),
             'og_site_name': 'AV Navigation IP Protection',
 
             # Twitter Card fields
             'twitter_card': metadata.get('twitter_card', 'summary_large_image'),
             'twitter_title': metadata.get('twitter_title', metadata.get('title', 'AV Navigation IP Protection')),
             'twitter_description': metadata.get('twitter_description', metadata.get('description', '')),
-            'twitter_image': metadata.get('twitter_image', metadata.get('og_image', 'https://av-navigation-ip.com/assets/images/og-general-info.jpg')),
+            'twitter_image': self._normalize_url(metadata.get('twitter_image', metadata.get('og_image', '/assets/images/og-general-info.jpg'))),
 
             # Schema.org date fields
             'date_published': metadata.get('date', metadata.get('date_published', '2025-11-01')),
-            'date_modified': metadata.get('modified', metadata.get('date_modified', '2025-11-12'))
+            'date_modified': metadata.get('modified', metadata.get('date_modified', '2025-11-12')),
+
+            # Google Analytics
+            'google_analytics_id': GOOGLE_ANALYTICS_ID
         }
 
         # Load and render template
@@ -174,7 +221,7 @@ class StaticSiteGenerator:
         sitemap_content = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 '''
-        base_url = "https://av-navigation-ip.com"  # TODO: Make configurable
+        base_url = SITE_URL
 
         for page in generated_pages:
             if page.name == 'index.html':
@@ -199,21 +246,31 @@ class StaticSiteGenerator:
 
     def generate_robots_txt(self):
         """Generate robots.txt"""
-        robots_content = """User-agent: *
-Allow: /
+        # Determine indexing policy based on environment
+        if ROBOTS_INDEX:
+            disallow_rule = "Allow: /"
+        else:
+            disallow_rule = "Disallow: /"
 
-Sitemap: https://av-navigation-ip.com/sitemap.xml
+        robots_content = f"""User-agent: *
+{disallow_rule}
+
+Sitemap: {SITE_URL}/sitemap.xml
 """
 
         robots_path = self.build_dir / 'robots.txt'
         with open(robots_path, 'w', encoding='utf-8') as f:
             f.write(robots_content)
 
-        print(f"✓ Generated robots.txt: {robots_path}")
+        print(f"✓ Generated robots.txt: {robots_path} (indexing: {'allowed' if ROBOTS_INDEX else 'blocked'})")
 
     def build_site(self):
         """Build the complete static site"""
         print(f"🚀 Starting static site generation using '{self.design}' design...")
+        print(f"🌍 Environment: {ENVIRONMENT}")
+        print(f"🔗 Site URL: {SITE_URL}")
+        print(f"🤖 Robots indexing: {'allowed' if ROBOTS_INDEX else 'blocked'}")
+        print()
 
         # Clean build directory
         self.clean_build_dir()

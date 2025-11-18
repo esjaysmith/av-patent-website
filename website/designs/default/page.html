@@ -95,7 +95,7 @@
         "availability": "Available",
         "businessFunction": "License",
         "description": "Available for exclusive and non-exclusive licensing",
-        "url": "https://av-navigation-ip.com/licensing.html"
+        "url": "{{ site_url }}/licensing.html"
     }
 }
 </script>
@@ -170,7 +170,7 @@
         "name": "AV Navigation IP Protection",
         "logo": {
             "@type": "ImageObject",
-            "url": "https://av-navigation-ip.com/assets/images/logo.png"
+            "url": "{{ site_url }}/assets/images/logo.png"
         }
     },
     "datePublished": "{{ date_published or '2025-11-01' }}",
@@ -195,13 +195,13 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://av-navigation-ip.com/"
+            "item": "{{ site_url }}/"
         }{% if breadcrumb_parent %},
         {
             "@type": "ListItem",
             "position": 2,
             "name": "{{ breadcrumb_parent }}",
-            "item": "https://av-navigation-ip.com{{ breadcrumb_parent_url }}"
+            "item": "{{ site_url }}{{ breadcrumb_parent_url }}"
         },
         {
             "@type": "ListItem",

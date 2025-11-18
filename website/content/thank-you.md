@@ -8,13 +8,13 @@ show_cta: false
 og_title: "Thank You - Licensing Inquiry Received"
 og_description: "Thank you for your licensing inquiry. We'll respond within 24 hours to discuss US Patent 12,001,207 licensing opportunities."
 og_type: "website"
-og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Thank You - Licensing Inquiry Received"
 twitter_description: "Thank you for your licensing inquiry. We'll respond within 24 hours to discuss US Patent 12,001,207 licensing opportunities."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"

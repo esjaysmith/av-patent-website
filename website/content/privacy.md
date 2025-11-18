@@ -9,13 +9,13 @@ show_cta: false
 og_title: "Privacy Policy | AV Navigation IP Protection"
 og_description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about licensing."
 og_type: "website"
-og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Privacy Policy | AV Navigation IP Protection"
 twitter_description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about licensing."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"

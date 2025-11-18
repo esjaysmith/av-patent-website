@@ -24,13 +24,13 @@ modified: "2025-10-18"
 og_title: "AV Patent Portfolio Due Diligence Guide for VCs | IP Assessment"
 og_description: "Guide to AV patent due diligence, including evaluation considerations for autonomous vehicle IP portfolios, patent quality, and freedom-to-operate for investments."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
+og_image: "/assets/images/og-investment-finance.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "AV Patent Portfolio Due Diligence Guide for VCs | IP Assessment"
 twitter_description: "Guide to AV patent due diligence, including evaluation considerations for autonomous vehicle IP portfolios, patent quality, and freedom-to-operate for investments."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-investment-finance.jpg"
+twitter_image: "/assets/images/og-investment-finance.jpg"
 ---
 
 # AV Patent Portfolio Due Diligence Guide for Venture Capital

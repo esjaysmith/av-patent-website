@@ -25,13 +25,13 @@ breadcrumb_parent_url: "/#solutions"
 og_title: "Series A AV Patent Portfolio Strategy | US Patent 12,001,207"
 og_description: "Build your AV patent portfolio before Series B. License camera navigation IP in 4-9 months vs 30-66 months in-house development."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+og_image: "/assets/images/og-startup-innovation.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Series A AV Patent Portfolio Strategy | US Patent 12,001,207"
 twitter_description: "Build your AV patent portfolio before Series B. License camera navigation IP in 4-9 months vs 30-66 months in-house development."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+twitter_image: "/assets/images/og-startup-innovation.jpg"
 ---
 
 # Patent Portfolio Strategy for Series A Autonomous Vehicle Startups

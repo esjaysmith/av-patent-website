@@ -9,13 +9,13 @@ show_cta: true
 og_title: "Patent Licensing Opportunities - US 12,001,207"
 og_description: "License US Patent 12,001,207 for camera-based AV navigation safety. Flexible licensing terms for startups, enterprises, and VCs."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-technical-legal.jpg"
+og_image: "/assets/images/og-technical-legal.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Patent Licensing Opportunities - US 12,001,207"
 twitter_description: "License US Patent 12,001,207 for camera-based AV navigation safety. Flexible licensing terms for startups, enterprises, and VCs."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-technical-legal.jpg"
+twitter_image: "/assets/images/og-technical-legal.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"

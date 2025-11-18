@@ -9,13 +9,13 @@ show_cta: true
 og_title: "Why License Now? Industry Trends and IP Strategy"
 og_description: "AV patent licensing insights for autonomous vehicle startups. Tesla FSD competition, VC due diligence, and IP portfolio strategy."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Why License Now? Industry Trends and IP Strategy"
 twitter_description: "AV patent licensing insights for autonomous vehicle startups. Tesla FSD competition, VC due diligence, and IP portfolio strategy."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"

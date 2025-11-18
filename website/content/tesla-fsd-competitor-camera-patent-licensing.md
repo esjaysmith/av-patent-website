@@ -24,13 +24,13 @@ modified: "2025-10-17"
 og_title: "Tesla FSD Competitor Camera Patent Licensing | AV IP"
 og_description: "Information on camera-based patent licensing for autonomous vehicle development, including IP considerations for camera-first systems."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+og_image: "/assets/images/og-startup-innovation.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Tesla FSD Competitor Camera Patent Licensing | AV IP"
 twitter_description: "Information on camera-based patent licensing for autonomous vehicle development, including IP considerations for camera-first systems."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+twitter_image: "/assets/images/og-startup-innovation.jpg"
 ---
 
 # Camera-Based Patent Licensing for Autonomous Vehicle Development

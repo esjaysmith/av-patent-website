@@ -9,13 +9,13 @@ show_cta: true
 og_title: "About Our Vision-Based Autonomous Navigation Patent"
 og_description: "About AV Navigation IP Protection. US Patent 12,001,207 is available for licensing related to camera-based autonomous vehicle navigation safety systems."
 og_type: "website"
-og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "About Our Vision-Based Autonomous Navigation Patent"
 twitter_description: "About AV Navigation IP Protection. US Patent 12,001,207 is available for licensing related to camera-based autonomous vehicle navigation safety systems."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"

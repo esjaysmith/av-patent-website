@@ -27,13 +27,13 @@ modified: "2025-10-18"
 og_title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
 og_description: "Information on patent strategies for autonomous trucking, including camera-based navigation safety for Class 8 trucks and commercial applications."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+og_image: "/assets/images/og-startup-innovation.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
 twitter_description: "Information on patent strategies for autonomous trucking, including camera-based navigation safety for Class 8 trucks and commercial applications."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-startup-innovation.jpg"
+twitter_image: "/assets/images/og-startup-innovation.jpg"
 ---
 
 # Patent Considerations for Autonomous Trucking Using Camera-Based Navigation

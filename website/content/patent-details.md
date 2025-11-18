@@ -9,13 +9,13 @@ show_cta: true
 og_title: "US Patent 12,001,207: Technical Details and Applications"
 og_description: "Detailed technical overview of US Patent 12,001,207 covering camera-based navigation safety for autonomous vehicles and drones."
 og_type: "article"
-og_image: "https://av-navigation-ip.com/assets/images/og-technical-legal.jpg"
+og_image: "/assets/images/og-technical-legal.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "US Patent 12,001,207: Technical Details and Applications"
 twitter_description: "Detailed technical overview of US Patent 12,001,207 covering camera-based navigation safety for autonomous vehicles and drones."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-technical-legal.jpg"
+twitter_image: "/assets/images/og-technical-legal.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"

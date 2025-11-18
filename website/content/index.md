@@ -10,13 +10,13 @@ hero_subtitle: "License cutting-edge camera-based navigation safety technology f
 og_title: "AV Navigation IP Protection | US Patent 12,001,207 Licensing"
 og_description: "License US Patent 12,001,207 for camera-based navigation safety in autonomous vehicles and drones. Strengthen your IP portfolio and protect your innovations."
 og_type: "website"
-og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "AV Navigation IP Protection | US Patent 12,001,207 Licensing"
 twitter_description: "License US Patent 12,001,207 for camera-based navigation safety in autonomous vehicles and drones. Strengthen your IP portfolio and protect your innovations."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"

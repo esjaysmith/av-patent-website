@@ -9,13 +9,13 @@ show_cta: false
 og_title: "Contact Us - Patent Licensing Inquiries"
 og_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
 og_type: "website"
-og_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Contact Us - Patent Licensing Inquiries"
 twitter_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
-twitter_image: "https://av-navigation-ip.com/assets/images/og-general-info.jpg"
+twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
@@ -34,7 +34,7 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
     <input type="hidden" name="access_key" value="bbf3b29a-8931-4c5a-9e5f-21434df994f0">
     <input type="hidden" name="subject" value="New Patent Licensing Inquiry - US 12,001,207">
     <input type="hidden" name="from_name" value="AV Navigation IP - Contact Form">
-    <input type="hidden" name="redirect" value="https://av-navigation-ip.com/thank-you.html">
+    <input type="hidden" name="redirect" value="/thank-you.html">
 
     <!-- Required Fields -->
     <div class="col-12">
