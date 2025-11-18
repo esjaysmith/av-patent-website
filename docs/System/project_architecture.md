@@ -116,8 +116,8 @@ beautifulsoup4==4.12.2  # HTML parsing (for testing)
                       │
                       ↓
 ┌─────────────────────────────────────────────────────────────┐
-│               Deployment (rsync)                             │
-│        (Upload to hosting provider)                          │
+│          Deployment (git push)                               │
+│   (Hosting service auto-builds and deploys)                 │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -271,14 +271,14 @@ python generate_site.py [--design theme_name]
 cd build && python -m http.server 8000
 
 # 3. Deploy to hosting
-./deploy.sh production  # (requires configuration)
-# OR
-rsync -avz build/ user@host:/path/to/site
+git add .
+git commit -m "Update website"
+git push
 ```
 
 ### Deployment Requirements
-- Python 3.x environment
-- Write access to hosting server
+- Git repository configured
+- Hosting service with git integration
 - Domain configuration (DNS)
 - SSL certificate setup
 - Formspree account for contact form
@@ -335,7 +335,7 @@ rsync -avz build/ user@host:/path/to/site
 3. Write content in Markdown
 4. Run `python generate_site.py`
 5. Preview in `/build/` directory
-6. Deploy with rsync or deploy script
+6. Commit and push to deploy
 
 ### Modifying Design
 1. Edit templates in `/designs/default/`

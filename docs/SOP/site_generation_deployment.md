@@ -2,15 +2,14 @@
 
 ## Overview
 
-This SOP covers the complete process of generating the static website, testing it locally, and deploying it to production hosting. The AV Navigation IP Protection website uses a Python-based static site generator.
+This SOP covers the complete process of generating the static website, testing it locally, and deploying it to production hosting. The AV Navigation IP Protection website uses a Python-based static site generator with git-based deployment.
 
 ## Prerequisites
 
 ### Required Software
 - Python 3.x (3.7 or higher)
 - pip (Python package manager)
-- Git (for version control)
-- SSH access (for rsync deployment)
+- Git (for version control and deployment)
 
 ### Required Python Packages
 ```bash
@@ -186,99 +185,32 @@ Before deploying to production, verify:
 
 ## Deployment Process
 
-### Initial Setup (One-Time)
+### Git-Based Deployment (Primary Method)
 
-#### Option 1: rsync Deployment (SiteGround, VPS)
+The site uses git push for deployment. The hosting service automatically builds and deploys when changes are pushed to the repository.
 
-**1. Configure SSH Access**
-```bash
-# Test SSH connection
-ssh username@your-server.com
-
-# Set up SSH key (recommended)
-ssh-copy-id username@your-server.com
-```
-
-**2. Update deploy.sh Script**
-Edit `/website/deploy.sh`:
-```bash
-# Production configuration
-REMOTE_USER="your-username"
-REMOTE_HOST="your-server.com"
-REMOTE_PATH="/path/to/public_html"
-```
-
-**3. Make Script Executable**
-```bash
-chmod +x deploy.sh
-```
-
-#### Option 2: Netlify Deployment (Git-Based)
-
-**1. Install Netlify CLI**
-```bash
-npm install -g netlify-cli
-```
-
-**2. Login to Netlify**
-```bash
-netlify login
-```
-
-**3. Initialize Site**
-```bash
-netlify init
-```
-
-**4. Configure Build Settings**
-- Build command: `python generate_site.py`
-- Publish directory: `website/build`
-
-### Deployment Execution
-
-#### Option 1: rsync Deployment
-
-**Production Deployment:**
+**1. Generate the Site**
 ```bash
 cd website
-./deploy.sh production
+python generate_site.py
 ```
 
-**Staging Deployment (if configured):**
-```bash
-./deploy.sh staging
-```
-
-**Manual rsync:**
-```bash
-rsync -avz --delete build/ username@server.com:/path/to/public_html/
-```
-
-**Flags Explained:**
-- `-a`: Archive mode (preserves permissions, timestamps)
-- `-v`: Verbose output
-- `-z`: Compress during transfer
-- `--delete`: Remove files on server not in source
-
-#### Option 2: Netlify Deployment
-
-**Deploy to Production:**
-```bash
-netlify deploy --prod
-```
-
-**Deploy to Draft (preview):**
-```bash
-netlify deploy
-```
-
-**Git-Based Deployment:**
+**2. Commit Changes**
 ```bash
 git add .
 git commit -m "Update website content"
-git push origin main
-# Netlify auto-deploys on push
 ```
+
+**3. Push to Deploy**
+```bash
+git push
+```
+
+The hosting service will:
+- Detect the push
+- Run the build command (`python generate_site.py`)
+- Deploy the `build/` directory to production
+- Update the live site
 
 ### Post-Deployment Verification
 
@@ -357,8 +289,9 @@ git push
 
 **6. Deploy**
 ```bash
-cd website
-./deploy.sh production
+git add .
+git commit -m "Update homepage content"
+git push
 ```
 
 ### Adding New Pages
@@ -385,7 +318,9 @@ python test_website.py
 
 **5. Deploy**
 ```bash
-./deploy.sh production
+git add .
+git commit -m "Add new page: [page-name]"
+git push
 ```
 
 ## Rollback Procedure
@@ -411,13 +346,18 @@ python generate_site.py
 git checkout main
 ```
 
-### Option 2: Keep Build Backups
+### Option 2: Tag Releases
 ```bash
-# Before deployment, backup current build
-cp -r build build_backup_$(date +%Y%m%d_%H%M%S)
+# Tag current release before deploying
+git tag -a v1.0.1 -m "Release version 1.0.1"
+git push origin v1.0.1
 
-# If rollback needed
-rsync -avz --delete build_backup_YYYYMMDD_HHMMSS/ username@server.com:/path/
+# If rollback needed, checkout the tag
+git checkout v1.0.0
+python generate_site.py
+git add build/
+git commit -m "Rollback to v1.0.0"
+git push
 ```
 
 ## Monitoring and Maintenance
@@ -451,14 +391,14 @@ rsync -avz --delete build_backup_YYYYMMDD_HHMMSS/ username@server.com:/path/
 3. Verify content files have valid frontmatter
 4. Check for syntax errors in Markdown files
 
-### Issue: Deployment Fails (rsync)
-**Symptoms:** rsync command fails or times out
+### Issue: Deployment Fails (Git Push)
+**Symptoms:** git push fails or deployment doesn't update
 
 **Solutions:**
-1. Test SSH connection: `ssh username@server.com`
-2. Verify server path is correct
-3. Check disk space on server: `df -h`
-4. Ensure proper permissions on remote directory
+1. Check git status and ensure changes are committed
+2. Verify you're on the correct branch
+3. Check hosting service build logs for errors
+4. Ensure build command is configured correctly on hosting service
 
 ### Issue: Pages Not Updating on Live Site
 **Symptoms:** Changes deployed but not visible

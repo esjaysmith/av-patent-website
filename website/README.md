@@ -28,7 +28,6 @@ website/
 ├── .env                    # Local environment config (gitignored)
 ├── generate_site.py        # Static site generator script
 ├── generate_og_images.py   # Open Graph image generator
-├── deploy.sh              # Deployment script
 ├── requirements.txt        # Python dependencies
 └── README.md              # This file
 ```
@@ -181,8 +180,8 @@ python generate_og_images.py
 # Generate site
 python generate_site.py
 
-# Test deployment script (dry run)
-./deploy.sh staging
+# Test locally
+cd build && python -m http.server 8000
 ```
 
 ### Live Deployment
@@ -199,13 +198,16 @@ python generate_site.py
 
 **Deploy to Production**:
 ```bash
-./deploy.sh production
+git add .
+git commit -m "Update website content"
+git push
 ```
 
 **Environment-Specific Configuration**:
 - `.env` is gitignored (create per environment)
 - Background images ARE committed to git (for reproducibility)
 - Generated OG images are gitignored (regenerate per deployment)
+- Hosting service automatically builds and deploys on git push
 
 ## Site Pages
 
@@ -283,27 +285,29 @@ The site uses a category-based system for Open Graph images:
 - Thank you page: `/thank-you.html`
 
 ### Configuration Steps
-1. Sign up for Formspree account
-2. Replace `YOUR_FORM_ID` in `contact.md`
+1. Sign up for form service account (Formspree, Web3Forms, etc.)
+2. Update form endpoint in `content/contact.md`
 3. Configure email notifications
 4. Test form submission
 
 ## Hosting Recommendations
 
-### Option 1: SiteGround (PRD Recommendation)
-- **Cost**: ~$10/month
-- **Features**: SSL, fast loading, WordPress compatible
-- **Deployment**: rsync or FTP
-
-### Option 2: Netlify (Alternative)
+### Option 1: Netlify (Recommended)
 - **Cost**: Free tier available
-- **Features**: Git-based deployment, auto-SSL
-- **Deployment**: Git push or drag-and-drop
+- **Features**: Git-based deployment, auto-SSL, automatic builds
+- **Deployment**: Git push (automatic)
+- **Build Command**: `cd website && python generate_site.py`
+- **Publish Directory**: `website/build`
 
-### Option 3: AWS S3 + CloudFront
-- **Cost**: ~$5/month
-- **Features**: High performance, global CDN
-- **Deployment**: AWS CLI or sync
+### Option 2: Vercel
+- **Cost**: Free tier available
+- **Features**: Git-based deployment, edge network, automatic SSL
+- **Deployment**: Git push (automatic)
+
+### Option 3: AWS Amplify
+- **Cost**: Pay-as-you-go (~$1-5/month)
+- **Features**: Git-based deployment, global CDN, auto-SSL
+- **Deployment**: Git push (automatic)
 
 ## Performance Targets
 

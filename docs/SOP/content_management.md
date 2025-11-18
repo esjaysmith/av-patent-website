@@ -392,8 +392,10 @@ python -m http.server 8000
 ### Step 8: Deploy
 **⚠️ ONLY deploy after fact-checking complete and documented**
 ```bash
-# Deploy to production (configure first)
-./deploy.sh production
+# Commit and push to deploy
+git add .
+git commit -m "Add new page: [page name]"
+git push
 ```
 
 ## Editing Existing Content
@@ -425,7 +427,9 @@ python generate_site.py
 
 ### Step 5: Deploy Updates
 ```bash
-./deploy.sh production
+git add .
+git commit -m "Update [page name]"
+git push
 ```
 
 ## Content Guidelines

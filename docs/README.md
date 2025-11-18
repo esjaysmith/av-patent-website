@@ -91,7 +91,7 @@ Finally: [`SOP/site_generation_deployment.md`](./SOP/site_generation_deployment.
 7. Generate site: `python generate_site.py`
 8. Test locally: `python -m http.server 8000`
 9. **Final fact-check pass before deploy**
-10. Deploy: `./deploy.sh production`
+10. Deploy: `git add . && git commit -m "Add new content" && git push`
 
 **See:** [`content_management.md`](./SOP/content_management.md) for detailed workflow
 
@@ -118,8 +118,9 @@ python generate_site.py
 
 **Command:**
 ```bash
-cd website
-./deploy.sh production
+git add .
+git commit -m "Update website"
+git push
 ```
 
 ### Running Tests

@@ -81,7 +81,6 @@ op_patent/
 │   ├── build/                # 🏗️ Generated static site (output directory)
 │   ├── generate_site.py      # 🔧 Site generator (main script)
 │   ├── test_website.py       # 🧪 Test suite
-│   ├── deploy.sh            # 🚀 Deployment script
 │   └── requirements.txt     # 📦 Python dependencies
 │
 ├── docs/                     # Developer documentation
@@ -381,40 +380,23 @@ python test_website.py
 
 ## Deployment
 
-### Using the Deployment Script
+### Git-Based Deployment
 
-```bash
-cd website
-
-# Deploy to staging
-./deploy.sh staging
-
-# Deploy to production
-./deploy.sh production
-```
-
-**What the script does:**
-1. Regenerates the site with `python generate_site.py`
-2. Runs the test suite to ensure quality
-3. Uses `rsync` to upload files to the hosting server
-4. Prompts for confirmation before deploying to production
-
-### Manual Deployment
-
-If you prefer to deploy manually:
+The site uses git push for deployment. Simply commit your changes and push to deploy:
 
 1. **Generate the site**:
    ```bash
    python generate_site.py
    ```
 
-2. **Upload the `build/` directory** to your web host using:
-   - FTP/SFTP client
-   - rsync
-   - Git-based deployment (Netlify, Vercel, etc.)
-   - AWS S3 + CloudFront
+2. **Commit and push**:
+   ```bash
+   git add .
+   git commit -m "Update website content"
+   git push
+   ```
 
-The entire website is in the `build/` directory - just upload its contents to your web server's root.
+The hosting service will automatically build and deploy the site from the repository.
 
 ## Important Documentation
 
