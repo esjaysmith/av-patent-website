@@ -29,6 +29,7 @@ SITE_DOMAIN = os.getenv('SITE_DOMAIN', 'av-navigation-ip.com')
 ENVIRONMENT = os.getenv('ENVIRONMENT', 'production')
 ROBOTS_INDEX = os.getenv('ROBOTS_INDEX', 'true').lower() == 'true'
 GOOGLE_ANALYTICS_ID = os.getenv('GOOGLE_ANALYTICS_ID', 'G-XXXXXXXXXX')
+GOOGLE_ANALYTICS_ENABLED = os.getenv('GOOGLE_ANALYTICS_ENABLED', 'false').lower() == 'true'
 
 class StaticSiteGenerator:
     def __init__(self, design="default"):
@@ -201,7 +202,8 @@ class StaticSiteGenerator:
             'date_modified': metadata.get('modified', metadata.get('date_modified', '2025-11-12')),
 
             # Google Analytics
-            'google_analytics_id': GOOGLE_ANALYTICS_ID
+            'google_analytics_id': GOOGLE_ANALYTICS_ID,
+            'google_analytics_enabled': GOOGLE_ANALYTICS_ENABLED
         }
 
         # Load and render template

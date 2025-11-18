@@ -17,14 +17,10 @@ pip install -r requirements.txt
 cp .env.example .env
 # Edit .env if needed (defaults are fine for local development)
 
-# 3. Generate the website
-python generate_site.py
+# 3. Build and serve the site (one-liner)
+rm -rf build && python generate_site.py && python -m http.server -d build 8000
 
-# 4. Run development server
-cd build
-python -m http.server 8000
-
-# 5. Open in browser
+# 4. Open in browser
 # Visit http://localhost:8000
 ```
 
@@ -328,7 +324,23 @@ Current theme: `default`
 
 ## Running the Development Server
 
-### Method 1: Python Built-in HTTP Server (Recommended)
+### Quick One-Liner (Recommended)
+
+Build and serve the site in one command:
+
+```bash
+cd website && rm -rf build && python generate_site.py && python -m http.server -d build 8000
+```
+
+Then visit: **http://localhost:8000**
+
+**What this does:**
+- Navigates to website directory
+- Removes old build artifacts
+- Generates fresh site from content
+- Starts HTTP server serving the build directory
+
+### Method 1: Python Built-in HTTP Server (Manual Steps)
 
 ```bash
 cd website/build
