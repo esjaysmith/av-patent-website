@@ -94,32 +94,32 @@ Don't let your breakthrough technologies remain vulnerable to IP challenges. US 
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #e67e22; margin-bottom: 15px;">Series A AV Startups</h3>
         <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Build your patent portfolio before Series B funding with strategic licensing for defensive IP protection.</p>
-        <a href="/series-a-av-patent-portfolio-strategy.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Learn More →</a>
+        <a href="/series-a-av-patent-portfolio-strategy.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Explore Series A Patent Strategy →</a>
       </div>
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #e67e22; margin-bottom: 15px;">Tesla FSD Competitors</h3>
         <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Compete with Tesla's Full Self-Driving using proven camera-based autonomous vehicle patent protection.</p>
-        <a href="/tesla-fsd-competitor-camera-patent-licensing.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Learn More →</a>
+        <a href="/tesla-fsd-competitor-camera-patent-licensing.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Camera Patent Licensing for FSD →</a>
       </div>
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #e67e22; margin-bottom: 15px;">Drone Delivery Pre-IPO</h3>
         <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Strengthen your drone patent portfolio before IPO with UAV visual navigation technology licensing.</p>
-        <a href="/drone-delivery-patent-portfolio-pre-ipo.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Learn More →</a>
+        <a href="/drone-delivery-patent-portfolio-pre-ipo.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Drone Navigation Patent Portfolio →</a>
       </div>
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #e67e22; margin-bottom: 15px;">VC Due Diligence Guide</h3>
         <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Comprehensive guide for VCs evaluating autonomous vehicle patent portfolios and IP quality assessment.</p>
-        <a href="/venture-capital-av-patent-portfolio-due-diligence.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Learn More →</a>
+        <a href="/venture-capital-av-patent-portfolio-due-diligence.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">AV Patent Due Diligence Guide →</a>
       </div>
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #e67e22; margin-bottom: 15px;">Autonomous Trucking</h3>
         <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Defensive patent strategy for autonomous trucking startups with camera-based navigation IP for Class 8 trucks.</p>
-        <a href="/autonomous-trucking-patent-defense-strategy.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Learn More →</a>
+        <a href="/autonomous-trucking-patent-defense-strategy.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Trucking Patent Defense Strategy →</a>
       </div>
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #e67e22; margin-bottom: 15px;">About This Patent</h3>
         <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Learn about the inventors, patent claims, and technical specifications of US Patent 12,001,207 B2.</p>
-        <a href="/about.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">Learn More →</a>
+        <a href="/about.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">View Patent Details & Claims →</a>
       </div>
     </div>
   </div>
