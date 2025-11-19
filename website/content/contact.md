@@ -96,7 +96,7 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 ## Direct Contact Information
 
 ### **Primary Licensing Contact**
-**Email:** [Y29udGFjdEBleGFtcGxlLmNvbQ==](mailto:Y29udGFjdEBleGFtcGxlLmNvbQ==)
+**Email:** [{{ contact_email_encoded }}](mailto:{{ contact_email_encoded }})
 **Subject Line Format:** "Patent Licensing Inquiry - [Your Company] - US 12,001,207"
 
 ### **Response Times**

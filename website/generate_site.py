@@ -30,6 +30,8 @@ ENVIRONMENT = os.getenv('ENVIRONMENT', 'production')
 ROBOTS_INDEX = os.getenv('ROBOTS_INDEX', 'true').lower() == 'true'
 GOOGLE_ANALYTICS_ID = os.getenv('GOOGLE_ANALYTICS_ID', 'G-XXXXXXXXXX')
 GOOGLE_ANALYTICS_ENABLED = os.getenv('GOOGLE_ANALYTICS_ENABLED', 'false').lower() == 'true'
+CONTACT_EMAIL = os.getenv('CONTACT_EMAIL', 'contact@example.com')
+CONTACT_EMAIL_ENCODED = base64.b64encode(CONTACT_EMAIL.encode('utf-8')).decode('utf-8')
 
 class StaticSiteGenerator:
     def __init__(self, design="default"):
@@ -128,13 +130,19 @@ class StaticSiteGenerator:
                 return {}, content
         return {}, content
 
-    def process_markdown_file(self, md_file_path):
+    def process_markdown_file(self, md_file_path, template_vars=None):
         """Process a single markdown file and return HTML content with metadata"""
         with open(md_file_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
         # Parse frontmatter
         metadata, markdown_content = self.parse_frontmatter(content)
+
+        # Process Jinja2 template variables in markdown content if provided
+        if template_vars:
+            from jinja2 import Template
+            markdown_template = Template(markdown_content)
+            markdown_content = markdown_template.render(**template_vars)
 
         # Convert markdown to HTML
         html_content = self.md.convert(markdown_content)
@@ -151,8 +159,6 @@ class StaticSiteGenerator:
 
     def generate_page(self, md_file_path, output_filename=None):
         """Generate a single HTML page from markdown file"""
-        html_content, metadata = self.process_markdown_file(md_file_path)
-
         # Determine output filename
         if output_filename is None:
             output_filename = md_file_path.stem + '.html'
@@ -166,7 +172,16 @@ class StaticSiteGenerator:
         # Determine page type for schema selection
         page_type = self.determine_page_type(output_filename)
 
-        # Set default metadata values
+        # Build template vars for markdown processing (only environment variables)
+        markdown_template_vars = {
+            'contact_email_encoded': CONTACT_EMAIL_ENCODED,
+            'site_url': SITE_URL,
+        }
+
+        # Process markdown with template variables
+        html_content, metadata = self.process_markdown_file(md_file_path, markdown_template_vars)
+
+        # Set default metadata values for final page template
         template_vars = {
             'title': metadata.get('title', 'AV Navigation IP Protection'),
             'description': metadata.get('description', 'Patent licensing for autonomous vehicle navigation technology'),
@@ -203,7 +218,10 @@ class StaticSiteGenerator:
 
             # Google Analytics
             'google_analytics_id': GOOGLE_ANALYTICS_ID,
-            'google_analytics_enabled': GOOGLE_ANALYTICS_ENABLED
+            'google_analytics_enabled': GOOGLE_ANALYTICS_ENABLED,
+
+            # Contact information (base64 encoded for spam protection)
+            'contact_email_encoded': CONTACT_EMAIL_ENCODED
         }
 
         # Load and render template
