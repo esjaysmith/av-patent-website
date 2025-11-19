@@ -1,5 +1,5 @@
 ---
-title: "AV Patent Portfolio Due Diligence Guide for VCs | IP Assessment"
+title: "AV Patent Due Diligence Guide for VCs"
 page_title: "AV Patent Portfolio Due Diligence Guide for Venture Capital"
 description: "Guide to AV patent due diligence, including evaluation considerations for autonomous vehicle IP portfolios, patent quality, and freedom-to-operate for investments."
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - camera-based navigation patents valuation
 show_cta: true
 cta_text: "Request Patent Portfolio Analysis Template"
-cta_link: "/contact.html?utm_source=vc-dd-guide&utm_medium=primary-cta&utm_campaign=patent-assessment"
+cta_link: "/contact.html"
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 layout: page
@@ -565,10 +565,10 @@ For Series A: Conditional. If portfolio company's technology touches any areas w
   <strong>VC Patent Due Diligence Tip:</strong> Always ask founders the eight patent questions listed in our Phase 1 screening section. Their responses reveal IP sophistication and strategic thinking better than any formal assessment. Founders who can't answer these questions clearly have gaps in IP strategy that will emerge post-investment.
 </div>
 
-<a href="/contact.html?utm_source=vc-dd-guide&utm_medium=secondary-cta&utm_campaign=checklist-download" class="btn btn-outline-primary mt-4">Download: VC Patent Due Diligence Checklist (PDF)</a>
+<a href="/contact.html" class="btn btn-outline-primary mt-4">Download: VC Patent Due Diligence Checklist (PDF)</a>
 
 ---
 
 **Need expert analysis of a portfolio company's patent portfolio?** We offer patent portfolio assessment services for VC investors, leveraging our experience as patent holders and autonomous vehicle industry experts. Our assessments help VCs make better investment decisions and support portfolio companies in strengthening IP positions.
 
-<a href="/contact.html?utm_source=vc-dd-guide&utm_medium=tertiary-cta&utm_campaign=vc-services" class="btn btn-primary mt-3">Request Patent Portfolio Assessment</a>
+<a href="/contact.html" class="btn btn-primary mt-3">Request Patent Portfolio Assessment</a>

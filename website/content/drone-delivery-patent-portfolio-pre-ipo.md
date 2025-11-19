@@ -12,7 +12,7 @@ keywords:
   - drone patent portfolio valuation
 show_cta: true
 cta_text: "Schedule Pre-IPO Patent Portfolio Assessment"
-cta_link: "/contact.html?utm_source=landing&utm_medium=page&utm_campaign=drone-delivery-ipo"
+cta_link: "/contact.html"
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 layout: page
@@ -449,7 +449,7 @@ The window for IPO preparation is narrow. Start your patent portfolio strengthen
 **Schedule a Pre-IPO Patent Portfolio Assessment:**
 Contact us to discuss your drone delivery company's patent strategy, licensing opportunities, and IPO preparation timeline. Our team will evaluate your current portfolio, identify strategic licensing opportunities, and develop an action plan for competitive IPO positioning.
 
-**[Schedule Pre-IPO Patent Portfolio Assessment](/contact.html?utm_source=drone-delivery-ipo-page&utm_medium=primary-cta&utm_campaign=patent-licensing)** →
+**[Schedule Pre-IPO Patent Portfolio Assessment](/contact.html)** →
 
 ---
 
@@ -458,7 +458,7 @@ Contact us to discuss your drone delivery company's patent strategy, licensing o
 <div class="alert alert-light">
   <strong>Download: Drone Patent Portfolio IPO Checklist</strong> — A practical checklist to audit your current drone patent portfolio and identify visual navigation patent gaps before IPO.
 
-  [Download IPO Patent Portfolio Checklist](/contact.html?utm_source=drone-delivery-ipo-page&utm_medium=secondary-cta&utm_campaign=downloadable-resource)
+  [Download IPO Patent Portfolio Checklist](/contact.html)
 </div>
 
 ---
@@ -467,7 +467,7 @@ Contact us to discuss your drone delivery company's patent strategy, licensing o
 
 Want to learn more about camera-based navigation patents and their applications for drone delivery?
 
-[View Camera-Based Navigation Patent Details](/patent-details.html?utm_source=drone-delivery-ipo-page&utm_medium=tertiary-cta)
+[View Camera-Based Navigation Patent Details](/patent-details.html)
 
 ---
 

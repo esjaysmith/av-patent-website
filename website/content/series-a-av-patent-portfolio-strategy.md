@@ -13,7 +13,7 @@ keywords:
   - camera-based navigation patents
 show_cta: true
 cta_text: "Schedule Patent Portfolio Assessment"
-cta_link: "/contact.html?utm_source=series-a-av-page&utm_medium=primary-cta&utm_campaign=patent-licensing"
+cta_link: "/contact.html"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-16"
@@ -215,7 +215,7 @@ The decision isn't binary. The optimal approach combines strategic licensing (fo
 <div class="cta-box">
   <h3>Download: Series A IP Strategy Checklist</h3>
   <p>Get our free checklist to audit your current IP portfolio and identify gaps before Series B due diligence.</p>
-  <a href="/contact.html?utm_source=series-a-av-page&utm_medium=secondary-cta&utm_campaign=downloadable-resource" class="btn btn-outline-primary">Download Free Checklist</a>
+  <a href="/contact.html" class="btn btn-outline-primary">Download Free Checklist</a>
 </div>
 
 ## How Strategic Patent Licensing Accelerates IP Portfolio Building
@@ -427,7 +427,7 @@ This patent exemplifies the type of strategic licensing opportunity that Series 
       </ul>
     </div>
   </div>
-  <a href="/patent-details.html?utm_source=series-a-av-page&utm_medium=tertiary-cta" class="btn btn-outline-primary">View Technical Specifications →</a>
+  <a href="/patent-details.html" class="btn btn-outline-primary">View Technical Specifications →</a>
 </div>
 
 ### Building a Balanced IP Portfolio
@@ -617,7 +617,7 @@ This roadmap shows investors you've planned beyond immediate Series B needs—a 
 <div class="cta-box-primary text-center my-5">
   <h3>Ready to Strengthen Your Patent Portfolio?</h3>
   <p class="lead">Schedule a patent portfolio assessment to discuss licensing options for US Patent 12,001,207 B2 and other camera-based safety patents.</p>
-  <a href="/contact.html?utm_source=series-a-av-page&utm_medium=mid-cta&utm_campaign=patent-licensing" class="btn btn-primary btn-lg">Schedule Portfolio Assessment</a>
+  <a href="/contact.html" class="btn btn-primary btn-lg">Schedule Portfolio Assessment</a>
 </div>
 
 ## Your 6-Month IP Portfolio Action Plan Before Series B
@@ -826,8 +826,8 @@ Your patent portfolio strategy for series A autonomous vehicle startups will det
   <div class="container">
     <h2>Ready to Strengthen Your Patent Portfolio Before Series B?</h2>
     <p class="lead mb-4">Schedule a patent portfolio assessment to discuss licensing options for US Patent 12,001,207 B2 and develop your Series B IP strategy.</p>
-    <a href="/contact.html?utm_source=series-a-av-page&utm_medium=primary-cta&utm_campaign=patent-licensing" class="btn btn-primary btn-lg me-3">Schedule Patent Portfolio Assessment</a>
-    <a href="/patent-details.html?utm_source=series-a-av-page" class="btn btn-outline-primary btn-lg">View Patent Technical Details</a>
+    <a href="/contact.html" class="btn btn-primary btn-lg me-3">Schedule Patent Portfolio Assessment</a>
+    <a href="/patent-details.html" class="btn btn-outline-primary btn-lg">View Patent Technical Details</a>
     <p class="mt-4 text-muted"><small>Typical response time: 1 business day | Consultation: No cost</small></p>
   </div>
 </div>

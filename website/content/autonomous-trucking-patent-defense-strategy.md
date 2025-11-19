@@ -17,7 +17,7 @@ breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 show_cta: true
 cta_text: "Schedule Patent Portfolio Consultation"
-cta_link: "/contact.html?utm_source=landing&utm_medium=page&utm_campaign=trucking-patent"
+cta_link: "/contact.html"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
@@ -477,11 +477,11 @@ The companies that build strong patent portfolios in 2025 will secure Series B/C
 <div class="cta-section-primary text-center py-5">
   <h2>Strengthen Your Autonomous Trucking Patent Portfolio</h2>
   <p class="lead">Schedule a consultation to discuss how US Patent 12,001,207 B2 can provide defensive IP protection for your commercial vehicle systems.</p>
-  <a href="/contact.html?utm_source=landing&utm_medium=page&utm_campaign=trucking-patent" class="btn btn-primary btn-lg">Schedule Free Consultation</a>
+  <a href="/contact.html" class="btn btn-primary btn-lg">Schedule Free Consultation</a>
   <p class="mt-3 small text-muted">Typical response time: 1 business day</p>
 </div>
 
-<a href="/contact.html?utm_source=landing&utm_medium=page&utm_campaign=trucking-roadmap" class="btn btn-outline-primary mt-4">Download: Autonomous Trucking IP Roadmap</a>
+<a href="/contact.html" class="btn btn-outline-primary mt-4">Download: Autonomous Trucking IP Roadmap</a>
 
 <p class="mt-4"><a href="/patent-details.html">View complete technical specifications of US Patent 12,001,207 B2 →</a></p>
 

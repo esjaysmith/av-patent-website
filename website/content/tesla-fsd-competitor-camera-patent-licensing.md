@@ -12,7 +12,7 @@ keywords:
   - autonomous vehicle camera patents
 show_cta: true
 cta_text: "Schedule Competitive Patent Strategy Consultation"
-cta_link: "/contact.html?utm_source=tesla-fsd-competitor-page&utm_medium=primary-cta&utm_campaign=patent-licensing"
+cta_link: "/contact.html"
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 layout: page
@@ -566,7 +566,7 @@ For any company competing with Tesla FSD, patent protection through strategic ca
 
 ### Additional Resources
 
-- [View US Patent 12,001,207 B2 Technical Specifications](/patent-details.html?utm_source=tesla-fsd-competitor-page&utm_medium=tertiary-cta)
+- [View US Patent 12,001,207 B2 Technical Specifications](/patent-details.html)
 - [Learn About Patent Licensing Options](/licensing.html)
 - [Read Autonomous Vehicle Industry Insights](/industry-insights.html)
 - [Contact Us About Strategic Patent Licensing](/contact.html)
