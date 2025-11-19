@@ -353,17 +353,32 @@ python test_website.py
    - **Base directory:** `website`
    - **Build command:** `python generate_site.py`
    - **Publish directory:** `website/build`
-   - **Environment variables:** (None needed for static site)
 
-4. **Deploy Site:**
+4. **Configure Environment Variables:**
+   - In Netlify dashboard: Site settings → Build & deploy → Environment
+   - Click "Add variable" for each of the following:
+     ```
+     ENVIRONMENT=production
+     SITE_DOMAIN=av-navigation-ip.com
+     SITE_URL=https://av-navigation-ip.com
+     ROBOTS_INDEX=true
+     GOOGLE_ANALYTICS_ID=G-YOUR-ACTUAL-ID
+     GOOGLE_ANALYTICS_ENABLED=true
+     CONTACT_EMAIL=licensing@av-navigation-ip.com
+     ```
+   - **Important:** Replace `G-YOUR-ACTUAL-ID` with your actual Google Analytics 4 Measurement ID
+   - **Note:** The `.env` file is gitignored and not needed in the repository - Netlify uses these dashboard values during builds
+
+5. **Deploy Site:**
    - Click "Deploy site"
    - Netlify will:
      - Clone repository
-     - Run `python generate_site.py`
+     - Load environment variables from dashboard
+     - Run `python generate_site.py` (which reads environment variables)
      - Publish `website/build` folder
      - Assign temporary URL: `random-name-12345.netlify.app`
 
-5. **Verify Deployment:**
+6. **Verify Deployment:**
    - Click temporary URL
    - Test homepage loads
    - Test navigation (all 14 pages)
