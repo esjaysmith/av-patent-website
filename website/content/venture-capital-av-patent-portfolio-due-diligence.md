@@ -11,8 +11,8 @@ keywords:
   - IP competitive moat evaluation
   - camera-based navigation patents valuation
 show_cta: true
-cta_text: "Request Patent Portfolio Analysis Template"
-cta_link: "/contact.html"
+cta_text: "Explore Patent Licensing Options"
+cta_link: "/licensing.html"
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 layout: page
@@ -565,10 +565,8 @@ For Series A: Conditional. If portfolio company's technology touches any areas w
   <strong>VC Patent Due Diligence Tip:</strong> Always ask founders the eight patent questions listed in our Phase 1 screening section. Their responses reveal IP sophistication and strategic thinking better than any formal assessment. Founders who can't answer these questions clearly have gaps in IP strategy that will emerge post-investment.
 </div>
 
-<a href="/contact.html" class="btn btn-outline-primary mt-4">Download: VC Patent Due Diligence Checklist (PDF)</a>
-
 ---
 
-**Need expert analysis of a portfolio company's patent portfolio?** We offer patent portfolio assessment services for VC investors, leveraging our experience as patent holders and autonomous vehicle industry experts. Our assessments help VCs make better investment decisions and support portfolio companies in strengthening IP positions.
+**Help portfolio companies strengthen their IP positions:** US Patent 12,001,207 B2 provides camera-based navigation safety technology that can fill critical gaps in AV startup patent portfolios. Contact us to discuss licensing opportunities for your portfolio companies.
 
-<a href="/contact.html" class="btn btn-primary mt-3">Request Patent Portfolio Assessment</a>
+<a href="/contact.html" class="btn btn-primary mt-3">Inquire About Patent Licensing</a>

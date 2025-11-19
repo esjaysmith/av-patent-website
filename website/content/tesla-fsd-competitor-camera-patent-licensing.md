@@ -11,8 +11,8 @@ keywords:
   - Tesla competitive IP licensing
   - autonomous vehicle camera patents
 show_cta: true
-cta_text: "Schedule Competitive Patent Strategy Consultation"
-cta_link: "/contact.html"
+cta_text: "Explore Patent Licensing Options"
+cta_link: "/licensing.html"
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 layout: page
@@ -40,8 +40,6 @@ Tesla's June 22, 2025 launch of supervised robotaxi service in Austin demonstrat
 The autonomous vehicle industry is developing camera-first systems. Tesla's June 22, 2025 Austin robotaxi service, operating with safety drivers present who can intervene if needed, represents developments in camera-first autonomous systems. For traditional automakers and AV technology companies, this creates considerations for patent positioning.
 
 This guide addresses IP considerations for companies developing camera-based systems, including strategic licensing options. For traditional automakers transitioning from LiDAR-heavy systems or AV startups developing camera-first technology, patent portfolio development is a consideration for competitive positioning.
-
-[Call-to-Action Button: Schedule Competitive Patent Strategy Consultation]
 
 ## Tesla's Camera-First Development Accelerates Competition
 
@@ -401,7 +399,7 @@ Company credibly competes in camera-first AV market with clear messaging:
 - "We differentiate on patented safety architecture (dual-module redundancy)"
 - "We provide IP warranties our competitors cannot (defensible patent portfolio)"
 
-[Internal Link: Schedule patent portfolio consultation]
+[Internal Link: View patent licensing options](/licensing.html)
 
 ## Your 6-Month Camera-Based Patent Strategy for Tesla FSD Competition
 
@@ -539,7 +537,7 @@ This 6-month timeline provides:
 - [ ] Major OEM partnership closed (enabled by IP warranties)
 - [ ] Series B/C funding closed at premium valuation (patent portfolio value)
 
-[Internal Link: Explore camera-based patent licensing options]
+[Internal Link: View patent licensing options](/licensing.html)
 
 ## Conclusion
 
@@ -558,11 +556,7 @@ The timeline advantage is decisive. Developing camera-based patents in-house typ
 
 For any company competing with Tesla FSD, patent protection through strategic camera-based licensing is not optional—it's essential for credible competitive positioning and long-term freedom to operate.
 
-[Call-to-Action Button: Schedule Competitive Patent Strategy Consultation]
-
-**Ready to strengthen your camera-based patent position against Tesla FSD?** Schedule a competitive patent strategy consultation to discuss licensing options for camera-based safety patents, including US Patent 12,001,207 B2 and other foundational IP. Our team will assess your current patent portfolio, identify gaps in defensive coverage, and recommend licensing strategies that enable credible competitive positioning in the camera-first AV market.
-
-[Secondary CTA Button: Download Camera-First Patent Landscape Report]
+**Ready to strengthen your camera-based patent position against Tesla FSD?** Contact us to discuss licensing options for US Patent 12,001,207 B2, a camera-based safety patent that enables credible competitive positioning in the camera-first AV market.
 
 ### Additional Resources
 

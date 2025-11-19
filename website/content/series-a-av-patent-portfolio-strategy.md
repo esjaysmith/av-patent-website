@@ -12,8 +12,8 @@ keywords:
   - patent licensing before Series B
   - camera-based navigation patents
 show_cta: true
-cta_text: "Schedule Patent Portfolio Assessment"
-cta_link: "/contact.html"
+cta_text: "Explore Patent Licensing Options"
+cta_link: "/licensing.html"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-16"
@@ -213,9 +213,9 @@ Instead of diverting engineering resources to patent applications, strategic lic
 The decision isn't binary. The optimal approach combines strategic licensing (for foundational technologies like camera-based safety) with selective patent applications (for your core proprietary innovations). This balanced strategy maximizes IP protection while preserving engineering velocity.
 
 <div class="cta-box">
-  <h3>Download: Series A IP Strategy Checklist</h3>
-  <p>Get our free checklist to audit your current IP portfolio and identify gaps before Series B due diligence.</p>
-  <a href="/contact.html" class="btn btn-outline-primary">Download Free Checklist</a>
+  <h3>Strengthen Your IP Portfolio with US Patent 12,001,207 B2</h3>
+  <p>License camera-based navigation safety technology to fill critical portfolio gaps before Series B due diligence.</p>
+  <a href="/licensing.html" class="btn btn-outline-primary">Explore Licensing Options</a>
 </div>
 
 ## How Strategic Patent Licensing Accelerates IP Portfolio Building
@@ -807,7 +807,7 @@ Series B valuation uplift from strong IP portfolio:
 Even at conservative estimates ($850K investment for $7.5M valuation uplift), the 9x ROI makes IP investment one of the highest-return activities for Series A startups preparing for Series B.
 
 <div class="alert alert-success">
-  <strong>Action Item:</strong> Schedule a kickoff meeting with your board and IP attorney next week to begin this 6-month action plan. The sooner you start, the stronger your IP position for Series B.
+  <strong>Action Item:</strong> Evaluate US Patent 12,001,207 B2 for your patent portfolio needs. Strategic licensing can provide immediate IP protection while you develop proprietary patents.
 </div>
 
 ## Conclusion: Build Your Series B Patent Portfolio Today
@@ -825,10 +825,9 @@ Your patent portfolio strategy for series A autonomous vehicle startups will det
 <div class="cta-section-primary text-center py-5 my-5">
   <div class="container">
     <h2>Ready to Strengthen Your Patent Portfolio Before Series B?</h2>
-    <p class="lead mb-4">Schedule a patent portfolio assessment to discuss licensing options for US Patent 12,001,207 B2 and develop your Series B IP strategy.</p>
-    <a href="/contact.html" class="btn btn-primary btn-lg me-3">Schedule Patent Portfolio Assessment</a>
+    <p class="lead mb-4">Contact us to discuss licensing options for US Patent 12,001,207 B2 and strengthen your IP position before your next funding round.</p>
+    <a href="/contact.html" class="btn btn-primary btn-lg me-3">Inquire About Patent Licensing</a>
     <a href="/patent-details.html" class="btn btn-outline-primary btn-lg">View Patent Technical Details</a>
-    <p class="mt-4 text-muted"><small>Typical response time: 1 business day | Consultation: No cost</small></p>
   </div>
 </div>
 
@@ -839,4 +838,4 @@ Your patent portfolio strategy for series A autonomous vehicle startups will det
 - [Camera-Based Navigation Patent Technical Specifications](/patent-details.html) - Detailed technical breakdown of US Patent 12,001,207 B2
 - [Patent Licensing Options](/licensing.html) - Exclusive vs. non-exclusive licensing, pricing, and terms
 - [Autonomous Vehicle Industry Insights](/industry-insights.html) - Market trends, funding data, and competitive analysis
-- [Contact Us](/contact.html) - Schedule consultation, request patent portfolio assessment
+- [Contact Us](/contact.html) - Inquire about patent licensing opportunities

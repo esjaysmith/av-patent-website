@@ -11,8 +11,8 @@ keywords:
   - UAV visual navigation patents
   - drone patent portfolio valuation
 show_cta: true
-cta_text: "Schedule Pre-IPO Patent Portfolio Assessment"
-cta_link: "/contact.html"
+cta_text: "Explore Patent Licensing Options"
+cta_link: "/licensing.html"
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 layout: page
@@ -443,23 +443,13 @@ The window for IPO preparation is narrow. Start your patent portfolio strengthen
 ## Next Steps: Strengthen Your Patent Portfolio Before IPO
 
 <div class="alert alert-info">
-  <strong>IPO Preparation Timeline:</strong> Strong patent portfolios require 6-12 months of strategic planning and execution. If your IPO is planned for the next 12-24 months, now is the time to evaluate and strengthen your IP position before S-1 filing.
+  <strong>IPO Preparation Timeline:</strong> Strong patent portfolios require 6-12 months of strategic planning and execution. If your IPO is planned for the next 12-24 months, now is the time to evaluate licensing US Patent 12,001,207 B2 to strengthen your IP position before S-1 filing.
 </div>
 
-**Schedule a Pre-IPO Patent Portfolio Assessment:**
-Contact us to discuss your drone delivery company's patent strategy, licensing opportunities, and IPO preparation timeline. Our team will evaluate your current portfolio, identify strategic licensing opportunities, and develop an action plan for competitive IPO positioning.
+**License Camera-Based Navigation Technology for IPO Success:**
+Contact us to discuss licensing US Patent 12,001,207 B2 for your drone delivery company's IPO preparation. This granted patent provides camera-based navigation safety coverage that can fill critical portfolio gaps.
 
-**[Schedule Pre-IPO Patent Portfolio Assessment](/contact.html)** →
-
----
-
-**Secondary Resource:**
-
-<div class="alert alert-light">
-  <strong>Download: Drone Patent Portfolio IPO Checklist</strong> — A practical checklist to audit your current drone patent portfolio and identify visual navigation patent gaps before IPO.
-
-  [Download IPO Patent Portfolio Checklist](/contact.html)
-</div>
+**[Inquire About Patent Licensing](/contact.html)** →
 
 ---
 
