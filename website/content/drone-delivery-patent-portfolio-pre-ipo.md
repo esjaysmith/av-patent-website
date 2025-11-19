@@ -41,7 +41,7 @@ For pre-IPO drone delivery companies, this represents both a challenge and an op
 
 This guide explains how you can strengthen your drone patent portfolio for IPO success through strategic licensing of camera-based navigation patents—filling critical gaps in your portfolio while maintaining your aggressive IPO timeline.
 
-## How Recent Drone IPOs Have Raised Investor Expectations for Patent Portfolios
+## How Recent Drone IPOs Raised Patent Portfolio Expectations
 
 The drone delivery market has evolved dramatically. Where once drone companies could succeed with strong flight control and communications patents, today's institutional investors expect comprehensive IP protection spanning multiple technology domains. This trend became increasingly visible with recent IPOs in the drone and adjacent autonomous vehicle sectors.
 
@@ -440,7 +440,7 @@ The window for IPO preparation is narrow. Start your patent portfolio strengthen
 
 ---
 
-## Next Steps: Ready to Strengthen Your Drone Patent Portfolio Before IPO?
+## Next Steps: Strengthen Your Patent Portfolio Before IPO
 
 <div class="alert alert-info">
   <strong>IPO Preparation Timeline:</strong> Strong patent portfolios require 6-12 months of strategic planning and execution. If your IPO is planned for the next 12-24 months, now is the time to evaluate and strengthen your IP position before S-1 filing.

@@ -1,7 +1,7 @@
 ---
 title: "AV Patent Due Diligence Guide for VCs"
 page_title: "AV Patent Portfolio Due Diligence Guide for Venture Capital"
-description: "Guide to AV patent due diligence, including evaluation considerations for autonomous vehicle IP portfolios, patent quality, and freedom-to-operate for investments."
+description: "AV patent due diligence guide: evaluate IP portfolios, patent quality, and freedom-to-operate for autonomous vehicle investments."
 keywords:
   - AV patent portfolio due diligence for venture capital
   - autonomous vehicle IP due diligence checklist
@@ -433,7 +433,7 @@ Companies with camera patents scoring 7-9 on this scale are well-positioned. Com
 - Portfolio includes high-quality camera-based navigation patents
 - **Signal:** Company positioned for industry's technology transition
 
-## Post-Investment: Helping Portfolio Companies Strengthen Patent Portfolios
+## Post-Investment: Strengthen Portfolio Company Patents
 
 Patent due diligence doesn't end at investment. VCs should actively support portfolio companies in strengthening IP positions.
 

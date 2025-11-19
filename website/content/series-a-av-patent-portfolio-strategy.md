@@ -467,7 +467,7 @@ Series B investors look for balanced IP portfolios:
 
 This timeline aligns patent portfolio development with fundraising cycles, maximizing IP value during Series B due diligence.
 
-## Case Study: How Camera-Based Safety Patents Strengthen Series B Positioning
+## Case Study: Camera Patents Strengthen Series B Position
 
 ### The Tesla FSD Competitive Context
 
