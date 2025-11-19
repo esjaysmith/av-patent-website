@@ -100,6 +100,7 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 **Subject Line Format:** "Patent Licensing Inquiry - [Your Company] - US 12,001,207"
 
 ### **Response Times**
+
 - **Initial Acknowledgment:** Within 24 hours
 - **Detailed Response:** Within 3-5 business days
 - **Licensing Consultation Scheduling:** Within 1 week
@@ -116,16 +117,19 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 Our licensing consultations typically cover:
 
 **Technical Alignment**
+
 - Patent technology overview and technical specifications
 - Integration requirements for your specific applications
 - Compatibility with your existing technology stack
 
 **Business Terms**
+
 - Licensing structure options (exclusive, non-exclusive, field-of-use)
 - Geographic scope and market territories
 - Compensation structures and payment terms
 
 **Implementation Support**
+
 - Technical documentation and integration guidance
 - Timeline for licensing agreement completion
 - Ongoing support and patent family updates
@@ -140,6 +144,7 @@ We welcome licensing inquiries from companies worldwide. Our patent licensing pr
 - **Emerging Markets**: Flexible terms for companies in developing autonomous vehicle markets
 
 ### **International Consultation Options**
+
 - **Video Conferencing**: Zoom, Teams, or Google Meet consultations
 - **Flexible Scheduling**: Accommodating multiple time zones
 - **Multi-Language Support**: Consultations available in English, with translator support as needed
@@ -149,18 +154,18 @@ We welcome licensing inquiries from companies worldwide. Our patent licensing pr
 
 ### **Information Security**
 All licensing inquiries are handled with strict confidentiality:
+
 - **Secure Communications**: Encrypted email and secure document sharing
 - **Non-Disclosure Agreements**: Available upon request for detailed technical discussions
 - **Information Handling**: Your company information is never shared with third parties
 
-<div id="privacy-policy" class="mt-5">
 ### **Privacy Policy Summary**
+
 - **Data Collection**: We collect only information necessary for licensing evaluation
 - **Data Use**: Information used solely for licensing inquiry response and relationship management
 - **Data Retention**: Inquiry information retained for 2 years or until licensing agreement completion
 - **Data Sharing**: No sharing with third parties except as required for legal compliance
 - **Data Rights**: You may request information update or deletion at any time
-</div>
 
 ## Frequently Asked Questions
 
@@ -180,4 +185,3 @@ For licensing inquiries regarding US Patent 12,001,207, submit the form above or
 
 ---
 
-*All inquiries handled confidentially. Licensing terms subject to negotiation and separate agreement.*

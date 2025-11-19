@@ -61,11 +61,13 @@ Camera-based approaches have demonstrated viability, with adoption occurring acr
 The technology involves vision-based autonomous navigation. The system includes end-to-end training (images to vehicle controls), visual navigation via waypoints, map-independent operation without detailed mapping, and obstacle avoidance through free passage detection and uncertainty-based stopping.
 
 **Architectural Foundation:**
+
 - Imitation learning foundation (building on NVIDIA DAVE-2, 2016)
 - Proprietary path planning via visual prompting and free passage detection with model uncertainty
 - Upside-Down Reinforcement Learning integration (Schmidhuber et al., 2019-2022)
 
 **System Capabilities:**
+
 - Real-time autonomous navigation using camera inputs
 - Adaptive decision-making based on uncertainty
 - Remote teleoperation and data collection
@@ -86,6 +88,7 @@ The startup, which was self-funded, developed a business case in a rural area, o
 Deep learning AI involves data collection and computational resources, often more than anticipated. The approach has shown technical viability, but the investment for commercial scale exceeds the organization's capacity.
 
 **Key factors include:**
+
 - Regulatory processes often involve larger organizations
 - AI systems require scaled data collection
 - Neural network training needs computational infrastructure
@@ -124,12 +127,14 @@ These capabilities have been validated through development and real-world testin
 The autonomous vehicle industry is undergoing changes. The industry debates sensor fusion versus camera-only approaches, and systems like Tesla's FSD v12 indicate that camera-based architectures may be viable for autonomous navigation.
 
 **Major trends in the market:**
+
 - Shift from lidar-heavy to camera-first architectures
 - Emphasis on software differentiation
 - Expansion to delivery and robotics
 - Regulatory developments for autonomous operations
 
 **Potential areas include:**
+
 - Licensing to automakers with autonomous technology
 - Partnerships with AV software providers
 - IP for camera-based systems
@@ -154,6 +159,7 @@ The patent encompasses research, development, and validation of a technical appr
 The focus is on suitable licensing arrangements. The aim is deployment of the technology at scale with appropriate value for the innovation.
 
 Discussions may cover:
+
 - Exclusive or non-exclusive arrangements
 - Per-vehicle models
 - Partnerships
@@ -177,4 +183,3 @@ Autonomous technology is under development. Discussions on the patent's potentia
 
 ---
 
-*This information is provided for licensing inquiry purposes only. All licensing terms are subject to negotiation and separate agreement.*

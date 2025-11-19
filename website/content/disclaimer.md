@@ -66,4 +66,3 @@ We reserve the right to update or modify this disclaimer at any time without pri
 
 ## Contact
 
-For questions about this disclaimer or patent licensing inquiries, please [contact us](/contact.html).

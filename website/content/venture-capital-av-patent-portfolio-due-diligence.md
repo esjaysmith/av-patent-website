@@ -152,6 +152,7 @@ Quantitative metrics are necessary but insufficient. You need patent quality eva
 Independent claims in a patent define the scope of protection. Broad independent claims = strong defensibility; narrow independent claims = weak defensibility.
 
 Ask your patent counsel: "Are these claims narrow or broad?" If they're narrow, ask why. Narrow claims might indicate:
+
 - Conservative drafting (good for enforceability, bad for coverage)
 - Significant claim narrowing during prosecution (examiner forced narrowing due to prior art)
 - Over-specificity (patent covers only one specific implementation)
@@ -159,6 +160,7 @@ Ask your patent counsel: "Are these claims narrow or broad?" If they're narrow, 
 **Patent Prosecution History:**
 
 Review the patent's examination record. Ask:
+
 - How many office action rejections? (Fewer rejections = higher quality)
 - How much did claims narrow during prosecution? (Less narrowing = stronger patent)
 - What prior art did the examiner cite? (Understanding competitive landscape)
@@ -248,6 +250,7 @@ When evaluating camera-based navigation patents, assess:
 When you encounter a camera-based patent in portfolio company's portfolio, use this evaluation:
 
 **Technology Coverage Assessment:**
+
 - [ ] **Camera-Only Navigation:** Patent covers camera-only systems (not requiring LiDAR fallback)?
 - [ ] **Safety Systems:** Patent addresses safety-critical functions with redundancy?
 - [ ] **E2E Neural Network Compatibility:** Patent applicable to end-to-end neural network architectures?
@@ -255,6 +258,7 @@ When you encounter a camera-based patent in portfolio company's portfolio, use t
 - [ ] **Regulatory Alignment:** Patent supports NHTSA Level 4 safety requirements?
 
 **Competitive Positioning Assessment:**
+
 - [ ] **Tesla Differentiation:** Patent provides different approach than Tesla's known FSD architecture?
 - [ ] **Non-Obvious Innovation:** Is invention truly novel (not obvious to competitors)?
 - [ ] **Commercial Viability:** Can patented technology be commercially deployed?
@@ -356,26 +360,31 @@ Companies with camera patents scoring 7-9 on this scale are well-positioned. Com
 ### Critical Red Flags (Deal-Breaker)
 
 **Zero Patents:**
+
 - No patents filed for startups at Series B+ stage
 - **Risk Level:** Deal-breaker (unless pre-seed/seed)
 - **Question:** Why hasn't company protected core innovations?
 
 **100% Pending Applications:**
+
 - No granted patents in portfolio
 - **Risk Level:** Deal-breaker for Series B+ (pending applications = minimal protection)
 - **Question:** Why hasn't company obtained any granted patents?
 
 **Freedom-to-Operate Issues:**
+
 - FTO analysis identifies clear infringement risks
 - **Risk Level:** Deal-breaker
 - **Question:** Can these be designed around? What's the cost/timeline?
 
 **Expiring Patents:**
+
 - All patents expire within 5 years
 - **Risk Level:** Deal-breaker (for 7+ year exit horizon)
 - **Question:** Can company extend protection through continuation applications?
 
 **No FTO Analysis:**
+
 - Company hasn't conducted freedom-to-operate analysis
 - **Risk Level:** Deal-breaker for Series B+
 - **Question:** Why hasn't management understood competitive IP landscape?
@@ -383,26 +392,31 @@ Companies with camera patents scoring 7-9 on this scale are well-positioned. Com
 ### Yellow Flags (Require Mitigation Plan)
 
 **Narrow Patent Claims:**
+
 - Patent claims too narrow; competitors can easily design around
 - **Risk Level:** Medium
 - **Mitigation:** Develop broader patents; license complementary IP
 
 **Limited Technology Coverage:**
+
 - Patents only cover 1-2 technology areas (significant portfolio gaps)
 - **Risk Level:** Medium
 - **Mitigation:** Strategic patent development plan post-investment
 
 **Weak Patent Prosecution:**
+
 - Multiple office action rejections; significant claim narrowing
 - **Risk Level:** Medium
 - **Mitigation:** Budget for re-filing and prosecution of improved patents
 
 **Competitor Dominance:**
+
 - Competitors have 10x more patents in same technology areas
 - **Risk Level:** Medium
 - **Mitigation:** Focus on differentiated technologies; license complementary IP
 
 **No Camera-Based Patents:**
+
 - Portfolio lacks camera-first patents (tech transition risk)
 - **Risk Level:** Medium-High
 - **Mitigation:** Urgent need to develop or license camera-based patents
@@ -410,26 +424,32 @@ Companies with camera patents scoring 7-9 on this scale are well-positioned. Com
 ### Green Flags (Positive Signals)
 
 **Granted Patents:**
+
 - 70%+ of portfolio is granted (not pending)
 - **Signal:** Company successfully prosecuted patents through USPTO
 
 **Broad Claims:**
+
 - Independent claims cover wide range of applications
 - **Signal:** Patent protection covers multiple use cases
 
 **Technology Diversity:**
+
 - Patents cover multiple technology areas (comprehensive coverage)
 - **Signal:** Mature IP thinking across technology stack
 
 **Recent Grants:**
+
 - Patents granted within last 3 years (current technology)
 - **Signal:** Patent portfolio reflects current R&D focus
 
 **FTO Opinion:**
+
 - Obtained legal freedom-to-operate opinion
 - **Signal:** Management understands competitive IP landscape
 
 **Camera-First Patents:**
+
 - Portfolio includes high-quality camera-based navigation patents
 - **Signal:** Company positioned for industry's technology transition
 
@@ -569,4 +589,3 @@ For Series A: Conditional. If portfolio company's technology touches any areas w
 
 **Help portfolio companies strengthen their IP positions:** US Patent 12,001,207 B2 provides camera-based navigation safety technology that can fill critical gaps in AV startup patent portfolios. Contact us to discuss licensing opportunities for your portfolio companies.
 
-<a href="/contact.html" class="btn btn-primary mt-3">Inquire About Patent Licensing</a>

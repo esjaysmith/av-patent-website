@@ -55,4 +55,3 @@ If you don't receive an acknowledgment email within 24 hours:
 
 **All inquiries handled confidentially.** Information on how US Patent 12,001,207 may apply to autonomous navigation projects will be provided in the response.
 
-[Return to Homepage](/) | [View Patent Technical Specifications](/patent-details.html)

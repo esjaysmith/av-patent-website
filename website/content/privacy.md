@@ -1,86 +1,73 @@
 ---
 title: "Privacy Policy | AV Navigation IP Protection"
-description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about licensing."
+description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about the patent sale."
 keywords: privacy policy, data protection, GDPR compliance
 layout: page
 show_cta: false
 
 # Open Graph
 og_title: "Privacy Policy | AV Navigation IP Protection"
-og_description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about licensing."
+og_description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about the patent sale."
 og_type: "website"
 og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Privacy Policy | AV Navigation IP Protection"
-twitter_description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about licensing."
+twitter_description: "Privacy policy for AV Navigation IP Protection. How we collect, use, and protect your information when contacting us about the patent sale."
 twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
-date_modified: "2025-11-12"
+date_modified: "2025-11-19"
 ---
 
 # Privacy Policy
 
-**Last Updated**: November 10, 2025
+**Last Updated**: November 19, 2025
 
 ## Introduction
 
-AV Navigation IP Protection ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our contact form.
+AV Navigation IP Protection ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our contact form to inquire about purchasing US Patent 12,001,207 B2.
 
 ## Information We Collect
 
 ### Personal Information You Provide
 
-When you submit our contact form, we collect:
-- Name (first and last)
+When you submit our contact form, we collect only the following information:
+
+- Name
 - Email address
-- Phone number (optional)
-- Company name and title
-- Industry focus
-- Licensing interest details
-- Project timeline information
-- Message content and project details
+- Company name (optional)
+- Message content
 
 ### Automatically Collected Information
 
-We may collect certain information automatically when you visit our website:
-- IP address
-- Browser type and version
-- Pages visited
-- Time and date of visit
-- Referring website
-- Device information
-
-This information is collected via Google Analytics and is used to improve our website and understand visitor behavior.
+We do not collect any information automatically. We do not use analytics tools, tracking cookies, or any other automated data collection methods.
 
 ## How We Use Your Information
 
-We use the information we collect to:
-- Respond to your licensing inquiries
-- Provide information about US Patent 12,001,207 B2
-- Evaluate licensing opportunities and compatibility
-- Schedule and conduct licensing consultations
-- Prepare customized licensing proposals
-- Improve our website and user experience
-- Analyze website traffic and visitor behavior
+We use the information we collect solely to:
+
+- Respond to your inquiries about purchasing US Patent 12,001,207 B2
+- Provide information about the patent and sale terms
+- Facilitate communication regarding the patent sale
 - Comply with legal obligations
 
 ## Information Sharing
 
-We do not sell, trade, or rent your personal information to third parties. We may share your information with:
-- Service providers who assist with website operations (e.g., Formspree for form submissions, Google Analytics for website analytics)
-- Legal counsel when necessary for licensing agreements
+We do not sell, trade, or rent your personal information to third parties. We may share your information only with:
+
+- Formspree (our form submission service provider)
+- Legal counsel when necessary for patent sale agreements
 - Legal authorities if required by law
 
 ## Data Retention
 
 We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. Specifically:
-- Licensing inquiry information: Retained for 2 years or until licensing agreement completion
-- Website analytics data: Retained according to Google Analytics settings (typically 26 months)
-- Completed licensing agreement records: Retained per legal requirements (typically 7 years)
+
+- Contact form submissions: Retained for 2 years or until patent sale completion
+- Completed sale agreement records: Retained per legal requirements (typically 7 years)
 
 ## Your Rights (GDPR Compliance)
 
@@ -97,30 +84,23 @@ To exercise these rights, please contact us using the information provided below
 
 ## Cookies
 
-Our website uses cookies to improve user experience. You can control cookie settings in your browser. If Google Analytics is implemented, we use cookies to track website usage.
-
-**Cookies We Use**:
-- **Google Analytics cookies** (_ga, _gid): Track website usage and visitor behavior
-- **Session cookies**: Maintain form data during your visit (if applicable)
-
-You can opt out of Google Analytics by installing the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout).
+Our website does not use cookies. We do not track your browsing behavior or collect any information automatically.
 
 ## Third-Party Services
 
-Our website uses third-party services:
-- **Formspree**: Contact form submissions ([Formspree Privacy Policy](https://formspree.io/legal/privacy-policy/))
-- **Google Analytics**: Website analytics ([Google Privacy Policy](https://policies.google.com/privacy))
-- **Bootstrap CDN**: CSS framework (hosted by jsDelivr)
+Our website uses only one third-party service:
 
-These services may collect information as described in their respective privacy policies. We do not control how these third parties use your information.
+- **Formspree**: Contact form submissions ([Formspree Privacy Policy](https://formspree.io/legal/privacy-policy/))
+
+Formspree processes form submissions and may collect information as described in their privacy policy. We do not control how Formspree uses your information beyond processing your contact form submission.
 
 ## Security
 
 We implement reasonable security measures to protect your personal information, including:
-- Secure HTTPS encryption for data transmission
+
 - Secure form submission through Formspree
 - Limited access to personal information
-- Regular security reviews
+- Secure communication channels
 
 However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security.
 
@@ -139,10 +119,12 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 ## Contact Us
 
 For questions about this Privacy Policy or to exercise your rights:
+
 - **Contact Form**: [Contact Page](/contact.html)
 - **Email**: Contact us through the form on our [Contact Page](/contact.html)
 
 You may also request:
+
 - A copy of your personal information
 - Correction of inaccurate information
 - Deletion of your personal information
@@ -153,8 +135,9 @@ We will respond to your request within 30 days.
 ## Legal Basis for Processing (GDPR)
 
 For EEA residents, our legal basis for collecting and using your personal information depends on the information and the context:
+
 - **Consent**: You have given clear consent for processing (e.g., contact form submission)
-- **Legitimate Interests**: Processing is necessary for our legitimate business interests (e.g., website analytics)
+- **Legitimate Interests**: Processing is necessary for our legitimate business interests (e.g., responding to purchase inquiries)
 - **Legal Obligations**: Processing is necessary to comply with legal requirements
 
 ## Data Protection Officer
@@ -163,4 +146,3 @@ For GDPR-related inquiries, you may contact our Data Protection Officer through 
 
 ---
 
-*This Privacy Policy applies to all visitors and users of the AV Navigation IP Protection website.*

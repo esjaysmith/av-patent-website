@@ -158,16 +158,19 @@ The financial burden of patent development extends far beyond filing fees. For r
 **Indirect Costs (Often Larger):**
 
 **Engineering Time:**
+
 - 80-200 hours of senior engineer time per patent application
 - At $150,000-$250,000 annual compensation, this represents $6,000-$25,000 in opportunity cost
 - Engineers diverted from product development, customer features, or bug fixes
 
 **Management Overhead:**
+
 - CTO/VP Engineering time coordinating with patent attorneys
 - Legal review and approval processes
 - Prior art research and competitive analysis
 
 **Risk Cost:**
+
 - 40-50% chance of rejection or requirement for significant claim amendments
 - Wasted investment if patent rejected: $40,000-$100,000 down the drain
 - No guarantees about claim scope even if granted
@@ -451,16 +454,19 @@ Series B investors look for balanced IP portfolios:
 **Portfolio Development Timeline**
 
 **Months 1-3 (Immediately After Series A):**
+
 - Audit existing IP and identify portfolio gaps
 - Negotiate and execute strategic patent licenses (2-3 licensed patents)
 - Provides immediate IP boost for board updates
 
 **Months 4-12 (Series A Operating Period):**
+
 - File patent applications for proprietary innovations (3-5 applications)
 - Continue product development with licensed patents providing freedom to operate
 - Monitor USPTO examination status
 
 **Months 13-18 (Series B Preparation):**
+
 - Present balanced IP portfolio to Series B investors: 2-3 granted licensed patents + 3-5 pending proprietary applications
 - Demonstrate IP roadmap for next 24 months post-Series B
 - Freedom-to-operate analysis shows no infringement risks
@@ -512,18 +518,21 @@ US Patent 12,001,207 B2 protects a dual-module camera-based navigation safety sy
 **Key Technical Elements:**
 
 **1. Safety-Determining Module**
+
 - Receives live camera images from vehicle
 - Compares live images to preprocessed stored images
 - Calculates "degree of correspondence" (how well live images match expected route)
 - Determines safety value indicating whether navigation can proceed safely
 
 **2. Control Module**
+
 - Receives navigation instructions from planning system
 - Receives safety value from safety-determining module
 - Only executes navigation commands if safety value exceeds predetermined threshold
 - Provides fail-safe mechanism preventing unsafe maneuvers
 
 **3. Visual Navigation Point Recognition**
+
 - Identifies navigation points from camera images (intersections, landmarks, route features)
 - Enables high-level navigation instructions ("turn left at second intersection")
 - Works with end-to-end neural network architectures (relevant to 2024-2025 approaches)
@@ -535,6 +544,7 @@ US Patent 12,001,207 B2 protects a dual-module camera-based navigation safety sy
 **Investor Question 1: "How are you differentiated from Tesla FSD?"**
 
 **Weak Answer:** "We have better algorithms."
+
 - Unprovable claim, subjective, no competitive moat
 
 **Strong Answer with Patent License:**
@@ -543,6 +553,7 @@ US Patent 12,001,207 B2 protects a dual-module camera-based navigation safety sy
 **Investor Question 2: "What's your IP strategy?"**
 
 **Weak Answer:** "We're filing patents for our innovations."
+
 - Pending applications, 18-36 month wait, uncertain outcome
 
 **Strong Answer with Patent License:**
@@ -604,11 +615,13 @@ When presenting licensed patents to Series B investors, framing matters. Positio
 Present your IP portfolio as:
 
 **Current Portfolio (Series A → Series B Timeline):**
+
 - ✅ 2 licensed granted patents (camera-based safety, navigation)
 - ⏳ 3-4 pending patent applications (proprietary innovations, filed Months 4-12)
 - 🎯 Target: 5-6 total patents (granted + pending) by Series B close
 
 **Post-Series B IP Roadmap:**
+
 - 📋 5-7 additional patent filings (next 24 months)
 - 🔒 Comprehensive IP portfolio: 10-12 patents granted + pending by Series C
 
@@ -646,6 +659,7 @@ Research competitor IP positions:
 - [ ] Focus on camera-based patent landscape (less crowded than LiDAR)
 
 Use free tools:
+
 - Google Patents (search interface)
 - USPTO Patent Public Search (official database)
 - Lens.org (patent analytics)
@@ -660,6 +674,7 @@ Prioritize patent licensing targets:
 - [ ] Drone/UAV patents (if applicable to your technology)
 
 **Criteria for licensing candidates:**
+
 - ✅ Granted status (not pending)
 - ✅ Expiration 2040 or later
 - ✅ Technical relevance to your approach
@@ -740,12 +755,14 @@ Prepare materials for investor due diligence:
 **Sample IP Pitch Deck Slides:**
 
 **Slide 1: IP Portfolio Overview**
+
 - Licensed Patents: 2 granted (US 12,001,207 B2 + 1 other)
 - Proprietary Applications: 3-4 pending
 - Coverage: Camera-based safety, navigation, [proprietary technology]
 - Timeline: All licensed patents expire 2040+
 
 **Slide 2: IP Strategy & Roadmap**
+
 - Balanced approach: Licensed foundational + proprietary differentiation
 - Series B-Series C roadmap: 10-12 total patents by Series C
 - Freedom to operate: Comprehensive FTO analysis complete
@@ -800,6 +817,7 @@ Series B valuation uplift from strong IP portfolio:
 - **Founder Dilution Reduction**: 5-8% less dilution (higher valuation = less equity given to investors)
 
 **ROI Calculation:**
+
 - Investment: $325K-$850K
 - Valuation uplift: $7.5M-$20M
 - **Return: 9x-61x ROI**
