@@ -72,10 +72,10 @@ The autonomous vehicle industry is experiencing unprecedented growth, with major
 
 ## Patent Overview: US 12,001,207
 
-**Issue Date:** June 4, 2024
-**Technology Focus:** Camera-based navigation safety systems
-**Applications:** Autonomous vehicles, drones, AI navigation platforms
-**Strategic Value:** Essential protection in the rapidly expanding AV market
+- **Issue Date:** June 4, 2024
+- **Technology Focus:** Camera-based navigation safety systems
+- **Applications:** Autonomous vehicles, drones, AI navigation platforms
+- **Strategic Value:** Essential protection in the rapidly expanding AV market
 
 **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
