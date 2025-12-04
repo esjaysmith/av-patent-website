@@ -33,7 +33,7 @@ The autonomous vehicle and drone navigation industries are experiencing unpreced
 <strong>Market Alert:</strong> Tesla's progress toward unsupervised Full Self-Driving represents a fundamental shift toward camera-first autonomous navigation, making camera-based safety patents increasingly valuable.
 </div>
 
-**Current Status (October 2025):** Supervised FSD launched as paid robotaxi service in Austin, TX. Progress continues toward unsupervised operations, with customer rollout to select US cities under development, limited to HW4/AI4 vehicles.
+**Current Status (December 2025):** Supervised FSD operates as paid robotaxi service in Austin, TX. Progress continues toward unsupervised operations in select US cities.
 
 **Key Developments:**
 
@@ -56,7 +56,7 @@ Camera-based navigation safety technology, like that protected by US Patent 12,0
 - Heavy sensor fusion (LiDAR, radar, cameras) → **Camera-dominant perception**
 
 - Rule-based decision systems → **AI-driven navigation decisions**
-- Incremental safety improvements → **Revolutionary safety approaches**
+- Incremental safety improvements → **Innovative safety approaches**
 
 - Hardware-heavy solutions → **Software-optimized navigation**
 
@@ -92,7 +92,7 @@ The AV patent landscape is rapidly evolving, with three distinct phases:
 ### **Venture Capital and Corporate Investment**
 **Record Investment in AV Technology:**
 
-- $100+ billion invested in autonomous vehicle development (2020-2024)
+- $100+ billion invested in autonomous vehicle development (2020-2024). *Based on industry reports and public market data. Actual results vary.*
 - Camera-first companies receiving premium valuations
 - Traditional automakers investing heavily in camera-based systems
 
@@ -105,7 +105,7 @@ The AV patent landscape is rapidly evolving, with three distinct phases:
 ### **Corporate AV Strategy Shifts**
 **Major Automaker Strategic Pivots:**
 
-- **General Motors**: After $10B investment in Cruise robotaxis, pivoted to Super Cruise driver-assist technology (Dec 2024)
+- **General Motors**: After $10B investment in Cruise robotaxis, pivoted to Super Cruise driver-assist technology (Dec 2024). *Based on industry reports and public market data. Actual results vary.*
 - **Ford**: Following Argo AI shutdown (Oct 2022), shifted focus to BlueCruise advanced driver assistance
 - **Volkswagen**: Camera-centric approach for ID. series autonomous features
 - **BMW**: Accelerated camera-based driver assistance development

@@ -43,8 +43,8 @@ The patent describes a system for controlling autonomous vehicles or air vessels
 
 #### 1. **Camera-Based Safety Architecture**
 
-- Advanced computer vision algorithms for real-time hazard detection
-- Multi-camera fusion techniques for comprehensive environmental awareness
+- Computer vision methods for real-time hazard detection as described in the patent claims
+- Camera-based environmental perception techniques
 - Fail-safe mechanisms when primary navigation systems encounter uncertainties
 
 #### 2. **Navigation Decision Logic**
@@ -55,7 +55,7 @@ The patent describes a system for controlling autonomous vehicles or air vessels
 
 #### 3. **Autonomous System Integration**
 
-- Seamless integration with existing autonomous vehicle control systems
+- Designed for integration with autonomous vehicle control systems
 - Modular design allowing retrofit into current AV platforms
 - Compatibility with both traditional sensor suites and camera-first architectures
 
