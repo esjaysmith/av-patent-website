@@ -16,7 +16,7 @@ keywords:
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 show_cta: true
-cta_text: "Schedule Patent Portfolio Consultation"
+cta_text: "Inquire About Patent Licensing"
 cta_link: "/contact.html"
 layout: page
 author: "AV Navigation IP Protection"
@@ -317,7 +317,7 @@ By licensing instead of developing in-house, autonomous trucking companies:
 - **Timeline**: 6-12 months before launching commercial operations
 - **Rationale**: Address liability concerns, secure insurance at favorable rates, meet regulatory requirements
 - **Expected ROI**: Lower insurance premiums, faster regulatory approval, investor confidence
-- **Action**: Schedule licensing discussions as deployment timelines become clear
+- **Action**: Contact us about licensing as deployment timelines become clear
 
 **Scenario 3: Competitive Response (Tesla Semi Entry)**
 
@@ -524,12 +524,9 @@ The companies that build strong patent portfolios in 2025 will secure Series B/C
 
 <div class="cta-section-primary text-center py-5">
   <h2>Strengthen Your Autonomous Trucking Patent Portfolio</h2>
-  <p class="lead">Schedule a consultation to discuss how US Patent 12,001,207 B2 can provide defensive IP protection for your commercial vehicle systems.</p>
-  <a href="/contact.html" class="btn btn-primary btn-lg">Schedule Free Consultation</a>
-  <p class="mt-3 small text-muted">Typical response time: 1 business day</p>
+  <p class="lead">Contact us to discuss licensing US Patent 12,001,207 B2 for defensive IP protection in your commercial vehicle systems.</p>
+  <a href="/contact.html" class="btn btn-primary btn-lg">Contact About Patent Licensing</a>
 </div>
-
-<a href="/contact.html" class="btn btn-outline-primary mt-4">Download: Autonomous Trucking IP Roadmap</a>
 
 <p class="mt-4"><a href="/patent-details.html">View complete technical specifications of US Patent 12,001,207 B2 →</a></p>
 
@@ -547,7 +544,7 @@ A: Yes, but the economics are challenging. In-house patent development takes 30-
 A: No. Strengthen your portfolio 3-6 months BEFORE your Series B discussions. Investors expect mature IP portfolios; having it in place before investor conversations is strategically essential.
 
 **Q: Does US Patent 12,001,207 B2 conflict with our existing technology?**
-A: Unlikely. The patent covers a safety validation architecture that complements, not replaces, core perception systems. Schedule a technical consultation to evaluate integration.
+A: Unlikely. The patent covers a safety validation architecture that complements, not replaces, core perception systems. Contact us to discuss integration with your specific technology.
 
 **Q: How do we explain patent licensing to Series B investors?**
 A: Frame it as strategic IP acquisition: "We licensed US Patent 12,001,207 to add safety-focused validation layer to our perception systems, de-risking our autonomous vehicle stack and strengthening our competitive moat. We strengthened our portfolio faster and cheaper than in-house development would have allowed."

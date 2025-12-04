@@ -1,7 +1,7 @@
 ---
 title: "Contact Us - Patent Licensing Inquiries"
 description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
-keywords: "patent licensing contact, US patent 12001207 inquiry, autonomous vehicle patent licensing contact, IP licensing consultation"
+keywords: "patent licensing contact, US patent 12001207 inquiry, autonomous vehicle patent licensing contact, IP licensing inquiry"
 page_title: "Contact Us"
 show_cta: false
 
@@ -104,36 +104,14 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 
 - **Initial Acknowledgment:** Within 24 hours
 - **Detailed Response:** Within 3-5 business days
-- **Licensing Consultation Scheduling:** Within 1 week
 
 ## What to Expect
 
 ### **Initial Response Process**
 1. **Acknowledgment Email**: Confirmation of your inquiry within 24 hours
 2. **Preliminary Assessment**: Review of your company and project requirements
-3. **Consultation Scheduling**: Calendar invitation for detailed discussion (30-60 minutes)
+3. **Licensing Discussion**: Detailed discussion of licensing terms and technical fit
 4. **Follow-up Documentation**: Customized licensing proposal based on your needs
-
-### **Consultation Topics**
-Our licensing consultations typically cover:
-
-**Technical Alignment**
-
-- Patent technology overview and technical specifications
-- Integration requirements for your specific applications
-- Compatibility with your existing technology stack
-
-**Business Terms**
-
-- Licensing structure options (exclusive, non-exclusive, field-of-use)
-- Geographic scope and market territories
-- Compensation structures and payment terms
-
-**Implementation Support**
-
-- Technical documentation and integration guidance
-- Timeline for licensing agreement completion
-- Ongoing support and patent family updates
 
 ## International Inquiries Welcome
 
@@ -144,11 +122,11 @@ We welcome licensing inquiries from companies worldwide. Our patent licensing pr
 - **Asia-Pacific**: Japan, South Korea, Australia, Singapore, and other key markets
 - **Emerging Markets**: Flexible terms for companies in developing autonomous vehicle markets
 
-### **International Consultation Options**
+### **International Communication**
 
-- **Video Conferencing**: Zoom, Teams, or Google Meet consultations
-- **Flexible Scheduling**: Accommodating multiple time zones
-- **Multi-Language Support**: Consultations available in English, with translator support as needed
+- **Video Conferencing**: Video calls available via Zoom, Teams, or Google Meet
+- **Time Zones**: Flexible communication accommodating multiple time zones
+- **Language Support**: English communication, with translator support as needed
 - **Local Legal Coordination**: Assistance with local IP counsel integration
 
 ## Privacy and Confidentiality
@@ -179,8 +157,8 @@ Yes, we offer flexible geographic licensing including country-specific, regional
 ### **Can startups access licensing on favorable terms?**
 Absolutely. We offer startup-friendly licensing structures including deferred payments, milestone-based royalties, and equity arrangements.
 
-### **Is technical support included with licensing?**
-Yes, licensing agreements include technical documentation, integration guidance, and ongoing patent family updates.
+### **What documentation is provided with licensing?**
+Licensing agreements include access to patent documentation and patent family information.
 
 For licensing inquiries regarding US Patent 12,001,207, submit the form above or contact via the provided email address.
 

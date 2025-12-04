@@ -34,7 +34,7 @@ You'll receive an **initial acknowledgment email** confirming we've received you
 We'll send a **detailed response** with a preliminary assessment of your licensing needs and next steps.
 
 ### Within 1 Week
-If applicable, we'll send a **consultation scheduling link** to discuss your project in detail (30-60 minute video call).
+If applicable, we'll provide additional information about licensing terms and next steps for your specific needs.
 
 ## While You Wait
 

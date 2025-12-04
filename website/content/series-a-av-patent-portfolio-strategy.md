@@ -629,8 +629,8 @@ This roadmap shows investors you've planned beyond immediate Series B needs—a 
 
 <div class="cta-box-primary text-center my-5">
   <h3>Ready to Strengthen Your Patent Portfolio?</h3>
-  <p class="lead">Schedule a patent portfolio assessment to discuss licensing options for US Patent 12,001,207 B2 and other camera-based safety patents.</p>
-  <a href="/contact.html" class="btn btn-primary btn-lg">Schedule Portfolio Assessment</a>
+  <p class="lead">Contact us to discuss licensing US Patent 12,001,207 B2 and other camera-based safety patents for your AV startup.</p>
+  <a href="/contact.html" class="btn btn-primary btn-lg">Inquire About Patent Licensing</a>
 </div>
 
 ## Your 6-Month IP Portfolio Action Plan Before Series B

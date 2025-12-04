@@ -162,8 +162,7 @@ Discussions may cover:
 
 - Exclusive or non-exclusive arrangements
 - Per-vehicle models
-- Partnerships
-- Integration support
+- Partnership opportunities
 
 ## Applications
 
@@ -173,7 +172,7 @@ The patent may apply to established automakers with autonomous capabilities, sof
 
 ## Inquiries
 
-Evaluating patent licensing involves technical and business discussions. Available elements include technical documentation, patent claim analysis, market assessment, and licensing terms.
+Patent licensing inquiries involve technical and business discussions regarding licensing terms and patent applications.
 
 Autonomous technology is under development. Discussions on the patent's potential applications are available.
 
