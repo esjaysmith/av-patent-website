@@ -1,20 +1,20 @@
 ---
 title: "Contact Us - Patent Licensing Inquiries"
-description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
+description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety IP for autonomous vehicles and drones."
 keywords: "patent licensing contact, US patent 12001207 inquiry, autonomous vehicle patent licensing contact, IP licensing inquiry"
 page_title: "Contact Us"
 show_cta: false
 
 # Open Graph
 og_title: "Contact Us - Patent Licensing Inquiries"
-og_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
+og_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety IP for autonomous vehicles and drones."
 og_type: "website"
 og_image: "/assets/images/og-general-info.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Contact Us - Patent Licensing Inquiries"
-twitter_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety technology for autonomous vehicles and drones."
+twitter_description: "Contact us for US Patent 12,001,207 licensing inquiries. Camera-based navigation safety IP for autonomous vehicles and drones."
 twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
@@ -24,7 +24,7 @@ date_modified: "2025-11-12"
 
 # Contact for Licensing Inquiries
 
-For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-based navigation safety technology, contact information is provided below.
+For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-based navigation safety IP, contact information is provided below.
 
 ## Licensing Inquiry Form
 
@@ -113,21 +113,18 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 3. **Licensing Discussion**: Detailed discussion of licensing terms and technical fit
 4. **Follow-up Documentation**: Customized licensing proposal based on your needs
 
-## International Inquiries Welcome
+## Geographic Availability
 
-We welcome licensing inquiries from companies worldwide. Our patent licensing program supports:
+Patent licensing is available for the following jurisdictions:
 
-- **North American Companies**: US, Canada, Mexico
-- **European Union**: All EU member states plus UK, Norway, Switzerland
-- **Asia-Pacific**: Japan, South Korea, Australia, Singapore, and other key markets
-- **Emerging Markets**: Flexible terms for companies in developing autonomous vehicle markets
+- **United States**: US-based companies and operations
+- **United Kingdom**: UK-based companies and operations
 
-### **International Communication**
+### **Communication**
 
 - **Video Conferencing**: Video calls available via Zoom, Teams, or Google Meet
-- **Time Zones**: Flexible communication accommodating multiple time zones
-- **Language Support**: English communication, with translator support as needed
-- **Local Legal Coordination**: Assistance with local IP counsel integration
+- **Time Zones**: Flexible communication accommodating US and UK time zones
+- **Language Support**: English communication
 
 ## Privacy and Confidentiality
 
@@ -152,7 +149,7 @@ All licensing inquiries are handled with strict confidentiality:
 From initial inquiry to signed agreement: 4-8 weeks for standard licensing terms, 8-12 weeks for complex exclusive arrangements.
 
 ### **Do you offer licensing for specific geographic regions?**
-Yes, we offer flexible geographic licensing including country-specific, regional, and global licensing options.
+Yes, licensing is available for the United States and United Kingdom.
 
 ### **Can startups access licensing on favorable terms?**
 Absolutely. We offer startup-friendly licensing structures including deferred payments, milestone-based royalties, and equity arrangements.

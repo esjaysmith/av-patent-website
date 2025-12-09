@@ -275,5 +275,5 @@ For Series B+ investments: Yes, absolutely ($50K-$100K prevents costly surprises
 
 ---
 
-**Help portfolio companies strengthen their IP positions:** US Patent 12,001,207 B2 provides camera-based navigation safety technology that can fill critical gaps in AV startup patent portfolios. Contact us to discuss licensing opportunities for your portfolio companies.
+**Help portfolio companies strengthen their IP positions:** US Patent 12,001,207 B2 provides camera-based navigation safety IP that can fill critical gaps in AV startup patent portfolios. Contact us to discuss licensing opportunities for your portfolio companies.
 

@@ -40,7 +40,7 @@ twitter_image: "/assets/images/og-startup-innovation.jpg"
 
 ## Executive Summary
 
-US Patent 12,001,207 B2 provides autonomous trucking companies with camera-based safety validation technology addressing investor, regulatory, and fleet deployment requirements. This dual-module system validates navigation commands against stored route data before execution, adding redundancy to commercial vehicle operations.
+US Patent 12,001,207 B2 provides autonomous trucking companies with camera-based safety validation IP addressing investor, regulatory, and fleet deployment requirements. This dual-module system validates navigation commands against stored route data before execution, adding redundancy to commercial vehicle operations.
 
 The patent supports:
 - **Investor Due Diligence**: Strengthens IP portfolios for Series B/C funding rounds where patent positions influence valuations

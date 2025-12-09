@@ -41,7 +41,7 @@ Tesla's camera-first approach to autonomous driving has validated vision-based n
 
 This guide addresses patent considerations for camera-based autonomous systems, including strategic licensing options that provide freedom to operate while focusing engineering resources on proprietary innovations.
 
-US Patent 12,001,207 covers camera-based navigation safety technology applicable to autonomous vehicle development. Licensing options include exclusive and non-exclusive arrangements for specific fields of use.
+US Patent 12,001,207 covers camera-based navigation safety IP applicable to autonomous vehicle development. Licensing options include exclusive and non-exclusive arrangements for specific fields of use.
 
 ## Tesla's Camera-First Development Context
 
@@ -74,14 +74,12 @@ Investors scrutinize freedom to operate during due diligence. Venture capital fi
 
 ### Regulatory Context
 
-Regulatory agencies worldwide focus on camera-based safety systems as autonomous vehicles advance toward commercial deployment. NHTSA encourages voluntary safety self-assessment reports detailing camera-based perception systems. European regulators mandate camera-based ADAS features under the General Safety Regulation.
+Regulatory agencies focus on camera-based safety systems as autonomous vehicles advance toward commercial deployment. NHTSA encourages voluntary safety self-assessment reports detailing camera-based perception systems. UK safety authorities are developing camera-specific requirements for advanced driver assistance systems.
 
 Owning or licensing patents covering camera-based safety systems provides:
 - Technical credibility through documented expertise
 - Safety methodology descriptions for regulatory requirements
 - Support for certification processes
-
-China's autonomous vehicle regulations, implemented in 2024-2025, require camera-based lane keeping assistance and automatic emergency braking for all new vehicles.
 
 ### Investor Credibility
 
@@ -242,7 +240,7 @@ Tesla's camera-first autonomous driving development creates competitive consider
 
 Licensing provides 4-9 month positioning compared to 18-36 months for in-house patent development, enabling companies to compete credibly while building proprietary IP.
 
-**Ready to strengthen your camera-based patent position?** Contact us to discuss licensing options for US Patent 12,001,207 B2.
+Contact us to discuss licensing options for US Patent 12,001,207 B2.
 
 ### Additional Resources
 
