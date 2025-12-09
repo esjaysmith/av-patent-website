@@ -33,6 +33,30 @@ GOOGLE_ANALYTICS_ENABLED = os.getenv('GOOGLE_ANALYTICS_ENABLED', 'false').lower(
 CONTACT_EMAIL = os.getenv('CONTACT_EMAIL', 'contact@example.com')
 CONTACT_EMAIL_ENCODED = base64.b64encode(CONTACT_EMAIL.encode('utf-8')).decode('utf-8')
 
+# Page order for sitemap and next-page navigation
+PAGE_ORDER = [
+    'index.html',           # Homepage - entry point
+    'patent-details.html',  # Core patent information
+    'licensing.html',       # How to license
+
+    # Landing pages - use case scenarios
+    'autonomous-trucking-patent-defense-strategy.html',
+    'venture-capital-av-patent-portfolio-due-diligence.html',
+    'series-a-av-patent-portfolio-strategy.html',
+    'drone-delivery-patent-portfolio-pre-ipo.html',
+    'tesla-fsd-competitor-camera-patent-licensing.html',
+
+    # Information pages
+    'industry-insights.html',
+    'about.html',
+
+    # Utility pages
+    'contact.html',
+    'privacy.html',
+    'disclaimer.html',
+    'thank-you.html',
+]
+
 class StaticSiteGenerator:
     def __init__(self, design="default"):
         self.base_dir = Path(__file__).parent
@@ -99,6 +123,21 @@ class StaticSiteGenerator:
         # If URL doesn't start with /, assume it's a relative path and add /
         else:
             return f"{SITE_URL}/{url}"
+
+    def get_next_page_url(self, current_page_filename):
+        """Get the next page URL in the circular navigation"""
+        try:
+            current_index = PAGE_ORDER.index(current_page_filename)
+            next_index = (current_index + 1) % len(PAGE_ORDER)
+            next_filename = PAGE_ORDER[next_index]
+
+            # Return relative URL
+            if next_filename == 'index.html':
+                return '/'
+            else:
+                return f'/{next_filename}'
+        except ValueError:
+            return None  # Fallback if page not in order
 
     def clean_build_dir(self):
         """Remove and recreate build directory"""
@@ -221,7 +260,10 @@ class StaticSiteGenerator:
             'google_analytics_enabled': GOOGLE_ANALYTICS_ENABLED,
 
             # Contact information (base64 encoded for spam protection)
-            'contact_email_encoded': CONTACT_EMAIL_ENCODED
+            'contact_email_encoded': CONTACT_EMAIL_ENCODED,
+
+            # Next page navigation
+            'next_page_url': self.get_next_page_url(output_filename),
         }
 
         # Load and render template
@@ -236,18 +278,18 @@ class StaticSiteGenerator:
         print(f"✓ Generated: {output_filename} from {md_file_path.name}")
         return output_path
 
-    def generate_sitemap(self, generated_pages):
-        """Generate sitemap.xml"""
+    def generate_sitemap(self):
+        """Generate sitemap.xml using PAGE_ORDER"""
         sitemap_content = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 '''
         base_url = SITE_URL
 
-        for page in generated_pages:
-            if page.name == 'index.html':
+        for page_filename in PAGE_ORDER:
+            if page_filename == 'index.html':
                 url = base_url + '/'
             else:
-                url = f"{base_url}/{page.name}"
+                url = f"{base_url}/{page_filename}"
 
             sitemap_content += f'''    <url>
         <loc>{url}</loc>
@@ -322,8 +364,28 @@ Sitemap: {SITE_URL}/sitemap.xml
                 print(f"❌ Error processing {md_file}: {e}")
                 return False
 
+        # Validate generated pages against PAGE_ORDER
+        generated_filenames = {page.name for page in generated_pages}
+        expected_filenames = set(PAGE_ORDER)
+
+        # Check for pages not in PAGE_ORDER (ERROR)
+        extra_pages = generated_filenames - expected_filenames
+        if extra_pages:
+            error_msg = (
+                f"❌ ERROR: Pages generated but not in PAGE_ORDER:\n"
+                f"   {', '.join(sorted(extra_pages))}\n\n"
+                f"   Add these pages to PAGE_ORDER in generate_site.py"
+            )
+            print(error_msg)
+            raise ValueError(error_msg)
+
+        # Check for missing pages (WARNING)
+        missing_pages = expected_filenames - generated_filenames
+        if missing_pages:
+            print(f"⚠️  Warning: Pages in PAGE_ORDER but not generated: {', '.join(sorted(missing_pages))}")
+
         # Generate sitemap and robots.txt
-        self.generate_sitemap(generated_pages)
+        self.generate_sitemap()
         self.generate_robots_txt()
 
         print(f"\n✅ Site generation complete!")

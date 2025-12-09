@@ -46,6 +46,13 @@
                 {{ content | safe }}
             </div>
 
+            <!-- Next Page Navigation -->
+            {% if next_page_url %}
+            <div class="next-page-navigation">
+                <a href="{{ next_page_url }}" class="next-page-button">Next Page →</a>
+            </div>
+            {% endif %}
+
             {% if show_cta %}
             <div class="cta-section">
                 <h3>Ready to License US Patent 12,001,207?</h3>
