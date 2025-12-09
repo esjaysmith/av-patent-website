@@ -3,6 +3,7 @@ title: "AV Patent 12,001,207 Licensing | IP Protection"
 description: "License US Patent 12,001,207 for camera-based navigation safety in AVs and drones. Strengthen your IP portfolio and protect innovations."
 keywords: "autonomous vehicle patent licensing, US patent 12001207, camera-based navigation safety, AV IP protection, drone navigation patents, patent licensing opportunities"
 is_homepage: true
+show_cta: true
 hero_title: "Protect Your AV Innovations with US Patent 12,001,207"
 hero_subtitle: "License camera-based navigation safety IP for autonomous vehicles and drones"
 
