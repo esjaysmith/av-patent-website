@@ -143,9 +143,9 @@ Works with existing camera-based perception stacks without system redesign. Adds
 
 ### Economic Comparison
 
-**In-House Development**: 30-66 months, $5.15M-$10.4M (R&D: 12-18 months/$5M-$10M; Application: 6-12 months/$50K-$100K; Prosecution: 12-36 months/$100K-$300K). High risk of non-grantable innovation or claim narrowing.
+**In-House Development**: 30-66 months, $5.15M-$10.4M (R&D: 12-18 months/$5M-$10M; Application: 6-12 months/$50K-$100K; Prosecution: 12-36 months/$100K-$300K). High risk of non-grantable innovation or claim narrowing. *Based on industry reports and public market data. Actual results vary.*
 
-**Patent Licensing**: 4-9 months, $60K-$230K + licensing fees (Due diligence: 1-2 months/$10K-$30K; Negotiation: 1-3 months; Integration: 2-4 months/$50K-$200K). Low risk with well-defined technology.
+**Patent Licensing**: 4-9 months, $60K-$230K + licensing fees (Due diligence: 1-2 months/$10K-$30K; Negotiation: 1-3 months; Integration: 2-4 months/$50K-$200K). Low risk with well-defined technology. *Based on industry reports and public market data. Actual results vary.*
 
 Licensing accelerates portfolio strengthening by 2-5 years, reduces financial risk by $5M-$10M, and achieves investor-ready portfolio before funding rounds. *Based on industry reports and public market data. Actual results vary.*
 

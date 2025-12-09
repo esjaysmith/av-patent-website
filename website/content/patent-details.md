@@ -112,7 +112,7 @@ Association with patented technology demonstrates innovation credibility to inve
 
 ## Licensing Opportunities
 
-This patent is available for licensing in the United States and United Kingdom across multiple industries and use cases. Whether you're developing the next generation of autonomous vehicles, commercial drones, or AI navigation systems, US Patent 12,001,207 provides essential IP protection for your innovations.
+This patent is available for licensing in the United States and United Kingdom across multiple industries and use cases. Whether you're developing the next generation of autonomous vehicles, commercial drones, or AI navigation systems, US Patent 12,001,207 provides IP protection for your innovations.
 
 ### **Licensing Options Available:**
 

@@ -118,7 +118,7 @@ Before filing a patent application, your engineering team must:
 - Conduct prior art searches to ensure novelty (20-40 hours)
 - Draft and revise application multiple times
 
-Total cost for this phase: $50,000-$150,000 including attorney fees and engineering time
+Total cost for this phase: $50,000-$150,000 including attorney fees and engineering time. *Based on industry reports and public market data. Actual results vary.*
 
 **Phase 2: USPTO Examination (12-24 months)**
 
@@ -155,7 +155,7 @@ The financial burden of patent development extends far beyond filing fees. For r
 - Patent attorney fees (prosecution): $10,000-$30,000 per patent over 18-24 months
 - Maintenance fees (if granted): $2,000-$8,000 over patent lifetime
 
-**Total direct cost per patent: $30,000-$70,000**
+**Total direct cost per patent: $30,000-$70,000** *Based on industry reports and public market data. Actual results vary.*
 
 **Indirect Costs (Often Larger):**
 
