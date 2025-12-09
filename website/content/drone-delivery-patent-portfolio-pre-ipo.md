@@ -126,14 +126,49 @@ Immediately strengthens portfolio with visual navigation coverage, demonstrates 
 
 ### Licensing vs In-House Development
 
-| Metric | In-House Development | Strategic Licensing |
-|--------|---------------------|-------------------|
-| Timeline to Granted Patent | 18-36 months | Immediate (already granted) |
-| IPO Timeline Fit | No (too slow) | Yes (immediate) |
-| Upfront Cost | $150K-$500K per patent | $50K-$300K licensing fee |
-| Engineering Resources | 200-500 hours per patent | 20-50 hours (integration) |
-| S-1 Filing Value | Pending applications (weak) | Granted patents (strong) |
-| Investor Perception | "Work in progress" | "Established IP portfolio" |
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>Metric</th>
+<th>In-House Development</th>
+<th>Strategic Licensing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timeline to Granted Patent</td>
+<td>18-36 months</td>
+<td>Immediate (already granted)</td>
+</tr>
+<tr>
+<td>IPO Timeline Fit</td>
+<td>No (too slow)</td>
+<td>Yes (immediate)</td>
+</tr>
+<tr>
+<td>Upfront Cost</td>
+<td>$150K-$500K per patent</td>
+<td>$50K-$300K licensing fee</td>
+</tr>
+<tr>
+<td>Engineering Resources</td>
+<td>200-500 hours per patent</td>
+<td>20-50 hours (integration)</td>
+</tr>
+<tr>
+<td>S-1 Filing Value</td>
+<td>Pending applications (weak)</td>
+<td>Granted patents (strong)</td>
+</tr>
+<tr>
+<td>Investor Perception</td>
+<td>"Work in progress"</td>
+<td>"Established IP portfolio"</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 *Based on industry reports and public market data. Actual results vary.*
 

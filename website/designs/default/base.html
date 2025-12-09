@@ -682,6 +682,102 @@
                 flex: 1;
             }
         }
+
+        /* Table Styling */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 40px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin: 0;
+        }
+
+        .table thead {
+            background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+        }
+
+        .table thead th {
+            color: white;
+            font-weight: 600;
+            font-size: 1.05rem;
+            padding: 20px 24px;
+            text-align: left;
+            border: none;
+        }
+
+        .table tbody td {
+            padding: 18px 24px;
+            color: #4a5568;
+            font-size: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: middle;
+        }
+
+        .table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .table tbody tr:hover {
+            background-color: rgba(230, 126, 34, 0.04);
+        }
+
+        .table tbody td strong {
+            color: #1a1f36;
+            font-weight: 600;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .badge.bg-success {
+            background-color: #10b981;
+            color: white;
+        }
+
+        .badge.bg-danger {
+            background-color: #ef4444;
+            color: white;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(248, 249, 250, 0.5);
+        }
+
+        .table-bordered {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* Responsive table */
+        @media (max-width: 768px) {
+            .table-responsive {
+                margin: 30px -20px;
+                border-radius: 0;
+            }
+
+            .table thead th,
+            .table tbody td {
+                padding: 14px 16px;
+                font-size: 0.95rem;
+            }
+
+            .table thead th {
+                font-size: 1rem;
+            }
+        }
+
     </style>
 </head>
 <body>

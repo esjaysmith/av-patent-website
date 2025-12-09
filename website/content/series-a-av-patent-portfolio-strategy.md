@@ -527,15 +527,6 @@ Camera-based safety patents, like US Patent 12,001,207 B2, align with industry t
 
 The 6-month IP action plan provides a tactical roadmap: audit your current portfolio, license foundational patents, file proprietary applications, and prepare IP materials for due diligence. This systematic approach transforms IP from a vague concern into a concrete competitive advantage.
 
-<div class="cta-section-primary text-center py-5 my-5">
-  <div class="container">
-    <h2>Ready to Strengthen Your Patent Portfolio Before Series B?</h2>
-    <p class="lead mb-4">Contact us to discuss licensing options for US Patent 12,001,207 B2 and strengthen your IP position before your next funding round.</p>
-    <a href="/contact.html" class="btn btn-primary btn-lg me-3">Inquire About Patent Licensing</a>
-    <a href="/patent-details.html" class="btn btn-outline-primary btn-lg">View Patent Technical Details</a>
-  </div>
-</div>
-
 ---
 
 **Related Resources:**

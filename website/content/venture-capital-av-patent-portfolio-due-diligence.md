@@ -63,6 +63,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 ### Portfolio Size & Quality
 
 **Portfolio Inventory (Request from Management):**
+
 - [ ] Complete list of granted patents (numbers, grant dates, expiration dates)
 - [ ] All pending patent applications (filing dates, application numbers, status)
 - [ ] Provisional patent applications
@@ -72,6 +73,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] Patent prosecution records
 
 **Quantitative Metrics:**
+
 - [ ] **Total Patents:** 10+ granted patents (Green) | 3-10 patents (Yellow) | <3 patents (Red)
 - [ ] **Granted vs Pending:** 70%+ granted (Green) | 50% granted (Yellow) | 100% pending (Red)
 - [ ] **Patent Age:** Multiple grants 3+ years (Green) | Mix 2-5 years (Yellow) | All <1 year (Red)
@@ -79,6 +81,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] **Technology Coverage:** 4+ areas (Green) | 2-3 areas (Yellow) | Single area (Red)
 
 **Portfolio Company Screening Questions:**
+
 - [ ] How many patents (granted vs pending vs provisional)?
 - [ ] When were patents granted? When do they expire?
 - [ ] What technology areas do patents cover? Any gaps?
@@ -91,6 +94,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 ### Freedom to Operate
 
 **FTO Analysis Requirements (Essential for Series B+):**
+
 - [ ] FTO analysis completed by reputable patent counsel ($50K-$100K investment)
 - [ ] Search for competitor patents in relevant technology areas
 - [ ] Claim-by-claim comparison to portfolio company's products
@@ -99,12 +103,14 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] Legal opinion on freedom to operate
 
 **FTO Red Flags (Deal-Breakers):**
+
 - [ ] No FTO analysis conducted (high-risk oversight)
 - [ ] FTO identifies clear infringement risks
 - [ ] Competitor patents block key product features
 - [ ] Management dismisses FTO concerns
 
 **FTO Green Flags:**
+
 - [ ] Documented FTO opinion from reputable counsel
 - [ ] No identified freedom-to-operate issues
 - [ ] Design-around options for borderline patents
@@ -113,6 +119,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 ### Technical Relevance
 
 **Patent Quality Assessment:**
+
 - [ ] **Claim Breadth:** Independent claims are broad (not narrow/easily designed around)
 - [ ] **Prosecution Strength:** Fewer than 5 office action rejections
 - [ ] **Minimal Claim Narrowing:** Claims didn't narrow significantly during prosecution
@@ -123,6 +130,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] **Licensing Value:** Competitors would want to license these patents
 
 **Camera-First Patent Evaluation (Critical for AV Investments):**
+
 - [ ] **Camera-Only Navigation:** Patent covers camera-only systems (not requiring LiDAR)
 - [ ] **Safety Systems:** Patent addresses safety-critical functions with redundancy
 - [ ] **E2E Neural Network Compatible:** Patent applicable to end-to-end architectures
@@ -133,6 +141,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] **Commercial Viability:** Technology can be commercially deployed
 
 **Founder Response Red Flags:**
+
 - [ ] Vague answers without specifics
 - [ ] Dismissive of FTO concerns
 - [ ] Overconfidence about patent strength
@@ -142,18 +151,21 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 ### Strategic Value
 
 **Competitive Landscape Assessment:**
+
 - [ ] **Benchmark Understanding:** Portfolio compared to Tesla (500+ patents), Waymo (1,500+), Cruise
 - [ ] **Technology-Specific Positioning:** Camera-first focus if targeting that market segment
 - [ ] **Strategic Coverage:** Patents in critical areas where company plans to compete
 - [ ] **Defensive Moat:** Patents prevent competitors from copying technology
 
 **Patent Gap Analysis:**
+
 - [ ] **Technology Gaps:** Identified areas lacking patent coverage vs competitors
 - [ ] **Defensive Gaps:** Assessed vulnerability to competitor patent assertions
 - [ ] **Offensive Opportunities:** Identified where company can assert patents
 - [ ] **Strategic Licensing Needs:** Determined what patents company should license
 
 **Critical Deal-Breaker Red Flags:**
+
 - [ ] **Zero Patents:** No patents filed for Series B+ stage company
 - [ ] **100% Pending Applications:** No granted patents in portfolio
 - [ ] **Clear FTO Issues:** Freedom-to-operate analysis identifies infringement risks
@@ -161,6 +173,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] **No FTO Analysis:** Company hasn't conducted freedom-to-operate analysis
 
 **Yellow Flags Requiring Mitigation:**
+
 - [ ] **Narrow Claims:** Patents easily designed around by competitors
 - [ ] **Limited Coverage:** Patents only cover 1-2 technology areas
 - [ ] **Weak Prosecution:** Multiple office action rejections with significant narrowing
@@ -168,6 +181,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] **No Camera-Based Patents:** Portfolio lacks camera-first patents
 
 **Green Flags (Positive Signals):**
+
 - [ ] **70%+ Granted:** Majority of portfolio is granted (not pending)
 - [ ] **Broad Claims:** Independent claims cover wide range of applications
 - [ ] **Technology Diversity:** Patents cover multiple technology areas
@@ -196,24 +210,28 @@ Evaluate portfolio company camera-based patents against this standard. Companies
 ## Post-Investment IP Strategy Support
 
 **Month 1-3: Strategic Assessment**
+
 - [ ] Conduct comprehensive patent portfolio audit
 - [ ] Identify patent gaps vs competitors
 - [ ] Evaluate strategic licensing opportunities
 - [ ] Develop 12-24 month patent roadmap
 
 **Month 4-6: Execute Patent Strategy**
+
 - [ ] Support strategic patent licensing decisions
 - [ ] Allocate budget for patent development ($200K-$500K typical)
 - [ ] Hire fractional patent counsel
 - [ ] File key patent applications for proprietary innovations
 
 **Month 7-12: Prepare for Next Round**
+
 - [ ] Update patent portfolio for Series B pitch deck
 - [ ] Conduct updated freedom-to-operate analysis
 - [ ] Position strengthened patent portfolio in fundraising narrative
 - [ ] Prepare patent case studies for investor presentations
 
 **VC Value-Add Opportunities:**
+
 - [ ] Connect portfolio companies with patent licensing opportunities
 - [ ] Introduce to patent counsel specializing in AV/camera-based patents
 - [ ] Facilitate cross-licensing discussions
@@ -224,21 +242,25 @@ Evaluate portfolio company camera-based patents against this standard. Companies
 ## Action Plan for VCs
 
 **Immediate Actions:**
+
 - [ ] Implement due diligence checklist for current portfolio companies
 - [ ] Review existing portfolio for IP gaps and risks
 - [ ] Budget for FTO analyses on Series B+ investments
 
 **Next 30 Days:**
+
 - [ ] Apply camera-based patent evaluation framework to current deals
 - [ ] Develop relationships with AV patent counsel
 - [ ] Create portfolio company IP strengthening roadmap
 
 **Quarterly Reviews:**
+
 - [ ] Audit portfolio company patent portfolios
 - [ ] Identify strategic licensing opportunities
 - [ ] Track patent portfolio metrics across portfolio
 
 **For Next Investment:**
+
 - [ ] Apply full IP due diligence process from initial screening
 - [ ] Include patent strengthening in investment plan
 - [ ] Build IP cooperation into term sheet if needed

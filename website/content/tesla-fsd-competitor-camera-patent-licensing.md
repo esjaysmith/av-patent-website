@@ -101,21 +101,75 @@ Major automotive OEMs require IP warranties from AV technology suppliers. Tier 1
 
 **Timeline Comparison:**
 
-| Activity | In-House Development | Licensed Patents |
-|----------|---------------------|------------------|
-| Patent development & prosecution | 18-30 months | Not required (already granted) |
-| Integration planning | 2-4 months | 1-2 months (due diligence) |
-| **Total Timeline** | **18-36 months** | **4-9 months** |
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>Activity</th>
+<th>In-House Development</th>
+<th>Licensed Patents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patent development & prosecution</td>
+<td>18-30 months</td>
+<td>Not required (already granted)</td>
+</tr>
+<tr>
+<td>Integration planning</td>
+<td>2-4 months</td>
+<td>1-2 months (due diligence)</td>
+</tr>
+<tr>
+<td><strong>Total Timeline</strong></td>
+<td><strong>18-36 months</strong></td>
+<td><strong>4-9 months</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 **Cost Analysis:**
 
-| Cost Category | In-House Development | Licensed Patents |
-|--------------|---------------------|------------------|
-| Patent attorney fees | $15,000-$30,000 per patent | $0 (already incurred) |
-| Engineering time | $40,000-$100,000 per patent | $5,000-$15,000 (due diligence) |
-| USPTO filing fees | $5,000-$10,000 per patent | $0 |
-| Risk of rejection | 40-50% USPTO rejection rate | 0% (already granted) |
-| **Total per Patent** | **$60,000-$140,000** | **Licensing fee varies** |
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>Cost Category</th>
+<th>In-House Development</th>
+<th>Licensed Patents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patent attorney fees</td>
+<td>$15,000-$30,000 per patent</td>
+<td>$0 (already incurred)</td>
+</tr>
+<tr>
+<td>Engineering time</td>
+<td>$40,000-$100,000 per patent</td>
+<td>$5,000-$15,000 (due diligence)</td>
+</tr>
+<tr>
+<td>USPTO filing fees</td>
+<td>$5,000-$10,000 per patent</td>
+<td>$0</td>
+</tr>
+<tr>
+<td>Risk of rejection</td>
+<td>40-50% USPTO rejection rate</td>
+<td>0% (already granted)</td>
+</tr>
+<tr>
+<td><strong>Total per Patent</strong></td>
+<td><strong>$60,000-$140,000</strong></td>
+<td><strong>Licensing fee varies</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 The critical factors are timeline and certainty. Licensing provides immediate defensive coverage and competitive credibility when timing matters most.
 

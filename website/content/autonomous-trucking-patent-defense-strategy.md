@@ -72,11 +72,38 @@ Critical patent categories:
 
 **Fleet Economics**: Camera-based systems cost $50K-$80K per truck versus $150K-$200K for LiDAR. For 100-truck fleets, this represents $10M-$18M savings over 5 years. *Based on industry reports and public market data. Actual results vary.* Tesla Semi's camera-first approach forces competitors to match cost structure or lose market viability.
 
-| System Type | Per-Vehicle Upfront | Annual Maintenance | 5-Year TCO |
-|------|---|---|---|
-| **LiDAR-Based** | $150K-$200K | $15K-$20K | $225K-$300K |
-| **Camera-Only** | $50K-$80K | $5K-$8K | $75K-$120K |
-| **Hybrid System** | $100K-$150K | $10K-$15K | $150K-$225K |
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<th>System Type</th>
+<th>Per-Vehicle Upfront</th>
+<th>Annual Maintenance</th>
+<th>5-Year TCO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>LiDAR-Based</strong></td>
+<td>$150K-$200K</td>
+<td>$15K-$20K</td>
+<td>$225K-$300K</td>
+</tr>
+<tr>
+<td><strong>Camera-Only</strong></td>
+<td>$50K-$80K</td>
+<td>$5K-$8K</td>
+<td>$75K-$120K</td>
+</tr>
+<tr>
+<td><strong>Hybrid System</strong></td>
+<td>$100K-$150K</td>
+<td>$10K-$15K</td>
+<td>$150K-$225K</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ---
 
