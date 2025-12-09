@@ -183,11 +183,11 @@ The critical factors are timeline and certainty. Licensing provides immediate de
 4. **Granted Status**: Only granted patents provide defensive IP value (15+ years remaining preferred)
 5. **Broad Applicability**: Coverage across multiple vehicle types (passenger cars, commercial trucks, aerial drones)
 
-## US Patent 12,001,207 B2: Camera-Based Safety Patent
+## US Patent 12,001,207: Camera-Based Safety Patent
 
 **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
-US Patent 12,001,207 B2, granted June 4, 2024, covers a dual-module camera-based navigation safety system applicable to autonomous vehicles and aerial vessels.
+US Patent 12,001,207, granted June 4, 2024, covers a dual-module camera-based navigation safety system applicable to autonomous vehicles and aerial vessels.
 
 ### Technical Overview
 
@@ -221,7 +221,7 @@ By licensing this patent, camera-first AV developers gain:
 4. Investor confidence through camera-based patent portfolio
 5. Cross-licensing currency for IP negotiations
 
-[View full US Patent 12,001,207 B2 technical specifications](/patent-details.html)
+[View full US Patent 12,001,207 technical specifications](/patent-details.html)
 
 ## Building a Camera-First Patent Portfolio Strategy
 
@@ -294,11 +294,11 @@ Tesla's camera-first autonomous driving development creates competitive consider
 
 Licensing provides 4-9 month positioning compared to 18-36 months for in-house patent development, enabling companies to compete credibly while building proprietary IP.
 
-Contact us to discuss licensing options for US Patent 12,001,207 B2.
+Contact us to discuss licensing options for US Patent 12,001,207.
 
 ### Additional Resources
 
-- [View US Patent 12,001,207 B2 Technical Specifications](/patent-details.html)
+- [View US Patent 12,001,207 Technical Specifications](/patent-details.html)
 - [Learn About Patent Licensing Options](/licensing.html)
 - [Read Autonomous Vehicle Industry Insights](/industry-insights.html)
 - [Contact Us About Strategic Patent Licensing](/contact.html)

@@ -92,7 +92,7 @@ Contact us to discuss licensing opportunities tailored to your business needs an
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
     <h2 style="text-align: center; font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; color: #1a1f36; margin-bottom: 20px;">Patent Licensing Solutions by Industry</h2>
     <p style="text-align: center; font-size: 1.2rem; color: #4a5568; margin-bottom: 50px; max-width: 700px; margin-left: auto; margin-right: auto;">
-      Explore how US Patent 12,001,207 B2 strengthens IP portfolios across autonomous vehicle applications
+      Explore how US Patent 12,001,207 strengthens IP portfolios across autonomous vehicle applications
     </p>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; margin-bottom: 40px;">
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
@@ -122,7 +122,7 @@ Contact us to discuss licensing opportunities tailored to your business needs an
       </div>
       <div style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border: 1px solid rgba(226, 126, 34, 0.15); border-radius: 12px; padding: 35px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06); transition: transform 0.3s ease, box-shadow 0.3s ease;">
         <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.5rem; color: #e67e22; margin-bottom: 15px;">About This Patent</h3>
-        <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Learn about the inventors, patent claims, and technical specifications of US Patent 12,001,207 B2.</p>
+        <p style="color: #4a5568; margin-bottom: 25px; line-height: 1.6;">Learn about the inventors, patent claims, and technical specifications of US Patent 12,001,207.</p>
         <a href="/about.html" style="display: inline-block; color: #e67e22; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">View Patent Details & Claims →</a>
       </div>
     </div>

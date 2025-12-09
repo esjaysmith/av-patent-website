@@ -40,7 +40,7 @@ twitter_image: "/assets/images/og-startup-innovation.jpg"
 
 ## Executive Summary
 
-US Patent 12,001,207 B2 provides autonomous trucking companies with camera-based safety validation IP addressing investor, regulatory, and fleet deployment requirements. This dual-module system validates navigation commands against stored route data before execution, adding redundancy to commercial vehicle operations.
+US Patent 12,001,207 provides autonomous trucking companies with camera-based safety validation IP addressing investor, regulatory, and fleet deployment requirements. This dual-module system validates navigation commands against stored route data before execution, adding redundancy to commercial vehicle operations.
 
 The patent supports:
 - **Investor Due Diligence**: Strengthens IP portfolios for Series B/C funding rounds where patent positions influence valuations
@@ -107,7 +107,7 @@ Critical patent categories:
 
 ---
 
-## Section 2: US Patent 12,001,207 B2 for Commercial Trucking
+## Section 2: US Patent 12,001,207 for Commercial Trucking
 
 ### Camera-Based Systems for Highway Operations
 
@@ -191,7 +191,7 @@ Camera-based safety patents address hours-of-service compliance, ELD integration
 
 **Weeks 1-2**: Conduct portfolio gap analysis across perception, safety, fleet management, regulatory compliance. Compare to competitors (Aurora, Waabi, Waymo Via, Tesla).
 
-**Weeks 3-4**: Evaluate US Patent 12,001,207 B2 applicability, request technical specifications, assess 2-4 month integration timeline.
+**Weeks 3-4**: Evaluate US Patent 12,001,207 applicability, request technical specifications, assess 2-4 month integration timeline.
 
 **Month 2**: Prepare investor materials documenting patents, create IP strategy presentation, quantify valuation impact, develop competitive comparisons.
 
@@ -208,7 +208,7 @@ Camera-based safety patents address hours-of-service compliance, ELD integration
 
 ## Conclusion
 
-US Patent 12,001,207 B2 provides autonomous trucking companies immediate portfolio strengthening through:
+US Patent 12,001,207 provides autonomous trucking companies immediate portfolio strengthening through:
 - Dual-module safety validation addressing liability and regulatory requirements
 - Visual navigation enabling cost-effective camera-based deployment
 - 15+ years protection (through 2041) versus 30-66 month in-house development
@@ -217,18 +217,18 @@ US Patent 12,001,207 B2 provides autonomous trucking companies immediate portfol
 Companies strengthening IP positions in 2025 will secure premium Series B/C valuations, favorable OEM partnerships, and competitive advantages for 2027-2028 commercial launches. Delayed action results in higher licensing costs, valuation discounts, and competitive disadvantages as patent landscape crowds.
 
 <div class="alert alert-info">
-<strong>Action Item:</strong> Evaluate licensing US Patent 12,001,207 B2 3-6 months before your next funding round to strengthen portfolio for investor due diligence.
+<strong>Action Item:</strong> Evaluate licensing US Patent 12,001,207 3-6 months before your next funding round to strengthen portfolio for investor due diligence.
 </div>
 
 ---
 
 <div class="cta-section-primary text-center py-5">
   <h2>Strengthen Your Autonomous Trucking Patent Portfolio</h2>
-  <p class="lead">Contact us to discuss licensing US Patent 12,001,207 B2 for defensive IP protection in your commercial vehicle systems.</p>
+  <p class="lead">Contact us to discuss licensing US Patent 12,001,207 for defensive IP protection in your commercial vehicle systems.</p>
   <a href="/contact.html" class="btn btn-primary btn-lg">Contact About Patent Licensing</a>
 </div>
 
-<p class="mt-4"><a href="/patent-details.html">View complete technical specifications of US Patent 12,001,207 B2 →</a></p>
+<p class="mt-4"><a href="/patent-details.html">View complete technical specifications of US Patent 12,001,207 →</a></p>
 
 ---
 
@@ -244,4 +244,4 @@ A: In-house development: 30-66 months, $5M-$10M, uncertain outcomes. Licensing: 
 A: Unlikely. Covers safety validation architecture complementing (not replacing) core perception. Contact for integration assessment.
 
 **Q: How to explain licensing to investors?**
-A: "We licensed US Patent 12,001,207 B2 to add safety-focused validation to our perception systems, de-risking our stack and strengthening our moat faster and cheaper than in-house development."
+A: "We licensed US Patent 12,001,207 to add safety-focused validation to our perception systems, de-risking our stack and strengthening our moat faster and cheaper than in-house development."

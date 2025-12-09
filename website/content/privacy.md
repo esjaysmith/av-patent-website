@@ -28,7 +28,7 @@ date_modified: "2025-11-19"
 
 ## Introduction
 
-AV Navigation IP Protection ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our contact form to inquire about purchasing US Patent 12,001,207 B2.
+AV Navigation IP Protection ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our contact form to inquire about purchasing US Patent 12,001,207.
 
 ## Information We Collect
 
@@ -49,7 +49,7 @@ We do not collect any information automatically. We do not use analytics tools, 
 
 We use the information we collect solely to:
 
-- Respond to your inquiries about purchasing US Patent 12,001,207 B2
+- Respond to your inquiries about purchasing US Patent 12,001,207
 - Provide information about the patent and sale terms
 - Facilitate communication regarding the patent sale
 - Comply with legal obligations

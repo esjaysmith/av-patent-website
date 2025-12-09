@@ -341,12 +341,12 @@ Every AV startup faces the "How do you compete with Tesla FSD?" question from in
 
 This response demonstrates strategic sophistication that resonates with Series B investors.
 
-### Example: US Patent 12,001,207 B2
+### Example: US Patent 12,001,207
 
 **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
 **Patent Overview:**
-- **Patent Number**: US 12,001,207 B2
+- **Patent Number**: US 12,001,207
 - **Grant Date**: June 4, 2024
 - **Expiration**: March 5, 2041 (15+ years remaining)
 - **Technology**: Dual-module camera-based navigation safety system
@@ -391,7 +391,7 @@ Weak answers result in pass decisions or valuation discounts. Strong answers req
 **Investor Question: "How are you differentiated from Tesla FSD?"**
 
 **Strong Answer with Patent License:**
-"We've licensed foundational camera-based safety patents (US 12,001,207 B2) that provide dual-module safety validation. Our proprietary algorithms focus on [specific differentiation], while the licensed patents give us freedom to operate in camera-based navigation without infringement risk."
+"We've licensed foundational camera-based safety patents (US 12,001,207) that provide dual-module safety validation. Our proprietary algorithms focus on [specific differentiation], while the licensed patents give us freedom to operate in camera-based navigation without infringement risk."
 
 **Investor Question: "What's your IP strategy?"**
 
@@ -415,7 +415,7 @@ Licensing demonstrates IP strategy sophistication:
 
 **Effective Series B IP Narrative:**
 
-> "Our IP strategy combines licensed foundational technology with proprietary innovation. We've licensed camera-based safety patents, including US 12,001,207 B2, which covers dual-module safety validation. This gives us immediate freedom to operate while our engineering focuses on [proprietary differentiator].
+> "Our IP strategy combines licensed foundational technology with proprietary innovation. We've licensed camera-based safety patents, including US 12,001,207, which covers dual-module safety validation. This gives us immediate freedom to operate while our engineering focuses on [proprietary differentiator].
 >
 > Our balanced portfolio—licensed baseline plus proprietary differentiation—provides the defensive position investors expect while maximizing engineering velocity."
 
@@ -485,7 +485,7 @@ Update board and incorporate IP strategy into Series B pitch deck (1-2 slides).
 **Sample IP Pitch Deck Slides:**
 
 **Slide 1: IP Portfolio Overview**
-- Licensed Patents: 2 granted (US 12,001,207 B2 + 1 other)
+- Licensed Patents: 2 granted (US 12,001,207 + 1 other)
 - Proprietary Applications: 3-4 pending
 - Coverage: Camera-based safety, navigation, [proprietary technology]
 - Timeline: All licensed patents expire 2040+
@@ -523,7 +523,7 @@ Update board and incorporate IP strategy into Series B pitch deck (1-2 slides).
 
 Your Series A gives you 18-24 months to prepare for Series B. In-house patent development takes 18-36 months, creating an impossible timeline. Strategic patent licensing solves this dilemma: acquire granted patents in 1-3 months, strengthen your portfolio immediately, and focus engineering on product development.
 
-Camera-based safety patents, like US Patent 12,001,207 B2, align with industry trends toward camera-first approaches. Licensing these patents addresses investor questions about Tesla FSD competition and demonstrates IP sophistication. Combined with proprietary patent applications for your unique innovations, you build the balanced portfolio Series B investors expect.
+Camera-based safety patents, like US Patent 12,001,207, align with industry trends toward camera-first approaches. Licensing these patents addresses investor questions about Tesla FSD competition and demonstrates IP sophistication. Combined with proprietary patent applications for your unique innovations, you build the balanced portfolio Series B investors expect.
 
 The 6-month IP action plan provides a tactical roadmap: audit your current portfolio, license foundational patents, file proprietary applications, and prepare IP materials for due diligence. This systematic approach transforms IP from a vague concern into a concrete competitive advantage.
 
@@ -531,7 +531,7 @@ The 6-month IP action plan provides a tactical roadmap: audit your current portf
 
 **Related Resources:**
 
-- [Camera-Based Navigation Patent Technical Specifications](/patent-details.html) - Detailed technical breakdown of US Patent 12,001,207 B2
+- [Camera-Based Navigation Patent Technical Specifications](/patent-details.html) - Detailed technical breakdown of US Patent 12,001,207
 - [Patent Licensing Options](/licensing.html) - Exclusive vs. non-exclusive licensing, pricing, and terms
 - [Autonomous Vehicle Industry Insights](/industry-insights.html) - Market trends, funding data, and competitive analysis
 - [Contact Us](/contact.html) - Inquire about patent licensing opportunities

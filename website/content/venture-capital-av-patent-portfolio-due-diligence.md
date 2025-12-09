@@ -189,7 +189,7 @@ Patent portfolio quality can influence 30-50% of autonomous vehicle startup valu
 - [ ] **FTO Opinion:** Obtained legal freedom-to-operate opinion
 - [ ] **Camera-First Patents:** Portfolio includes high-quality camera navigation patents
 
-### Case Study: US Patent 12,001,207 B2 Benchmark
+### Case Study: US Patent 12,001,207 Benchmark
 
 **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
@@ -297,5 +297,5 @@ For Series B+ investments: Yes, absolutely ($50K-$100K prevents costly surprises
 
 ---
 
-**Help portfolio companies strengthen their IP positions:** US Patent 12,001,207 B2 provides camera-based navigation safety IP that can fill critical gaps in AV startup patent portfolios. Contact us to discuss licensing opportunities for your portfolio companies.
+**Help portfolio companies strengthen their IP positions:** US Patent 12,001,207 provides camera-based navigation safety IP that can fill critical gaps in AV startup patent portfolios. Contact us to discuss licensing opportunities for your portfolio companies.
 

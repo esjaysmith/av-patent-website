@@ -24,7 +24,7 @@ date_modified: "2025-11-12"
 
 # Patent Licensing Opportunities
 
-**US Patent 12,001,207 B2** is available for licensing across multiple industries and applications. **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+**US Patent 12,001,207** is available for licensing across multiple industries and applications. **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
 We offer flexible licensing arrangements designed to meet the diverse needs of companies developing autonomous vehicle and drone navigation technologies.
 

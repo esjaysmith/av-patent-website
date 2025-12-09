@@ -99,7 +99,7 @@ The FAA increasingly requires visual safety systems for BVLOS operations. Camera
 **Investor Expectations:**
 Institutional investors use pattern analysis to evaluate portfolios. Visual navigation patents are increasingly expected. Their absence raises questions about autonomous capability.
 
-### US Patent 12,001,207 B2: Camera-Based Safety for Drones
+### US Patent 12,001,207: Camera-Based Safety for Drones
 
 [View Full Patent on Google Patents](https://patents.google.com/patent/US12001207B2)
 
@@ -283,7 +283,7 @@ The window for IPO preparation is narrow. Start your patent portfolio strengthen
 ## Next Steps: Strengthen Your Patent Portfolio Before IPO
 
 **License Camera-Based Navigation Technology for IPO Success:**
-Contact us to discuss licensing US Patent 12,001,207 B2 for your drone delivery company's IPO preparation. This granted patent provides camera-based navigation safety coverage that can fill critical portfolio gaps.
+Contact us to discuss licensing US Patent 12,001,207 for your drone delivery company's IPO preparation. This granted patent provides camera-based navigation safety coverage that can fill critical portfolio gaps.
 
 [Inquire About Patent Licensing](/contact.html)
 

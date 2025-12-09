@@ -32,7 +32,7 @@ The information provided on this website is for general informational purposes o
 
 ## No Legal or Licensing Advice
 
-This website provides information about US Patent 12,001,207 B2 and potential licensing opportunities. No information on this site should be construed as:
+This website provides information about US Patent 12,001,207 and potential licensing opportunities. No information on this site should be construed as:
 
 - Legal advice regarding patent law or intellectual property
 - Licensing advice or recommendations
@@ -45,7 +45,7 @@ All patent licensing terms, conditions, and pricing are subject to negotiation a
 
 ## No Guarantees or Warranties
 
-While we strive to provide accurate and up-to-date information about US Patent 12,001,207 B2, we make no warranties or guarantees regarding:
+While we strive to provide accurate and up-to-date information about US Patent 12,001,207, we make no warranties or guarantees regarding:
 
 - The accuracy, completeness, or timeliness of information
 - The suitability of the patent for any particular application
