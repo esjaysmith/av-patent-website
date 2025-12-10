@@ -143,11 +143,11 @@ Works with existing camera-based perception stacks without system redesign. Adds
 
 ### Economic Comparison
 
-**In-House Development**: 30-66 months, $5.15M-$10.4M (R&D: 12-18 months/$5M-$10M; Application: 6-12 months/$50K-$100K; Prosecution: 12-36 months/$100K-$300K). High risk of non-grantable innovation or claim narrowing. *Based on industry reports and public market data. Actual results vary.*
+**In-House Development**: 30-66 months. High risk of non-grantable innovation or claim narrowing. Costs vary significantly based on complexity and legal requirements. *Based on industry reports and public market data. Actual results vary.*
 
-**Patent Licensing**: 4-9 months, $60K-$230K + licensing fees (Due diligence: 1-2 months/$10K-$30K; Negotiation: 1-3 months; Integration: 2-4 months/$50K-$200K). Low risk with well-defined technology. *Based on industry reports and public market data. Actual results vary.*
+**Patent Licensing**: 4-9 months. Lower risk with already-granted technology. Costs vary based on licensing terms. *Based on industry reports and public market data. Actual results vary.*
 
-Licensing accelerates portfolio strengthening by 2-5 years, reduces financial risk by $5M-$10M, and achieves investor-ready portfolio before funding rounds. *Based on industry reports and public market data. Actual results vary.*
+Licensing may accelerate portfolio development compared to in-house development timelines. Financial and strategic impacts vary by company circumstances. *Based on industry reports and public market data. Actual results vary.*
 
 ### License Types
 
@@ -191,9 +191,9 @@ Camera-based safety patents address hours-of-service compliance, ELD integration
 
 **Weeks 1-2**: Conduct portfolio gap analysis across perception, safety, fleet management, regulatory compliance. Compare to competitors (Aurora, Waabi, Waymo Via, Tesla).
 
-**Weeks 3-4**: Evaluate US Patent 12,001,207 applicability, request technical specifications, assess 2-4 month integration timeline.
+**Weeks 3-4**: Evaluate US Patent 12,001,207 applicability and discuss integration considerations.
 
-**Month 2**: Prepare investor materials documenting patents, create IP strategy presentation, quantify valuation impact, develop competitive comparisons.
+**Month 2**: Prepare investor materials discussing patent strategy and competitive positioning.
 
 **Month 3**: Integrate licensed patents into technical architecture, train engineering team, include references in regulatory filings, update investor pitch deck.
 
@@ -241,7 +241,7 @@ A: Patents matter less at Seed/Pre-Seed but become critical by Series A. By Seri
 A: In-house development: 30-66 months, $5M-$10M, uncertain outcomes. Licensing: 4-9 months, $60K-$230K + fees, low risk. Faster, cheaper portfolio strengthening.
 
 **Q: Does this patent conflict with existing technology?**
-A: Unlikely. Covers safety validation architecture complementing (not replacing) core perception. Contact for integration assessment.
+A: The patent covers safety validation architecture. Contact us to discuss how it relates to your specific technology implementation.
 
 **Q: How to explain licensing to investors?**
 A: "We licensed US Patent 12,001,207 to add safety-focused validation to our perception systems, de-risking our stack and strengthening our moat faster and cheaper than in-house development."

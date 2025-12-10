@@ -109,9 +109,8 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 
 ### **Initial Response Process**
 1. **Acknowledgment Email**: Confirmation of your inquiry within 24 hours
-2. **Preliminary Assessment**: Review of your company and project requirements
-3. **Licensing Discussion**: Detailed discussion of licensing terms and technical fit
-4. **Follow-up Documentation**: Customized licensing proposal based on your needs
+2. **Discussion**: We'll discuss your inquiry via email or phone
+3. **Next Steps**: We'll outline potential next steps for further discussion
 
 ## Geographic Availability
 
@@ -152,10 +151,10 @@ From initial inquiry to signed agreement: 4-8 weeks for standard licensing terms
 Yes, licensing is available for the United States and United Kingdom.
 
 ### **Can startups access licensing on favorable terms?**
-Absolutely. We offer startup-friendly licensing structures including deferred payments, milestone-based royalties, and equity arrangements.
+Licensing discussions are open to companies of all sizes, including startups. Terms are negotiable based on specific circumstances.
 
-### **What documentation is provided with licensing?**
-Licensing agreements include access to patent documentation and patent family information.
+### **What information is discussed during licensing inquiries?**
+Discussions focus on the patent, potential licensing arrangements, and answering questions about the technology and its applications.
 
 For licensing inquiries regarding US Patent 12,001,207, submit the form above or contact via the provided email address.
 
