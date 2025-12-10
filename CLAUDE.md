@@ -11,3 +11,17 @@ docs
 We must consistently update the `docs` documentation after implementing new features to ensure it accurately reflects the most current information.
 
 Before planning any implementation, always review the `docs/README.md` first to gain proper context.
+
+## WEBSITE CONTENT EDITING WORKFLOW
+
+**CRITICAL:** This is a static site generator. When editing website content:
+
+- ✅ **EDIT:** Markdown source files in `/website/content/*.md`
+- ❌ **NEVER EDIT:** HTML files in `/website/build/*.html` (auto-generated, will be overwritten)
+- **After editing:** Run `python generate_site.py` from `/website/` directory
+- **To view changes:** Refresh browser at http://localhost:8000 (server usually already running)
+
+**For complete workflow details, see:**
+- `docs/README.md` → "Understanding Static Site Generation" section
+- `docs/SOP/content_management.md` → Complete content editing procedures
+- `docs/SOP/site_generation_deployment.md` → Generation and deployment procedures

@@ -8,10 +8,28 @@ This directory contains comprehensive documentation for the AV Navigation IP Pro
 
 ## Quick Reference
 
-- **Project Type:** Static website for patent licensing
+- **Project Type:** Static website for patent licensing (Python-generated from Markdown)
 - **Current Phase:** Phase 2 Complete (Ready for Phase 3 - Content Expansion)
 - **Tech Stack:** Python, Markdown, Jinja2, Bootstrap 5
 - **Development Status:** Production-ready, SEO optimization ongoing
+
+## ⚠️ CRITICAL: Understanding Static Site Generation
+
+**This website is GENERATED from Markdown source files:**
+
+- **✅ EDIT:** Content files in `/website/content/*.md` (Markdown source files)
+- **❌ DO NOT EDIT:** HTML files in `/website/build/*.html` (these are auto-generated)
+
+**Workflow:**
+1. Edit Markdown files in `/website/content/`
+2. Run `python generate_site.py` to regenerate HTML
+3. HTML files are created/updated in `/website/build/`
+4. Test locally at http://localhost:8000 (usually already running)
+
+**When viewing changes:**
+- User typically runs `python -m http.server 8000` in `/website/build/`
+- After editing content, just regenerate the site to see changes
+- No need to restart the server unless specified
 
 ## Documentation Structure
 

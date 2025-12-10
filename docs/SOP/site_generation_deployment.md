@@ -4,6 +4,59 @@
 
 This SOP covers the complete process of generating the static website, testing it locally, and deploying it to production hosting. The AV Navigation IP Protection website uses a Python-based static site generator with git-based deployment.
 
+## ⚠️ CRITICAL: Understanding Static Site Generation
+
+**This website is GENERATED, not hand-coded:**
+
+### The Generation Model
+
+```
+SOURCE FILES (Edit These)          GENERATED FILES (Don't Edit)
+/website/content/*.md       →      /website/build/*.html
+     ↓                                    ↓
+  Markdown + YAML                    Rendered HTML
+     ↓                                    ↓
+  YOU EDIT THESE              GENERATOR CREATES THESE
+```
+
+### Key Concepts
+
+**1. Source Files (Markdown)**
+- **Location:** `/website/content/*.md`
+- **What they are:** Human-editable content files
+- **Format:** Markdown with YAML frontmatter
+- **Version controlled:** YES (these are in git)
+
+**2. Generated Files (HTML)**
+- **Location:** `/website/build/*.html`
+- **What they are:** Auto-generated output files
+- **Format:** Complete HTML pages
+- **Should you edit:** NO (changes will be overwritten)
+
+**3. The Generator Script**
+- **File:** `/website/generate_site.py`
+- **What it does:** Reads `.md` files, applies templates, creates `.html` files
+- **When to run:** After ANY content changes
+
+### Typical Development Setup
+
+**User usually runs:**
+```bash
+cd website/build
+python -m http.server 8000
+```
+
+**This creates:**
+- Local web server on port 8000
+- Access at http://localhost:8000
+- Server runs continuously during development
+
+**Workflow:**
+1. Edit Markdown file in `/website/content/`
+2. Run `python generate_site.py` from `/website/`
+3. Refresh browser (server still running)
+4. See your changes immediately
+
 ## Prerequisites
 
 ### Required Software
@@ -255,40 +308,43 @@ Test at breakpoints:
 
 ### Making Content Updates
 
-**1. Edit Content**
+**⚠️ REMEMBER:** Edit Markdown source files, NOT HTML files
+
+**1. Edit Content (Source Files)**
 ```bash
 cd website/content
-# Edit file (e.g., vim index.md)
+# Edit the Markdown source file (NOT the HTML file!)
+vim index.md  # ✅ CORRECT
+# NOT: vim ../build/index.html  # ❌ WRONG
 ```
 
-**2. Regenerate Site**
+**2. Regenerate Site (Convert Markdown to HTML)**
 ```bash
 cd website
 python generate_site.py
 ```
 
-**3. Test Locally**
+This reads your `.md` files and creates/updates `.html` files in `/website/build/`
+
+**3. Test Locally (View Changes)**
 ```bash
+# If server not already running:
 cd build
 python -m http.server 8000
-# Verify changes at http://localhost:8000
+
+# Usually server is already running, so just:
+# - Refresh browser at http://localhost:8000
 ```
 
-**4. Run Tests**
+**4. Run Tests (Optional but recommended)**
 ```bash
 cd website
 python test_website.py
 ```
 
-**5. Commit Changes**
+**5. Commit and Deploy**
 ```bash
-git add website/content/
-git commit -m "Update homepage content"
-git push
-```
-
-**6. Deploy**
-```bash
+# Commit both source (.md) and generated (.html) files
 git add .
 git commit -m "Update homepage content"
 git push
@@ -296,23 +352,41 @@ git push
 
 ### Adding New Pages
 
-**1. Create Content File**
+**1. Create Content Source File (Markdown)**
 ```bash
 cd website/content
-# Create new-page.md with frontmatter
+# Create new-page.md with YAML frontmatter
+# This is the SOURCE file you'll edit in the future
 ```
 
-**2. Generate Site**
+**Example:**
+```markdown
+---
+title: "New Page Title"
+description: "Meta description for SEO"
+keywords: "keyword1, keyword2"
+---
+
+# New Page Heading
+
+Content goes here...
+```
+
+**2. Generate Site (Create HTML from Markdown)**
 ```bash
 cd website
 python generate_site.py
 ```
+
+This creates `/website/build/new-page.html` from your `new-page.md` source file.
 
 **3. Update Navigation (if needed)**
 Edit `/website/designs/default/base.html` to add nav link.
 
 **4. Test**
 ```bash
+# Refresh browser at http://localhost:8000/new-page.html
+# Or run test suite:
 python test_website.py
 ```
 
@@ -322,6 +396,8 @@ git add .
 git commit -m "Add new page: [page-name]"
 git push
 ```
+
+**⚠️ FUTURE EDITS:** Always edit `new-page.md` (source), never `new-page.html` (generated)
 
 ## Rollback Procedure
 

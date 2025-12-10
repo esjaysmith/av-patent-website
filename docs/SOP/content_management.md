@@ -4,10 +4,93 @@
 
 This SOP defines best practices for creating, editing, and managing content for the AV Navigation IP Protection website. The website uses a Markdown-based content system with YAML frontmatter for metadata.
 
+## ⚠️ CRITICAL: Understanding the Static Site Generation Workflow
+
+**This is a GENERATED static website. Understanding the workflow is essential:**
+
+### Source vs. Generated Files
+
+**✅ ALWAYS EDIT: Markdown Source Files**
+- **Location:** `/website/content/*.md`
+- **Format:** Markdown with YAML frontmatter
+- **Examples:** `index.md`, `patent-details.md`, `licensing.md`
+- **Purpose:** These are the SOURCE files you edit
+
+**❌ NEVER EDIT: Generated HTML Files**
+- **Location:** `/website/build/*.html`
+- **Format:** Auto-generated HTML
+- **Examples:** `index.html`, `patent-details.html`, `licensing.html`
+- **Purpose:** These are OUTPUT files created by `generate_site.py`
+- **⚠️ WARNING:** Any edits to HTML files will be OVERWRITTEN on next generation
+
+### The Generation Process
+
+```
+┌─────────────────────────────────────┐
+│  1. Edit Markdown Source Files      │
+│     /website/content/*.md            │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  2. Run Site Generator               │
+│     python generate_site.py          │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  3. HTML Files Generated/Updated     │
+│     /website/build/*.html            │
+└──────────────┬──────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────┐
+│  4. View Changes in Browser          │
+│     http://localhost:8000            │
+└─────────────────────────────────────┘
+```
+
+### Typical Development Setup
+
+**User usually runs:**
+```bash
+cd website/build
+python -m http.server 8000
+```
+
+**This means:**
+- Local web server is running on port 8000
+- Access site at http://localhost:8000
+- Server keeps running during development
+- **After editing content, just regenerate (no need to restart server)**
+
+### Quick Workflow for Content Changes
+
+**1. Edit Content**
+```bash
+# Edit the Markdown source file
+vim website/content/index.md
+```
+
+**2. Regenerate Site**
+```bash
+cd website
+python generate_site.py
+```
+
+**3. View Changes**
+- Refresh browser at http://localhost:8000
+- Server usually already running (no restart needed)
+
+**Common Mistake:**
+❌ Editing HTML files in `/website/build/` (changes will be lost)
+✅ Always edit Markdown files in `/website/content/`
+
 ## Content File Structure
 
 ### Location
-All content files are located in: `/website/content/`
+All content **source** files are located in: `/website/content/`
+Generated HTML files are created in: `/website/build/`
 
 ### File Naming Convention
 - Use lowercase with hyphens: `page-name.md`
@@ -371,15 +454,19 @@ Track these metrics across all landing pages:
 
 ### Step 6: Generate and Preview
 ```bash
-# Generate site
+# Generate site from Markdown source files
 cd /website
 python generate_site.py
 
-# Preview locally
+# If local server not running, start it:
 cd build
 python -m http.server 8000
+
 # Visit: http://localhost:8000
+# (Usually server is already running, just refresh browser)
 ```
+
+**Note:** The server typically stays running during development. After regenerating the site, simply refresh your browser to see changes.
 
 ### Step 7: Review and Test
 1. Check page loads correctly
@@ -400,8 +487,8 @@ git push
 
 ## Editing Existing Content
 
-### Step 1: Locate File
-Find the content file in `/website/content/`:
+### Step 1: Locate Source File
+Find the **Markdown source file** in `/website/content/`:
 - Homepage: `index.md`
 - Patent Details: `patent-details.md`
 - Licensing: `licensing.md`
@@ -409,21 +496,32 @@ Find the content file in `/website/content/`:
 - Contact: `contact.md`
 - Thank You: `thank-you.md`
 
+**⚠️ IMPORTANT:** Edit the `.md` file, NOT the `.html` file in `/website/build/`
+
 ### Step 2: Edit Content
-1. Open file in text editor
+1. Open **source file** in text editor (`.md` file in `/website/content/`)
 2. Modify frontmatter if metadata changes
 3. Edit Markdown content
 4. Save file
 
 ### Step 3: Regenerate Site
 ```bash
+cd website
 python generate_site.py
 ```
 
+**What happens:** Generator reads your edited `.md` file and creates/updates the corresponding `.html` file in `/website/build/`
+
 ### Step 4: Test Changes
-1. Preview in browser
+1. Refresh browser at http://localhost:8000 (server usually already running)
 2. Verify changes appear correctly
 3. Test affected links and navigation
+
+**If server not running:**
+```bash
+cd website/build
+python -m http.server 8000
+```
 
 ### Step 5: Deploy Updates
 ```bash
