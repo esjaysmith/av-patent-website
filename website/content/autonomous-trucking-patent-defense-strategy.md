@@ -299,7 +299,7 @@ Companies strengthening IP positions in 2025 will secure premium Series B/C valu
   <a href="/contact.html" class="cta-button">Contact About Patent Licensing</a>
 </div>
 
-<p class="mt-4"><a href="/patent-details.html">View complete technical specifications of US Patent 12,001,207 →</a></p>
+<p class="mt-4"><a href="/patent-details.html">View technical specifications of US Patent 12,001,207 →</a></p>
 
 ---
 
