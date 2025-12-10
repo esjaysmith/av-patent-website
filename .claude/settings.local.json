@@ -37,7 +37,8 @@
       "Bash(do sed -i '' 's|\\.agent/SOP/|docs/SOP/|g' \"$file\")",
       "Bash(do sed -i '' 's|\\.agent/US12001207B2\\.html|docs/US12001207B2.html|g' \"$file\")",
       "Bash(for file in website/content/fact-check-logs/*.md)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(ls:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
