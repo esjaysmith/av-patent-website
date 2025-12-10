@@ -112,12 +112,6 @@ We offer flexible compensation arrangements tailored to your business model and 
 - **Annual Licensing**: Fixed annual payments for ongoing patent access
 - **Hybrid Structures**: Combination of upfront and royalty-based compensation
 
-### **Strategic Partnerships**
-
-- **Equity Arrangements**: Licensing in exchange for equity participation
-- **Joint Development**: Collaborative development with shared IP ownership
-- **Cross-Licensing**: Patent portfolio exchanges with complementary technologies
-
 ## Industry-Specific Benefits
 
 ### **Automotive Industry**

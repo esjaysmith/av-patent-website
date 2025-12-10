@@ -28,12 +28,12 @@ date_modified: "2025-11-12"
 - **Issue Date:** June 4, 2024
 - **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
 - **Assignee:** Individual (self-owned)
-- **Patent Family:** Based on US16/987,612 (granted as US12,001,207, expires approximately 2040); priority to NL 2023628; potential continuations and international filings
+- **Patent Family:** Based on US16/987,412 (granted as US12,001,207, expires approximately 2040); priority to NL 2023628; potential continuations and international filings
 - **Technology Classification:** G05D1/00 (Vehicle control), B60W60/00 (Autonomous vehicle drive control), G01C21/00 (Navigation)
 
 ## Patent Abstract
 
-The patent describes a system for controlling autonomous vehicles or air vessels (drones) that uses camera images, navigation modules, and machine learning to safely navigate predefined routes. The system receives destination inputs, generates navigation instructions, captures live camera images, and compares them to stored reference images. A key innovation is the safety-determining module that generates a "safety value" indicating whether navigation instructions can be safely executed. If safety thresholds are not met, the system can request human operator intervention, enabling the system to learn from training data and improve over time.
+The patent describes a system for controlling autonomous vehicles or air vessels (drones) that uses camera images, navigation modules, and machine learning to safely navigate predefined routes. The system receives destination inputs, generates navigation instructions, captures live camera images, and compares them to stored reference images. A key innovation is the safety-determining module that generates a "safety value" indicating whether navigation instructions can be safely executed. If safety thresholds are not met, the system can request human operator intervention. The system accumulates and stores training data for future reference.
 
 *For complete legal text and detailed claims, refer to official USPTO records.*
 
@@ -56,43 +56,46 @@ The patent describes a system for controlling autonomous vehicles or air vessels
 #### 3. **Autonomous System Integration**
 
 - Designed for integration with autonomous vehicle control systems
-- Modular design allowing retrofit into current AV platforms
-- Compatibility with both traditional sensor suites and camera-first architectures
+- Camera-primary approach with optional acceleration sensor integration
 
 ## Industry Applications and Use Cases
 
+*The patent covers autonomous land vehicles and air vessels. The following specific applications are potential use cases inferred from the patent's technical scope and are not explicitly stated in the patent.*
+
 ### Autonomous Vehicles
 
-**Key Applications:**
+**Potential Applications:**
 
-- **Consumer Vehicles**: Enhanced safety for Level 2-5 autonomous driving systems
-- **Commercial Fleets**: Robotaxi and delivery vehicle safety improvements
+- **Consumer Vehicles**: Safety systems for autonomous driving
+- **Commercial Fleets**: Robotaxi and delivery vehicle applications
 - **Urban Navigation**: City driving scenarios with complex visual environments
-- **Highway Systems**: High-speed navigation with camera-based hazard detection
+- **Highway Systems**: Navigation with camera-based hazard detection
 
 ### Drone and UAV Systems
 
-**Commercial Applications:**
+**Potential Commercial Applications:**
 
-- **Delivery Drones**: Safe navigation in populated areas
+- **Delivery Drones**: Navigation in populated areas
 - **Inspection Drones**: Industrial facility navigation with obstacle avoidance
 - **Agricultural UAVs**: Autonomous crop monitoring with terrain safety
 - **Emergency Response**: Search and rescue operations in challenging environments
 
 ### AI Navigation Platforms
 
-**Technology Integration:**
+**Technology Integration Potential:**
 
 - **Edge Computing**: Real-time processing for autonomous systems
-- **Neural Networks**: Enhanced training data for navigation AI models
-- **Sensor Fusion**: Improved integration of camera data with other sensors
-- **Safety Standards**: Compliance with emerging AV safety regulations
+- **Neural Networks**: Training data accumulation for navigation AI models
+- **Sensor Fusion**: Integration of camera data with other sensors
+- **Machine Learning**: Camera-based image processing and safety assessment
 
 ## Competitive Landscape and Patent Value
 
+*The following market analysis and strategic considerations are inferred from the patent's technical scope and are not statements contained in the patent itself.*
+
 ### Market Positioning
 
-The patent provides essential protection in a rapidly evolving field where major technology companies are racing to develop safe, reliable autonomous navigation systems. With the industry's increasing focus on camera-based approaches, this patent offers critical IP protection for:
+The patent provides protection in a rapidly evolving field where major technology companies are developing autonomous navigation systems. With the industry's increasing focus on camera-based approaches, this patent may offer IP protection for:
 
 - **Startups** developing next-generation AV technology
 - **Established automakers** transitioning to autonomous capabilities
@@ -101,18 +104,20 @@ The patent provides essential protection in a rapidly evolving field where major
 
 ### Strategic IP Advantages
 
+*These potential advantages are business considerations and are not claims made in the patent.*
+
 #### **Freedom to Operate**
-Licensing this patent provides companies with confidence to develop and deploy camera-based navigation systems without fear of infringement claims in this critical IP area.
+Licensing this patent may provide companies with confidence to develop and deploy camera-based navigation systems without concern about infringement claims in this IP area.
 
 #### **Defensive Portfolio Building**
-The patent serves as valuable defensive IP, protecting against litigation from competitors while enabling cross-licensing opportunities with industry leaders.
+The patent may serve as defensive IP, potentially protecting against litigation from competitors while enabling cross-licensing opportunities with industry leaders.
 
 #### **Technology Validation**
-Association with patented technology demonstrates innovation credibility to investors, customers, and regulatory bodies.
+Association with patented technology may demonstrate innovation credibility to investors, customers, and regulatory bodies.
 
 ## Licensing Opportunities
 
-This patent is available for licensing in the United States and United Kingdom across multiple industries and use cases. Whether you're developing the next generation of autonomous vehicles, commercial drones, or AI navigation systems, US Patent 12,001,207 provides IP protection for your innovations.
+This patent is available for licensing in the United States and United Kingdom. US Patent 12,001,207 covers camera-based navigation and safety assessment systems for autonomous land vehicles and air vessels.
 
 ### **Licensing Options Available:**
 

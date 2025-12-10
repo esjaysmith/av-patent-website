@@ -121,7 +121,6 @@ Camera-based systems excel in long-haul trucking through:
 **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
 - **Grant Date:** June 4, 2024 | **Expiration:** March 5, 2041 (15+ years remaining)
-- **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
 - **Technology:** Dual-module camera-based navigation safety system
 - **Applicability:** Autonomous vehicles including Class 8 commercial trucks
 
