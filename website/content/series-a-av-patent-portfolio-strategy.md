@@ -86,7 +86,7 @@ Startups that can't answer these questions confidently face valuation penalties 
 The autonomous vehicle patent landscape has exploded. Tens of thousands of AV-related patents have been filed globally, with significant growth in recent years (estimates suggest 18,000+ AV patents as of 2021, growing to 25,000+ by 2025, though exact counts vary by classification methodology). Early market leaders have built formidable patent moats:
 
 - Tesla holds hundreds of AV-related patents focused on camera-based perception and end-to-end neural network architectures (precise AV-specific counts vary by definition; Tesla's total automotive patent portfolio is significantly larger)
-- Waymo (Alphabet) holds approximately 1,900 granted patents as of 2024-2025 (out of 3,476 total patent families, over 92% active), covering sensor fusion, mapping, simulation, and autonomous driving systems
+- Waymo (Alphabet) holds approximately 929 granted USPTO patents as of 2024-2025 (out of 3,476 total global patent families, over 92% active), covering sensor fusion, mapping, simulation, and autonomous driving systems
 - Cruise (GM) has accumulated hundreds of patents since its acquisition in 2016 (exact AV-specific counts vary)
 
 *Note: Patent counts are estimates and vary depending on how "AV-related" is defined. Major automotive companies like Toyota hold over 200,000 total automotive patents; the figures above represent autonomous driving-specific portfolios. As of 2025, over 60% of AV AI patents are concentrated among leading firms.*
@@ -316,7 +316,7 @@ Camera-based navigation and safety patents represent an ideal strategic licensin
 **Industry Trend Alignment**
 
 The autonomous vehicle industry is undergoing a major shift toward camera-first architectures:
-- Tesla announced supervised robotaxi launch in June 2025, with unsupervised capabilities under development, validating camera-only approaches
+- Tesla launched supervised robotaxi service in Austin in June 2025, with unsupervised capabilities under development, validating camera-only approaches
 - While historical estimates suggested camera systems cost $5,000-$15,000 per vehicle vs. $70,000-$100,000 for LiDAR systems, recent market data (2024-2025) indicates significant cost reductions: camera-based sensor suites now typically range from $400-$5,000, while LiDAR units have dropped to $500-$10,000 for automotive-grade sensors (with some high-volume production units as low as $138). The cost gap between sensor approaches has narrowed considerably due to economies of scale. *Based on industry reports and public market data. Actual results vary.*
 - Major players continue evolving their sensor strategies following market dynamics in 2024
 
@@ -385,7 +385,7 @@ This response demonstrates strategic sophistication that resonates with Series B
 
 ### The Tesla FSD Competitive Context
 
-Tesla announced a supervised robotaxi launch in June 2025, with unsupervised capabilities under development. Every AV startup now faces direct comparison to Tesla FSD. In Series B pitches, investors ask:
+Tesla launched supervised robotaxi service in Austin in June 2025, with unsupervised capabilities under development. Every AV startup now faces direct comparison to Tesla FSD. In Series B pitches, investors ask:
 
 - "How is your camera-based approach differentiated from Tesla's?"
 - "Do you have IP protecting your camera-based technology?"

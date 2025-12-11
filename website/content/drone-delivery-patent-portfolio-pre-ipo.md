@@ -54,7 +54,7 @@ Recent autonomous technology IPOs have demonstrated the importance of comprehens
 ### Patent Portfolio Requirements
 
 **Granted Patents Required:**
-IPO underwriters often view granted patents as more valuable than pending applications during due diligence, though the extent depends on application strength and portfolio context. A typical benchmark for drone company IPOs is 15-25 granted patents before S-1 filing (for example, [Garuda Aerospace secured 20 patents](https://technuter.com/breaking-news/garuda-aerospace-20-patents.html) ahead of their planned 2025 IPO, while ideaForge had [38 granted patents](https://droneii.com/the-diverging-fortunes-of-drone-ipos) at IPO). Pending applications represent uncertain value - they might never issue, or issue after IPO completion.
+IPO underwriters often view granted patents as more valuable than pending applications during due diligence, though the extent depends on application strength and portfolio context. A typical benchmark for drone company IPOs is 15-25 granted patents before S-1 filing (for example, [Garuda Aerospace secured 20 patents](https://technuter.com/breaking-news/garuda-aerospace-20-patents.html) ahead of their planned IPO, while ideaForge had [25 granted patents](https://inc42.com/buzz/drone-startup-ideaforge-raises-inr-255-cr-from-anchor-investors-ahead-of-ipo/) at their June 2023 IPO). Pending applications represent uncertain value - they might never issue, or issue after IPO completion.
 
 **Technology Coverage:**
 Portfolios need patents covering:

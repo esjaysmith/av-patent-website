@@ -28,8 +28,8 @@ date_modified: "2025-11-12"
 - **Issue Date:** June 4, 2024
 - **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
 - **Assignee:** Individual (self-owned)
-- **Patent Family:** Based on US16/987,412 (granted as US12,001,207, expires approximately 2040); priority to NL 2023628; potential continuations and international filings
-- **Technology Classification:** G05D1/00 (Vehicle control), B60W60/00 (Autonomous vehicle drive control), G01C21/00 (Navigation)
+- **Patent Family:** Application US16/987,612 (granted as US12,001,207, expires March 5, 2041); priority to NL2023628; related patents include EP3786756B1 (Europe) and continuation US20240176345A1
+- **Technology Classification:** G05D1/0088 (Autonomous decision-making), B60W60/001 (Autonomous road vehicle planning), G01C21/34 (Route guidance)
 
 ## Patent Abstract
 
@@ -45,11 +45,11 @@ The patent describes a system for controlling autonomous vehicles or air vessels
 
 - Computer vision methods for real-time hazard detection as described in the patent claims
 - Camera-based environmental perception techniques
-- Fail-safe mechanisms when primary navigation systems encounter uncertainties
+- Confidence-based safety thresholds with human operator handoff when uncertainties arise
 
 #### 2. **Navigation Decision Logic**
 
-- Intelligent routing algorithms that prioritize safety over efficiency
+- Route-based navigation with safety value assessment before instruction execution
 - Real-time path adjustment based on visual scene analysis
 - Integration with machine learning models for predictive safety assessments
 
@@ -107,7 +107,7 @@ The patent provides protection in a rapidly evolving field where major technolog
 *These potential advantages are business considerations and are not claims made in the patent.*
 
 #### **Freedom to Operate**
-Licensing this patent may provide companies with confidence to develop and deploy camera-based navigation systems without concern about infringement claims in this IP area.
+Licensing this patent may provide companies with rights to use the patented technology in their camera-based navigation systems.
 
 #### **Defensive Portfolio Building**
 The patent may serve as defensive IP, potentially protecting against litigation from competitors while enabling cross-licensing opportunities with industry leaders.

@@ -50,11 +50,11 @@ Tesla's June 2025 launch of supervised robotaxi service in Austin demonstrates p
 **Industry Implications:**
 
 - **Camera-first validation**: Vision-based autonomous driving demonstrates viability for commercial deployment
-- **Cost advantages**: Camera-based approaches typically cost under $1,000 for core sensors vs. $5,000-$75,000 for LiDAR-heavy systems
+- **Cost advantages**: Camera-based approaches typically cost under $1,000 for core sensors vs. $500-$10,000+ for automotive-grade LiDAR systems (costs have declined significantly in recent years)
 - **Competitive pressure**: Investors and customers increasingly evaluate AV approaches against camera-first standards
 - **IP considerations**: Companies developing similar systems face patent positioning questions
 
-The autonomous vehicle industry is experiencing consolidation. GM's Cruise paused operations in late 2023, Ford shut down Argo AI in 2022, and VW strengthened its partnership with Mobileye in 2024. Chinese competitors including NIO, XPeng, and Li Auto announced advanced ADAS systems and in-house chip development in 2024-2025.
+The autonomous vehicle industry is experiencing consolidation. GM's Cruise paused operations after an October 2023 incident and GM exited the robotaxi business entirely in December 2024. Ford shut down Argo AI in 2022, and VW strengthened its partnership with Mobileye in 2024. Chinese competitors including NIO, XPeng, and Li Auto announced advanced ADAS systems and in-house chip development in 2024-2025.
 
 Companies developing camera-first systems require:
 - Camera-first architecture matching cost structures

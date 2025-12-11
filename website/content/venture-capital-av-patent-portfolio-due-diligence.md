@@ -286,7 +286,7 @@ Disciplined patent due diligence enables VCs to:
 - **Inform Valuation:** Patent portfolio strength justifies premium or demands discount
 - **Create Post-Investment Value:** Active patent strategy support strengthens portfolio company positioning
 
-Companies that master patent portfolio strategy will outcompete those that don't. Rigorous IP due diligence leads to better investment decisions and helps portfolio companies build durable competitive advantages.
+Companies that master patent portfolio strategy may outcompete those that don't. Rigorous IP due diligence leads to better investment decisions and helps portfolio companies build durable competitive advantages.
 
 ---
 

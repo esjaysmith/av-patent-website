@@ -50,14 +50,14 @@ We offer flexible licensing arrangements designed to meet the diverse needs of c
 
 ### **Non-Exclusive Licensing**
 <div class="patent-highlight">
-<strong>Best for:</strong> Companies seeking cost-effective access to proven IP with flexible implementation terms.
+<strong>Best for:</strong> Companies seeking cost-effective access to patented technology with flexible implementation terms.
 </div>
 
 **Key Benefits:**
 
 - **Cost-Effective**: Lower upfront costs and flexible royalty structures
 - **Rapid Implementation**: Quick access to patent rights without lengthy negotiations
-- **Risk Mitigation**: Proven IP reduces R&D risks
+- **Risk Mitigation**: Licensed IP may support freedom-to-operate considerations
 - **Market Entry**: Accelerated entry into autonomous navigation markets
 
 **Potential Applications:**
@@ -134,7 +134,7 @@ We offer flexible compensation arrangements tailored to your business model and 
 
 - **System Integration**: The patent describes a modular camera-based navigation system that may be integrated with autonomous platforms
 - **Camera-Based Design**: The patent describes a camera-based approach with machine learning integration
-- **Long-Term Protection**: Patent protection extends to approximately 2040
+- **Long-Term Protection**: Patent protection extends to March 2041
 
 ## Getting Started
 

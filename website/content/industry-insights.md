@@ -33,7 +33,7 @@ The autonomous vehicle and drone navigation industries are experiencing signific
 <strong>Market Alert:</strong> Tesla's progress toward unsupervised Full Self-Driving represents a fundamental shift toward camera-first autonomous navigation, making camera-based safety patents increasingly valuable.
 </div>
 
-**Current Status (December 2025):** Tesla launched a paid robotaxi service ($4.20 flat fee) in Austin, TX in June 2025, operating with safety monitors in the passenger seat. The service operates with significant limitations, including restricted hours (6am-midnight), limited downtown coverage, and weather restrictions. Tesla aimed to deploy 500 robotaxis by end of 2025 but is projected to deploy fewer than 100. *Progress toward unsupervised operations is based on company announcements; actual rollout timelines may vary due to regulatory and technical challenges.*
+**Current Status (December 2025):** Tesla launched a paid robotaxi service ($4.20 flat fee) in Austin, TX in June 2025, operating with safety monitors in the passenger seat. The service operates with significant limitations, including restricted hours (6am-midnight), limited downtown coverage, and weather restrictions. Tesla aimed to deploy 500 robotaxis by end of 2025 but confirmed approximately 60 vehicles with plans to double the fleet in December 2025. *Progress toward unsupervised operations is based on company announcements; actual rollout timelines may vary due to regulatory and technical challenges.*
 
 **Key Developments:**
 
@@ -75,13 +75,13 @@ The AV patent landscape is rapidly evolving, with three distinct phases:
 - Early autonomous driving system patents
 - Limited commercial deployment
 
-**Phase 2 (2021-2024): Camera-First Emergence** ← *Current Phase*
+**Phase 2 (2021-2025): Camera-First Emergence** ← *Current Phase*
 
 - Tesla FSD development and market adoption
 - Camera-based safety technology patents (like US 12,001,207)
 - Regulatory framework development
 
-**Phase 3 (2025-2030): Projected Market Saturation** ← *Anticipated*
+**Phase 3 (2026-2030): Projected Market Saturation** ← *Anticipated*
 
 - Potentially more crowded patent landscape
 - Possible increase in licensing costs
@@ -148,7 +148,7 @@ Patents covering camera-based navigation safety may provide:
 ### **Big Tech AV Patent Portfolios**
 **Google/Waymo:**
 
-- Extensive patent portfolio (3,476 patents globally, 1,898 granted, with over 92% active)
+- Extensive patent portfolio (3,476 patents globally, 929 USPTO granted, with over 92% active)
 - Comprehensive focus on sensor fusion, mapping, and camera-based perception technologies
 - Advanced multimodal perception systems including camera, LiDAR, and radar integration
 

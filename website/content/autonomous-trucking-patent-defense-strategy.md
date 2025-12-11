@@ -73,7 +73,7 @@ The autonomous vehicle patent landscape features diverse sensor strategies. Majo
 
 **Camera-First Pioneers:**
 
-- **Wayve** (UK-based): Developed embodied AI using camera-only systems, raised substantial 2024 funding led by SoftBank. Focus on generalizable vision-based learning applicable across vehicle types and geographies.
+- **Wayve** (UK-based): Developed embodied AI using camera-only systems, raised $1.05B Series C in May 2024 led by SoftBank. Focus on generalizable vision-based learning applicable across vehicle types and geographies.
 - **Tesla**: Camera-first Full Self-Driving (FSD) system deployed across passenger and commercial vehicles (Tesla Semi).
 
 **Multi-Sensor & Hybrid:**
@@ -87,7 +87,7 @@ The industry shows growing interest in camera-first approaches due to cost advan
 Critical patent categories include:
 
 - **Navigation & Perception**: Camera-based lane detection, visual navigation points, route planning
-- **Safety Systems**: Fail-safe mechanisms, redundant sensors, dual-module validation (addresses liability)
+- **Safety Systems**: Safety-threshold mechanisms, redundant sensors, dual-module validation (addresses liability)
 - **Fleet Management**: V2V communication, central control, predictive maintenance
 - **Regulatory Compliance**: NHTSA monitoring, FMCSA hours-of-service, ELD integration
 
@@ -149,7 +149,7 @@ Camera-based systems can be effective in long-haul trucking contexts:
 
 **Visual Navigation Points**: Route following based on visual landmarks (highway signs, road markings) rather than precise GPS. Enables high-level instructions ("Exit at mile marker 47") reliable for designated trucking routes.
 
-**Fail-Safe Control**: Only executes commands when safety values exceed predetermined thresholds. Built-in redundancy supports NHTSA and FMCSA regulatory compliance, demonstrating safety-first architecture.
+**Safety-Threshold Control**: Only executes commands when safety values exceed predetermined thresholds. Built-in redundancy supports NHTSA and FMCSA regulatory compliance, demonstrating safety-first architecture.
 
 ### Application to Trucking Systems
 
@@ -227,7 +227,7 @@ Licensing may accelerate portfolio development compared to in-house development 
 
 **Waabi** (founded by Raquel Urtasun, former Uber ATG) raised $200M Series B (June 2024) with comprehensive portfolio covering simulation, AI, and camera-based perception. IP strength drove premium valuation despite limited testing versus competitors.
 
-**Aurora** acquired Uber ATG portfolio (2021), shifted from LiDAR to camera-based systems, partnered with OEMs (Volvo, Paccar) for manufacturing patents. Demonstrates portfolio building through acquisition and partnership.
+**Aurora** acquired Uber ATG portfolio (2021), uses multi-sensor approach (proprietary FirstLight LiDAR, cameras, radar), partnered with OEMs (Volvo, Paccar) for manufacturing patents. Demonstrates portfolio building through acquisition and partnership.
 
 **Traditional OEMs** (Daimler, Volvo, Paccar) license AV technology to fill software IP gaps, recognizing tech expertise requirements for camera-based navigation beyond manufacturing capabilities.
 
@@ -285,7 +285,7 @@ US Patent 12,001,207 offers autonomous trucking companies portfolio strengthenin
 - 15+ years protection (through 2041) offering long-term IP coverage
 - Integration potential with existing perception systems
 
-Companies strengthening IP positions in 2025 will secure premium Series B/C valuations, favorable OEM partnerships, and competitive advantages for 2027-2028 commercial launches. Delayed action results in higher licensing costs, valuation discounts, and competitive disadvantages as patent landscape crowds.
+Companies strengthening IP positions in 2025 may benefit from improved Series B/C valuations, favorable OEM partnerships, and competitive advantages for 2027-2028 commercial launches. Early action may result in more favorable licensing terms as the patent landscape evolves.
 
 <div class="alert alert-info">
 <strong>Action Item:</strong> Consider evaluating patent licensing opportunities well in advance of funding rounds or commercial deployment to allow time for due diligence and integration planning. Consult with patent counsel for company-specific timing recommendations.

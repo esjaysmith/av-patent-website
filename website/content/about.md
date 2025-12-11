@@ -64,7 +64,7 @@ Camera-based approaches have demonstrated viability in certain contexts and impl
 - Live camera image comparison with pre-recorded route imagery
 - Safety value calculation to determine when navigation instructions can be safely executed
 - Visual navigation point recognition for high-level route following
-- Fail-safe mechanisms including human operator intervention requests
+- Safety-threshold mechanisms including human operator intervention requests
 
 **Prototype System Capabilities** (demonstrated in research, some aspects covered by the patent):
 

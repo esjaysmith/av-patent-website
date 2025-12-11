@@ -38,7 +38,8 @@
       "Bash(do sed -i '' 's|\\.agent/US12001207B2\\.html|docs/US12001207B2.html|g' \"$file\")",
       "Bash(for file in website/content/fact-check-logs/*.md)",
       "Bash(grep:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "WebFetch(domain:patents.google.com)"
     ]
   },
   "enableAllProjectMcpServers": true,
