@@ -43,23 +43,42 @@ US Patent 12,001,207, issued June 4, 2024, covers an **autonomous vehicle contro
 
 ## Strategic Benefits of Licensing
 
-### **> Defensive IP Strategy**
-
-- Expand your IP portfolio with complementary patent rights
-- Strengthen patent positions that may deter litigation
-- Support freedom-to-operate analysis in competitive markets
-
-### **> Business Value Creation**
-
-- Enhance company valuation through expanded IP assets
-- Strengthen position for funding rounds and partnerships
-- Demonstrate innovation leadership to investors and customers
-
-### **> Market Expansion**
-
-- Accelerate product development with established IP foundations
-- Enter new markets with confidence in IP protection
-- Enable cross-licensing opportunities with industry leaders
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Benefit Category</th>
+        <th>Key Advantages</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Defensive IP Strategy</strong></td>
+        <td>
+          • Expand your IP portfolio with complementary patent rights<br>
+          • Strengthen patent positions that may deter litigation<br>
+          • Support freedom-to-operate analysis in competitive markets
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Business Value Creation</strong></td>
+        <td>
+          • Enhance company valuation through expanded IP assets<br>
+          • Strengthen position for funding rounds and partnerships<br>
+          • Demonstrate innovation leadership to investors and customers
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Market Expansion</strong></td>
+        <td>
+          • Accelerate product development with established IP foundations<br>
+          • Enter new markets with confidence in IP protection<br>
+          • Enable cross-licensing opportunities with industry leaders
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## Industry Relevance and Timing
 

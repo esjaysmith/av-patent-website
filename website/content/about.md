@@ -75,9 +75,14 @@ Camera-based approaches have demonstrated viability in certain contexts and impl
 
 *Note: The research process explored various vision-based learning approaches. The patent specifically protects the dual-module safety system architecture as described above, rather than general end-to-end neural network training methods.*
 
-A demonstration of the technology is available at: https://www.youtube.com/watch?v=SOWuOP-0nDE
+### Technology Demonstration
 
-The demonstration depicts an autonomous research vehicle navigating using vision-based controls, including path visualization and obstacle awareness.
+<div class="text-center my-4">
+  <a href="https://www.youtube.com/watch?v=SOWuOP-0nDE" target="_blank" rel="noopener noreferrer">
+    <img src="/assets/images/about-demo-drive.jpg" alt="Vision-based autonomous navigation demonstration" class="img-fluid rounded shadow" style="max-width: 800px;">
+  </a>
+  <p class="text-muted"><small>The demonstration depicts an autonomous research vehicle navigating using vision-based controls, including path visualization and obstacle awareness.</small></p>
+</div>
 
 ## Why This Patent Is Available for Licensing
 
