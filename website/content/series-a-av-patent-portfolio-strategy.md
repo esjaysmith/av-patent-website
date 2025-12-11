@@ -513,10 +513,10 @@ Licensing demonstrates IP strategy sophistication:
 > Our balanced portfolio—licensed baseline plus proprietary differentiation—provides the defensive position investors expect while maximizing engineering velocity."
 
 **Visual IP Roadmap:**
-- ✅ 2 licensed granted patents (camera-based safety, navigation)
-- ⏳ 3-4 pending patent applications (proprietary innovations)
-- 🎯 Target: 5-6 total patents by Series B close
-- 📋 Post-Series B: 10-12 patents by Series C
+- 2 licensed granted patents (camera-based safety, navigation)
+- 3-4 pending patent applications (proprietary innovations)
+- Target: 5-6 total patents by Series B close
+- Post-Series B: 10-12 patents by Series C
 
 ## Your 6-Month IP Portfolio Action Plan Before Series B
 
