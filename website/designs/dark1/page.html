@@ -1,0 +1,358 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if is_homepage %}
+<!-- Hero Section for Homepage -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-badge">US Patent 12,001,207 - Issued June 2024</div>
+            <h1>{{ hero_title | default('Camera-Based Navigation IP for <span>Autonomous Vehicles</span>') | safe }}</h1>
+            <p class="hero-description">{{ hero_subtitle | default('License strategic patent protection for deep learning control systems with camera-based navigation and safety assessment. Strengthen your IP portfolio in the expanding AV and drone markets.') }}</p>
+            <div class="hero-actions">
+                <a href="/contact.html" class="btn-primary">
+                    Start Licensing Inquiry
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/patent-details.html" class="btn-secondary">View Patent Details</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Patent Overview -->
+<section class="patent-overview">
+    <div class="container">
+        <div class="patent-grid">
+            <div class="patent-stat">
+                <div class="patent-stat-value">US 12,001,207</div>
+                <div class="patent-stat-label">Patent Number</div>
+            </div>
+            <div class="patent-stat">
+                <div class="patent-stat-value">June 4, 2024</div>
+                <div class="patent-stat-label">Issue Date</div>
+            </div>
+            <div class="patent-stat">
+                <div class="patent-stat-value">Camera + AI</div>
+                <div class="patent-stat-label">Technology Focus</div>
+            </div>
+            <div class="patent-stat">
+                <div class="patent-stat-value">AVs & Drones</div>
+                <div class="patent-stat-label">Applications</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why License Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Strategic Value</div>
+            <h2 class="section-title">Why License This Patent</h2>
+            <p class="section-description">Secure IP protection for camera-first autonomous navigation systems before the market consolidates.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">&#128737;</div>
+                <h3 class="benefit-title">Defensive IP Strategy</h3>
+                <p class="benefit-text">Expand your patent portfolio with complementary rights. Strengthen positions that may deter litigation and support freedom-to-operate analysis.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">&#128200;</div>
+                <h3 class="benefit-title">Business Value Creation</h3>
+                <p class="benefit-text">Enhance company valuation through expanded IP assets. Strengthen positioning for funding rounds and demonstrate innovation leadership.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">&#127760;</div>
+                <h3 class="benefit-title">Market Expansion</h3>
+                <p class="benefit-text">Accelerate product development with established IP foundations. Enter new markets with confidence and enable cross-licensing opportunities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solutions Section -->
+<section id="solutions" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Industry Solutions</div>
+            <h2 class="section-title">Patent Licensing by Sector</h2>
+            <p class="section-description">Explore how US Patent 12,001,207 strengthens IP portfolios across autonomous vehicle applications.</p>
+        </div>
+        <div class="solutions-grid">
+            <a href="/series-a-av-patent-portfolio-strategy.html" class="solution-card">
+                <div class="solution-content">
+                    <h3>Series A AV Startups</h3>
+                    <p>Build your patent portfolio before Series B funding</p>
+                </div>
+                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/tesla-fsd-competitor-camera-patent-licensing.html" class="solution-card">
+                <div class="solution-content">
+                    <h3>Tesla FSD Competitors</h3>
+                    <p>Camera-based patent protection for FSD alternatives</p>
+                </div>
+                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/drone-delivery-patent-portfolio-pre-ipo.html" class="solution-card">
+                <div class="solution-content">
+                    <h3>Drone Delivery Pre-IPO</h3>
+                    <p>Strengthen your drone patent portfolio before IPO</p>
+                </div>
+                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/venture-capital-av-patent-portfolio-due-diligence.html" class="solution-card">
+                <div class="solution-content">
+                    <h3>VC Due Diligence Guide</h3>
+                    <p>Evaluate AV patent portfolios and IP quality</p>
+                </div>
+                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/autonomous-trucking-patent-defense-strategy.html" class="solution-card">
+                <div class="solution-content">
+                    <h3>Autonomous Trucking</h3>
+                    <p>Defensive patent strategy for Class 8 truck navigation</p>
+                </div>
+                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/about.html" class="solution-card">
+                <div class="solution-content">
+                    <h3>About This Patent</h3>
+                    <p>Technical specifications, claims, and inventors</p>
+                </div>
+                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="cta-title">Ready to License US Patent 12,001,207?</h2>
+            <p class="cta-description">Contact us to discuss licensing opportunities tailored to your autonomous vehicle or drone navigation projects.</p>
+            <a href="/contact.html" class="btn-primary">
+                Get in Touch
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if not is_homepage %}
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb-nav" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb-list">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-separator">&#8250;</li>
+            {% if breadcrumb_parent %}
+            <li>
+                <a href="{{ breadcrumb_parent_url }}">{{ breadcrumb_parent }}</a>
+            </li>
+            <li class="breadcrumb-separator">&#8250;</li>
+            {% endif %}
+            <li class="breadcrumb-current" aria-current="page">{{ page_title or title }}</li>
+        </ol>
+    </div>
+</nav>
+{% endif %}
+
+<div class="main-content">
+    <div class="container">
+        <div class="content-wrapper">
+            {% if not is_homepage %}
+            <h1>{{ page_title }}</h1>
+            {% endif %}
+
+            <div class="content">
+                {{ content | safe }}
+            </div>
+
+            <!-- Next Page Navigation -->
+            {% if next_page_url %}
+            <div class="next-page-navigation">
+                <a href="{{ next_page_url }}" class="next-page-button">Next Page &rarr;</a>
+            </div>
+            {% endif %}
+
+            {% if show_cta %}
+            <div class="content-cta-section">
+                <h3>Ready to License US Patent 12,001,207?</h3>
+                <p>Contact us to discuss licensing opportunities for your autonomous vehicle or drone navigation projects.</p>
+                <a href="/contact.html" class="cta-button">GET IN TOUCH</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% if page_type == "patent-details" %}
+<!-- Patent Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Patent",
+    "@id": "US12001207",
+    "name": "US Patent 12,001,207",
+    "description": "Camera-based navigation safety technology for autonomous vehicles and drones",
+    "patentNumber": "US12,001,207",
+    "datePublished": "2024-06-04",
+    "creator": {
+        "@type": "Person",
+        "name": "Patent Inventor"
+    },
+    "assignee": {
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection"
+    },
+    "classification": "Autonomous Vehicle and Drone Navigation",
+    "applicationArea": [
+        "Autonomous Vehicles",
+        "Drone Navigation",
+        "Camera-based Safety Systems",
+        "AI Navigation"
+    ],
+    "technicalField": "Camera-based navigation safety mechanisms",
+    "abstract": "This patent describes innovative methods and systems for enhancing navigation safety in autonomous vehicles and unmanned aerial vehicles (drones) through advanced camera-based perception and safety mechanisms.",
+    "claims": [
+        "Camera-Based Safety Architecture",
+        "Navigation Decision Logic",
+        "Autonomous System Integration"
+    ],
+    "licensing": {
+        "@type": "Offer",
+        "availability": "Available",
+        "businessFunction": "License",
+        "description": "Available for exclusive and non-exclusive licensing",
+        "url": "{{ site_url }}/licensing.html"
+    }
+}
+</script>
+{% endif %}
+
+{% if page_type == "contact" %}
+<!-- FAQ Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "How long does the licensing process typically take?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "From initial inquiry to signed agreement: 4-8 weeks for standard licensing terms, 8-12 weeks for complex exclusive arrangements."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Do you offer licensing for specific geographic regions?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer flexible geographic licensing including country-specific, regional, and global licensing options."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can startups access licensing on favorable terms?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We offer startup-friendly licensing structures including deferred payments, milestone-based royalties, and equity arrangements."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is technical support included with licensing?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, licensing agreements include technical documentation, integration guidance, and ongoing patent family updates."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What response time can I expect for licensing inquiries?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Initial acknowledgment within 24 hours, detailed response within 3-5 business days, and licensing consultation scheduling within 1 week."
+            }
+        }
+    ]
+}
+</script>
+{% endif %}
+
+{% if page_type in ["landing", "insights", "about"] or (page_type not in ["patent-details", "contact", "homepage"]) %}
+<!-- Article Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page_title or title }}",
+    "description": "{{ description }}",
+    "author": {
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "AV Navigation IP Protection",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site_url }}/assets/images/logo.png"
+        }
+    },
+    "datePublished": "{{ date_published or '2025-11-01' }}",
+    "dateModified": "{{ date_modified or date_published or '2025-11-12' }}",
+    "image": "{{ og_image }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ og_url }}"
+    }
+}
+</script>
+{% endif %}
+
+{% if not is_homepage %}
+<!-- BreadcrumbList Schema.org structured data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site_url }}/"
+        }{% if breadcrumb_parent %},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ breadcrumb_parent }}",
+            "item": "{{ site_url }}{{ breadcrumb_parent_url }}"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ page_title or title }}",
+            "item": "{{ og_url }}"
+        }{% else %},
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ page_title or title }}",
+            "item": "{{ og_url }}"
+        }{% endif %}
+    ]
+}
+</script>
+{% endif %}
+
+{% endblock %}
