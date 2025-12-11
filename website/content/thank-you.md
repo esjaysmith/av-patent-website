@@ -27,7 +27,7 @@ We've received your patent licensing inquiry for **US Patent 12,001,207** (Camer
 
 ## What Happens Next
 
-### Within 24 Hours
+### Within 48 Hours
 You'll receive an **initial acknowledgment email** confirming we've received your inquiry and providing a preliminary timeline.
 
 ### Within 3-5 Business Days

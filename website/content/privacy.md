@@ -19,16 +19,16 @@ twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
-date_modified: "2025-11-19"
+date_modified: "2025-12-11"
 ---
 
 # Privacy Policy
 
-**Last Updated**: November 19, 2025
+**Last Updated**: December 11, 2025
 
 ## Introduction
 
-AV Navigation IP Protection ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our contact form to inquire about purchasing US Patent 12,001,207.
+AV Navigation IP Protection ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our contact form to inquire about licensing US Patent 12,001,207.
 
 ## Information We Collect
 
@@ -38,36 +38,39 @@ When you submit our contact form, we collect only the following information:
 
 - Name
 - Email address
-- Company name (optional)
+- Company/Organization name
 - Message content
 
 ### Automatically Collected Information
 
-We do not collect any information automatically. We do not use analytics tools, tracking cookies, or any other automated data collection methods.
+If you accept cookies via our consent banner, we use Google Analytics to collect anonymous usage data such as pages visited, time on site, and general location (country/region). This helps us understand how visitors use our website.
 
 ## How We Use Your Information
 
 We use the information we collect solely to:
 
-- Respond to your inquiries about purchasing US Patent 12,001,207
-- Provide information about the patent and sale terms
-- Facilitate communication regarding the patent sale
+- Respond to your inquiries about licensing US Patent 12,001,207
+- Provide information about the patent and licensing terms
+- Facilitate communication regarding licensing opportunities
+- Improve our website through analytics (if you consent to cookies)
 - Comply with legal obligations
 
 ## Information Sharing
 
 We do not sell, trade, or rent your personal information to third parties. We may share your information only with:
 
-- Formspree (our form submission service provider)
-- Legal counsel when necessary for patent sale agreements
+- Web3Forms (our form submission service provider)
+- hCaptcha (spam protection on contact form)
+- Google Analytics (if you consent to cookies)
+- Legal counsel when necessary for licensing agreements
 - Legal authorities if required by law
 
 ## Data Retention
 
 We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. Specifically:
 
-- Contact form submissions: Retained for 2 years or until patent sale completion
-- Completed sale agreement records: Retained per legal requirements (typically 7 years)
+- Contact form submissions: Retained for 2 years or until licensing agreement completion
+- Completed licensing agreement records: Retained per legal requirements
 
 ## Your Rights (GDPR Compliance)
 
@@ -84,21 +87,32 @@ To exercise these rights, please contact us using the information provided below
 
 ## Cookies
 
-Our website does not use cookies. We do not track your browsing behavior or collect any information automatically.
+We use a cookie consent banner that appears when you first visit our website. Cookies are only set if you click "Accept."
+
+| Cookie Type | Provider | Purpose | Duration |
+|-------------|----------|---------|----------|
+| Analytics | Google Analytics | Anonymous usage statistics | 2 years |
+| Consent | Local Storage | Remembers your cookie preference | 30 days |
+
+If you do not accept cookies, no tracking cookies are set and Google Analytics is not loaded. You can clear your browser's local storage at any time to reset your preference.
 
 ## Third-Party Services
 
-Our website uses only one third-party service:
+Our website uses the following third-party services:
 
-- **Formspree**: Contact form submissions ([Formspree Privacy Policy](https://formspree.io/legal/privacy-policy/))
+| Service | Purpose | Privacy Policy |
+|---------|---------|----------------|
+| Web3Forms | Contact form submissions | [Web3Forms Privacy](https://web3forms.com/privacy) |
+| hCaptcha | Spam protection | [hCaptcha Privacy](https://www.hcaptcha.com/privacy) |
+| Google Analytics | Website analytics (with consent) | [Google Privacy](https://policies.google.com/privacy) |
 
-Formspree processes form submissions and may collect information as described in their privacy policy. We do not control how Formspree uses your information beyond processing your contact form submission.
+These services may collect information as described in their respective privacy policies.
 
 ## Security
 
 We implement reasonable security measures to protect your personal information, including:
 
-- Secure form submission through Formspree
+- Secure form submission (HTTPS)
 - Limited access to personal information
 - Secure communication channels
 
@@ -137,7 +151,7 @@ We will respond to your request within 30 days.
 For EEA residents, our legal basis for collecting and using your personal information depends on the information and the context:
 
 - **Consent**: You have given clear consent for processing (e.g., contact form submission)
-- **Legitimate Interests**: Processing is necessary for our legitimate business interests (e.g., responding to purchase inquiries)
+- **Legitimate Interests**: Processing is necessary for our legitimate business interests (e.g., responding to licensing inquiries)
 - **Legal Obligations**: Processing is necessary to comply with legal requirements
 
 ## Data Protection Officer

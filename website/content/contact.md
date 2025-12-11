@@ -102,13 +102,12 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 
 ### **Response Times**
 
-- **Initial Acknowledgment:** Within 24 hours
-- **Detailed Response:** Within 3-5 business days
+- **Initial Acknowledgment:** Within 2 business days
+- **Detailed Response:** Within 5 business days
 
 ## What to Expect
 
-### **Initial Response Process**
-1. **Acknowledgment Email**: Confirmation of your inquiry within 24 hours
+1. **Acknowledgment**: Confirmation of your inquiry
 2. **Discussion**: We'll discuss your inquiry via email or phone
 3. **Next Steps**: We'll outline potential next steps for further discussion
 
@@ -130,7 +129,7 @@ Patent licensing is available for the following jurisdictions:
 ### **Information Security**
 All licensing inquiries are handled with strict confidentiality:
 
-- **Secure Communications**: Encrypted email and secure document sharing
+- **Secure Communications**: Secure document sharing
 - **Non-Disclosure Agreements**: Available upon request for detailed technical discussions
 - **Information Handling**: Your company information is never shared with third parties
 
@@ -145,13 +144,13 @@ All licensing inquiries are handled with strict confidentiality:
 ## Frequently Asked Questions
 
 ### **How long does the licensing process typically take?**
-From initial inquiry to signed agreement: 4-8 weeks for standard licensing terms, 8-12 weeks for complex exclusive arrangements.
+Timelines vary depending on the complexity of the arrangement and responsiveness of all parties. Simple licensing discussions may conclude in weeks; complex exclusive arrangements typically take longer.
 
 ### **Do you offer licensing for specific geographic regions?**
 Yes, licensing is available for the United States and United Kingdom.
 
-### **Can startups access licensing on favorable terms?**
-Licensing discussions are open to companies of all sizes, including startups. Terms are negotiable based on specific circumstances.
+### **Can startups access licensing?**
+Licensing discussions are open to companies of all sizes. Terms are discussed on a case-by-case basis.
 
 ### **What information is discussed during licensing inquiries?**
 Discussions focus on the patent, potential licensing arrangements, and answering questions about the technology and its applications.
