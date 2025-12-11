@@ -161,35 +161,74 @@ The patent's general autonomous vehicle system can be applied to trucking contex
 
 ### Economic Comparison
 
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>In-House Development</th>
-<th>Patent Licensing</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Development of patent-quality innovations can take significant time (often multiple years) with risks including non-grantable innovation, claim narrowing during prosecution, and significant R&D investment.
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Metric</th>
+        <th>In-House Development</th>
+        <th>Patent Licensing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Timeline to Granted Patent</strong></td>
+        <td>18-36 months (often multiple years)</td>
+        <td><span class="badge bg-success">Immediate (already granted)</span></td>
+      </tr>
+      <tr>
+        <td><strong>Primary Risks</strong></td>
+        <td>
+          • Non-grantable innovation<br>
+          • Claim narrowing during prosecution<br>
+          • Significant R&D investment required
+        </td>
+        <td>
+          • License negotiation complexity<br>
+          • Ongoing royalty obligations<br>
+          • Field-of-use restrictions
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Typical Timeline</strong></td>
+        <td>Multiple years for development & prosecution</td>
+        <td>Months to a year (negotiation & due diligence)</td>
+      </tr>
+      <tr>
+        <td><strong>Strategic Value</strong></td>
+        <td>
+          Proprietary IP owned outright<br>
+          Complete control over technology
+        </td>
+        <td>
+          Faster portfolio development<br>
+          Lower upfront technical risk
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Cost Structure</strong></td>
+        <td>
+          High upfront R&D investment<br>
+          Attorney fees: $15K-$45K+ per patent<br>
+          Engineering time: 200-500 hours
+        </td>
+        <td>
+          Licensing fees vary by terms<br>
+          Potential royalty payments<br>
+          Lower engineering time commitment
+        </td>
+      </tr>
+      <tr class="table-info">
+        <td colspan="3">
+          <strong>Note:</strong> Licensing may accelerate portfolio development compared to in-house development timelines. Financial and strategic impacts vary significantly by company circumstances. Consult with patent counsel and financial advisors for company-specific cost-benefit analysis.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <div class="alert alert-secondary mt-3">
 <small><em>These are rough industry averages; actual timelines and costs can differ substantially based on technical complexity, legal fees, and company resources.</em></small>
-</div>
-</td>
-<td>
-Licensing already-granted patents may offer faster portfolio development. Costs vary based on licensing terms, exclusivity requirements, and field-of-use restrictions.
-<div class="alert alert-secondary mt-3">
-<small><em>Actual licensing timelines (typically months to a year) and costs can differ based on negotiation complexity, due diligence requirements, and deal structure.</em></small>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-
-Licensing may accelerate portfolio development compared to in-house development timelines. Financial and strategic impacts vary significantly by company circumstances.
-
-<div class="alert alert-info">
-<em>Consult with patent counsel and financial advisors for company-specific cost-benefit analysis.</em>
 </div>
 
 ### License Types
@@ -202,22 +241,46 @@ Licensing may accelerate portfolio development compared to in-house development 
 
 ### Timing Considerations
 
-<table class="table table-bordered">
-<thead>
-<tr>
-<th>Pre-Funding Round</th>
-<th>Pre-Commercial Deployment</th>
-<th>OEM Partnership Prep</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Consider evaluating patent licensing several months before Series B/C rounds to strengthen IP portfolio for investor due diligence</td>
-<td>Allow sufficient lead time before operations for IP integration, regulatory documentation, and insurance discussions</td>
-<td>Early patent portfolio development may support partnership negotiations</td>
-</tr>
-</tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Timing Milestone</th>
+        <th>Recommended Action</th>
+        <th>Strategic Benefit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Pre-Funding Round</strong></td>
+        <td>Evaluate patent licensing several months before Series B/C rounds</td>
+        <td>
+          • Strengthen IP portfolio for investor due diligence<br>
+          • Demonstrate strategic IP planning<br>
+          • Address potential valuation questions
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Pre-Commercial Deployment</strong></td>
+        <td>Allow sufficient lead time before operations begin</td>
+        <td>
+          • Complete IP integration planning<br>
+          • Prepare regulatory documentation<br>
+          • Support insurance discussions
+        </td>
+      </tr>
+      <tr>
+        <td><strong>OEM Partnership Prep</strong></td>
+        <td>Develop patent portfolio early in partnership discussions</td>
+        <td>
+          • Support partnership negotiations<br>
+          • Demonstrate IP credibility<br>
+          • Enable cross-licensing opportunities
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div class="alert alert-warning mt-3">
 <strong>Important:</strong> These are general recommendations; actual optimal timing varies by company circumstances, funding timeline, and strategic priorities. Consult with patent counsel and financial advisors for company-specific planning.

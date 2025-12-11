@@ -112,76 +112,163 @@ Strategic licensing of camera-based safety patents allows Series A startups to:
 
 Patent development follows a predictable but lengthy process that rarely aligns with startup fundraising cycles. Understanding this timeline is critical for Series A companies planning their IP strategy.
 
-**Phase 1: Patent Application Preparation (3-6 months)**
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Phase</th>
+        <th>Duration</th>
+        <th>Key Activities</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1. Patent Application Preparation</strong></td>
+        <td>3-6 months</td>
+        <td>
+          • Document invention with technical drawings (50-200 engineer-hours)<br>
+          • Work with patent attorneys on legal claims (40-80 attorney-hours)<br>
+          • Conduct prior art searches (20-40 hours)<br>
+          • Draft and revise application
+        </td>
+        <td>$50K-$150K</td>
+      </tr>
+      <tr>
+        <td><strong>2. USPTO Examination</strong></td>
+        <td>12-24 months</td>
+        <td>
+          • Average time to first office action: ~20 months<br>
+          • Examiner reviews for novelty and patentability<br>
+          • 40-50% receive initial rejections
+        </td>
+        <td>Included in filing</td>
+      </tr>
+      <tr>
+        <td><strong>3. Office Action Responses</strong></td>
+        <td>3-6 months per round</td>
+        <td>
+          • Attorney prepares responses to examiner concerns<br>
+          • May require claim amendments<br>
+          • Average 1-2 rounds of office actions<br>
+          • Can extend total pendency to 36+ months
+        </td>
+        <td>$10K-$30K per round</td>
+      </tr>
+      <tr>
+        <td><strong>4. Patent Grant (if successful)</strong></td>
+        <td>24-36+ months total</td>
+        <td>
+          • Total timeline from filing to grant<br>
+          • 40-50% allowance rate for software/AV patents<br>
+          • Many require claim narrowing
+        </td>
+        <td>—</td>
+      </tr>
+      <tr class="table-warning">
+        <td colspan="4">
+          <strong>The Series B Conflict:</strong> Series B fundraising timeline is typically 18-24 months from Series A close. By the time you file a patent application (3-6 months preparation) and it navigates USPTO examination (12-24 months), you're often approaching or past your Series B target date. Investors discount pending patent applications—they want granted patents that have survived USPTO scrutiny.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-Before filing a patent application, your engineering team must:
-- Document the invention with technical drawings and specifications (typically 50-200 engineer-hours per patent, though complex AV technologies may require more)
-- Work with patent attorneys to translate technical concepts into legal claims (40-80 attorney-hours at $300-$600/hour)
-- Conduct prior art searches to ensure novelty (20-40 hours)
-- Draft and revise application multiple times
-
-Total cost for this phase: $50,000-$150,000 including attorney fees and engineering time. *Based on industry reports and public market data. Actual results vary.*
-
-**Phase 2: USPTO Examination (12-24 months)**
-
-After filing, your application enters the USPTO examination queue:
-- Average time to first office action: approximately 20 months (per 2023-2024 USPTO data, with total pendency averaging 24-30 months; complex technologies like autonomous vehicles may experience longer delays)
-- Examiner reviews application for novelty, non-obviousness, and patentability
-- 40-50% of applications receive initial rejections or office actions requiring responses
-
-**Phase 3: Office Action Responses (3-6 months per round)**
-
-If the examiner raises objections:
-- Patent attorney prepares responses addressing examiner's concerns
-- May require claim amendments or additional technical documentation
-- Average applications go through 1-2 rounds of office actions
-- Each round costs $10,000-$30,000 in attorney fees
-- Complex office action responses can extend total pendency to 36+ months
-
-**Phase 4: Patent Grant (if successful)**
-- Total timeline from filing to grant: typically 24-30 months on average, though complex autonomous vehicle technologies may take 30-36+ months depending on examination complexity and office action responses
-- Overall allowance rate varies by technology sector: approximately 54% overall USPTO average, but software-related patents (including many AV technologies) have historically lower allowance rates of 40-50%, with many granted patents requiring significant claim amendments or narrowing
-
-**The Series B Conflict:**
-
-Your Series B fundraising timeline is typically 18-24 months from Series A close, though this varies based on market traction, funding environment, and sector dynamics (autonomous vehicle startups often experience longer timelines due to regulatory requirements and capital intensity). By the time you file a patent application (3-6 months preparation), and it navigates USPTO examination (12-24 months), you're often approaching or past your Series B target date—and that's assuming no office action delays.
-
-Investors discount pending patent applications. They want granted patents that have survived USPTO scrutiny. Filing applications 6 months before Series B provides little IP value in investor eyes.
+*Based on industry reports and public market data. Actual results vary.*
 
 ### The True Cost of Patent Development
 
 The financial burden of patent development extends far beyond filing fees. For resource-constrained Series A startups, the true cost includes opportunity costs that can derail product development.
 
-**Direct Costs Per Patent:**
-- USPTO filing fees: $3,000-$5,000 per application (utility patent, small entity)
-- Patent attorney fees (preparation): $15,000-$25,000 per patent
-- Patent attorney fees (prosecution): $10,000-$30,000 per patent over 18-24 months
-- Maintenance fees (if granted): $2,000-$8,000 over patent lifetime
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Cost Category</th>
+        <th>Amount</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3" class="table-secondary"><strong>Direct Costs Per Patent</strong></td>
+      </tr>
+      <tr>
+        <td>USPTO Filing Fees</td>
+        <td>$3,000-$5,000</td>
+        <td>Utility patent, small entity</td>
+      </tr>
+      <tr>
+        <td>Patent Attorney (Preparation)</td>
+        <td>$15,000-$25,000</td>
+        <td>Initial application drafting</td>
+      </tr>
+      <tr>
+        <td>Patent Attorney (Prosecution)</td>
+        <td>$10,000-$30,000</td>
+        <td>Over 18-24 months</td>
+      </tr>
+      <tr>
+        <td>Maintenance Fees</td>
+        <td>$2,000-$8,000</td>
+        <td>Over patent lifetime (if granted)</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Total Direct Cost</strong></td>
+        <td><strong>$30,000-$70,000</strong></td>
+        <td>Actual AV patents: $15K-$50K typical range</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="table-secondary"><strong>Indirect Costs (Often Larger)</strong></td>
+      </tr>
+      <tr>
+        <td>Engineering Time</td>
+        <td>$6,000-$25,000</td>
+        <td>
+          50-200 hours senior engineer time<br>
+          @ $150K-$250K annual compensation<br>
+          Diverted from product development
+        </td>
+      </tr>
+      <tr>
+        <td>Management Overhead</td>
+        <td>Variable</td>
+        <td>
+          CTO/VP Engineering coordination<br>
+          Legal review and approval<br>
+          Prior art research
+        </td>
+      </tr>
+      <tr>
+        <td>Risk Cost</td>
+        <td>$40,000-$100,000</td>
+        <td>
+          40-50% rejection rate for software/AV patents<br>
+          Potential loss if rejected after prosecution<br>
+          No guarantees on final claim scope
+        </td>
+      </tr>
+      <tr class="table-warning">
+        <td><strong>Total Cost Per Patent<br>(Including Opportunity Cost)</strong></td>
+        <td><strong>$150,000-$500,000</strong></td>
+        <td>
+          Highly variable estimate<br>
+          Upper range assumes significant engineering opportunity costs
+        </td>
+      </tr>
+      <tr class="table-light">
+        <td colspan="3">
+          <small><strong>For Series A Startups ($15-$30M funding):</strong><br>
+          • Direct patent expenses: 0.5-2% of total capital per patent<br>
+          • 5-10 patent portfolio: $300K-$1.5M in direct legal costs<br>
+          • Alternative use: Could fund 2-5 engineers for a full year</small>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-**Total direct cost per patent: $30,000-$70,000** *This is a broad industry estimate; actual costs for autonomous vehicle patents typically range from $15,000-$50,000 for preparation and prosecution (excluding maintenance fees) and vary significantly based on invention complexity, attorney rates, and prosecution length. Some straightforward applications may cost less, while complex AV technologies with extensive office action responses may exceed these ranges.*
-
-**Indirect Costs (Often Larger):**
-
-**Engineering Time:**
-- 50-200 hours of senior engineer time per patent application, depending on invention complexity (AV software inventions may require 50-150 hours; hardware or system-level inventions may require more)
-- At $150,000-$250,000 annual compensation, this represents $6,000-$25,000 in opportunity cost
-- Engineers diverted from product development, customer features, or bug fixes
-
-**Management Overhead:**
-- CTO/VP Engineering time coordinating with patent attorneys
-- Legal review and approval processes
-- Prior art research and competitive analysis
-
-**Risk Cost:**
-- Allowance rates vary by sector (40-50% for software-related patents including many AV technologies)
-- Potential loss if patent rejected after prosecution: $40,000-$100,000
-- No guarantees about final claim scope even if granted
-
-**Total Cost Per Patent (Including Opportunity Cost): $150,000-$500,000**
-
-*This estimate is highly variable and subjective, as it includes both direct legal fees and indirect opportunity costs. Direct legal fees for utility patents are often $5,000-$20,000 for straightforward applications, with comprehensive AV patent prosecution rarely exceeding $100,000 unless involving extensive office actions or appeals. The upper range assumes significant engineering opportunity costs, which vary dramatically based on team size, salaries, and alternative uses of engineering time. Smaller startups with lean teams may experience lower absolute opportunity costs.*
-
-For a Series A startup with $15-$30M in funding, direct patent expenses typically represent 0.5-2% of total capital per patent. To build a competitive portfolio of 5-10 patents, direct legal costs typically range $300K-$1.5M—capital that could fund 2-5 engineers for a full year. *Based on industry reports and public market data. Actual results vary.*
+*Based on industry reports and public market data. Actual results vary.*
 
 ### The Resource Allocation Problem
 

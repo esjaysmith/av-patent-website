@@ -102,32 +102,32 @@ Major automotive OEMs often require IP warranties from AV technology suppliers. 
 **Timeline Comparison:**
 
 <div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
-<th>Activity</th>
-<th>In-House Development</th>
-<th>Licensed Patents</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Patent development & prosecution</td>
-<td>18-30 months</td>
-<td>Not required (already granted)</td>
-</tr>
-<tr>
-<td>Integration planning</td>
-<td>2-4 months</td>
-<td>1-2 months (due diligence)</td>
-</tr>
-<tr>
-<td><strong>Total Timeline</strong></td>
-<td><strong>18-36 months</strong></td>
-<td><strong>4-9 months</strong></td>
-</tr>
-</tbody>
-</table>
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Activity</th>
+        <th>In-House Development</th>
+        <th>Licensed Patents</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Patent Development & Prosecution</strong></td>
+        <td>18-30 months</td>
+        <td><span class="badge bg-success">Not required (already granted)</span></td>
+      </tr>
+      <tr>
+        <td><strong>Integration Planning</strong></td>
+        <td>2-4 months</td>
+        <td>1-2 months (due diligence)</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Total Timeline</strong></td>
+        <td><strong>18-36 months</strong></td>
+        <td><strong>4-9 months</strong></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 *These are approximate timelines based on industry averages. Actual durations can vary significantly depending on patent office processing times, complexity, jurisdiction, and other factors.*
@@ -135,42 +135,42 @@ Major automotive OEMs often require IP warranties from AV technology suppliers. 
 **Cost Analysis:**
 
 <div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
-<th>Cost Category</th>
-<th>In-House Development</th>
-<th>Licensed Patents</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Patent attorney fees</td>
-<td>$15,000-$30,000 per patent</td>
-<td>$0 (already incurred)</td>
-</tr>
-<tr>
-<td>Engineering time</td>
-<td>$40,000-$100,000 per patent</td>
-<td>$5,000-$15,000 (due diligence)</td>
-</tr>
-<tr>
-<td>USPTO filing fees</td>
-<td>$5,000-$10,000 per patent</td>
-<td>$0</td>
-</tr>
-<tr>
-<td>Risk of rejection</td>
-<td>40-50% USPTO rejection rate</td>
-<td>0% (already granted)</td>
-</tr>
-<tr>
-<td><strong>Total per Patent</strong></td>
-<td><strong>$60,000-$140,000</strong></td>
-<td><strong>Licensing fee varies</strong></td>
-</tr>
-</tbody>
-</table>
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Cost Category</th>
+        <th>In-House Development</th>
+        <th>Licensed Patents</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Patent Attorney Fees</strong></td>
+        <td>$15,000-$30,000 per patent</td>
+        <td><span class="badge bg-success">$0 (already incurred)</span></td>
+      </tr>
+      <tr>
+        <td><strong>Engineering Time</strong></td>
+        <td>$40,000-$100,000 per patent</td>
+        <td>$5,000-$15,000 (due diligence)</td>
+      </tr>
+      <tr>
+        <td><strong>USPTO Filing Fees</strong></td>
+        <td>$5,000-$10,000 per patent</td>
+        <td><span class="badge bg-success">$0</span></td>
+      </tr>
+      <tr>
+        <td><strong>Risk of Rejection</strong></td>
+        <td>40-50% USPTO rejection rate</td>
+        <td><span class="badge bg-success">0% (already granted)</span></td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Total per Patent</strong></td>
+        <td><strong>$60,000-$140,000</strong></td>
+        <td><strong>Licensing fee varies</strong></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 *These are estimated costs based on industry averages. Actual costs can vary significantly depending on patent complexity, attorney rates, jurisdiction, and other factors.*
@@ -284,14 +284,52 @@ Camera-based patents can provide currency for cross-licensing negotiations with 
 ### Cost Projection
 
 **Investment (6 months):**
-- Camera-based safety patent licensing: $100,000-$300,000
-- Patent attorney fees (provisional filings): $25,000-$50,000
-- FTO and landscape analysis: $30,000-$70,000
-- **Total:** $155,000-$420,000
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Investment Category</th>
+        <th>Cost Range</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Camera-Based Safety Patent Licensing</strong></td>
+        <td>$100,000-$300,000</td>
+        <td>Immediate defensive coverage</td>
+      </tr>
+      <tr>
+        <td><strong>Patent Attorney Fees</strong></td>
+        <td>$25,000-$50,000</td>
+        <td>Provisional filings for proprietary innovations</td>
+      </tr>
+      <tr>
+        <td><strong>FTO and Landscape Analysis</strong></td>
+        <td>$30,000-$70,000</td>
+        <td>Freedom-to-operate assessment</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Total 6-Month Investment</strong></td>
+        <td><strong>$155,000-$420,000</strong></td>
+        <td>Complete IP positioning strategy</td>
+      </tr>
+      <tr class="table-success">
+        <td colspan="3">
+          <strong>Expected Value:</strong><br>
+          • Defensible competitive position<br>
+          • Reduced litigation risk ($3M-$10M potentially saved if infringement avoided)*<br>
+          • Accelerated partnership timelines<br>
+          • Increased company valuation potential<br>
+          <small><em>*Based on industry reports and public market data. Actual results vary significantly by case and company.</em></small>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 *These are estimated costs based on industry averages. Actual costs can vary significantly depending on complexity, jurisdiction, attorney rates, and specific circumstances.*
-
-**Value:** Defensible competitive position, reduced litigation risk ($3M-$10M potentially saved if infringement avoided), accelerated partnership timelines, increased company valuation. *Based on industry reports and public market data. Actual results vary significantly by case and company.*
 
 ## Conclusion
 

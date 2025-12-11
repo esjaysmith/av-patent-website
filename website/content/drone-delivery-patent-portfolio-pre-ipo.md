@@ -129,47 +129,47 @@ Immediately strengthens portfolio with visual navigation coverage, demonstrates 
 ### Licensing vs In-House Development
 
 <div class="table-responsive">
-<table class="table">
-<thead>
-<tr>
-<th>Metric</th>
-<th>In-House Development</th>
-<th>Strategic Licensing</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Timeline to Granted Patent</td>
-<td>18-36 months</td>
-<td>Immediate (already granted)</td>
-</tr>
-<tr>
-<td>IPO Timeline Fit</td>
-<td>No (too slow)</td>
-<td>Yes (immediate)</td>
-</tr>
-<tr>
-<td>Upfront Cost</td>
-<td>$15K-$45K per patent (application through grant)*</td>
-<td>$50K-$300K licensing fee**</td>
-</tr>
-<tr>
-<td>Engineering Resources</td>
-<td>200-500 hours per patent***</td>
-<td>20-50 hours (integration)***</td>
-</tr>
-<tr>
-<td>S-1 Filing Value</td>
-<td>Pending applications (weak)</td>
-<td>Granted patents (strong)</td>
-</tr>
-<tr>
-<td>Investor Perception</td>
-<td>"Work in progress"</td>
-<td>"Established IP portfolio"</td>
-</tr>
-</tbody>
-</table>
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Metric</th>
+        <th>In-House Development</th>
+        <th>Strategic Licensing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Timeline to Granted Patent</strong></td>
+        <td>18-36 months</td>
+        <td><span class="badge bg-success">Immediate (already granted)</span></td>
+      </tr>
+      <tr>
+        <td><strong>IPO Timeline Fit</strong></td>
+        <td><span class="badge bg-danger">No</span> (too slow)</td>
+        <td><span class="badge bg-success">Yes</span> (immediate)</td>
+      </tr>
+      <tr>
+        <td><strong>Upfront Cost</strong></td>
+        <td>$15K-$45K per patent*</td>
+        <td>$50K-$300K licensing fee**</td>
+      </tr>
+      <tr>
+        <td><strong>Engineering Resources</strong></td>
+        <td>200-500 hours per patent***</td>
+        <td>20-50 hours (integration)***</td>
+      </tr>
+      <tr>
+        <td><strong>S-1 Filing Value</strong></td>
+        <td>Pending applications (weak)</td>
+        <td>Granted patents (strong)</td>
+      </tr>
+      <tr>
+        <td><strong>Investor Perception</strong></td>
+        <td>"Work in progress"</td>
+        <td>"Established IP portfolio"</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ***Cost and Resource Disclaimers:**
@@ -244,10 +244,39 @@ Licensed patents are disclosed separately in the IP section of S-1 filings, iden
 
 **Cost Projection:**
 
-- Patent licensing: $200K-$600K (2-4 licensed patents)*
-- Patent applications: $75K-$450K (5-10 applications filed and prosecuted)**
-- Freedom-to-operate analysis: $50K-$100K***
-- Total IP investment: $325K-$1.15M
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Investment Category</th>
+        <th>Cost Range</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Patent Licensing</strong></td>
+        <td>$200K-$600K</td>
+        <td>2-4 licensed patents*</td>
+      </tr>
+      <tr>
+        <td><strong>Patent Applications</strong></td>
+        <td>$75K-$450K</td>
+        <td>5-10 applications filed and prosecuted**</td>
+      </tr>
+      <tr>
+        <td><strong>Freedom-to-Operate Analysis</strong></td>
+        <td>$50K-$100K</td>
+        <td>Comprehensive IP landscape review***</td>
+      </tr>
+      <tr class="table-info">
+        <td><strong>Total IP Investment</strong></td>
+        <td><strong>$325K-$1.15M</strong></td>
+        <td>12-month pre-IPO patent portfolio strengthening</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 \* **Licensing costs** are illustrative estimates. Actual fees vary significantly based on patent scope, exclusivity terms, industry segment, and negotiation. Many agreements include ongoing royalty payments (commonly 2%-8% of net sales) rather than or in addition to upfront fees. [Patent licensing structures](https://patentpc.com/blog/patent-licensing-statistics-trends-and-insights-for-2024) should be evaluated based on long-term business model.
 

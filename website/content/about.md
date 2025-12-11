@@ -120,13 +120,36 @@ Parts of the industry appear to have shifted from skepticism about camera-only s
 
 ### Technology Validation
 
-According to developer testing, the prototype demonstrated:
-- Autonomous navigation in real-world test environments
-- Obstacle detection and avoidance using vision as the primary sensor
-- Route following using pre-recorded visual reference data (as described in the patent) rather than continuously-updated detailed infrastructure maps
-- Architecture applicable to both ground vehicles and aerial systems
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Validated Capability</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Autonomous Navigation</strong></td>
+        <td>Real-world test environments (not simulation only)</td>
+      </tr>
+      <tr>
+        <td><strong>Obstacle Detection & Avoidance</strong></td>
+        <td>Vision as primary sensor (camera-based)</td>
+      </tr>
+      <tr>
+        <td><strong>Route Following</strong></td>
+        <td>Pre-recorded visual reference data (patent-described method) rather than continuously-updated detailed infrastructure maps</td>
+      </tr>
+      <tr>
+        <td><strong>Multi-Platform Architecture</strong></td>
+        <td>Applicable to both ground vehicles and aerial systems</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-These capabilities were validated through internal development and real-world testing, not theoretical simulation alone; results may vary in broader applications and independent verification may be needed for commercial deployment.
+*These capabilities were validated through internal development and real-world testing according to developer testing; results may vary in broader applications and independent verification may be needed for commercial deployment.*
 
 ## Looking Forward: Industry Developments
 

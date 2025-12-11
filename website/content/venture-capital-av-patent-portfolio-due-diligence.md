@@ -74,11 +74,50 @@ Patent portfolio quality can significantly influence autonomous vehicle startup 
 
 **Quantitative Metrics:**
 
-- [ ] **Total Patents:** 10+ granted patents (Green) | 3-10 patents (Yellow) | <3 patents (Red)
-- [ ] **Granted vs Pending:** 70%+ granted (Green) | 50% granted (Yellow) | 100% pending (Red)
-- [ ] **Patent Age:** Multiple grants 3+ years (Green) | Mix 2-5 years (Yellow) | All <1 year (Red)
-- [ ] **Patent Expiration:** 10+ years remaining (Green) | 5-10 years (Yellow) | <5 years (Red)
-- [ ] **Technology Coverage:** 4+ areas (Green) | 2-3 areas (Yellow) | Single area (Red)
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Metric</th>
+        <th><span class="badge bg-success">Green</span></th>
+        <th><span class="badge bg-warning text-dark">Yellow</span></th>
+        <th><span class="badge bg-danger">Red</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Total Patents</strong></td>
+        <td>10+ granted patents</td>
+        <td>3-10 patents</td>
+        <td>&lt;3 patents</td>
+      </tr>
+      <tr>
+        <td><strong>Granted vs Pending</strong></td>
+        <td>70%+ granted</td>
+        <td>50% granted</td>
+        <td>100% pending</td>
+      </tr>
+      <tr>
+        <td><strong>Patent Age</strong></td>
+        <td>Multiple grants 3+ years</td>
+        <td>Mix 2-5 years</td>
+        <td>All &lt;1 year</td>
+      </tr>
+      <tr>
+        <td><strong>Patent Expiration</strong></td>
+        <td>10+ years remaining</td>
+        <td>5-10 years</td>
+        <td>&lt;5 years</td>
+      </tr>
+      <tr>
+        <td><strong>Technology Coverage</strong></td>
+        <td>4+ areas</td>
+        <td>2-3 areas</td>
+        <td>Single area</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 **Portfolio Company Screening Questions:**
 
@@ -131,14 +170,50 @@ Patent portfolio quality can significantly influence autonomous vehicle startup 
 
 **Camera-First Patent Evaluation (Critical for AV Investments):**
 
-- [ ] **Camera-Only Navigation:** Patent covers camera-only systems (not requiring LiDAR)
-- [ ] **Safety Systems:** Patent addresses safety-critical functions with redundancy
-- [ ] **E2E Neural Network Compatible:** Patent applicable to end-to-end architectures
-- [ ] **Multi-Vehicle Application:** Patent covers multiple vehicle types
-- [ ] **Regulatory Alignment:** Patent supports NHTSA Level 4 requirements
-- [ ] **Tesla Differentiation:** Patent provides different approach than Tesla FSD
-- [ ] **Non-Obvious Innovation:** Invention is truly novel (not obvious)
-- [ ] **Commercial Viability:** Technology can be commercially deployed
+<div class="table-responsive">
+  <table class="table table-striped table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Evaluation Criteria</th>
+        <th>Assessment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Camera-Only Navigation</strong></td>
+        <td>Patent covers camera-only systems (not requiring LiDAR)</td>
+      </tr>
+      <tr>
+        <td><strong>Safety Systems</strong></td>
+        <td>Patent addresses safety-critical functions with redundancy</td>
+      </tr>
+      <tr>
+        <td><strong>E2E Neural Network Compatible</strong></td>
+        <td>Patent applicable to end-to-end architectures</td>
+      </tr>
+      <tr>
+        <td><strong>Multi-Vehicle Application</strong></td>
+        <td>Patent covers multiple vehicle types</td>
+      </tr>
+      <tr>
+        <td><strong>Regulatory Alignment</strong></td>
+        <td>Patent supports NHTSA Level 4 requirements</td>
+      </tr>
+      <tr>
+        <td><strong>Tesla Differentiation</strong></td>
+        <td>Patent provides different approach than Tesla FSD</td>
+      </tr>
+      <tr>
+        <td><strong>Non-Obvious Innovation</strong></td>
+        <td>Invention is truly novel (not obvious)</td>
+      </tr>
+      <tr>
+        <td><strong>Commercial Viability</strong></td>
+        <td>Technology can be commercially deployed</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 **Founder Response Red Flags:**
 
