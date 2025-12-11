@@ -24,7 +24,7 @@ date_modified: "2025-11-12"
 
 # Legal Disclaimer
 
-**Last Updated**: November 10, 2025
+**Last Updated**: November 12, 2025
 
 ## Informational Purposes Only
 
@@ -66,3 +66,8 @@ We reserve the right to update or modify this disclaimer at any time without pri
 
 ## Contact
 
+For questions about this disclaimer or to discuss licensing inquiries:
+
+<div class="text-center py-3">
+  <a href="/contact.html" class="cta-button">Contact Us</a>
+</div>
