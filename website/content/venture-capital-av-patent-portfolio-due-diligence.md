@@ -272,7 +272,7 @@ Patent portfolio quality can significantly influence autonomous vehicle startup 
 - **Title:** System for controlling an autonomous driving vehicle or air vessel with steering and acceleration values based on camera-based navigation
 - **Grant Date:** June 4, 2024 | **Expiration:** Approximately March 5, 2041 (based on filing date and patent term adjustment; subject to maintenance fee payments and other USPTO requirements)
 - **Technology:** Dual-module camera-based navigation safety system
-- **Assignee:** Individual inventors (Stephan Johannes Smit and Johannes Wilhelmus Maria Van Bentum)
+- **Assignee:** Individual inventors 
 
 **Quality Assessment (Score: 9/10):**
 - Granted patent with broad claims covering multiple applications

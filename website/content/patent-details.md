@@ -26,7 +26,6 @@ date_modified: "2025-11-12"
 
 - **Patent Number:** US 12,001,207 — **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 - **Issue Date:** June 4, 2024
-- **Inventors:** Stephan Johannes Smit, Johannes Wilhelmus Maria VAN BENTUM
 - **Assignee:** Individual (self-owned)
 - **Patent Family:** Application US16/987,612 (granted as US12,001,207, expires March 5, 2041); priority to NL2023628; related patents include EP3786756B1 (Europe) and continuation US20240176345A1
 - **Technology Classification:** G05D1/0088 (Autonomous decision-making), B60W60/001 (Autonomous road vehicle planning), G01C21/34 (Route guidance)
