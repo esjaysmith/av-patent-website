@@ -42,3 +42,6 @@ logs/
 .claude
 /.playwright-mcp/
 /.claude/
+
+# Auto Claude data directory
+.auto-claude/
