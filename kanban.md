@@ -8,21 +8,20 @@ kanban-plugin: board
 
 - [ ] SEO technical optimization
 - [ ] Cookie consent modal
-- [x] Production launch (Milestone 5)
 
 
 ## In Progress
 
+- [ ] Production launch
 
 
 ## Done
 
-- [x] Legal compliance (Milestone 4)
-- [x] SEO technical implementation (Milestone 3)
+- [x] Next page navigation feature
+- [x] Website content corrections
+- [x] Site structure and navigation
 - [x] Contact form with Web3Forms
-- [x] Site structure and navigation (Milestone 1)
-- [ ] Website content corrections
-- [ ] Next page navigation feature
+- [x] Legal compliance (Milestone 4)
 
 
 
