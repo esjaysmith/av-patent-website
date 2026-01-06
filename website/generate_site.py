@@ -264,6 +264,15 @@ class StaticSiteGenerator:
 
             # Next page navigation
             'next_page_url': self.get_next_page_url(output_filename),
+
+            # Homepage-specific fields
+            'hero_badge': metadata.get('hero_badge', ''),
+            'show_patent_stats': metadata.get('show_patent_stats', False),
+            'patent_stats': metadata.get('patent_stats', []),
+            'show_strategic_value': metadata.get('show_strategic_value', False),
+            'strategic_benefits': metadata.get('strategic_benefits', []),
+            'show_industry_solutions': metadata.get('show_industry_solutions', False),
+            'industry_solutions': metadata.get('industry_solutions', []),
         }
 
         # Load and render template

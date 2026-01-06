@@ -3,9 +3,56 @@ title: "AV Patent 12,001,207 Licensing | IP Protection"
 description: "License US Patent 12,001,207 for camera-based navigation safety in AVs and drones. Strengthen your IP portfolio and protect innovations."
 keywords: "autonomous vehicle patent licensing, US patent 12001207, camera-based navigation safety, AV IP protection, drone navigation patents, patent licensing opportunities"
 is_homepage: true
-show_cta: true
+show_cta: false
 hero_title: "Protect Your AV Innovations with US Patent 12,001,207"
 hero_subtitle: "License camera-based navigation safety IP for autonomous vehicles and drones"
+
+# Homepage sections (rendered by template)
+hero_badge: "US Patent 12,001,207 - Issued June 2024"
+show_patent_stats: true
+show_strategic_value: true
+show_industry_solutions: true
+
+# Patent stats for homepage
+patent_stats:
+  - value: "US 12,001,207"
+    label: "Patent Number"
+  - value: "June 4, 2024"
+    label: "Issue Date"
+  - value: "Camera + AI"
+    label: "Technology Focus"
+  - value: "AVs & Drones"
+    label: "Applications"
+
+# Strategic value benefits
+strategic_benefits:
+  - title: "Defensive IP Strategy"
+    description: "Expand your patent portfolio with complementary rights. Strengthen positions that may deter litigation and support freedom-to-operate analysis."
+  - title: "Business Value Creation"
+    description: "Enhance company valuation through expanded IP assets. Strengthen positioning for funding rounds and demonstrate innovation leadership."
+  - title: "Market Expansion"
+    description: "Accelerate product development with established IP foundations. Enter new markets with confidence and enable cross-licensing opportunities."
+
+# Industry solutions
+industry_solutions:
+  - title: "Series A AV Startups"
+    description: "Build your patent portfolio before Series B funding"
+    url: "/series-a-av-patent-portfolio-strategy.html"
+  - title: "Tesla FSD Competitors"
+    description: "Camera-based patent protection for FSD alternatives"
+    url: "/tesla-fsd-competitor-camera-patent-licensing.html"
+  - title: "Drone Delivery Pre-IPO"
+    description: "Strengthen your drone patent portfolio before IPO"
+    url: "/drone-delivery-patent-portfolio-pre-ipo.html"
+  - title: "VC Due Diligence Guide"
+    description: "Evaluate AV patent portfolios and IP quality"
+    url: "/venture-capital-av-patent-portfolio-due-diligence.html"
+  - title: "Autonomous Trucking"
+    description: "Defensive patent strategy for Class 8 truck navigation"
+    url: "/autonomous-trucking-patent-defense-strategy.html"
+  - title: "About This Patent"
+    description: "Technical specifications, claims, and inventors"
+    url: "/about.html"
 
 # Open Graph
 og_title: "AV Navigation IP Protection | US Patent 12,001,207 Licensing"
@@ -24,7 +71,7 @@ date_published: "2025-11-01"
 date_modified: "2025-11-12"
 ---
 
-# Secure Your Portfolio with Camera-Based Navigation IP
+## Secure Your Portfolio with Camera-Based Navigation IP
 
 US Patent 12,001,207, issued June 4, 2024, covers an **autonomous vehicle control system** using deep learning and camera-based navigation with integrated safety assessment. This patent offers IP protection for companies developing next-generation navigation systems in the autonomous transportation industry.
 

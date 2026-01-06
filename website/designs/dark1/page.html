@@ -6,9 +6,11 @@
 <section class="hero">
     <div class="container">
         <div class="hero-inner">
-            <div class="hero-badge">US Patent 12,001,207 - Issued June 2024</div>
-            <h1>{{ hero_title | default('Camera-Based Navigation IP for <span>Autonomous Vehicles</span>') | safe }}</h1>
-            <p class="hero-description">{{ hero_subtitle | default('License strategic patent protection for deep learning control systems with camera-based navigation and safety assessment. Strengthen your IP portfolio in the expanding AV and drone markets.') }}</p>
+            {% if hero_badge %}
+            <div class="hero-badge">{{ hero_badge }}</div>
+            {% endif %}
+            <h1>{{ hero_title | safe }}</h1>
+            <p class="hero-description">{{ hero_subtitle }}</p>
             <div class="hero-actions">
                 <a href="/contact.html" class="btn-primary">
                     Start Licensing Inquiry
@@ -20,30 +22,23 @@
     </div>
 </section>
 
+{% if show_patent_stats and patent_stats %}
 <!-- Patent Overview -->
 <section class="patent-overview">
     <div class="container">
         <div class="patent-grid">
+            {% for stat in patent_stats %}
             <div class="patent-stat">
-                <div class="patent-stat-value">US 12,001,207</div>
-                <div class="patent-stat-label">Patent Number</div>
+                <div class="patent-stat-value">{{ stat.value }}</div>
+                <div class="patent-stat-label">{{ stat.label }}</div>
             </div>
-            <div class="patent-stat">
-                <div class="patent-stat-value">June 4, 2024</div>
-                <div class="patent-stat-label">Issue Date</div>
-            </div>
-            <div class="patent-stat">
-                <div class="patent-stat-value">Camera + AI</div>
-                <div class="patent-stat-label">Technology Focus</div>
-            </div>
-            <div class="patent-stat">
-                <div class="patent-stat-value">AVs & Drones</div>
-                <div class="patent-stat-label">Applications</div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
+{% endif %}
 
+{% if show_strategic_value and strategic_benefits %}
 <!-- Why License Section -->
 <section class="section">
     <div class="container">
@@ -53,22 +48,18 @@
             <p class="section-description">Secure IP protection for camera-first autonomous navigation systems before the market consolidates.</p>
         </div>
         <div class="benefits-grid">
+            {% for benefit in strategic_benefits %}
             <div class="benefit-card">
-                <h3 class="benefit-title">Defensive IP Strategy</h3>
-                <p class="benefit-text">Expand your patent portfolio with complementary rights. Strengthen positions that may deter litigation and support freedom-to-operate analysis.</p>
+                <h3 class="benefit-title">{{ benefit.title }}</h3>
+                <p class="benefit-text">{{ benefit.description }}</p>
             </div>
-            <div class="benefit-card">
-                <h3 class="benefit-title">Business Value Creation</h3>
-                <p class="benefit-text">Enhance company valuation through expanded IP assets. Strengthen positioning for funding rounds and demonstrate innovation leadership.</p>
-            </div>
-            <div class="benefit-card">
-                <h3 class="benefit-title">Market Expansion</h3>
-                <p class="benefit-text">Accelerate product development with established IP foundations. Enter new markets with confidence and enable cross-licensing opportunities.</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
+{% endif %}
 
+{% if show_industry_solutions and industry_solutions %}
 <!-- Solutions Section -->
 <section id="solutions" class="section section-alt">
     <div class="container">
@@ -78,51 +69,19 @@
             <p class="section-description">Explore how US Patent 12,001,207 strengthens IP portfolios across autonomous vehicle applications.</p>
         </div>
         <div class="solutions-grid">
-            <a href="/series-a-av-patent-portfolio-strategy.html" class="solution-card">
+            {% for solution in industry_solutions %}
+            <a href="{{ solution.url }}" class="solution-card">
                 <div class="solution-content">
-                    <h3>Series A AV Startups</h3>
-                    <p>Build your patent portfolio before Series B funding</p>
+                    <h3>{{ solution.title }}</h3>
+                    <p>{{ solution.description }}</p>
                 </div>
                 <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="/tesla-fsd-competitor-camera-patent-licensing.html" class="solution-card">
-                <div class="solution-content">
-                    <h3>Tesla FSD Competitors</h3>
-                    <p>Camera-based patent protection for FSD alternatives</p>
-                </div>
-                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="/drone-delivery-patent-portfolio-pre-ipo.html" class="solution-card">
-                <div class="solution-content">
-                    <h3>Drone Delivery Pre-IPO</h3>
-                    <p>Strengthen your drone patent portfolio before IPO</p>
-                </div>
-                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="/venture-capital-av-patent-portfolio-due-diligence.html" class="solution-card">
-                <div class="solution-content">
-                    <h3>VC Due Diligence Guide</h3>
-                    <p>Evaluate AV patent portfolios and IP quality</p>
-                </div>
-                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="/autonomous-trucking-patent-defense-strategy.html" class="solution-card">
-                <div class="solution-content">
-                    <h3>Autonomous Trucking</h3>
-                    <p>Defensive patent strategy for Class 8 truck navigation</p>
-                </div>
-                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="/about.html" class="solution-card">
-                <div class="solution-content">
-                    <h3>About This Patent</h3>
-                    <p>Technical specifications, claims, and inventors</p>
-                </div>
-                <svg class="solution-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            {% endfor %}
         </div>
     </div>
 </section>
+{% endif %}
 
 <!-- CTA Section -->
 <section class="cta-section">

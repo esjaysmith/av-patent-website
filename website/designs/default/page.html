@@ -6,12 +6,90 @@
 <div class="hero-section">
     <div class="container">
         <div class="hero-content">
+            {% if hero_badge %}
+            <div class="hero-badge">{{ hero_badge }}</div>
+            {% endif %}
             <h1>{{ hero_title }}</h1>
             <p>{{ hero_subtitle }}</p>
-            <a href="/contact.html" class="cta-button">Start Licensing Inquiry</a>
+            <div class="hero-actions">
+                <a href="/contact.html" class="cta-button">Start Licensing Inquiry</a>
+                <a href="/patent-details.html" class="btn-secondary">View Patent Details</a>
+            </div>
         </div>
     </div>
 </div>
+
+{% if show_patent_stats and patent_stats %}
+<!-- Patent Overview Stats -->
+<section class="patent-overview">
+    <div class="container">
+        <div class="patent-grid">
+            {% for stat in patent_stats %}
+            <div class="patent-stat">
+                <div class="patent-stat-value">{{ stat.value }}</div>
+                <div class="patent-stat-label">{{ stat.label }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if show_strategic_value and strategic_benefits %}
+<!-- Why License Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Strategic Value</div>
+            <h2 class="section-title">Why License This Patent</h2>
+            <p class="section-description">Secure IP protection for camera-first autonomous navigation systems before the market consolidates.</p>
+        </div>
+        <div class="benefits-grid">
+            {% for benefit in strategic_benefits %}
+            <div class="benefit-card">
+                <h3 class="benefit-title">{{ benefit.title }}</h3>
+                <p class="benefit-text">{{ benefit.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if show_industry_solutions and industry_solutions %}
+<!-- Solutions Section -->
+<section id="solutions" class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-label">Industry Solutions</div>
+            <h2 class="section-title">Patent Licensing by Sector</h2>
+            <p class="section-description">Explore how US Patent 12,001,207 strengthens IP portfolios across autonomous vehicle applications.</p>
+        </div>
+        <div class="solutions-grid">
+            {% for solution in industry_solutions %}
+            <a href="{{ solution.url }}" class="solution-card">
+                <div class="solution-content">
+                    <h3>{{ solution.title }}</h3>
+                    <p>{{ solution.description }}</p>
+                </div>
+                <span class="solution-arrow">&rarr;</span>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- CTA Section -->
+<section class="cta-section-homepage">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="cta-title">Ready to License US Patent 12,001,207?</h2>
+            <p class="cta-description">Contact us to discuss licensing opportunities tailored to your autonomous vehicle or drone navigation projects.</p>
+            <a href="/contact.html" class="cta-button">Get in Touch</a>
+        </div>
+    </div>
+</section>
 {% endif %}
 
 {% if not is_homepage %}
@@ -49,7 +127,7 @@
             <!-- Next Page Navigation -->
             {% if next_page_url %}
             <div class="next-page-navigation">
-                <a href="{{ next_page_url }}" class="next-page-button">Next Page →</a>
+                <a href="{{ next_page_url }}" class="next-page-button">Next Page &rarr;</a>
             </div>
             {% endif %}
 

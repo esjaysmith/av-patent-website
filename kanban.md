@@ -6,23 +6,24 @@ kanban-plugin: board
 
 ## Backlog
 
-- [ ] fix site design content duplication
 - [ ] add google analytics
 - [ ] run google pageload stats again
 - [ ] SEO technical optimization
 - [ ] Add page/info for patent extension
+- [ ] change 2025 all rights ... to 2026
 
 
 ## In Progress
 
-- [ ] fix form submission
-- [ ] use https and check redirects
-- [ ] namecheap: email forwarding for licensing@...
 - [ ] point google indexer to site
 
 
 ## Done
 
+- [ ] fix site design content duplication
+- [ ] use https and check redirects
+- [ ] fix form submission
+- [ ] namecheap email catch-all for av-navigation-ip domain
 - [ ] Verify dns works
 - [x] Next page navigation feature
 - [x] Website content corrections
