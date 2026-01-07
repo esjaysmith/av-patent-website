@@ -10,6 +10,7 @@ kanban-plugin: board
 - [ ] run google pageload stats again
 - [ ] SEO technical optimization
 - [ ] Add page/info for patent extension
+- [ ] 'Alpamayo' landing page
 - [ ] change 2025 all rights ... to 2026
 
 
