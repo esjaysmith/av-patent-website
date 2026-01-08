@@ -155,6 +155,17 @@ class StaticSiteGenerator:
         else:
             print("! No assets directory found, skipping...")
 
+    def copy_indexnow_key(self):
+        """Copy IndexNow API key file to build root for domain verification"""
+        # Look for IndexNow key files (pattern: 32-char hex string .txt)
+        indexnow_pattern = re.compile(r'^[a-f0-9]{32}\.txt$')
+
+        for file_path in self.assets_dir.glob('*.txt'):
+            if indexnow_pattern.match(file_path.name):
+                dest_path = self.build_dir / file_path.name
+                shutil.copy2(file_path, dest_path)
+                print(f"✓ Copied IndexNow key to root: {file_path.name}")
+
 
 
     def parse_frontmatter(self, content):
@@ -348,6 +359,9 @@ Sitemap: {SITE_URL}/sitemap.xml
 
         # Copy assets
         self.copy_assets()
+
+        # Copy IndexNow key file to root
+        self.copy_indexnow_key()
 
         # Find all markdown files in content directory
         if not self.content_dir.exists():
