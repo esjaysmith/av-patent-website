@@ -16,7 +16,7 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] point google indexer to site
+- [ ] google, bing indexing
 
 
 ## Done
