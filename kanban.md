@@ -16,7 +16,8 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] google, bing indexing
+- [ ] publish on github pages
+- [ ] solve google, bing indexing
 
 
 ## Done
