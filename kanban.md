@@ -19,6 +19,7 @@ kanban-plugin: board
 - [ ] ??
 - [ ] publish on github pages
 - [ ] solve google, bing indexing
+- [ ] alpamayo (nvidia end 2 end)
 
 
 ## Done
