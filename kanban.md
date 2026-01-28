@@ -16,7 +16,7 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] ??
+- [ ] fix root and www canonical
 - [ ] publish on github pages
 - [ ] solve google, bing indexing
 - [ ] alpamayo (nvidia end 2 end)
