@@ -47,9 +47,9 @@ https://www.av-navigation-ip.com/* https://av-navigation-ip.com/:splat 301!
 ```
 
 **Action Items:**
-- [ ] Verify primary domain in Netlify dashboard (Site settings → Domain management)
-- [ ] If not working, add `netlify.toml` with redirect rule
-- [ ] Verify redirect works: `curl -I https://www.av-navigation-ip.com` should return 301
+- [x] Verify primary domain in Netlify dashboard (Site settings → Domain management) ✓ Confirmed Feb 12, 2026
+- [ ] ~~If not working, add `netlify.toml` with redirect rule~~ (Not needed — Netlify auto-redirect working)
+- [x] Verify redirect works: `curl -I https://www.av-navigation-ip.com` should return 301 ✓ Confirmed Feb 12, 2026
 - [ ] Verify in Google Search Console that preferred domain is set
 
 **1.2 Ensure consistent URL structure**
@@ -317,7 +317,7 @@ New pages targeting comparison searches:
 ## Execution Timeline
 
 ### Week 1: Technical Fixes
-- [ ] Fix www redirect issue
+- [x] Fix www redirect issue ✓ Confirmed working Feb 12, 2026
 - [ ] Request indexing for all pages
 - [ ] Enable IndexNow
 - [ ] Set up Google Analytics
@@ -351,9 +351,9 @@ New pages targeting comparison searches:
 
 ## Priority Action Items (This Week)
 
-1. **IMMEDIATE:** Fix www vs non-www redirect at hosting level
-2. **TODAY:** Request indexing for all 14 pages in GSC
-3. **TODAY:** Submit sitemap to Bing, enable IndexNow
+1. ~~**IMMEDIATE:** Fix www vs non-www redirect at hosting level~~ ✓ Done Feb 12, 2026
+2. ~~**TODAY:** Request indexing for all 14 pages in GSC~~ ✓ 6 high-priority pages requested Feb 12, 2026
+3. ~~**TODAY:** Submit sitemap to Bing, enable IndexNow~~ ✓ Sitemaps verified (already submitted), 6 pages indexed via Bing WMT Feb 12, 2026 — IndexNow still pending
 4. **THIS WEEK:** Optimize LinkedIn profile, schedule first 3 posts
 5. **THIS WEEK:** Identify 5 Quora questions to answer
 
@@ -593,6 +593,43 @@ Even without licensing revenue, the patent has strategic value.
 | 6 | Defense/government research | Low | Medium |
 | 7 | Academic licensing | Low | Low (credibility) |
 | 8 | Insurance/certification | Low | Speculative |
+
+---
+
+## Action Log
+
+Track all completed actions with timestamps to measure results and steer future efforts.
+
+| Date | Time (UTC) | Action | Category | Details | Result/Notes |
+|------|------------|--------|----------|---------|--------------|
+| 2026-02-12 | 15:12 | Verified www→non-www 301 redirect | Technical SEO | `curl -I https://www.av-navigation-ip.com` returns 301 to `https://av-navigation-ip.com/` | Working correctly via Netlify auto-redirect |
+| 2026-02-12 | 15:12 | Confirmed Netlify domain config | Technical SEO | Primary domain: `av-navigation-ip.com`, www redirects automatically | No `netlify.toml` needed |
+| 2026-02-12 | 16:26 | GSC indexing audit | Technical SEO | 4 indexed, 14 not indexed (11 "Discovered - not indexed", 1 duplicate canonical, 1 redirect, 1 alternate canonical) | Baseline established |
+| 2026-02-12 | ~16:30 | Requested indexing: `series-a-av-patent-portfolio-strategy.html` | GSC Indexing | URL Inspection → Request Indexing | Added to priority crawl queue |
+| 2026-02-12 | ~16:35 | Confirmed already indexed: `tesla-fsd-competitor-camera-patent-licensing.html` | GSC Indexing | URL Inspection showed "URL is on Google" | No action needed |
+| 2026-02-12 | ~16:40 | Requested indexing: `drone-delivery-patent-portfolio-pre-ipo.html` | GSC Indexing | URL Inspection → Request Indexing | Added to priority crawl queue |
+| 2026-02-12 | ~16:45 | Requested indexing: `autonomous-trucking-patent-defense-strategy.html` | GSC Indexing | URL Inspection → Request Indexing | Added to priority crawl queue |
+| 2026-02-12 | ~16:55 | Requested indexing: `patent-details.html` | GSC Indexing | URL Inspection → Request Indexing | Added to priority crawl queue |
+| 2026-02-12 | ~17:00 | Requested indexing: `industry-insights.html` | GSC Indexing | URL Inspection → Request Indexing | Added to priority crawl queue |
+| 2026-02-12 | 17:05 | Verified GSC sitemap status | Technical SEO | sitemap.xml: Submitted Jan 7, last read Feb 10, Status: Success, 14 URLs discovered | Healthy — no resubmission needed |
+| 2026-02-12 | 17:10 | Verified Bing sitemaps | Bing WMT | 2 sitemaps (www + non-www), both Success, 14 URLs each | Healthy |
+| 2026-02-12 | ~17:12 | Requested Bing indexing: `series-a-av-patent-portfolio-strategy.html` | Bing Indexing | URL Inspection → Request Indexing (was "Not discovered") | Submitted successfully |
+| 2026-02-12 | ~17:13 | Requested Bing indexing: `drone-delivery-patent-portfolio-pre-ipo.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
+| 2026-02-12 | ~17:14 | Requested Bing indexing: `autonomous-trucking-patent-defense-strategy.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
+| 2026-02-12 | ~17:16 | Requested Bing indexing: `patent-details.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
+| 2026-02-12 | ~17:17 | Requested Bing indexing: `industry-insights.html` | Bing Indexing | URL Inspection → Request Indexing (was "Not discovered") | Submitted successfully |
+| 2026-02-12 | ~17:18 | Requested Bing indexing: `tesla-fsd-competitor-camera-patent-licensing.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
+
+### Pending Follow-ups
+
+| Target Date | Action | Priority |
+|-------------|--------|----------|
+| 2026-02-19 | Check if requested pages are now indexed in GSC | High |
+| 2026-02-19 | Check if requested pages are now indexed in Bing | High |
+| 2026-02-19 | Request indexing for remaining non-priority GSC pages | Medium |
+| TBD | Verify GSC preferred domain setting | Medium |
+| TBD | Enable IndexNow for instant Bing/Yandex indexing | Medium |
+| TBD | Request indexing for `venture-capital-av-patent-portfolio-due-diligence.html` (check status first) | High |
 
 ---
 
