@@ -16,7 +16,7 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] fix root and www canonical
+- [ ] claw: apply humanizer skill
 - [ ] publish on github pages
 - [ ] solve google, bing indexing
 - [ ] alpamayo (nvidia end 2 end)
@@ -24,6 +24,7 @@ kanban-plugin: board
 
 ## Done
 
+- [ ] fix root and www canonical
 - [ ] fix site design content duplication
 - [ ] use https and check redirects
 - [ ] fix form submission
