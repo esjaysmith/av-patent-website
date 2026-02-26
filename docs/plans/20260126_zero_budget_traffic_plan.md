@@ -73,6 +73,126 @@ Create `/indexnow.txt` key file and use IndexNow API for instant Bing/Yandex ind
 
 ---
 
+## Phase 1B: AI Search Engine Optimization (Week 1-2)
+
+As of February 2026, frontier LLMs with built-in web search are a significant and growing traffic/citation source. When users ask ChatGPT, Claude, Gemini, Grok, or Perplexity about AV patents, drone navigation IP, or licensing strategies, our pages should surface as cited sources. This requires allowing AI crawlers and submitting to their indexes.
+
+### AI Search Landscape (Feb 2026)
+
+| LLM / Provider | Search Backend | Custom Index? | How to Submit |
+|----------------|---------------|---------------|---------------|
+| **ChatGPT (OpenAI)** | Bing API + OAI-SearchBot crawler | Yes — supplemental proprietary layer on top of Bing | Bing Webmaster Tools (sitemaps, IndexNow). Allow `OAI-SearchBot` + `GPTBot` in robots.txt |
+| **Claude (Anthropic)** | Brave Search | No — uses Brave's independent index (not Google/Bing) | Submit URLs at search.brave.com/submit-url. Allow Brave's bot in robots.txt |
+| **Gemini (Google)** | Native Google Search | Yes — full proprietary (Googlebot) | Google Search Console (already configured) |
+| **Grok (xAI)** | xAI's own live search API + X integration | Yes — proprietary crawler network (GrokBot/xAI-Grok UAs) | No public submission tool. Allow Grok bots in robots.txt. Benefit from X/Twitter discoverability |
+| **Perplexity** | Own search infrastructure | Yes — large custom index + real-time PerplexityBot crawling | Allow `PerplexityBot` in robots.txt. Perplexity Pro "Pages" allows direct submission |
+| **Microsoft Copilot** | Bing-native | Yes — full Bing index | Bing Webmaster Tools (same as ChatGPT path) |
+| **Meta AI** | Primarily Bing + developing own crawler | Building — Meta-ExternalAgent crawler active | Bing Webmaster Tools + allow `Meta-ExternalAgent` in robots.txt |
+
+### Key Insight
+
+Most frontier LLMs now maintain their own crawl/index infrastructure beyond just search APIs. Blocking any of these bots in `robots.txt` prevents inclusion in AI-generated answers — which is increasingly where high-intent professionals (VCs, startup CTOs, IP attorneys) discover content.
+
+### 1B.1 Update robots.txt — Allow All AI Crawlers
+
+**Current state:** Check if `robots.txt` exists and what it allows/blocks.
+
+**Target robots.txt should explicitly allow:**
+```
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-Grok
+Allow: /
+
+User-agent: Grok-DeepSearch
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://av-navigation-ip.com/sitemap.xml
+```
+
+**Action Items:**
+- [ ] Audit current `robots.txt` at https://av-navigation-ip.com/robots.txt
+- [ ] Update to explicitly allow all AI crawler user agents listed above
+- [ ] Ensure `Sitemap:` directive is present pointing to sitemap.xml
+- [ ] Deploy updated robots.txt
+
+### 1B.2 Submit to Brave Search (Claude's Backend)
+
+Brave Search is fully independent of Google and Bing. If we're not in Brave's index, Claude users won't find us via web search.
+
+**Action Items:**
+- [ ] Submit homepage: https://search.brave.com/submit-url
+- [ ] Submit all 5 SEO landing pages individually
+- [ ] Submit patent-details.html and licensing.html
+- [ ] Verify indexing after 1-2 weeks
+
+### 1B.3 Enable IndexNow (Covers Bing → ChatGPT → Copilot → Meta AI)
+
+IndexNow is the single highest-leverage action: one protocol covers Bing, which feeds ChatGPT, Microsoft Copilot, and partially Meta AI.
+
+**Action Items:**
+- [ ] Generate IndexNow API key
+- [ ] Create key verification file at site root (e.g., `/{key}.txt`)
+- [ ] Submit all pages via IndexNow API
+- [ ] Consider adding IndexNow ping to deployment pipeline (auto-notify on content changes)
+
+### 1B.4 Optimize Content for AI Citation
+
+AI search engines favor content that is:
+- **Directly quotable** — clear, factual statements that can be cited as-is
+- **Structured with headers** — H2/H3 structure helps AI extract relevant sections
+- **Authoritative** — specific patent numbers, dates, and technical details
+- **Answer-formatted** — content that directly answers likely queries
+
+**Target Queries to Optimize For (AI Search):**
+- "What patents cover autonomous vehicle camera navigation?"
+- "AV startup patent licensing options"
+- "Dual-module safety system autonomous vehicles"
+- "Drone delivery patent portfolio"
+- "Camera-based navigation patent landscape"
+- "US Patent 12,001,207"
+
+**Action Items:**
+- [ ] Review landing pages for AI-citation-friendliness (clear factual statements, specific data points)
+- [ ] Ensure patent number US 12,001,207 appears prominently and consistently
+- [ ] Add FAQ-style content sections that directly answer likely AI search queries
+- [ ] Consider adding a `/facts.html` or structured data page optimized for AI extraction
+
+### 1B.5 Monitor AI Search Visibility
+
+**Action Items:**
+- [ ] Test queries in ChatGPT, Claude, Perplexity, and Gemini to see if our pages appear in citations
+- [ ] Document which pages/queries surface our content
+- [ ] Track changes monthly as AI indexes update
+- [ ] Set up Google Alerts for "US 12,001,207" and "av-navigation-ip.com" to catch AI-generated mentions
+
+---
+
 ## Phase 2: Content Amplification (Weeks 2-4)
 
 ### Strategy: Leverage existing 5 high-intent landing pages
@@ -305,6 +425,9 @@ New pages targeting comparison searches:
 | Keyword Rankings | GSC | 5-10 page 1 positions |
 | LinkedIn Post Views | LinkedIn | 1,000+/post |
 | Quora Answer Views | Quora | 500+/answer |
+| AI Search Citations | Manual testing | Appear in 3+ LLM search results |
+| Brave Search Indexed | Brave Search | All key pages indexed |
+| AI Crawler Access | Server logs / robots.txt | All major bots allowed |
 
 ### Monthly Review
 - Which landing pages getting traffic?
@@ -321,6 +444,13 @@ New pages targeting comparison searches:
 - [ ] Request indexing for all pages
 - [ ] Enable IndexNow
 - [ ] Set up Google Analytics
+
+### Week 1-2: AI Search Engine Optimization
+- [ ] Audit and update robots.txt to allow all AI crawler user agents
+- [ ] Submit all key pages to Brave Search (search.brave.com/submit-url)
+- [ ] Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline)
+- [ ] Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility
+- [ ] Review landing pages for AI-citation-friendliness
 
 ### Week 2-3: LinkedIn Launch
 - [ ] Optimize personal LinkedIn profile
@@ -354,8 +484,11 @@ New pages targeting comparison searches:
 1. ~~**IMMEDIATE:** Fix www vs non-www redirect at hosting level~~ ✓ Done Feb 12, 2026
 2. ~~**TODAY:** Request indexing for all 14 pages in GSC~~ ✓ 6 high-priority pages requested Feb 12, 2026
 3. ~~**TODAY:** Submit sitemap to Bing, enable IndexNow~~ ✓ Sitemaps verified (already submitted), 6 pages indexed via Bing WMT Feb 12, 2026 — IndexNow still pending
-4. **THIS WEEK:** Optimize LinkedIn profile, schedule first 3 posts
-5. **THIS WEEK:** Identify 5 Quora questions to answer
+4. **THIS WEEK:** Update robots.txt to allow AI crawlers (GPTBot, ClaudeBot, PerplexityBot, GrokBot, Meta-ExternalAgent)
+5. **THIS WEEK:** Submit key pages to Brave Search (Claude's search backend — independent of Google/Bing)
+6. **THIS WEEK:** Enable IndexNow (single action covers Bing → ChatGPT → Copilot → Meta AI)
+7. **THIS WEEK:** Optimize LinkedIn profile, schedule first 3 posts
+8. **THIS WEEK:** Identify 5 Quora questions to answer
 
 ---
 
@@ -373,6 +506,9 @@ New pages targeting comparison searches:
 | Substack/Newsletter | Free tier |
 | Directory submissions | Free |
 | Guest posting | Free (time only) |
+| Brave Search submission | Free |
+| IndexNow | Free |
+| AI crawler robots.txt | Free |
 | **Total** | **$0** |
 
 ---
@@ -630,6 +766,10 @@ Track all completed actions with timestamps to measure results and steer future 
 | TBD | Verify GSC preferred domain setting | Medium |
 | TBD | Enable IndexNow for instant Bing/Yandex indexing | Medium |
 | TBD | Request indexing for `venture-capital-av-patent-portfolio-due-diligence.html` (check status first) | High |
+| TBD | Update robots.txt to allow all AI crawler bots (GPTBot, ClaudeBot, PerplexityBot, etc.) | High |
+| TBD | Submit all key pages to Brave Search (Claude's backend) | High |
+| TBD | Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline) | High |
+| TBD | Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini | Medium |
 
 ---
 
@@ -640,3 +780,6 @@ Track all completed actions with timestamps to measure results and steer future 
 - LinkedIn and Quora will likely drive fastest initial traffic
 - SEO/organic search is a long game (3-6 months minimum)
 - Adjust strategy based on what channels perform best
+- AI search (ChatGPT, Claude, Perplexity, Gemini) is an increasingly important discovery channel for professional audiences — optimizing for AI citation is zero-cost and high-leverage
+- Brave Search (Claude's backend) is independent of Google/Bing — requires separate submission
+- IndexNow is the single highest-ROI technical action: one protocol feeds Bing, ChatGPT, Copilot, and partially Meta AI

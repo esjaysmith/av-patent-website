@@ -36,96 +36,78 @@ The patent describes a system for controlling autonomous vehicles or air vessels
 
 *For complete legal text and detailed claims, refer to official USPTO records.*
 
-## Key Technical Claims
+## Key technical claims
 
-### Primary Innovation Areas
-
-#### 1. **Camera-Based Safety Architecture**
+### 1. Camera-based safety architecture
 
 - Computer vision methods for real-time hazard detection as described in the patent claims
 - Camera-based environmental perception techniques
 - Confidence-based safety thresholds with human operator handoff when uncertainties arise
 
-#### 2. **Navigation Decision Logic**
+### 2. Navigation decision logic
 
 - Route-based navigation with safety value assessment before instruction execution
 - Real-time path adjustment based on visual scene analysis
 - Integration with machine learning models for predictive safety assessments
 
-#### 3. **Autonomous System Integration**
+### 3. Autonomous system integration
 
 - Designed for integration with autonomous vehicle control systems
 - Camera-primary approach with optional acceleration sensor integration
 
-## Industry Applications and Use Cases
+## Industry applications
 
-*The patent covers autonomous land vehicles and air vessels. The following specific applications are potential use cases inferred from the patent's technical scope and are not explicitly stated in the patent.*
+*The patent covers autonomous land vehicles and air vessels. The following are potential use cases inferred from the patent's technical scope, not explicitly stated in the patent.*
 
-### Autonomous Vehicles
+### Autonomous vehicles
 
-**Potential Applications:**
+- Consumer vehicles: safety systems for autonomous driving
+- Commercial fleets: robotaxi and delivery vehicle applications
+- Urban navigation: city driving with complex visual environments
+- Highway systems: navigation with camera-based hazard detection
 
-- **Consumer Vehicles**: Safety systems for autonomous driving
-- **Commercial Fleets**: Robotaxi and delivery vehicle applications
-- **Urban Navigation**: City driving scenarios with complex visual environments
-- **Highway Systems**: Navigation with camera-based hazard detection
+### Drones and UAVs
 
-### Drone and UAV Systems
+- Delivery drones: navigation in populated areas
+- Inspection drones: industrial facility navigation with obstacle avoidance
+- Agricultural UAVs: autonomous crop monitoring with terrain safety
+- Emergency response: search and rescue in challenging environments
 
-**Potential Commercial Applications:**
+### AI navigation platforms
 
-- **Delivery Drones**: Navigation in populated areas
-- **Inspection Drones**: Industrial facility navigation with obstacle avoidance
-- **Agricultural UAVs**: Autonomous crop monitoring with terrain safety
-- **Emergency Response**: Search and rescue operations in challenging environments
+- Edge computing: real-time processing for autonomous systems
+- Neural networks: training data accumulation for navigation AI models
+- Sensor fusion: integration of camera data with other sensors
+- Machine learning: camera-based image processing and safety assessment
 
-### AI Navigation Platforms
+## Competitive landscape
 
-**Technology Integration Potential:**
+*The following analysis is inferred from the patent's technical scope, not statements in the patent itself.*
 
-- **Edge Computing**: Real-time processing for autonomous systems
-- **Neural Networks**: Training data accumulation for navigation AI models
-- **Sensor Fusion**: Integration of camera data with other sensors
-- **Machine Learning**: Camera-based image processing and safety assessment
+### Market positioning
 
-## Competitive Landscape and Patent Value
+The patent covers territory in a field where major technology companies are building autonomous navigation systems. As the industry moves toward camera-based approaches, the patent may offer IP protection for:
 
-*The following market analysis and strategic considerations are inferred from the patent's technical scope and are not statements contained in the patent itself.*
+- Startups developing AV technology
+- Established automakers transitioning to autonomous capabilities
+- Technology companies entering the mobility market
+- Drone manufacturers expanding into commercial applications
 
-### Market Positioning
+### Strategic uses
 
-The patent provides protection in a rapidly evolving field where major technology companies are developing autonomous navigation systems. With the industry's increasing focus on camera-based approaches, this patent may offer IP protection for:
+*These are business considerations, not claims made in the patent.*
 
-- **Startups** developing next-generation AV technology
-- **Established automakers** transitioning to autonomous capabilities
-- **Technology companies** entering the mobility market
-- **Drone manufacturers** expanding into commercial applications
+**Freedom to operate** — Licensing provides rights to use the patented technology in camera-based navigation systems.
 
-### Strategic IP Advantages
+**Defensive IP** — The patent can protect against competitor litigation and enable cross-licensing opportunities.
 
-*These potential advantages are business considerations and are not claims made in the patent.*
+**Credibility** — Patented technology can signal innovation to investors, customers, and regulators.
 
-#### **Freedom to Operate**
-Licensing this patent may provide companies with rights to use the patented technology in their camera-based navigation systems.
+## Licensing
 
-#### **Defensive Portfolio Building**
-The patent may serve as defensive IP, potentially protecting against litigation from competitors while enabling cross-licensing opportunities with industry leaders.
+US Patent 12,001,207 is available for licensing in the United States and United Kingdom. It covers camera-based navigation and safety assessment systems for autonomous land vehicles and air vessels.
 
-#### **Technology Validation**
-Association with patented technology may demonstrate innovation credibility to investors, customers, and regulatory bodies.
-
-## Licensing Opportunities
-
-This patent is available for licensing in the United States and United Kingdom. US Patent 12,001,207 covers camera-based navigation and safety assessment systems for autonomous land vehicles and air vessels.
-
-### **Licensing Options Available:**
-
-- **Exclusive licensing** for specific market segments
-- **Non-exclusive licensing** for broad market access
-- **Field-of-use licensing** for targeted applications
-- **Geographic licensing** for USA and/or UK markets
-
-Contact us to discuss how US Patent 12,001,207 can strengthen your IP portfolio and support your autonomous system development.
+Options include exclusive, non-exclusive, field-of-use, and geographic licensing. See our [licensing page](/licensing.html) for details, or [contact us](/contact.html) to start a conversation.
 
 ---
 

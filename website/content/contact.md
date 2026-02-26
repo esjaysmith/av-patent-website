@@ -93,69 +93,46 @@ For inquiries regarding licensing opportunities for US Patent 12,001,207 camera-
 <script src="https://web3forms.com/client/script.js" async defer></script>
 </div>
 
-## Direct Contact Information
-
-### **Primary Licensing Contact**
+## Direct contact
 
 - **Email:** [{{ contact_email_encoded }}](mailto:{{ contact_email_encoded }})
-- **Subject Line Format:** "Patent Licensing Inquiry - [Your Company] - US 12,001,207"
+- **Subject line:** "Patent Licensing Inquiry - [Your Company] - US 12,001,207"
 
-### **Response Times**
+We typically acknowledge inquiries within 2 business days, with a detailed response within 5.
 
-- **Initial Acknowledgment:** Within 2 business days
-- **Detailed Response:** Within 5 business days
+## What to expect
 
-## What to Expect
+1. We'll confirm we received your inquiry
+2. We'll follow up by email or phone to discuss details
+3. If there's a fit, we'll outline next steps
 
-1. **Acknowledgment**: Confirmation of your inquiry
-2. **Discussion**: We'll discuss your inquiry via email or phone
-3. **Next Steps**: We'll outline potential next steps for further discussion
+## Geographic availability
 
-## Geographic Availability
+Patent licensing is available in the United States and United Kingdom.
 
-Patent licensing is available for the following jurisdictions:
+We're flexible on communication — video calls via Zoom, Teams, or Google Meet work across US and UK time zones. English only.
 
-- **United States**: US-based companies and operations
-- **United Kingdom**: UK-based companies and operations
+## Privacy and confidentiality
 
-### **Communication**
+All licensing inquiries are handled confidentially. We offer NDAs for detailed technical discussions, and your company information is never shared with third parties.
 
-- **Video Conferencing**: Video calls available via Zoom, Teams, or Google Meet
-- **Time Zones**: Flexible communication accommodating US and UK time zones
-- **Language Support**: English communication
+We collect only what's needed for licensing evaluation, retain inquiry data for up to 2 years, and never share it outside legal requirements. You can request updates or deletion at any time. See our full [Privacy Policy](/privacy.html) for details.
 
-## Privacy and Confidentiality
+## Frequently asked questions
 
-### **Information Security**
-All licensing inquiries are handled with strict confidentiality:
+**How long does the licensing process take?**
+Simple arrangements can wrap up in weeks. Exclusive deals take longer, depending on complexity and how quickly both sides respond.
 
-- **Secure Communications**: Secure document sharing
-- **Non-Disclosure Agreements**: Available upon request for detailed technical discussions
-- **Information Handling**: Your company information is never shared with third parties
+**Do you license for specific regions?**
+Yes — currently the United States and United Kingdom.
 
-### **Privacy Policy Summary**
+**Can startups license the patent?**
+Yes. We work with companies of all sizes and discuss terms case by case.
 
-- **Data Collection**: We collect only information necessary for licensing evaluation
-- **Data Use**: Information used solely for licensing inquiry response and relationship management
-- **Data Retention**: Inquiry information retained for 2 years or until licensing agreement completion
-- **Data Sharing**: No sharing with third parties except as required for legal compliance
-- **Data Rights**: You may request information update or deletion at any time
+**What happens in a licensing discussion?**
+We cover the patent itself, potential arrangements, and any questions about the technology and how it applies to your use case.
 
-## Frequently Asked Questions
-
-### **How long does the licensing process typically take?**
-Timelines vary depending on the complexity of the arrangement and responsiveness of all parties. Simple licensing discussions may conclude in weeks; complex exclusive arrangements typically take longer.
-
-### **Do you offer licensing for specific geographic regions?**
-Yes, licensing is available for the United States and United Kingdom.
-
-### **Can startups access licensing?**
-Licensing discussions are open to companies of all sizes. Terms are discussed on a case-by-case basis.
-
-### **What information is discussed during licensing inquiries?**
-Discussions focus on the patent, potential licensing arrangements, and answering questions about the technology and its applications.
-
-For licensing inquiries regarding US Patent 12,001,207, submit the form above or contact via the provided email address.
+To get started, submit the form above or email us directly.
 
 ---
 

@@ -40,7 +40,9 @@
       "Bash(grep:*)",
       "Bash(ls:*)",
       "WebFetch(domain:patents.google.com)",
-      "mcp__playwright__browser_wait_for"
+      "mcp__playwright__browser_wait_for",
+      "Skill(humanizer)",
+      "mcp__playwright__browser_tabs"
     ]
   },
   "enableAllProjectMcpServers": true,
