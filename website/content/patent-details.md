@@ -19,7 +19,7 @@ twitter_image: "/assets/images/og-technical-legal.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
-date_modified: "2025-11-12"
+date_modified: "2026-02-25"
 ---
 
 # US Patent 12,001,207: Camera-Based Navigation Safety Technology

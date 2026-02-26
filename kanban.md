@@ -16,7 +16,7 @@ kanban-plugin: board
 
 ## In Progress
 
-- [ ] claw: apply humanizer skill
+- [ ] generic way of handling last modified, updated dates and year
 - [ ] publish on github pages
 - [ ] solve google, bing indexing
 - [ ] alpamayo (nvidia end 2 end)
@@ -24,6 +24,7 @@ kanban-plugin: board
 
 ## Done
 
+- [ ] apply humanizer skill
 - [ ] fix root and www canonical
 - [ ] fix site design content duplication
 - [ ] use https and check redirects

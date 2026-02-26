@@ -264,7 +264,7 @@ class StaticSiteGenerator:
 
             # Schema.org date fields
             'date_published': metadata.get('date', metadata.get('date_published', '2025-11-01')),
-            'date_modified': metadata.get('modified', metadata.get('date_modified', '2025-11-12')),
+            'date_modified': metadata.get('modified', metadata.get('date_modified', '2026-02-25')),
 
             # Google Analytics
             'google_analytics_id': GOOGLE_ANALYTICS_ID,

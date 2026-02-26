@@ -19,7 +19,7 @@ twitter_image: "/assets/images/og-technical-legal.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
-date_modified: "2025-11-12"
+date_modified: "2026-02-25"
 ---
 
 # Patent Licensing Opportunities
@@ -104,6 +104,7 @@ The patent describes a modular camera-based navigation system with machine learn
 ## Getting started
 
 When reaching out, it helps to share:
+
 - Your company background and market focus
 - How you'd use the patent
 - Target markets (US and/or UK)

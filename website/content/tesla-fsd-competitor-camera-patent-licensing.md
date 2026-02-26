@@ -18,7 +18,7 @@ breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-17"
-modified: "2025-10-17"
+modified: "2026-02-25"
 
 # Open Graph
 og_title: "Tesla FSD Competitor Camera Patent Licensing | AV IP"

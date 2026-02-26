@@ -21,7 +21,7 @@ cta_link: "/contact.html"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
-modified: "2025-10-18"
+modified: "2026-02-25"
 
 # Open Graph
 og_title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"

@@ -18,7 +18,7 @@ breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
-modified: "2025-10-18"
+modified: "2026-02-25"
 
 # Open Graph
 og_title: "Drone Delivery Patent Portfolio for IPO | Strategic Licensing Guide"

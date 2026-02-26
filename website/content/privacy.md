@@ -19,12 +19,12 @@ twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
-date_modified: "2025-12-11"
+date_modified: "2026-02-25"
 ---
 
 # Privacy Policy
 
-**Last Updated**: December 11, 2025
+**Last Updated**: February 25, 2026
 
 ## Introduction
 
