@@ -334,7 +334,25 @@ class StaticSiteGenerator:
         else:
             disallow_rule = "Disallow: /"
 
-        robots_content = f"""User-agent: *
+        # Explicit AI crawler rules (allow even if general policy is disallow)
+        ai_crawlers = [
+            "GPTBot",
+            "OAI-SearchBot",
+            "ChatGPT-User",
+            "anthropic-ai",
+            "ClaudeBot",
+            "PerplexityBot",
+            "GrokBot",
+            "xAI-Grok",
+            "Grok-DeepSearch",
+            "Meta-ExternalAgent",
+        ]
+        ai_rules = "\n".join(
+            f"User-agent: {bot}\nAllow: /\n" for bot in ai_crawlers
+        )
+
+        robots_content = f"""{ai_rules}
+User-agent: *
 {disallow_rule}
 
 Sitemap: {SITE_URL}/sitemap.xml

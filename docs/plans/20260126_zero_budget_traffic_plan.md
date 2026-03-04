@@ -136,9 +136,9 @@ Sitemap: https://av-navigation-ip.com/sitemap.xml
 ```
 
 **Action Items:**
-- [ ] Audit current `robots.txt` at https://av-navigation-ip.com/robots.txt
-- [ ] Update to explicitly allow all AI crawler user agents listed above
-- [ ] Ensure `Sitemap:` directive is present pointing to sitemap.xml
+- [x] Audit current `robots.txt` at https://av-navigation-ip.com/robots.txt ✓ Mar 4, 2026
+- [x] Update to explicitly allow all AI crawler user agents listed above ✓ Mar 4, 2026 — Added GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, GrokBot, xAI-Grok, Grok-DeepSearch, Meta-ExternalAgent
+- [x] Ensure `Sitemap:` directive is present pointing to sitemap.xml ✓ Mar 4, 2026
 - [ ] Deploy updated robots.txt
 
 ### 1B.2 Submit to Brave Search (Claude's Backend)
@@ -446,7 +446,7 @@ New pages targeting comparison searches:
 - [ ] Set up Google Analytics
 
 ### Week 1-2: AI Search Engine Optimization
-- [ ] Audit and update robots.txt to allow all AI crawler user agents
+- [x] Audit and update robots.txt to allow all AI crawler user agents ✓ Mar 4, 2026
 - [ ] Submit all key pages to Brave Search (search.brave.com/submit-url)
 - [ ] Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline)
 - [ ] Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility
@@ -484,7 +484,7 @@ New pages targeting comparison searches:
 1. ~~**IMMEDIATE:** Fix www vs non-www redirect at hosting level~~ ✓ Done Feb 12, 2026
 2. ~~**TODAY:** Request indexing for all 14 pages in GSC~~ ✓ 6 high-priority pages requested Feb 12, 2026
 3. ~~**TODAY:** Submit sitemap to Bing, enable IndexNow~~ ✓ Sitemaps verified (already submitted), 6 pages indexed via Bing WMT Feb 12, 2026 — IndexNow still pending
-4. **THIS WEEK:** Update robots.txt to allow AI crawlers (GPTBot, ClaudeBot, PerplexityBot, GrokBot, Meta-ExternalAgent)
+4. ~~**THIS WEEK:** Update robots.txt to allow AI crawlers (GPTBot, ClaudeBot, PerplexityBot, GrokBot, Meta-ExternalAgent)~~ ✓ Done Mar 4, 2026
 5. **THIS WEEK:** Submit key pages to Brave Search (Claude's search backend — independent of Google/Bing)
 6. **THIS WEEK:** Enable IndexNow (single action covers Bing → ChatGPT → Copilot → Meta AI)
 7. **THIS WEEK:** Optimize LinkedIn profile, schedule first 3 posts
@@ -755,6 +755,7 @@ Track all completed actions with timestamps to measure results and steer future 
 | 2026-02-12 | ~17:16 | Requested Bing indexing: `patent-details.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
 | 2026-02-12 | ~17:17 | Requested Bing indexing: `industry-insights.html` | Bing Indexing | URL Inspection → Request Indexing (was "Not discovered") | Submitted successfully |
 | 2026-02-12 | ~17:18 | Requested Bing indexing: `tesla-fsd-competitor-camera-patent-licensing.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
+| 2026-03-04 | — | Updated robots.txt with AI crawler user agents | AI Search SEO | Added explicit Allow rules for GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, GrokBot, xAI-Grok, Grok-DeepSearch, Meta-ExternalAgent | Updated in `generate_site.py`; pending deploy |
 
 ### Pending Follow-ups
 
@@ -766,7 +767,7 @@ Track all completed actions with timestamps to measure results and steer future 
 | TBD | Verify GSC preferred domain setting | Medium |
 | TBD | Enable IndexNow for instant Bing/Yandex indexing | Medium |
 | TBD | Request indexing for `venture-capital-av-patent-portfolio-due-diligence.html` (check status first) | High |
-| TBD | Update robots.txt to allow all AI crawler bots (GPTBot, ClaudeBot, PerplexityBot, etc.) | High |
+| ~~TBD~~ | ~~Update robots.txt to allow all AI crawler bots~~ ✓ Done Mar 4, 2026 | — |
 | TBD | Submit all key pages to Brave Search (Claude's backend) | High |
 | TBD | Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline) | High |
 | TBD | Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini | Medium |
