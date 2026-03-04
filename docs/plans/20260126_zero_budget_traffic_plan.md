@@ -156,9 +156,9 @@ Brave Search is fully independent of Google and Bing. If we're not in Brave's in
 IndexNow is the single highest-leverage action: one protocol covers Bing, which feeds ChatGPT, Microsoft Copilot, and partially Meta AI.
 
 **Action Items:**
-- [ ] Generate IndexNow API key
-- [ ] Create key verification file at site root (e.g., `/{key}.txt`)
-- [ ] Submit all pages via IndexNow API
+- [x] Generate IndexNow API key ✓ (key: `6a70e795af4a499aa8699b2f7208ee04`)
+- [x] Create key verification file at site root (e.g., `/{key}.txt`) ✓ Live and verified
+- [x] Submit all pages via IndexNow API ✓ Mar 4, 2026 — 14 URLs submitted, HTTP 200 success
 - [ ] Consider adding IndexNow ping to deployment pipeline (auto-notify on content changes)
 
 ### 1B.4 Optimize Content for AI Citation
@@ -448,7 +448,7 @@ New pages targeting comparison searches:
 ### Week 1-2: AI Search Engine Optimization
 - [x] Audit and update robots.txt to allow all AI crawler user agents ✓ Mar 4, 2026
 - [ ] Submit all key pages to Brave Search (search.brave.com/submit-url)
-- [ ] Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline)
+- [x] Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline) ✓ Mar 4, 2026
 - [ ] Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility
 - [ ] Review landing pages for AI-citation-friendliness
 
@@ -755,7 +755,9 @@ Track all completed actions with timestamps to measure results and steer future 
 | 2026-02-12 | ~17:16 | Requested Bing indexing: `patent-details.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
 | 2026-02-12 | ~17:17 | Requested Bing indexing: `industry-insights.html` | Bing Indexing | URL Inspection → Request Indexing (was "Not discovered") | Submitted successfully |
 | 2026-02-12 | ~17:18 | Requested Bing indexing: `tesla-fsd-competitor-camera-patent-licensing.html` | Bing Indexing | URL Inspection → Request Indexing (was "Discovered but not crawled") | Submitted successfully |
-| 2026-03-04 | — | Updated robots.txt with AI crawler user agents | AI Search SEO | Added explicit Allow rules for GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, GrokBot, xAI-Grok, Grok-DeepSearch, Meta-ExternalAgent | Updated in `generate_site.py`; pending deploy |
+| 2026-03-04 | — | Updated robots.txt with AI crawler user agents | AI Search SEO | Added explicit Allow rules for GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, GrokBot, xAI-Grok, Grok-DeepSearch, Meta-ExternalAgent | Updated in `generate_site.py`; deployed |
+| 2026-03-04 | — | Fixed IndexNow HOST config | IndexNow | Changed `www.av-navigation-ip.com` → `av-navigation-ip.com` in `submit_indexnow.py` | Matches canonical domain |
+| 2026-03-04 | — | Submitted all 14 URLs via IndexNow API | IndexNow | Key file verified live (HTTP 200), bulk submission to `api.indexnow.org` | HTTP 200 Success — feeds Bing, ChatGPT, Copilot, Meta AI |
 
 ### Pending Follow-ups
 
@@ -765,11 +767,11 @@ Track all completed actions with timestamps to measure results and steer future 
 | 2026-02-19 | Check if requested pages are now indexed in Bing | High |
 | 2026-02-19 | Request indexing for remaining non-priority GSC pages | Medium |
 | TBD | Verify GSC preferred domain setting | Medium |
-| TBD | Enable IndexNow for instant Bing/Yandex indexing | Medium |
+| ~~TBD~~ | ~~Enable IndexNow for instant Bing/Yandex indexing~~ ✓ Done Mar 4, 2026 | — |
 | TBD | Request indexing for `venture-capital-av-patent-portfolio-due-diligence.html` (check status first) | High |
 | ~~TBD~~ | ~~Update robots.txt to allow all AI crawler bots~~ ✓ Done Mar 4, 2026 | — |
 | TBD | Submit all key pages to Brave Search (Claude's backend) | High |
-| TBD | Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline) | High |
+| ~~TBD~~ | ~~Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline)~~ ✓ Done Mar 4, 2026 | — |
 | TBD | Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini | Medium |
 
 ---

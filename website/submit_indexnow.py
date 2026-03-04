@@ -11,7 +11,7 @@ from pathlib import Path
 
 # Configuration
 INDEXNOW_KEY = "6a70e795af4a499aa8699b2f7208ee04"
-HOST = "www.av-navigation-ip.com"
+HOST = "av-navigation-ip.com"
 KEY_LOCATION = f"https://{HOST}/{INDEXNOW_KEY}.txt"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/IndexNow"
 
