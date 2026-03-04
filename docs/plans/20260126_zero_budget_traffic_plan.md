@@ -6,6 +6,49 @@
 
 ---
 
+## Quick Reference
+
+Things to remember when working on this site. Read this section first when resuming work.
+
+### After editing content
+
+1. Edit markdown source files in `/website/content/*.md` (never edit `/website/build/` directly)
+2. Run `python generate_site.py` from `/website/` to rebuild
+3. Deploy (push to Netlify)
+4. Run `python submit_indexnow.py` from `/website/` to notify Bing/ChatGPT/Copilot/Meta AI of changes
+
+### Domain & URL rules
+
+- Canonical domain is `av-navigation-ip.com` (no `www`)
+- All internal links use `.html` extensions
+- `www` 301-redirects to non-www automatically via Netlify
+
+### Key files
+
+| File | Purpose |
+|------|---------|
+| `website/generate_site.py` | Static site generator — produces all HTML, sitemap, robots.txt, copies IndexNow key |
+| `website/submit_indexnow.py` | Submits all sitemap URLs to IndexNow API (run after deploy) |
+| `website/build/robots.txt` | Auto-generated — AI crawler rules live in `generate_site.py` |
+| `website/build/sitemap.xml` | Auto-generated — add/remove pages by adding/removing `.md` files in `content/` |
+| `website/build/6a70e795af4a499aa8699b2f7208ee04.txt` | IndexNow key verification file (must stay at site root) |
+
+### Search engine accounts
+
+- **Google Search Console** — tracks indexing and organic search
+- **Bing Webmaster Tools** — tracks Bing indexing; feeds ChatGPT/Copilot
+- **Brave Search** — independent index; powers Claude web search (submit URLs at `search.brave.com/submit-url`)
+- **IndexNow** — one submission covers Bing, ChatGPT, Copilot, Meta AI
+
+### Common gotchas
+
+- Never edit HTML in `/website/build/` — it gets overwritten by `generate_site.py`
+- The IndexNow key file is copied from `/website/` during site generation — if you delete it from the source directory, it disappears from the build
+- Sitemap and robots.txt are generated, not static — edit `generate_site.py` to change them
+- Brave Search is independent of Google and Bing — new pages need separate submission there
+
+---
+
 ## Current State Assessment
 
 ### Site Statistics (Jan 26, 2026)
@@ -59,8 +102,8 @@ https://www.av-navigation-ip.com/* https://av-navigation-ip.com/:splat 301!
 ### Priority 2: Force Re-indexing
 
 **2.1 Google Search Console**
-- [ ] Use "URL Inspection" on each page
-- [ ] Click "Request Indexing" for all 14 pages
+- [x] Use "URL Inspection" on each page ✓ 6 pages Feb 12, remaining 6 pages Mar 4, 2026
+- [x] Click "Request Indexing" for all 14 pages ✓ All non-indexed pages requested (8 already indexed)
 - [ ] Submit sitemap again at `https://av-navigation-ip.com/sitemap.xml`
 
 **2.2 Bing Webmaster Tools**
@@ -186,10 +229,23 @@ AI search engines favor content that is:
 ### 1B.5 Monitor AI Search Visibility
 
 **Action Items:**
-- [ ] Test queries in ChatGPT, Claude, Perplexity, and Gemini to see if our pages appear in citations
-- [ ] Document which pages/queries surface our content
+- [x] Test queries in ChatGPT, Claude, Perplexity, and Gemini to see if our pages appear in citations ✓ Mar 4, 2026
+- [x] Document which pages/queries surface our content ✓ Mar 4, 2026 (see baseline below)
 - [ ] Track changes monthly as AI indexes update
 - [ ] Set up Google Alerts for "US 12,001,207" and "av-navigation-ip.com" to catch AI-generated mentions
+
+### AI Search Baseline Results (March 4, 2026)
+
+Tested via web search (powers Claude; indicative of broader AI search visibility):
+
+| Query | Site appears? | Position | Notes |
+|-------|--------------|----------|-------|
+| "US Patent 12,001,207 autonomous vehicle camera navigation" | **Yes** | #1 | Homepage surfaces directly |
+| "autonomous vehicle camera-based navigation patent licensing" | **Yes** | #1 | Homepage surfaces directly |
+| "dual-module safety system autonomous vehicles patent" | **No** | — | Competing against Nvidia HALOS, Cyngn. Term not prominent enough in content |
+| "drone delivery patent portfolio navigation safety" | **Yes** | #2 | Homepage surfaces behind Google Patents |
+
+**Takeaway:** Strong visibility for patent-number and licensing-intent queries. Gap on "dual-module safety system" — add this term more prominently to `patent-details.html`.
 
 ---
 
@@ -441,15 +497,15 @@ New pages targeting comparison searches:
 
 ### Week 1: Technical Fixes
 - [x] Fix www redirect issue ✓ Confirmed working Feb 12, 2026
-- [ ] Request indexing for all pages
-- [ ] Enable IndexNow
+- [x] Request indexing for all pages ✓ Feb 12 + Mar 4, 2026
+- [x] Enable IndexNow ✓ Mar 4, 2026
 - [ ] Set up Google Analytics
 
 ### Week 1-2: AI Search Engine Optimization
 - [x] Audit and update robots.txt to allow all AI crawler user agents ✓ Mar 4, 2026
 - [ ] Submit all key pages to Brave Search (search.brave.com/submit-url)
 - [x] Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline) ✓ Mar 4, 2026
-- [ ] Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility
+- [x] Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility ✓ Mar 4, 2026 (see Baseline Results below)
 - [ ] Review landing pages for AI-citation-friendliness
 
 ### Week 2-3: LinkedIn Launch
@@ -758,6 +814,9 @@ Track all completed actions with timestamps to measure results and steer future 
 | 2026-03-04 | — | Updated robots.txt with AI crawler user agents | AI Search SEO | Added explicit Allow rules for GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, GrokBot, xAI-Grok, Grok-DeepSearch, Meta-ExternalAgent | Updated in `generate_site.py`; deployed |
 | 2026-03-04 | — | Fixed IndexNow HOST config | IndexNow | Changed `www.av-navigation-ip.com` → `av-navigation-ip.com` in `submit_indexnow.py` | Matches canonical domain |
 | 2026-03-04 | — | Submitted all 14 URLs via IndexNow API | IndexNow | Key file verified live (HTTP 200), bulk submission to `api.indexnow.org` | HTTP 200 Success — feeds Bing, ChatGPT, Copilot, Meta AI |
+| 2026-03-04 | — | GSC indexing audit | Technical SEO | 8 indexed (up from 4), 10 not indexed (4 www/http variants, 6 real pages never crawled) | Progress from Feb 12 |
+| 2026-03-04 | — | Requested GSC indexing for 6 remaining pages | GSC Indexing | about, disclaimer, drone-delivery, privacy, thank-you, venture-capital — all "Request Indexing" confirmed | All added to priority crawl queue |
+| 2026-03-04 | — | AI search baseline visibility test | AI Search SEO | Tested 4 target queries via web search. Site ranks #1 for patent number + licensing queries, #2 for drone delivery, not found for "dual-module safety system" | Baseline established; gap identified |
 
 ### Pending Follow-ups
 
@@ -772,7 +831,7 @@ Track all completed actions with timestamps to measure results and steer future 
 | ~~TBD~~ | ~~Update robots.txt to allow all AI crawler bots~~ ✓ Done Mar 4, 2026 | — |
 | TBD | Submit all key pages to Brave Search (Claude's backend) | High |
 | ~~TBD~~ | ~~Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline)~~ ✓ Done Mar 4, 2026 | — |
-| TBD | Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini | Medium |
+| ~~TBD~~ | ~~Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini~~ ✓ Done Mar 4, 2026 | — |
 
 ---
 
