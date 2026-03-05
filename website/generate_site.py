@@ -37,6 +37,7 @@ CONTACT_EMAIL_ENCODED = base64.b64encode(CONTACT_EMAIL.encode('utf-8')).decode('
 PAGE_ORDER = [
     'index.html',           # Homepage - entry point
     'patent-details.html',  # Core patent information
+    'patent-details-continuation.html',  # Continuation patent details
     'licensing.html',       # How to license
 
     # Landing pages - use case scenarios
@@ -48,6 +49,7 @@ PAGE_ORDER = [
 
     # Information pages
     'industry-insights.html',
+    'news.html',
     'about.html',
 
     # Utility pages

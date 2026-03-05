@@ -18,7 +18,7 @@ breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-17"
-modified: "2026-02-25"
+modified: "2026-03-05"
 
 # Open Graph
 og_title: "Tesla FSD Competitor Camera Patent Licensing | AV IP"
@@ -41,7 +41,7 @@ Tesla's camera-first approach to autonomous driving has validated vision-based n
 
 This guide addresses patent considerations for camera-based autonomous systems, including strategic licensing options that provide freedom to operate while focusing engineering resources on proprietary innovations.
 
-US Patent 12,001,207 covers camera-based navigation safety IP applicable to autonomous vehicle development. Licensing options include exclusive and non-exclusive arrangements for specific fields of use.
+Two granted US patents (12,001,207 and 12,530,030) with 33 claims cover camera-based navigation safety IP for autonomous vehicle development. The portfolio includes a dual-module safety architecture and a traffic-aware clear-passage determination system. Licensing is available in exclusive and non-exclusive arrangements for specific fields of use.
 
 ## Tesla's camera-first development context
 
@@ -185,17 +185,18 @@ The critical factors are timeline and certainty. Licensing can provide immediate
 4. **Granted status** — only granted patents provide defensive IP value (15+ years remaining preferred)
 5. **Broad applicability** — coverage across multiple vehicle types (passenger cars, commercial trucks, aerial drones)
 
-## US Patent 12,001,207: camera-based safety patent
+## Camera-based navigation safety patent portfolio
+
+### US Patent 12,001,207: dual-module safety system
 
 **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
 US Patent 12,001,207, granted June 4, 2024, covers a dual-module camera-based navigation safety system applicable to autonomous vehicles and aerial vessels.
 
-### Technical overview
-
 - **Grant Date**: June 4, 2024
-- **Expiration**: March 5, 2041 (approximately 15+ years remaining as of October 2025)
+- **Expiration**: March 5, 2041 (15+ years remaining)
 - **Priority Date**: August 9, 2019
+- **Claims**: 13 apparatus claims
 
 **Key Patent Claims:**
 - Camera-based navigation point recognition
@@ -204,28 +205,41 @@ US Patent 12,001,207, granted June 4, 2024, covers a dual-module camera-based na
 - Training methodology using recorded camera images
 - Applicability to both ground vehicles and aerial vehicles
 
+### US Patent 12,530,030: clear-passage determination
+
+**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12530030B2)**
+
+US Patent 12,530,030, granted January 20, 2026, is a continuation patent that adds a clear-passage-determining module. This module evaluates whether a navigation instruction can be executed given current traffic conditions — for example, determining that a left turn should wait until oncoming traffic with right-of-way has cleared.
+
+- **Grant Date**: January 20, 2026
+- **Expiration**: March 5, 2041 (same as parent patent)
+- **Claims**: 20 claims across method (1-15), computer program product (16-18), and system (19-20) categories
+
+Camera-first autonomous driving systems need to make these decisions constantly. When a vehicle approaches an unprotected left turn, it has to judge whether there's time to go before oncoming traffic arrives. Tesla FSD does this with cameras alone, and that is the same problem this patent covers.
+
 ### Strategic value for camera-first development
 
-**Technology Alignment**: The patent covers camera-based point recognition for navigation safety, applicable to camera-first autonomous systems. The system uses visual recognition of navigation points (landmarks, turn-offs, road features) to enable high-level navigation instructions.
+The portfolio covers camera-based point recognition for navigation safety and traffic-aware passage determination. The 33 claims cover three stages: recognizing navigation points, assessing safety, and determining whether traffic conditions allow execution.
 
-**Architectural Differentiation**: Unlike single-module end-to-end approaches, this patent describes a dual-module architecture:
+Unlike single-module end-to-end approaches, the portfolio describes a multi-module architecture:
 - Safety-Determining Module: Compares live camera images with stored preprocessed images to calculate a safety value
 - Control Module: Only executes navigation instructions if safety value exceeds a predetermined threshold
+- Clear-Passage-Determining Module: Evaluates whether traffic conditions permit safe execution of navigation instructions
 
-**E2E Neural Network Compatibility**: While describing a dual-module architecture, the modules can be implemented using end-to-end neural networks. The patent is technology-agnostic regarding implementation, allowing modern neural network techniques.
+The patents are implementation-agnostic. The modules can be built with end-to-end neural networks or other architectures.
 
 ### Licensing benefits
 
-By licensing this patent, camera-first AV developers may gain:
-1. Immediate defensive IP coverage
-2. Competitive differentiation through dual-module safety architecture
-3. Regulatory credibility with patented safety methodology
-4. Investor confidence through camera-based patent portfolio
+Licensing the portfolio gives camera-first AV developers:
+1. Defensive IP coverage across 33 claims and three claim types (system, method, computer program product)
+2. A dual-module safety architecture and clear-passage determination that differ from single-module approaches
+3. Patented safety methodology for regulatory discussions
+4. A multi-patent portfolio for investor due diligence
 5. Cross-licensing currency for IP negotiations
 
 *Benefits depend on specific licensing terms, implementation approach, and legal context.*
 
-[View full US Patent 12,001,207 technical specifications](/patent-details.html)
+[View full patent portfolio technical specifications](/patent-details.html)
 
 ## Building a camera-first patent portfolio
 
@@ -340,11 +354,11 @@ Tesla's camera-first autonomous driving development creates competitive consider
 
 Licensing can provide 4-9 month positioning compared to 18-36 months for in-house patent development, enabling companies to compete credibly while building proprietary IP. *These are approximate timelines; actual durations vary based on patent office processing times, complexity, and other factors.*
 
-Contact us to discuss licensing options for US Patent 12,001,207.
+Contact us to discuss licensing options for the camera-based navigation safety patent portfolio.
 
 ### Additional resources
 
-- [US Patent 12,001,207 technical specifications](/patent-details.html)
+- [Patent portfolio technical specifications](/patent-details.html)
 - [Patent licensing options](/licensing.html)
 - [Autonomous vehicle industry insights](/industry-insights.html)
 - [Contact us about patent licensing](/contact.html)

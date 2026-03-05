@@ -19,7 +19,7 @@ twitter_image: "/assets/images/og-general-info.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
-date_modified: "2026-02-25"
+date_modified: "2026-03-05"
 ---
 
 # Why license now?
@@ -147,6 +147,24 @@ With protection, companies get clearer freedom to operate, competitive advantage
 Tesla's market moves, regulatory evolution, and investment trends all point in the same direction: camera-based navigation IP is becoming more relevant. For some companies, licensing now may cost less than developing around existing patents, managing infringement risks, or delaying market entry.
 
 *This is general industry analysis, not legal advice. Outcomes vary based on technology, market conditions, and legal developments. Consult IP counsel for company-specific analysis.*
+
+## Recent industry developments
+
+### Nvidia Alpamayo (January 2026)
+
+Nvidia unveiled Alpamayo at CES 2026: a family of open-source AI models built for autonomous vehicles, including a 10-billion-parameter vision language action model that gives AVs chain-of-thought reasoning for complex edge cases. The first production vehicle running Alpamayo ships in the Mercedes-Benz CLA in Q1 2026. Camera-based reasoning is becoming the default approach to AV safety, and the patent portfolio's dual-module safety architecture and clear-passage determination cover this same territory.
+
+### Zipline raises $600M, surpasses 2 million drone deliveries (January 2026)
+
+Zipline raised $600M at a $7.6B valuation and crossed the 2-million mark for commercial drone deliveries. The company is expanding to Houston and Phoenix in 2026, with drones that use cameras and Nvidia chips for detect-and-avoid navigation. More camera-based drones in more cities means more systems that need the kind of safety determination and clear-passage logic the portfolio covers.
+
+### Wayve Series D: $1.2B at $8.6B valuation (February 2026)
+
+UK-based Wayve raised $1.2B in Series D funding at an $8.6B valuation, backed by Nvidia, Microsoft, Uber, Mercedes-Benz, Nissan, and Stellantis. Wayve plans to launch commercial robotaxi trials in London in 2026 and deploy supervised autonomy software in consumer vehicles starting in 2027. Wayve's approach relies on camera input and learned driving behavior rather than hand-coded rules. That puts it directly in the territory of the patent portfolio's claims on camera-based safety value assessment and navigation point recognition.
+
+### Tesla patents active camera glare shields for FSD (2026)
+
+Tesla filed a patent for active glare shields on its Full Self-Driving cameras, using sintered steel cones with stepper motor adjustment to combat sun glare in real time. Tesla is not adding lidar or radar; it is solving camera problems with better camera hardware. As the largest camera-first AV program, that direction makes patents covering camera-based navigation safety systems more relevant, not less.
 
 [Contact us](/contact.html) to discuss how US Patent 12,001,207 fits your IP strategy.
 

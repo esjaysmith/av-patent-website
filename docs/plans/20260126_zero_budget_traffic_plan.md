@@ -6,6 +6,39 @@
 
 ---
 
+## Recurring Tasks
+
+Cadence-based tasks to maintain and grow traffic. Check these first when resuming work.
+
+### Weekly
+
+- [ ] Update news page with any AV/drone/patent industry developments (`website/content/news.md`)
+- [ ] Check Google Search Console for new indexing issues or keyword data
+- [ ] Check Bing Webmaster Tools for indexing status
+- [ ] Post 3x on LinkedIn (patent holder's personal profile) — use templates in Phase 2.1
+- [ ] Answer 5 Quora questions with links to landing pages
+- [ ] Comment on 10 relevant AV/drone LinkedIn posts
+
+### Monthly
+
+- [ ] Test AI search visibility — run target queries in ChatGPT, Claude, Perplexity, Gemini and compare to baseline
+- [ ] Review Google Analytics (GA4 `G-4C95JX9MNT`) for traffic trends and top pages
+- [ ] Check GSC for new keyword rankings and click-through data
+- [ ] Submit any new/updated pages to Brave Search (`search.brave.com/submit-url`)
+- [ ] Run `python submit_indexnow.py` after any content deploy
+- [ ] Review and update `industry-insights.md` with market developments
+- [ ] Monitor HARO/Connectively for relevant journalist queries
+
+### Quarterly
+
+- [ ] Full GSC/Bing indexing audit — ensure all pages indexed
+- [ ] Update AI search baseline results table (Phase 1B.5)
+- [ ] Review patent landscape for competitor filings (USPTO/EPO)
+- [ ] Refresh landing page content for accuracy (dates, market data, company examples)
+- [ ] Check patent maintenance fee schedule for US 12,001,207 and US 12,530,030
+
+---
+
 ## Quick Reference
 
 Things to remember when working on this site. Read this section first when resuming work.
@@ -98,7 +131,7 @@ https://www.av-navigation-ip.com/* https://av-navigation-ip.com/:splat 301!
 - ~~Verify primary domain in Netlify dashboard (Site settings → Domain management)~~ ✓ Confirmed Feb 12, 2026
 - ~~If not working, add `netlify.toml` with redirect rule~~ ✓ Not needed — Netlify auto-redirect working
 - ~~Verify redirect works: `curl -I https://www.av-navigation-ip.com` should return 301~~ ✓ Confirmed Feb 12, 2026
-- [ ] Verify in Google Search Console that preferred domain is set
+- ~~Verify in Google Search Console that preferred domain is set~~ ✓ Mar 5, 2026 — Domain property (sc-domain:av-navigation-ip.com) aggregates all variants automatically
 
 **1.2 Ensure consistent URL structure**
 - All internal links should use `.html` extension consistently
@@ -194,9 +227,9 @@ Sitemap: https://av-navigation-ip.com/sitemap.xml
 Brave Search is fully independent of Google and Bing. If we're not in Brave's index, Claude users won't find us via web search.
 
 **Action Items:**
-- [ ] Submit homepage: https://search.brave.com/submit-url
-- [ ] Submit all 5 SEO landing pages individually
-- [ ] Submit patent-details.html and licensing.html
+- ~~Submit homepage~~ ✓ Mar 5, 2026
+- ~~Submit all 5 SEO landing pages individually~~ ✓ Mar 5, 2026
+- ~~Submit patent-details.html and licensing.html~~ ✓ Mar 5, 2026
 - [ ] Verify indexing after 1-2 weeks
 
 ### 1B.3 Enable IndexNow (Covers Bing → ChatGPT → Copilot → Meta AI)
@@ -506,7 +539,7 @@ New pages targeting comparison searches:
 
 ### Week 1-2: AI Search Engine Optimization
 - ~~Audit and update robots.txt to allow all AI crawler user agents~~ ✓ Mar 4, 2026
-- [ ] Submit all key pages to Brave Search (search.brave.com/submit-url)
+- ~~Submit all key pages to Brave Search (search.brave.com/submit-url)~~ ✓ Mar 5, 2026 — 8 high-priority URLs submitted
 - ~~Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline)~~ ✓ Mar 4, 2026
 - ~~Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility~~ ✓ Mar 4, 2026 (see Baseline Results below)
 - ~~Review landing pages for AI-citation-friendliness~~ ✓ Mar 5, 2026
@@ -544,7 +577,7 @@ New pages targeting comparison searches:
 2. ~~**TODAY:** Request indexing for all 14 pages in GSC~~ ✓ 6 high-priority pages requested Feb 12, 2026
 3. ~~**TODAY:** Submit sitemap to Bing, enable IndexNow~~ ✓ Sitemaps verified Feb 12, 2026; IndexNow enabled Mar 4, 2026
 4. ~~**THIS WEEK:** Update robots.txt to allow AI crawlers (GPTBot, ClaudeBot, PerplexityBot, GrokBot, Meta-ExternalAgent)~~ ✓ Done Mar 4, 2026
-5. **THIS WEEK:** Submit key pages to Brave Search (Claude's search backend — independent of Google/Bing)
+5. ~~**THIS WEEK:** Submit key pages to Brave Search (Claude's search backend — independent of Google/Bing)~~ ✓ Done Mar 5, 2026
 6. ~~**THIS WEEK:** Enable IndexNow (single action covers Bing → ChatGPT → Copilot → Meta AI)~~ ✓ Done Mar 4, 2026
 7. **THIS WEEK:** Optimize LinkedIn profile, schedule first 3 posts
 8. **THIS WEEK:** Identify 5 Quora questions to answer
@@ -828,11 +861,11 @@ Track all completed actions with timestamps to measure results and steer future 
 | ~~2026-02-19~~ | ~~Check if requested pages are now indexed in GSC~~ ✓ Audited Mar 4 — 8 indexed (up from 4) | ~~High~~ ✓ |
 | ~~2026-02-19~~ | ~~Check if requested pages are now indexed in Bing~~ ✓ Checked Mar 4 | ~~High~~ ✓ |
 | ~~2026-02-19~~ | ~~Request indexing for remaining non-priority GSC pages~~ ✓ 6 remaining pages requested Mar 4 | ~~Medium~~ ✓ |
-| TBD | Verify GSC preferred domain setting | Medium |
+| ~~TBD~~ | ~~Verify GSC preferred domain setting~~ ✓ Mar 5, 2026 — Domain property covers all variants | ~~Medium~~ ✓ |
 | ~~TBD~~ | ~~Enable IndexNow for instant Bing/Yandex indexing~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
 | ~~TBD~~ | ~~Request indexing for `venture-capital-av-patent-portfolio-due-diligence.html`~~ ✓ Requested Mar 4, 2026 | ~~High~~ ✓ |
 | ~~TBD~~ | ~~Update robots.txt to allow all AI crawler bots~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
-| TBD | Submit all key pages to Brave Search (Claude's backend) | High |
+| ~~TBD~~ | ~~Submit all key pages to Brave Search (Claude's backend)~~ ✓ Done Mar 5, 2026 | ~~High~~ ✓ |
 | ~~TBD~~ | ~~Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline)~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
 | ~~TBD~~ | ~~Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
 

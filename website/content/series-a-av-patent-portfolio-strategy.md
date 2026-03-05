@@ -1,5 +1,5 @@
 ---
-title: "Series A AV Patent Portfolio Strategy | US 12,001,207"
+title: "Series A AV Patent Portfolio Strategy | Camera Navigation IP"
 page_title: "Build Your Patent Portfolio Before Series B Funding: Strategic Licensing for AV Startups"
 description: "Build your AV patent portfolio before Series B. License camera navigation IP in 4-9 months vs 30-66 months in-house development."
 keywords:
@@ -17,19 +17,19 @@ cta_link: "/licensing.html"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-16"
-modified: "2026-02-25"
+modified: "2026-03-05"
 breadcrumb_parent: "Solutions"
 breadcrumb_parent_url: "/#solutions"
 
 # Open Graph
-og_title: "Series A AV Patent Portfolio Strategy | US Patent 12,001,207"
+og_title: "Series A AV Patent Portfolio Strategy | Camera Navigation IP Portfolio"
 og_description: "Build your AV patent portfolio before Series B. License camera navigation IP in 4-9 months vs 30-66 months in-house development."
 og_type: "article"
 og_image: "/assets/images/og-startup-innovation.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "Series A AV Patent Portfolio Strategy | US Patent 12,001,207"
+twitter_title: "Series A AV Patent Portfolio Strategy | Camera Navigation IP Portfolio"
 twitter_description: "Build your AV patent portfolio before Series B. License camera navigation IP in 4-9 months vs 30-66 months in-house development."
 twitter_image: "/assets/images/og-startup-innovation.jpg"
 ---
@@ -433,27 +433,30 @@ Every AV startup faces the "How do you compete with Tesla FSD?" question from in
 
 This response demonstrates strategic sophistication that resonates with Series B investors.
 
-### Example: US patent 12,001,207
+### Example: camera-based navigation safety patent portfolio
 
-**[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+**Patent Portfolio Overview:**
 
-**Patent Overview:**
-- **Patent Number**: US 12,001,207
+This portfolio consists of two granted US patents with 33 total claims, expiring March 5, 2041.
+
+**US Patent 12,001,207** — [View on Google Patents](https://patents.google.com/patent/US12001207B2)
 - **Grant Date**: June 4, 2024
-- **Filing Date**: August 7, 2020 (claiming priority to August 9, 2019)
-- **Expiration**: March 5, 2041 (approximately 16 years remaining as of December 2025)
+- **Claims**: 13 apparatus claims
 - **Technology**: Dual-module camera-based navigation safety system
+- **Key Claims**: Camera-based visual navigation point recognition, dual safety module architecture (safety-determining + control module), applicability to ground vehicles and air vessels
 
-**Key Claims:**
-1. **Camera-Based Visual Navigation Point Recognition** - Identifies navigation points from camera images, enables high-level navigation instructions
-2. **Dual Safety Module Architecture** - Safety-determining module validates navigation instructions; control module only executes if safety threshold met
-3. **Applicable to Autonomous Vehicles and Air Vessels** - Covers ground vehicles (robotaxis, delivery, trucking) and drones/UAVs
+**US Patent 12,530,030** — [View on Google Patents](https://patents.google.com/patent/US12530030B2)
+- **Grant Date**: January 20, 2026
+- **Claims**: 20 claims — method (1-15), computer program product (16-18), system (19-20)
+- **Technology**: Clear-passage-determining module for traffic-aware navigation decisions
+- **Key Claims**: Evaluates whether navigation instructions can be executed based on current traffic conditions (e.g., waiting for oncoming traffic before turning)
 
-**Strategic Value:**
-- Immediate portfolio boost with granted status
-- Camera-first alignment addresses Tesla FSD competitive positioning
-- Safety focus addresses investor concerns
-- Long-term protection through 2041 covers typical IPO timeline
+**Why this matters for Series B:**
+- Two granted patents with 33 claims across three claim types (system, method, computer program product). A single patent with one claim type is easier for competitors to design around.
+- Camera-first technology, relevant to Tesla FSD competitive questions
+- Covers both safety validation and traffic-aware decision-making, which investors care about when evaluating deployment readiness
+- Protection through 2041, which covers a typical IPO timeline
+- Three claim categories mean a competitor would need to avoid all three to stay clear of the portfolio
 
 ### Building a balanced IP portfolio
 
@@ -484,12 +487,12 @@ Weak answers result in pass decisions or valuation discounts. Strong answers req
 **Investor Question: "How are you differentiated from Tesla FSD?"**
 
 **Strong Answer with Patent License:**
-"We've licensed foundational camera-based safety patents (US 12,001,207) that provide dual-module safety validation. Our proprietary algorithms focus on [specific differentiation], while the licensed patents give us freedom to operate in camera-based navigation without infringement risk."
+"We've licensed two granted camera-based safety patents (US 12,001,207 and US 12,530,030) with 33 claims. They cover dual-module safety validation and traffic-aware clear-passage determination. Our proprietary algorithms focus on [specific differentiation], and the licensed patents give us freedom to operate without infringement risk."
 
 **Investor Question: "What's your IP strategy?"**
 
 **Strong Answer with Patent License:**
-"We have a balanced IP portfolio: 2 granted licensed patents providing foundational camera-based safety coverage, plus 3-4 proprietary patent applications covering our unique innovations. Our licensed patents expire in 2041, covering our entire IPO timeline."
+"We have two licensed granted patents with 33 claims across system, method, and computer program product categories for camera-based safety coverage, plus 3-4 proprietary patent applications for our own innovations. The licensed patents expire in 2041, which covers our IPO timeline."
 
 ### Why this matters for Series B
 
@@ -498,7 +501,7 @@ Licensing shows IP sophistication:
 - You planned your IP strategy around the fundraising timeline
 - You understand that camera-based patents matter post-Tesla FSD
 
-**Timeline Alignment:** This patent is already granted. Execute licensing agreement in 30-60 days and present to Series B investors as core IP asset—no USPTO examination uncertainty.
+**Timeline Alignment:** Both patents are already granted. Execute a licensing agreement in 30-60 days and present to Series B investors as a core IP asset. No USPTO examination uncertainty.
 
 **Cost-Effectiveness:**
 - Licensing fee: $50K-$200K for non-exclusive, $200K-$500K for exclusive field-of-use *Note: AV technology patent licensing fees vary widely ($10K-$1M+ depending on patent strength, exclusivity scope, field-of-use restrictions, and negotiation leverage). No standard rates exist in the industry. Some licenses use royalty structures (e.g., percentage of revenue or EBITDA margin) instead of or in addition to upfront fees. Actual licensing costs should be negotiated based on specific patent value and business circumstances.*
@@ -508,7 +511,7 @@ Licensing shows IP sophistication:
 
 **Effective Series B IP Narrative:**
 
-> "Our IP strategy combines licensed foundational technology with proprietary innovation. We've licensed camera-based safety patents, including US 12,001,207, which covers dual-module safety validation. This gives us immediate freedom to operate while our engineering focuses on [proprietary differentiator].
+> "We licensed two granted camera-based safety patents: US 12,001,207 for dual-module safety validation, and US 12,530,030 for traffic-aware clear-passage determination. That's 33 claims across three claim types, giving us freedom to operate while engineering stays focused on [proprietary differentiator].
 >
 > Our balanced portfolio—licensed baseline plus proprietary differentiation—provides the defensive position investors expect while maximizing engineering velocity."
 
@@ -578,7 +581,7 @@ Update board and incorporate IP strategy into Series B pitch deck (1-2 slides).
 **Sample IP Pitch Deck Slides:**
 
 **Slide 1: IP Portfolio Overview**
-- Licensed Patents: 2 granted (US 12,001,207 + 1 other)
+- Licensed Patents: 2 granted (US 12,001,207 + US 12,530,030, 33 claims total)
 - Proprietary Applications: 3-4 pending
 - Coverage: Camera-based safety, navigation, [proprietary technology]
 - Timeline: All licensed patents expire 2040+
@@ -620,13 +623,13 @@ Your Series A gives you 18-24 months to prepare for Series B. In-house patent de
 
 Strategic patent licensing closes the gap: acquire granted patents in 1-3 months, strengthen your portfolio immediately, and keep engineering focused on the product.
 
-Camera-based safety patents like US Patent 12,001,207 align with the industry's camera-first shift and give you a concrete answer when investors ask about Tesla FSD competition. Combine licensed patents with proprietary applications for your unique innovations, and you have the balanced portfolio Series B investors expect.
+A portfolio like US Patents 12,001,207 and 12,530,030, with 33 claims across system, method, and computer program product categories, fits the industry's camera-first direction and gives you a real answer when investors ask about Tesla FSD competition. Three claim types are harder to design around than one, and that matters when investors evaluate defensibility. Combine licensed patents with proprietary applications for your own innovations, and you have the kind of portfolio that holds up in Series B due diligence.
 
 ---
 
 **Related Resources:**
 
-- [Camera-Based Navigation Patent Technical Specifications](/patent-details.html) - Detailed technical breakdown of US Patent 12,001,207
+- [Camera-Based Navigation Patent Portfolio Technical Specifications](/patent-details.html) - Detailed technical breakdown of the patent portfolio
 - [Patent Licensing Options](/licensing.html) - Exclusive vs. non-exclusive licensing, pricing, and terms
 - [Autonomous Vehicle Industry Insights](/industry-insights.html) - Market trends, funding data, and competitive analysis
 - [Contact Us](/contact.html) - Inquire about patent licensing opportunities

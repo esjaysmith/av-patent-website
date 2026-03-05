@@ -18,7 +18,7 @@ breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
-modified: "2026-02-25"
+modified: "2026-03-05"
 
 # Open Graph
 og_title: "AV Patent Portfolio Due Diligence Guide for VCs | IP Assessment"
@@ -264,24 +264,26 @@ Green flags:
 - [ ] Obtained legal freedom-to-operate opinion
 - [ ] Portfolio includes high-quality camera navigation patents
 
-### Case study: US Patent 12,001,207 benchmark
+### Case study: 2-patent camera navigation safety portfolio
 
-[View full patent on Google Patents →](https://patents.google.com/patent/US12001207B2)
+[View US 12,001,207 on Google Patents →](https://patents.google.com/patent/US12001207B2) | [View US 12,530,030 on Google Patents →](https://patents.google.com/patent/US12530030B2)
 
-Patent overview:
-- System for controlling an autonomous driving vehicle or air vessel with steering and acceleration values based on camera-based navigation
-- Granted June 4, 2024 | Expires approximately March 5, 2041 (subject to maintenance fee payments and other USPTO requirements)
-- Dual-module camera-based navigation safety system
+Portfolio overview:
+- Two granted US patents with 33 total claims covering camera-based navigation safety
+- US 12,001,207 (granted June 4, 2024): dual-module safety architecture — 13 apparatus claims
+- US 12,530,030 (granted January 20, 2026): clear-passage-determining module — 20 claims across method (1–15), computer program product (16–18), and system (19–20) categories
+- Both expire March 5, 2041 (subject to maintenance fee payments and other USPTO requirements)
 - Assigned to individual inventors
 
 Quality assessment (9/10):
-- Granted patent with broad claims covering multiple applications
-- Camera-first focus aligned with industry trends (particularly Tesla's approach)
-- Safety emphasis relevant to regulatory requirements
+- Two granted patents, 33 claims across apparatus, method, and computer program product categories
+- The claim type spread matters: apparatus claims cover the hardware, method claims cover how it works, computer program product claims cover the software. Designing around all three is harder than designing around one.
+- Camera-first focus, consistent with the Tesla-driven industry shift toward vision-based autonomy
+- Safety-oriented claims relevant to NHTSA and FAA regulatory frameworks
 - 15+ years remaining protection (approximately)
 
 Use as benchmark:
-Evaluate portfolio company camera-based patents against this standard using qualitative assessment. *Scoring is subjective and based on claim breadth, technology relevance, and competitive positioning; actual positioning depends on overall business strategy.* Companies with patents scoring 7-9 may be well-positioned. Companies with 0-3 patents or all pending applications may face elevated risk.
+Evaluate portfolio company camera-based patents against this standard using qualitative assessment. *Scoring is subjective and based on claim breadth, technology relevance, and competitive positioning; actual positioning depends on overall business strategy.* A 2-patent portfolio with claims across three categories represents stronger IP than a single patent. Companies with patents scoring 7-9 may be well-positioned. Companies with 0-3 patents or all pending applications may face elevated risk.
 
 ## Post-investment IP strategy support
 
@@ -349,7 +351,7 @@ Patent portfolio sizes referenced in this guide are based on publicly available 
 - Waymo has approximately 3,476 global patents (3,199 active) primarily in autonomous driving technologies. *Source: [Waymo Patents Analysis](https://insights.greyb.com/waymo-patents/)*
 - Patent counts represent total portfolios and may include applications across different jurisdictions. AV-specific patent counts vary by technology area definition.
 
-US Patent 12,001,207 expiration date calculations are based on standard USPTO patent term calculations (20 years from earliest filing date plus patent term adjustment). Actual expiration may vary based on maintenance fee payments, terminal disclaimers, or other USPTO actions. The patent is assigned to individual inventors; licensing discussions should verify current ownership status and availability.
+Patent expiration date calculations are based on standard USPTO patent term calculations (20 years from earliest filing date plus patent term adjustment). Both US 12,001,207 and US 12,530,030 expire March 5, 2041. The continuation patent (US 12,530,030) shares this expiration date through a terminal disclaimer. Actual expiration may vary based on maintenance fee payments or other USPTO actions. The patents are assigned to individual inventors; licensing discussions should verify current ownership status and availability.
 
 References to patent portfolio impact on valuation (e.g., "30-50% valuation impact") are based on industry reports, public market data, and general investment practices. Actual valuation impacts vary significantly based on company-specific factors, market conditions, technology quality, and investor preferences.
 
@@ -385,5 +387,5 @@ For Series B+ investments: Yes, absolutely ($50K-$100K prevents costly surprises
 
 ---
 
-US Patent 12,001,207 provides camera-based navigation safety IP that may be relevant for AV startup patent portfolios. [Contact us](/contact.html) to explore licensing discussions.
+The 2-patent portfolio (US 12,001,207 and US 12,530,030) has 33 claims covering camera-based navigation safety, which may be relevant for AV startup patent portfolios. [Contact us](/contact.html) to discuss licensing.
 

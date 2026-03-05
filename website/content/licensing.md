@@ -1,30 +1,30 @@
 ---
-title: "Patent Licensing Opportunities - US 12,001,207"
-description: "License US Patent 12,001,207 for camera-based AV navigation safety. Flexible licensing terms for startups, enterprises, and VCs."
-keywords: "patent licensing opportunities, US patent 12001207 licensing, autonomous vehicle patent license, exclusive patent licensing, non-exclusive patent license"
+title: "Patent Portfolio Licensing - Camera-Based Navigation Safety"
+description: "License a 2-patent US portfolio (US 12,001,207 and US 12,530,030) covering camera-based AV navigation safety. 33 claims across dual-module safety and clear-passage determination."
+keywords: "patent licensing opportunities, US patent 12001207 licensing, US patent 12530030 licensing, autonomous vehicle patent license, patent portfolio licensing, exclusive patent licensing, non-exclusive patent license"
 page_title: "Licensing Opportunities"
 show_cta: true
 
 # Open Graph
-og_title: "Patent Licensing Opportunities - US 12,001,207"
-og_description: "License US Patent 12,001,207 for camera-based AV navigation safety. Flexible licensing terms for startups, enterprises, and VCs."
+og_title: "Patent Portfolio Licensing - Camera-Based Navigation Safety"
+og_description: "License a 2-patent US portfolio (US 12,001,207 and US 12,530,030) covering camera-based AV navigation safety. 33 claims across dual-module safety and clear-passage determination."
 og_type: "article"
 og_image: "/assets/images/og-technical-legal.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "Patent Licensing Opportunities - US 12,001,207"
-twitter_description: "License US Patent 12,001,207 for camera-based AV navigation safety. Flexible licensing terms for startups, enterprises, and VCs."
+twitter_title: "Patent Portfolio Licensing - Camera-Based Navigation Safety"
+twitter_description: "License a 2-patent US portfolio (US 12,001,207 and US 12,530,030) covering camera-based AV navigation safety. 33 claims across dual-module safety and clear-passage determination."
 twitter_image: "/assets/images/og-technical-legal.jpg"
 
 # Schema.org dates
 date_published: "2025-11-01"
-date_modified: "2026-02-25"
+date_modified: "2026-03-05"
 ---
 
 # Patent Licensing Opportunities
 
-**US Patent 12,001,207** — a dual-module camera-based navigation safety system — is available for licensing across multiple industries and applications. Patent protection extends to March 5, 2041. **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+Two US patents covering camera-based navigation safety are available for licensing. **US Patent 12,001,207** covers the dual-module safety architecture (13 claims). **US Patent 12,530,030** covers the clear-passage-determining module (20 claims). Both expire March 5, 2041. [View full portfolio details](/patent-details.html)
 
 We offer flexible licensing arrangements for companies developing autonomous vehicle and drone navigation technologies.
 
@@ -37,7 +37,7 @@ We offer flexible licensing arrangements for companies developing autonomous veh
 
 An exclusive license gives you full control over implementation in your target market. Competitors can't access the same technology, and you get direct input on future patent family developments.
 
-Typical exclusive licensees: automotive manufacturers building camera-based AV systems, air vessel navigation platform developers, and technology companies building autonomous navigation solutions.
+Typical exclusive licensees include automotive manufacturers building camera-based AV systems and air vessel navigation developers. A portfolio license covers both the dual-module safety architecture and clear-passage determination.
 
 ### Non-exclusive licensing
 <div class="patent-highlight">
@@ -49,7 +49,7 @@ Non-exclusive licenses offer lower upfront costs, flexible royalties, and faster
 Typical non-exclusive licensees: AV startups, established companies expanding into autonomy, research institutions commercializing navigation work, and international companies entering US markets.
 
 ### Field-of-use licensing
-License the patent for specific applications only:
+License the portfolio for specific applications only:
 
 - Consumer vehicles (personal AVs and driver assistance)
 - Commercial transportation (delivery, logistics, freight)
@@ -60,8 +60,9 @@ License the patent for specific applications only:
 ### Geographic licensing
 Licensing is currently available for:
 
-- United States
-- United Kingdom
+- **United States** — US Patent 12,001,207 and US Patent 12,530,030
+- **Europe** — EP3786756B1
+- **United Kingdom**
 
 ## Licensing process
 
@@ -91,15 +92,15 @@ Licensing is currently available for:
 
 ### Automotive
 
-The patent's safety-determining module and camera-based methodology may be relevant to automotive safety development and camera-first AV systems. Specific standards compliance would need separate evaluation. Patent protection can also support technology validation in development processes.
+The dual-module safety architecture and clear-passage-determining module apply to camera-first AV systems. Standards compliance (ISO 26262, etc.) would need separate evaluation.
 
 ### Drones and UAVs
 
-The patent covers air vessels, potentially applicable to package delivery, inspection services, and other commercial operations. The safety-determining technology may be relevant to air vessel safety development, though specific certification requirements need separate evaluation.
+Both patents cover air vessels. The clear-passage-determining module (US 12,530,030) adds traffic-aware decision-making for air vessel navigation. Package delivery, inspection, and other commercial drone operations are potential use cases. Certification requirements (FAA Part 107, etc.) need separate evaluation.
 
 ### AI and robotics
 
-The patent describes a modular camera-based navigation system with machine learning integration that can be integrated with autonomous platforms. Patent protection extends to March 2041.
+The 33 claims cover a modular camera-based navigation system designed for autonomous platforms. The system uses machine learning for safety assessment and clear-passage determination. Patent protection runs through March 2041.
 
 ## Getting started
 
@@ -107,9 +108,9 @@ When reaching out, it helps to share:
 
 - Your company background and market focus
 - How you'd use the patent
-- Target markets (US and/or UK)
+- Target markets (US, Europe, and/or UK)
 
-Contact us to start a conversation about licensing US Patent 12,001,207.
+Contact us to start a conversation about licensing our patent portfolio.
 
 ## Frequently asked questions
 
@@ -117,13 +118,13 @@ Contact us to start a conversation about licensing US Patent 12,001,207.
 
 Typical licensing agreements are completed in 30-60 days from initial contact. Non-exclusive licenses can often be finalized faster than exclusive arrangements.
 
-### What does a license to US Patent 12,001,207 include?
+### What does a portfolio license include?
 
-A license grants the right to use the patented dual-module camera-based navigation safety system in your products. The specific scope depends on the license type (exclusive, non-exclusive, or field-of-use) and geographic territory (United States and/or United Kingdom).
+A license grants the right to use the dual-module safety architecture (US 12,001,207) and the clear-passage-determining module (US 12,530,030) in your products. Scope depends on license type (exclusive, non-exclusive, or field-of-use) and geographic territory (United States, Europe, and/or United Kingdom).
 
 ### Can I license the patent for a specific application only?
 
-Yes. Field-of-use licensing lets you license US Patent 12,001,207 for a specific application, such as consumer autonomous vehicles, commercial drone delivery, or industrial automation, without paying for rights you do not need.
+Yes. Field-of-use licensing lets you license the portfolio for a specific application, such as consumer autonomous vehicles, commercial drone delivery, or industrial automation, without paying for rights you do not need.
 
 ### How much does licensing cost?
 

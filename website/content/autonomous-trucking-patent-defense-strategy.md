@@ -1,7 +1,7 @@
 ---
-title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
+title: "Autonomous Trucking Patent Defense Strategy | 2-Patent Portfolio"
 page_title: "Patent Considerations for Autonomous Trucking Using Camera-Based Navigation"
-description: "Information on patent strategies for autonomous trucking, including camera-based navigation safety applicable to commercial vehicle applications."
+description: "Patent portfolio (US 12,001,207 & US 12,530,030, 33 claims) covering camera-based navigation safety and clear-passage determination for commercial trucking applications."
 keywords:
   - autonomous trucking patent defense strategy
   - commercial vehicle AV patent licensing
@@ -21,18 +21,18 @@ cta_link: "/contact.html"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
-modified: "2026-02-25"
+modified: "2026-03-05"
 
 # Open Graph
-og_title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
-og_description: "Information on patent strategies for autonomous trucking, including camera-based navigation safety applicable to commercial vehicle applications."
+og_title: "Autonomous Trucking Patent Defense Strategy | 2-Patent Portfolio, 33 Claims"
+og_description: "Patent portfolio (US 12,001,207 & US 12,530,030, 33 claims) covering camera-based navigation safety and clear-passage determination for commercial trucking applications."
 og_type: "article"
 og_image: "/assets/images/og-startup-innovation.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
-twitter_title: "Autonomous Trucking Patent Defense Strategy | US 12,001,207"
-twitter_description: "Information on patent strategies for autonomous trucking, including camera-based navigation safety applicable to commercial vehicle applications."
+twitter_title: "Autonomous Trucking Patent Defense Strategy | 2-Patent Portfolio, 33 Claims"
+twitter_description: "Patent portfolio (US 12,001,207 & US 12,530,030, 33 claims) covering camera-based navigation safety and clear-passage determination for commercial trucking applications."
 twitter_image: "/assets/images/og-startup-innovation.jpg"
 ---
 
@@ -40,7 +40,7 @@ twitter_image: "/assets/images/og-startup-innovation.jpg"
 
 ## Executive summary
 
-US Patent 12,001,207 covers a camera-based safety validation system for autonomous vehicles that can be applied to trucking operations. This dual-module system validates navigation commands against stored route data before execution, adding redundancy to autonomous vehicle operations including potential commercial vehicle applications.
+This patent portfolio (US 12,001,207 and US 12,530,030, 33 claims total) covers camera-based safety validation for autonomous vehicles, with direct applications to trucking. The original patent's dual-module system validates navigation commands against stored route data before execution. The continuation adds a clear-passage-determining module that evaluates whether a maneuver can be safely executed given surrounding traffic. For trucks, this means the system can assess whether it is safe to turn at an intersection, merge onto a highway, or pull into a loading dock before committing to the maneuver.
 
 ### Key patent benefits
 
@@ -119,7 +119,7 @@ Camera-based systems can offer economic advantages in certain deployment scenari
 
 ---
 
-## Section 2: US Patent 12,001,207 for commercial trucking
+## Section 2: Patent portfolio for commercial trucking
 
 ### Camera-based systems for highway operations
 
@@ -129,13 +129,21 @@ Camera-based systems can be effective in long-haul trucking contexts:
 - AI-enhanced cameras can handle varied weather conditions with multiple camera angles providing redundancy. *Actual performance varies by weather severity, AI model capabilities, and environmental factors.*
 - Camera systems offer different cost-performance tradeoffs than multi-sensor approaches, with advantages varying by deployment scenario.
 
-### Patent overview
+### Portfolio overview
 
-[View full patent on Google Patents →](https://patents.google.com/patent/US12001207B2)
+**US Patent 12,001,207** — [View on Google Patents](https://patents.google.com/patent/US12001207B2)
 
 - **Grant Date:** June 4, 2024 | **Expiration:** March 5, 2041 (15+ years remaining)
-- **Technology:** Dual-module camera-based navigation safety system
-- **Applicability:** Autonomous driving vehicles and air vessels (applicable to various vehicle types including potential commercial truck applications)
+- **Claims:** 13 apparatus claims covering dual-module camera-based navigation safety
+- **Technology:** Safety-determining module + control module with threshold-based execution
+
+**US Patent 12,530,030** (continuation) — [View on Google Patents](https://patents.google.com/patent/US12530030B2)
+
+- **Grant Date:** January 20, 2026 | **Expiration:** March 5, 2041 (terminal disclaimer)
+- **Claims:** 20 claims — method (1-15), computer program product (16-18), system (19-20)
+- **Technology:** Clear-passage-determining module for traffic-aware navigation decisions
+
+**Portfolio total:** 2 US patents, 33 claims. Covers autonomous driving vehicles and air vessels, including commercial trucks.
 
 ### Key technical features
 
@@ -147,7 +155,9 @@ Safety-threshold control only executes commands when safety values exceed predet
 
 ### Application to trucking systems
 
-The patent's general autonomous vehicle system can be applied to trucking contexts. Works with existing camera-based perception stacks without system redesign. Adds safety validation layer complementing (not replacing) core navigation. Can be implemented in commercial trucks, delivery vehicles, and fleet operations. Provides dual-module architecture distinct from single-module competitors, supporting premium insurance rates and faster regulatory approval.
+The portfolio's technology applies to trucking without requiring a system redesign. It adds a safety validation layer that complements (not replaces) core navigation, and it works with existing camera-based perception stacks. Can be implemented in commercial trucks, delivery vehicles, and fleet operations. The dual-module architecture is distinct from single-module competitors, which may support insurance and regulatory discussions.
+
+The continuation patent's clear-passage module is particularly useful for commercial trucks. It determines whether a maneuver can be safely executed given surrounding traffic: can the truck turn at this intersection, merge here, pull into this loading dock? Vehicle size and stopping distance make these decisions higher-stakes for trucks than for passenger cars, and the clear-passage module provides a structured way to evaluate them before the vehicle commits.
 
 ---
 
@@ -316,7 +326,7 @@ Camera-based safety patents may be referenced in:
 
 Weeks 1-2: Conduct portfolio gap analysis across perception, safety, fleet management, and regulatory compliance. Compare to competitors (Aurora, Waabi, Waymo Via, Tesla).
 
-Weeks 3-4: Evaluate US Patent 12,001,207 applicability and discuss integration considerations.
+Weeks 3-4: Evaluate patent portfolio applicability (US 12,001,207 dual-module safety + US 12,530,030 clear-passage determination) and discuss integration considerations.
 
 Month 2: Prepare investor materials discussing patent strategy and competitive positioning.
 
@@ -333,13 +343,14 @@ Month 3: Integrate licensed patents into technical architecture, train engineeri
 
 ## Conclusion
 
-US Patent 12,001,207 offers autonomous trucking companies portfolio strengthening through:
-- Dual-module safety validation addressing liability and regulatory requirements
-- Visual navigation technology applicable to camera-based deployment
-- 15+ years protection (through 2041)
-- Integration potential with existing perception systems
+This portfolio (US 12,001,207 and US 12,530,030, 33 claims) gives autonomous trucking companies:
+- Dual-module safety validation that addresses liability and regulatory requirements
+- Clear-passage determination for traffic-aware decisions (intersections, highway merges, loading docks)
+- Visual navigation technology for camera-based deployment
+- 15+ years of protection (both patents through 2041)
+- Compatibility with existing perception systems
 
-Companies strengthening IP positions in 2025 may benefit from improved Series B/C valuations, favorable OEM partnerships, and competitive advantages for 2027-2028 commercial launches.
+Companies building IP positions now are better positioned for Series B/C valuations and OEM partnerships ahead of 2027-2028 commercial launches.
 
 <div class="alert alert-info">
 <strong>Action Item:</strong> Consider evaluating patent licensing opportunities well in advance of funding rounds or commercial deployment to allow time for due diligence and integration planning. Consult with patent counsel for company-specific timing recommendations.
@@ -349,11 +360,11 @@ Companies strengthening IP positions in 2025 may benefit from improved Series B/
 
 <div class="cta-section-primary text-center py-5">
   <h2>Strengthen your autonomous trucking patent portfolio</h2>
-  <p class="lead">Contact us to discuss licensing US Patent 12,001,207 for defensive IP protection in your commercial vehicle systems.</p>
+  <p class="lead">Contact us to discuss licensing our 2-patent portfolio (33 claims) for defensive IP protection in your commercial vehicle systems.</p>
   <a href="/contact.html" class="cta-button">Contact About Patent Licensing</a>
 </div>
 
-<p class="mt-4"><a href="/patent-details.html">View technical specifications of US Patent 12,001,207 →</a></p>
+<p class="mt-4"><a href="/patent-details.html">View full patent portfolio details →</a></p>
 
 ---
 
@@ -365,8 +376,8 @@ A: Patents matter less at Seed/Pre-Seed but become increasingly important by Ser
 **Q: Why license instead of developing in-house?**
 A: In-house development typically requires multiple years with significant costs and uncertain patent grant outcomes. Licensing offers access to already-granted patents, potentially accelerating portfolio development. Actual timelines and costs vary widely based on company resources, technical complexity, and negotiation terms. Consult patent counsel for company-specific analysis.
 
-**Q: Does this patent conflict with existing technology?**
-A: The patent covers safety validation architecture. Contact us to discuss how it relates to your specific technology implementation.
+**Q: Do these patents conflict with existing technology?**
+A: The patents cover safety validation architecture and clear-passage determination. Contact us to discuss how they relate to your specific technology implementation.
 
 **Q: How to explain licensing to investors?**
-A: "We licensed US Patent 12,001,207 to add safety-focused validation to our perception systems, de-risking our stack and strengthening our moat faster and cheaper than in-house development."
+A: "We licensed a 2-patent portfolio with 33 claims covering safety validation and clear-passage determination. It adds a redundant safety layer to our perception stack, and we got granted-patent coverage years faster than filing our own."

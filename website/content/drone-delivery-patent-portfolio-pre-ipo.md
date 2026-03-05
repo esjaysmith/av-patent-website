@@ -1,7 +1,7 @@
 ---
 title: "Drone Delivery Patent Portfolio for IPO | Strategic Licensing Guide"
 page_title: "Strengthen Your Drone Patent Portfolio for IPO Success: Strategic Licensing Guide"
-description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
+description: "Strengthen drone patent portfolios before IPO. License a 2-patent, 33-claim portfolio covering UAV camera-based navigation safety, visual positioning, and clear-passage determination."
 keywords:
   - drone delivery patent portfolio for IPO
   - UAV patent strategy pre-IPO
@@ -18,18 +18,18 @@ breadcrumb_parent_url: "/#solutions"
 layout: page
 author: "AV Navigation IP Protection"
 date: "2025-10-18"
-modified: "2026-02-25"
+modified: "2026-03-05"
 
 # Open Graph
 og_title: "Drone Delivery Patent Portfolio for IPO | Strategic Licensing Guide"
-og_description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
+og_description: "Strengthen drone patent portfolios before IPO. License a 2-patent, 33-claim portfolio covering UAV camera-based navigation safety, visual positioning, and clear-passage determination."
 og_type: "article"
 og_image: "/assets/images/og-investment-finance.jpg"
 
 # Twitter Card
 twitter_card: "summary_large_image"
 twitter_title: "Drone Delivery Patent Portfolio for IPO | Strategic Licensing Guide"
-twitter_description: "Strengthen drone patent portfolios before IPO. License US Patent 12,001,207 for UAV camera-based navigation safety and visual positioning."
+twitter_description: "Strengthen drone patent portfolios before IPO. License a 2-patent, 33-claim portfolio covering UAV camera-based navigation safety, visual positioning, and clear-passage determination."
 twitter_image: "/assets/images/og-investment-finance.jpg"
 ---
 
@@ -41,7 +41,7 @@ Pre-IPO drone delivery companies face investor scrutiny of patent portfolios dur
 
 Strategic patent licensing accelerates portfolio development by providing immediate access to granted patents while proprietary applications go through USPTO examination. A balanced approach combines licensed foundational patents with proprietary innovations.
 
-US Patent 12,001,207 covers camera-based navigation safety applicable to both autonomous vehicles and aerial systems (drones/UAVs). The dual-module safety architecture may be relevant to operators seeking to demonstrate robust detect-and-avoid capabilities for FAA BVLOS operations. Licensing options available for commercial drone applications.
+Two granted US patents (US 12,001,207 and US 12,530,030) with 33 total claims cover camera-based navigation safety for autonomous vehicles and aerial systems (drones/UAVs). US 12,001,207 is the dual-module safety architecture. The continuation, US 12,530,030, adds a clear-passage-determining module that assesses whether a flight path is clear before executing navigation instructions. For drone operators applying for FAA BVLOS waivers, this maps to the detect-and-avoid requirement. Licensing options available for commercial drone applications.
 
 Typical benchmark for IPO readiness: 15-25 granted patents spanning flight control, navigation, communications, and safety systems. (Based on analysis of recent drone company IPOs; actual requirements vary by company, industry segment, and underwriter expectations.)
 
@@ -99,28 +99,47 @@ The FAA's [BVLOS waiver process](https://www.faa.gov/newsroom/beyond-visual-line
 **Investor Expectations:**
 Based on analysis of institutional investor due diligence patterns, visual navigation patents are increasingly common in competitive portfolios. However, investor expectations vary by company stage, target market, and overall IP strategy. Portfolio gaps may prompt questions about technical capabilities during due diligence.
 
-### US Patent 12,001,207: camera-based safety for drones
+### Patent portfolio: camera-based safety for drones
 
-[View Full Patent on Google Patents](https://patents.google.com/patent/US12001207B2)
+#### US Patent 12,001,207: dual-module safety architecture
+
+[View on Google Patents](https://patents.google.com/patent/US12001207B2)
 
 **Technology Overview:**
 Dual-module camera-based navigation safety system where one module determines the safest navigation path using visual recognition, while a second module verifies safety before the vehicle/aircraft executes the command.
 
-*Note: Patent information provided for illustrative purposes regarding camera-based navigation technologies. Licensing availability and terms subject to verification with patent holders.*
-
 **Grant and Expiration:**
 - Granted: June 4, 2024
 - Expires: March 5, 2041 (approximately 15 years of remaining protection as of 2026)
+- 13 claims covering the dual-module safety architecture
 
 **Key Drone Applications:**
 
 - Visual point recognition for navigation without precise GPS coordinates
 - Dual safety module architecture ensuring redundant safety verification
-- Applicable to "vehicles" broadly - explicitly includes UAVs and aircraft in patent claims
+- Applicable to "vehicles" broadly — explicitly includes UAVs and aircraft in patent claims
 - Camera-based navigation using preprocessed stored images for comparison
 
-**IPO Value:**
-Immediately strengthens portfolio with visual navigation coverage, demonstrates autonomous capability to investors, provides technology relevant to FAA BVLOS waiver applications, and enables comprehensive IP disclosure for S-1 filing.
+#### US Patent 12,530,030: clear-passage determination
+
+[View on Google Patents](https://patents.google.com/patent/US12530030B2)
+
+**Technology Overview:**
+This continuation patent adds a clear-passage-determining module. It evaluates whether a navigation instruction can be safely executed given current conditions. Example: is the drone's planned flight path clear of obstacles or conflicting traffic? If not, the system waits.
+
+**Grant and Expiration:**
+- Granted: January 20, 2026
+- Expires: March 5, 2041 (same expiration as US 12,001,207 via terminal disclaimer)
+- 20 claims: method claims (1–15), computer program product claims (16–18), system claims (19–20)
+
+**Drone-specific relevance:**
+Consider a delivery drone approaching a landing zone. It needs to know whether the descent path is clear before committing. Or an inspection drone near a building that has to decide if a turn is safe. The clear-passage module handles exactly this: comparing live camera images against stored references to make go/no-go decisions. The patent's 20 claims cover the method, the software implementation, and the system itself.
+
+*Note: Patent information provided for illustrative purposes regarding camera-based navigation technologies. Licensing availability and terms subject to verification with patent holders.*
+
+#### Combined portfolio value for IPO
+
+Two patents, 33 claims, three claim types (apparatus, method, and computer program product). For S-1 disclosure, this is a ready-made block of visual navigation IP that covers both hardware and software. The claim diversity also matters: apparatus claims protect the physical system, method claims protect how it works, and computer program product claims protect the software. Competitors would need to design around all three.
 
 ---
 
@@ -323,7 +342,7 @@ The window for IPO preparation is narrow. Start your patent portfolio strengthen
 
 ## Next steps
 
-[Contact us](/contact.html) to discuss licensing US Patent 12,001,207 for your drone delivery company's IPO preparation.
+[Contact us](/contact.html) to discuss licensing our 2-patent navigation safety portfolio for your drone delivery company's IPO preparation.
 
 - [View patent technical details](/patent-details.html)
 - [Explore licensing options](/licensing.html)
