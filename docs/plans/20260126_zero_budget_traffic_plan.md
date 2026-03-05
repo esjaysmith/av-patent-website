@@ -10,6 +10,11 @@
 
 Things to remember when working on this site. Read this section first when resuming work.
 
+### Conventions
+
+- **Done items:** Use `~~strikethrough~~ ✓ date/details` format (not `[x]` checkboxes)
+- **Open items:** Use `- [ ]` checkboxes
+
 ### After editing content
 
 1. Edit markdown source files in `/website/content/*.md` (never edit `/website/build/` directly)
@@ -90,9 +95,9 @@ https://www.av-navigation-ip.com/* https://av-navigation-ip.com/:splat 301!
 ```
 
 **Action Items:**
-- [x] Verify primary domain in Netlify dashboard (Site settings → Domain management) ✓ Confirmed Feb 12, 2026
-- [ ] ~~If not working, add `netlify.toml` with redirect rule~~ (Not needed — Netlify auto-redirect working)
-- [x] Verify redirect works: `curl -I https://www.av-navigation-ip.com` should return 301 ✓ Confirmed Feb 12, 2026
+- ~~Verify primary domain in Netlify dashboard (Site settings → Domain management)~~ ✓ Confirmed Feb 12, 2026
+- ~~If not working, add `netlify.toml` with redirect rule~~ ✓ Not needed — Netlify auto-redirect working
+- ~~Verify redirect works: `curl -I https://www.av-navigation-ip.com` should return 301~~ ✓ Confirmed Feb 12, 2026
 - [ ] Verify in Google Search Console that preferred domain is set
 
 **1.2 Ensure consistent URL structure**
@@ -102,17 +107,17 @@ https://www.av-navigation-ip.com/* https://av-navigation-ip.com/:splat 301!
 ### Priority 2: Force Re-indexing
 
 **2.1 Google Search Console**
-- [x] Use "URL Inspection" on each page ✓ 6 pages Feb 12, remaining 6 pages Mar 4, 2026
-- [x] Click "Request Indexing" for all 14 pages ✓ All non-indexed pages requested (8 already indexed)
+- ~~Use "URL Inspection" on each page~~ ✓ 6 pages Feb 12, remaining 6 pages Mar 4, 2026
+- ~~Click "Request Indexing" for all 14 pages~~ ✓ All non-indexed pages requested (8 already indexed)
 - [ ] Submit sitemap again at `https://av-navigation-ip.com/sitemap.xml`
 
 **2.2 Bing Webmaster Tools**
-- [ ] Use "URL Submission" for all pages
-- [ ] Enable IndexNow (instant indexing protocol)
-- [ ] Submit sitemap manually
+- ~~Use "URL Submission" for all pages~~ ✓ 6 pages submitted Feb 12, 2026
+- ~~Enable IndexNow (instant indexing protocol)~~ ✓ Mar 4, 2026
+- ~~Submit sitemap manually~~ ✓ Verified both sitemaps present and healthy Feb 12, 2026
 
 **2.3 Enable IndexNow**
-Create `/indexnow.txt` key file and use IndexNow API for instant Bing/Yandex indexing.
+~~Create `/indexnow.txt` key file and use IndexNow API for instant Bing/Yandex indexing.~~ ✓ Done Mar 4, 2026 — key file live, 14 URLs submitted
 
 ---
 
@@ -179,10 +184,10 @@ Sitemap: https://av-navigation-ip.com/sitemap.xml
 ```
 
 **Action Items:**
-- [x] Audit current `robots.txt` at https://av-navigation-ip.com/robots.txt ✓ Mar 4, 2026
-- [x] Update to explicitly allow all AI crawler user agents listed above ✓ Mar 4, 2026 — Added GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, GrokBot, xAI-Grok, Grok-DeepSearch, Meta-ExternalAgent
-- [x] Ensure `Sitemap:` directive is present pointing to sitemap.xml ✓ Mar 4, 2026
-- [ ] Deploy updated robots.txt
+- ~~Audit current `robots.txt` at https://av-navigation-ip.com/robots.txt~~ ✓ Mar 4, 2026
+- ~~Update to explicitly allow all AI crawler user agents listed above~~ ✓ Mar 4, 2026 — Added GPTBot, OAI-SearchBot, ChatGPT-User, anthropic-ai, ClaudeBot, PerplexityBot, GrokBot, xAI-Grok, Grok-DeepSearch, Meta-ExternalAgent
+- ~~Ensure `Sitemap:` directive is present pointing to sitemap.xml~~ ✓ Mar 4, 2026
+- ~~Deploy updated robots.txt~~ ✓ Deployed Mar 4, 2026
 
 ### 1B.2 Submit to Brave Search (Claude's Backend)
 
@@ -199,9 +204,9 @@ Brave Search is fully independent of Google and Bing. If we're not in Brave's in
 IndexNow is the single highest-leverage action: one protocol covers Bing, which feeds ChatGPT, Microsoft Copilot, and partially Meta AI.
 
 **Action Items:**
-- [x] Generate IndexNow API key ✓ (key: `6a70e795af4a499aa8699b2f7208ee04`)
-- [x] Create key verification file at site root (e.g., `/{key}.txt`) ✓ Live and verified
-- [x] Submit all pages via IndexNow API ✓ Mar 4, 2026 — 14 URLs submitted, HTTP 200 success
+- ~~Generate IndexNow API key~~ ✓ Key: `6a70e795af4a499aa8699b2f7208ee04`
+- ~~Create key verification file at site root (`/{key}.txt`)~~ ✓ Live and verified
+- ~~Submit all pages via IndexNow API~~ ✓ Mar 4, 2026 — 14 URLs submitted, HTTP 200 success
 - [ ] Consider adding IndexNow ping to deployment pipeline (auto-notify on content changes)
 
 ### 1B.4 Optimize Content for AI Citation
@@ -229,8 +234,8 @@ AI search engines favor content that is:
 ### 1B.5 Monitor AI Search Visibility
 
 **Action Items:**
-- [x] Test queries in ChatGPT, Claude, Perplexity, and Gemini to see if our pages appear in citations ✓ Mar 4, 2026
-- [x] Document which pages/queries surface our content ✓ Mar 4, 2026 (see baseline below)
+- ~~Test queries in ChatGPT, Claude, Perplexity, and Gemini to see if our pages appear in citations~~ ✓ Mar 4, 2026
+- ~~Document which pages/queries surface our content~~ ✓ Mar 4, 2026 (see baseline below)
 - [ ] Track changes monthly as AI indexes update
 - [ ] Set up Google Alerts for "US 12,001,207" and "av-navigation-ip.com" to catch AI-generated mentions
 
@@ -438,11 +443,9 @@ Ensure the patent is listed and linked on:
 
 ## Phase 5: Technical Enhancements (Ongoing)
 
-### 5.1 Enable Google Analytics
+### ~~5.1 Enable Google Analytics~~ ✓ Mar 5, 2026
 
-**Action:** Set up GA4 to track actual traffic
-- Currently configured but disabled
-- Enable in `generate_site.py` configuration
+~~**Action:** Set up GA4 to track actual traffic~~ ✓ GA4 property `G-4C95JX9MNT` enabled in `.env`, baked into all 14 pages
 
 ### 5.2 Add Blog/News Section
 
@@ -496,16 +499,16 @@ New pages targeting comparison searches:
 ## Execution Timeline
 
 ### Week 1: Technical Fixes
-- [x] Fix www redirect issue ✓ Confirmed working Feb 12, 2026
-- [x] Request indexing for all pages ✓ Feb 12 + Mar 4, 2026
-- [x] Enable IndexNow ✓ Mar 4, 2026
-- [ ] Set up Google Analytics
+- ~~Fix www redirect issue~~ ✓ Confirmed working Feb 12, 2026
+- ~~Request indexing for all pages~~ ✓ Feb 12 + Mar 4, 2026
+- ~~Enable IndexNow~~ ✓ Mar 4, 2026
+- ~~Set up Google Analytics~~ ✓ Mar 5, 2026 — GA4 property `G-4C95JX9MNT` enabled
 
 ### Week 1-2: AI Search Engine Optimization
-- [x] Audit and update robots.txt to allow all AI crawler user agents ✓ Mar 4, 2026
+- ~~Audit and update robots.txt to allow all AI crawler user agents~~ ✓ Mar 4, 2026
 - [ ] Submit all key pages to Brave Search (search.brave.com/submit-url)
-- [x] Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline) ✓ Mar 4, 2026
-- [x] Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility ✓ Mar 4, 2026 (see Baseline Results below)
+- ~~Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline)~~ ✓ Mar 4, 2026
+- ~~Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility~~ ✓ Mar 4, 2026 (see Baseline Results below)
 - [ ] Review landing pages for AI-citation-friendliness
 
 ### Week 2-3: LinkedIn Launch
@@ -539,10 +542,10 @@ New pages targeting comparison searches:
 
 1. ~~**IMMEDIATE:** Fix www vs non-www redirect at hosting level~~ ✓ Done Feb 12, 2026
 2. ~~**TODAY:** Request indexing for all 14 pages in GSC~~ ✓ 6 high-priority pages requested Feb 12, 2026
-3. ~~**TODAY:** Submit sitemap to Bing, enable IndexNow~~ ✓ Sitemaps verified (already submitted), 6 pages indexed via Bing WMT Feb 12, 2026 — IndexNow still pending
+3. ~~**TODAY:** Submit sitemap to Bing, enable IndexNow~~ ✓ Sitemaps verified Feb 12, 2026; IndexNow enabled Mar 4, 2026
 4. ~~**THIS WEEK:** Update robots.txt to allow AI crawlers (GPTBot, ClaudeBot, PerplexityBot, GrokBot, Meta-ExternalAgent)~~ ✓ Done Mar 4, 2026
 5. **THIS WEEK:** Submit key pages to Brave Search (Claude's search backend — independent of Google/Bing)
-6. **THIS WEEK:** Enable IndexNow (single action covers Bing → ChatGPT → Copilot → Meta AI)
+6. ~~**THIS WEEK:** Enable IndexNow (single action covers Bing → ChatGPT → Copilot → Meta AI)~~ ✓ Done Mar 4, 2026
 7. **THIS WEEK:** Optimize LinkedIn profile, schedule first 3 posts
 8. **THIS WEEK:** Identify 5 Quora questions to answer
 
@@ -822,16 +825,16 @@ Track all completed actions with timestamps to measure results and steer future 
 
 | Target Date | Action | Priority |
 |-------------|--------|----------|
-| 2026-02-19 | Check if requested pages are now indexed in GSC | High |
-| 2026-02-19 | Check if requested pages are now indexed in Bing | High |
-| 2026-02-19 | Request indexing for remaining non-priority GSC pages | Medium |
+| ~~2026-02-19~~ | ~~Check if requested pages are now indexed in GSC~~ ✓ Audited Mar 4 — 8 indexed (up from 4) | ~~High~~ ✓ |
+| ~~2026-02-19~~ | ~~Check if requested pages are now indexed in Bing~~ ✓ Checked Mar 4 | ~~High~~ ✓ |
+| ~~2026-02-19~~ | ~~Request indexing for remaining non-priority GSC pages~~ ✓ 6 remaining pages requested Mar 4 | ~~Medium~~ ✓ |
 | TBD | Verify GSC preferred domain setting | Medium |
-| ~~TBD~~ | ~~Enable IndexNow for instant Bing/Yandex indexing~~ ✓ Done Mar 4, 2026 | — |
-| TBD | Request indexing for `venture-capital-av-patent-portfolio-due-diligence.html` (check status first) | High |
-| ~~TBD~~ | ~~Update robots.txt to allow all AI crawler bots~~ ✓ Done Mar 4, 2026 | — |
+| ~~TBD~~ | ~~Enable IndexNow for instant Bing/Yandex indexing~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
+| ~~TBD~~ | ~~Request indexing for `venture-capital-av-patent-portfolio-due-diligence.html`~~ ✓ Requested Mar 4, 2026 | ~~High~~ ✓ |
+| ~~TBD~~ | ~~Update robots.txt to allow all AI crawler bots~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
 | TBD | Submit all key pages to Brave Search (Claude's backend) | High |
-| ~~TBD~~ | ~~Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline)~~ ✓ Done Mar 4, 2026 | — |
-| ~~TBD~~ | ~~Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini~~ ✓ Done Mar 4, 2026 | — |
+| ~~TBD~~ | ~~Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline)~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
+| ~~TBD~~ | ~~Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
 
 ---
 
