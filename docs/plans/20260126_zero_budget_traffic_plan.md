@@ -226,9 +226,9 @@ AI search engines favor content that is:
 - "US Patent 12,001,207"
 
 **Action Items:**
-- [ ] Review landing pages for AI-citation-friendliness (clear factual statements, specific data points)
-- [ ] Ensure patent number US 12,001,207 appears prominently and consistently
-- [ ] Add FAQ-style content sections that directly answer likely AI search queries
+- ~~Review landing pages for AI-citation-friendliness (clear factual statements, specific data points)~~ ✓ Mar 5, 2026
+- ~~Ensure patent number US 12,001,207 appears prominently and consistently~~ ✓ Mar 5, 2026 — consistent across all pages
+- ~~Add FAQ-style content sections that directly answer likely AI search queries~~ ✓ Mar 5, 2026 — FAQ sections added to patent-details.md and licensing.md
 - [ ] Consider adding a `/facts.html` or structured data page optimized for AI extraction
 
 ### 1B.5 Monitor AI Search Visibility
@@ -509,7 +509,7 @@ New pages targeting comparison searches:
 - [ ] Submit all key pages to Brave Search (search.brave.com/submit-url)
 - ~~Enable IndexNow (key file + API submission for Bing/ChatGPT/Copilot pipeline)~~ ✓ Mar 4, 2026
 - ~~Test queries in ChatGPT, Claude, Perplexity, Gemini — baseline AI visibility~~ ✓ Mar 4, 2026 (see Baseline Results below)
-- [ ] Review landing pages for AI-citation-friendliness
+- ~~Review landing pages for AI-citation-friendliness~~ ✓ Mar 5, 2026
 
 ### Week 2-3: LinkedIn Launch
 - [ ] Optimize personal LinkedIn profile

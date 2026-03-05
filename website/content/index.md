@@ -73,14 +73,15 @@ date_modified: "2026-02-25"
 
 ## What this patent covers
 
-US Patent 12,001,207, issued June 4, 2024, describes an autonomous vehicle control system that uses deep learning and camera-based navigation with a built-in safety assessment layer. If your system navigates using cameras, runs confidence checks, or hands off to a remote operator when confidence drops, this patent is relevant to you.
+US Patent 12,001,207, issued June 4, 2024, describes a dual-module safety system for autonomous vehicles and drones. A safety-determining module compares live camera images against stored reference images and generates a safety value. A separate control module only executes navigation instructions if that safety value meets a predetermined threshold. If confidence drops below the threshold, the system hands off to a remote human operator.
 
 <div class="patent-highlight">
-<strong>In short:</strong> Deep learning control + camera-based navigation + safety confidence scoring + remote operator handoff. This is the architecture most camera-first AV companies are building toward.
+<strong>In short:</strong> Dual-module safety architecture — camera-based navigation + safety confidence scoring + remote operator handoff. This is the architecture most camera-first AV companies are building toward. Patent protection extends to March 5, 2041.
 </div>
 
 ### Coverage areas
 
+- Dual-module camera-based navigation safety systems
 - Camera-based guidance systems for autonomous vehicles
 - Commercial and consumer drone navigation
 - Machine learning navigation algorithms
@@ -99,10 +100,11 @@ A few things happening in the market right now:
 
 ## Patent details
 
-- **Issue date:** June 4, 2024
-- **Technology:** Camera-based navigation with safety assessment
-- **Applications:** Autonomous vehicles, drones, AI navigation
 - **Patent number:** US 12,001,207
+- **Issue date:** June 4, 2024
+- **Expiration:** March 5, 2041
+- **Technology:** Dual-module camera-based navigation safety system
+- **Applications:** Autonomous vehicles, drones, AI navigation
 
 [View full patent on Google Patents](https://patents.google.com/patent/US12001207B2)
 

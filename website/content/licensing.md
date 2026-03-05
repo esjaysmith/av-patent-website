@@ -24,7 +24,7 @@ date_modified: "2026-02-25"
 
 # Patent Licensing Opportunities
 
-**US Patent 12,001,207** is available for licensing across multiple industries and applications. **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
+**US Patent 12,001,207** — a dual-module camera-based navigation safety system — is available for licensing across multiple industries and applications. Patent protection extends to March 5, 2041. **[View Full Patent on Google Patents →](https://patents.google.com/patent/US12001207B2)**
 
 We offer flexible licensing arrangements for companies developing autonomous vehicle and drone navigation technologies.
 
@@ -110,6 +110,24 @@ When reaching out, it helps to share:
 - Target markets (US and/or UK)
 
 Contact us to start a conversation about licensing US Patent 12,001,207.
+
+## Frequently asked questions
+
+### How long does the licensing process take?
+
+Typical licensing agreements are completed in 30-60 days from initial contact. Non-exclusive licenses can often be finalized faster than exclusive arrangements.
+
+### What does a license to US Patent 12,001,207 include?
+
+A license grants the right to use the patented dual-module camera-based navigation safety system in your products. The specific scope depends on the license type (exclusive, non-exclusive, or field-of-use) and geographic territory (United States and/or United Kingdom).
+
+### Can I license the patent for a specific application only?
+
+Yes. Field-of-use licensing lets you license US Patent 12,001,207 for a specific application, such as consumer autonomous vehicles, commercial drone delivery, or industrial automation, without paying for rights you do not need.
+
+### How much does licensing cost?
+
+Licensing terms are negotiated per agreement and depend on exclusivity, field of use, geographic scope, and compensation structure (royalty-based, fixed-fee, or hybrid). Contact us to discuss terms suited to your situation.
 
 ---
 

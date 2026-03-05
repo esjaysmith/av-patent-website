@@ -110,7 +110,7 @@ Dual-module camera-based navigation safety system where one module determines th
 
 **Grant and Expiration:**
 - Granted: June 4, 2024
-- Expected Term: Utility patents typically expire 20 years from the earliest U.S. filing date, plus any Patent Term Adjustment (PTA). Consult the patent documentation for specific filing dates and PTA calculations. Standard patent term provides substantial long-term protection for licensees.
+- Expires: March 5, 2041 (approximately 15 years of remaining protection as of 2026)
 
 **Key Drone Applications:**
 

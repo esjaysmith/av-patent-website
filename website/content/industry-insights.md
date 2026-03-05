@@ -64,7 +64,7 @@ This shift makes camera-based safety patents more valuable as a foundation for a
 
 **2015-2020 — Foundation.** Basic AV concepts, sensor fusion patents, early autonomous driving systems. Limited commercial deployment.
 
-**2021-2025 — Camera-first emergence** (current). Tesla FSD development and adoption. Camera-based safety patents like US 12,001,207. Regulatory frameworks taking shape.
+**2021-2025 — Camera-first emergence** (current). Tesla FSD development and adoption. Dual-module camera-based safety patents like US 12,001,207 (expires March 5, 2041). Regulatory frameworks taking shape.
 
 **2026-2030 — Projected saturation.** Likely a more crowded patent landscape with higher licensing costs and fewer foundational patents available.
 
