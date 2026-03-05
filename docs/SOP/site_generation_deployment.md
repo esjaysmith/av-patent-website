@@ -37,7 +37,20 @@ cd website
 python generate_site.py
 ```
 
-Expected output: 14 pages generated + sitemap.xml + robots.txt.
+Expected output: 16 pages generated + sitemap.xml + robots.txt.
+
+### Environment Variables
+
+The site generator uses environment variables for configuration (Google Analytics, site URL, etc.). These are loaded from `/website/.env` locally via `python-dotenv`.
+
+**IMPORTANT:** The `.env` file is for local development only. Production env vars are managed in the **Netlify project configuration** (web UI: Site settings → Environment variables). If you add or change an env var, update it in both places.
+
+| Variable | Purpose | Default |
+|----------|---------|---------|
+| `GOOGLE_ANALYTICS_ID` | GA4 measurement ID | `G-XXXXXXXXXX` (inactive) |
+| `GOOGLE_ANALYTICS_ENABLED` | Enable/disable GA | `false` |
+
+If env vars are missing during generation, the site builds but with defaults (e.g., GA tag renders as `'unknown'`).
 
 ### Prerequisites
 

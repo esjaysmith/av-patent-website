@@ -93,7 +93,7 @@ Things to remember when working on this site. Read this section first when resum
 - **Google:** 4 pages indexed, 2 not indexed, 0 clicks
 - **Bing:** 2 pages indexed (homepage only)
 - **Live since:** ~2 weeks (early January 2026)
-- **Total pages:** 14 (13 in sitemap)
+- **Total pages:** 16 (16 in sitemap, as of Mar 5 2026)
 
 ### Technical Issues Identified
 1. **Duplicate without user-selected canonical:** Google seeing both `www` and non-`www` versions
@@ -480,18 +480,9 @@ Ensure the patent is listed and linked on:
 
 ~~**Action:** Set up GA4 to track actual traffic~~ ✓ GA4 property `G-4C95JX9MNT` enabled in `.env`, baked into all 14 pages
 
-### 5.2 Add Blog/News Section
+### ~~5.2 Add Blog/News Section~~ ✓ Mar 5, 2026
 
-Create a `/blog/` or `/news/` section for:
-- Industry updates
-- Patent landscape analysis
-- Company news
-
-**Benefits:**
-- Fresh content for Google
-- More pages to index
-- More keywords to rank for
-- Newsletter content source
+~~Create a `/blog/` or `/news/` section~~ ✓ Created `news.html` with 5 dated entries (continuation patent grant, Nvidia Alpamayo, Zipline $600M, Wayve Series D, Tesla glare patent). Added to nav and sitemap.
 
 ### 5.3 Implement FAQ Schema
 
@@ -776,8 +767,9 @@ Low revenue but builds credibility and pipeline.
 Strengthen the portfolio through additional filings.
 
 **Current Assets:**
-- US 12,001,207 (granted) - Dual-module safety system
-- Continuation (pending) - Safety passage / free space
+- US 12,001,207 (granted June 2024) — Dual-module safety system, 13 claims
+- US 12,530,030 (granted January 20, 2026) — Continuation, clear-passage-determining module, 20 claims (method/CPP/system)
+- EP3786756B1 (granted) — European patent, same family
 
 **Strategic Considerations:**
 - [ ] Review continuation claims against current market implementations
@@ -853,6 +845,9 @@ Track all completed actions with timestamps to measure results and steer future 
 | 2026-03-04 | — | GSC indexing audit | Technical SEO | 8 indexed (up from 4), 10 not indexed (4 www/http variants, 6 real pages never crawled) | Progress from Feb 12 |
 | 2026-03-04 | — | Requested GSC indexing for 6 remaining pages | GSC Indexing | about, disclaimer, drone-delivery, privacy, thank-you, venture-capital — all "Request Indexing" confirmed | All added to priority crawl queue |
 | 2026-03-04 | — | AI search baseline visibility test | AI Search SEO | Tested 4 target queries via web search. Site ranks #1 for patent number + licensing queries, #2 for drone delivery, not found for "dual-module safety system" | Baseline established; gap identified |
+| 2026-03-05 | — | Continuation patent content update | Content | Added US 12,530,030 to all pages: patent-details (portfolio reframe), new patent-details-continuation page, licensing, index, industry-insights (4 new developments), news page (5 items), all 5 SEO landing pages. 33 claims across 2 US patents. | Site now 16 pages |
+| 2026-03-05 | — | Updated site templates for portfolio framing | Templates | CTA: "Ready to License This Patent Portfolio?", footer: both patent numbers, "Why License This Patent Portfolio", added News to nav + footer quick links | All pages regenerated |
+| 2026-03-05 | — | Verified sitemap.xml | Technical SEO | All 16 pages present including patent-details-continuation.html and news.html | Ready for deploy + IndexNow |
 
 ### Pending Follow-ups
 
@@ -868,6 +863,10 @@ Track all completed actions with timestamps to measure results and steer future 
 | ~~TBD~~ | ~~Submit all key pages to Brave Search (Claude's backend)~~ ✓ Done Mar 5, 2026 | ~~High~~ ✓ |
 | ~~TBD~~ | ~~Enable IndexNow (covers Bing → ChatGPT → Copilot pipeline)~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
 | ~~TBD~~ | ~~Baseline AI search visibility test across ChatGPT, Claude, Perplexity, Gemini~~ ✓ Done Mar 4, 2026 | ~~High~~ ✓ |
+| 2026-03-05 | Deploy continuation patent update to Netlify | High |
+| 2026-03-05 | Run `python submit_indexnow.py` after deploy (16 URLs) | High |
+| 2026-03-05 | Submit `patent-details-continuation.html` and `news.html` to Brave Search | High |
+| 2026-03-05 | Request GSC indexing for `patent-details-continuation.html` and `news.html` | High |
 
 ---
 
